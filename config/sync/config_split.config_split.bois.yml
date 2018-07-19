@@ -1,0 +1,15 @@
+uuid: 5a3b546d-424d-4fc3-b43b-47b15fa5a92d
+langcode: fr
+status: false
+dependencies: {  }
+id: bois
+label: 'Refuge-porte du Bois'
+folder: ../config/sites/bois
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.site
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
