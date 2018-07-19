@@ -1,0 +1,15 @@
+uuid: 1db3de7b-8364-4a61-94d4-5ad9e92dbc60
+langcode: fr
+status: false
+dependencies: {  }
+id: arpont
+label: 'Refuge de l''Arpont'
+folder: ../config/sites/arpont
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.site
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
