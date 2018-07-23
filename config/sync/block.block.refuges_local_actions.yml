@@ -1,0 +1,20 @@
+uuid: ca4276cd-0557-47d7-a6d2-6d9c8e32b965
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - refuges
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: refuges_local_actions
+theme: refuges
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

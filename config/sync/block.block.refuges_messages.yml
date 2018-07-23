@@ -1,0 +1,22 @@
+uuid: a6b2c52f-f73e-42da-aa49-aabd26ec5f87
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - refuges
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: refuges_messages
+theme: refuges
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messages de statut'
+  provider: system
+  label_display: '0'
+visibility: {  }
