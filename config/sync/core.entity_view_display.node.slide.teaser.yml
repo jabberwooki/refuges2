@@ -1,0 +1,21 @@
+uuid: e7825a50-9e8b-47d9-bba0-f60cfae409a9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slide.field_image_file
+    - node.type.slide
+  module:
+    - user
+id: node.slide.teaser
+targetEntityType: node
+bundle: slide
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_image_file: true
+  langcode: true

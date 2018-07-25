@@ -1,0 +1,19 @@
+uuid: 1fb8f44d-5b0e-4395-904d-8b28a67bfe52
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_credit
+    - node.type.slide
+id: node.slide.field_credit
+field_name: field_credit
+entity_type: node
+bundle: slide
+label: 'Credit photo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
