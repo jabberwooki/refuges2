@@ -1,0 +1,9 @@
+uuid: 3580286f-0929-4893-9447-f36bf291d7f5
+langcode: fr
+status: true
+dependencies: {  }
+id: text
+label: 'Texte simple'
+icon_uuid: null
+description: 'Bloc de texte sur toute la largeur du contenu.'
+behavior_plugins: {  }

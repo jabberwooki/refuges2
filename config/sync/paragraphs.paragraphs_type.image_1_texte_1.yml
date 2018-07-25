@@ -1,0 +1,9 @@
+uuid: ed52b99f-a076-497a-8813-55a178c58329
+langcode: fr
+status: true
+dependencies: {  }
+id: image_1_texte_1
+label: 'Image 1/2 - Texte 1/2'
+icon_uuid: null
+description: 'Image à gauche sur la moitié de la largeur - Texte à droite sur la moitié de la largeur.'
+behavior_plugins: {  }

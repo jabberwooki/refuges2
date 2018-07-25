@@ -1,0 +1,32 @@
+uuid: 7d7fcbcf-f20d-4724-91ca-44a7bc31418e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_1_texte_1.field_image
+    - field.field.paragraph.image_1_texte_1.field_raw_text
+    - paragraphs.paragraphs_type.image_1_texte_1
+  module:
+    - image
+id: paragraph.image_1_texte_1.default
+targetEntityType: paragraph
+bundle: image_1_texte_1
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_raw_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }
