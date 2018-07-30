@@ -1,0 +1,17 @@
+uuid: ec572adf-bd6b-4489-9843-f926fb9cb30e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Actualité
+type: news
+description: 'Actualités du refuge et autres.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,19 @@
+uuid: 3a62082b-8efc-41d3-8949-c3308e150350
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.news
+id: node.news.field_summary
+field_name: field_summary
+entity_type: node
+bundle: news
+label: Résumé
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

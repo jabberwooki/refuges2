@@ -1,0 +1,30 @@
+uuid: c4369f0e-d10a-4dc5-813f-5a100538352e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - refuges
+id: views_block__news_frontpage_block
+theme: refuges
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news-frontpage_block'
+settings:
+  id: 'views_block:news-frontpage_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
