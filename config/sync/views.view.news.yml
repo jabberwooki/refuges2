@@ -191,11 +191,12 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
-      title: ''
+      title: Actualités
       defaults:
         title: false
         style: false
         row: false
+        header: false
       style:
         type: grid
         options:
@@ -211,6 +212,20 @@ display:
         type: 'entity:node'
         options:
           view_mode: teaser
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: 'En direct du [site:name] '
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
