@@ -1,0 +1,84 @@
+uuid: 6d05cc5b-5884-4acf-873c-e39037b680ac
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.field_content
+    - field.field.node.event.field_event_dates
+    - field.field.node.event.field_image
+    - field.field.node.event.field_location
+    - field.field.node.event.field_pub_dates
+    - field.field.node.event.field_summary
+    - node.type.event
+  module:
+    - datetime_range
+    - ds
+    - entity_reference_revisions
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - links
+        - field_event_dates
+        - field_content
+        - field_location
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  field_content:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_event_dates:
+    type: daterange_custom
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd/m/Y (H:i)'
+      separator: '>'
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_location:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  links:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_image: true
+  field_pub_dates: true
+  field_summary: true
+  langcode: true

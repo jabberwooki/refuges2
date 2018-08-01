@@ -1,0 +1,20 @@
+uuid: 69901ef2-de75-44db-a2be-8a283ac30328
+langcode: fr
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - node
+id: node.field_pub_dates
+field_name: field_pub_dates
+entity_type: node
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
