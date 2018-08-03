@@ -3,10 +3,14 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.media.file.field_description
+    - field.field.media.file.field_flipthrough_url
     - field.field.media.file.field_media_file
     - media.type.file
   module:
     - file
+    - link
+    - text
 _core:
   default_config_hash: 9s0lWIanCnW5Xrrkmedxohs9F0yk4LO8ZcmVQ9xyuu4
 id: media.file.default
@@ -14,11 +18,30 @@ targetEntityType: media
 bundle: file
 mode: default
 content:
+  field_description:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_flipthrough_url:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_media_file:
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-    type: file_default
+    type: file_url_plain
     weight: 1
     region: content
 hidden:

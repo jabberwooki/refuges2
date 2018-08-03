@@ -1,0 +1,87 @@
+uuid: a0bea8c4-08b3-4421-be36-f4cdb6a5d386
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.teaser
+    - field.field.media.file.field_description
+    - field.field.media.file.field_flipthrough_url
+    - field.field.media.file.field_media_file
+    - media.type.file
+  module:
+    - ds
+    - file
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - name
+        - field_description
+      right:
+        - field_flipthrough_url
+        - field_media_file
+_core:
+  default_config_hash: 9s0lWIanCnW5Xrrkmedxohs9F0yk4LO8ZcmVQ9xyuu4
+id: media.file.teaser
+targetEntityType: media
+bundle: file
+mode: teaser
+content:
+  field_description:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: left
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+  field_flipthrough_url:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: right
+  field_media_file:
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    weight: 3
+    region: right
+  name:
+    type: string
+    weight: 0
+    region: left
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  thumbnail: true
+  uid: true
