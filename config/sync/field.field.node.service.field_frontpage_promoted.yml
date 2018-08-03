@@ -1,0 +1,23 @@
+uuid: 8df4505f-edba-4201-80b5-0c1f4c2d0bc2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_frontpage_promoted
+    - node.type.service
+  module:
+    - options
+id: node.service.field_frontpage_promoted
+field_name: field_frontpage_promoted
+entity_type: node
+bundle: service
+label: 'Affichage en page d''accueil'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

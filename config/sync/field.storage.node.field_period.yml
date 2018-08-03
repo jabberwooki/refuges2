@@ -1,0 +1,27 @@
+uuid: 4432fbd8-863b-42b9-ba90-fb3674d4d21a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_period
+field_name: field_period
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'de gardiennage'
+    -
+      value: '2'
+      label: 'hors gardiennage'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

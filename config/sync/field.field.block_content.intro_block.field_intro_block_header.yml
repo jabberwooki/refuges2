@@ -1,0 +1,21 @@
+uuid: e9e26095-d43f-40a9-945a-1a805fdfe8a1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.intro_block
+    - field.storage.block_content.field_intro_block_header
+  module:
+    - text
+id: block_content.intro_block.field_intro_block_header
+field_name: field_intro_block_header
+entity_type: block_content
+bundle: intro_block
+label: En-tête
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

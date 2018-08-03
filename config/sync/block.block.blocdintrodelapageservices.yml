@@ -1,0 +1,31 @@
+uuid: 23a6ba14-2d62-4a8f-acdd-2321f4e88dac
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:intro_block:6d6f6b90-7ad4-4506-91dd-efb85fe52a20'
+  module:
+    - block_content
+    - system
+  theme:
+    - refuges
+id: blocdintrodelapageservices
+theme: refuges
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:6d6f6b90-7ad4-4506-91dd-efb85fe52a20'
+settings:
+  id: 'block_content:6d6f6b90-7ad4-4506-91dd-efb85fe52a20'
+  label: 'Bloc d''intro de la page Services'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/services-gardiennage\r\n/services-hors-gardiennage"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,29 @@
+uuid: 9204af4f-aeb8-439c-b80d-e080bc13693b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.services
+  module:
+    - system
+  theme:
+    - refuges
+id: services
+theme: refuges
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:services'
+settings:
+  id: 'system_menu_block:services'
+  label: Services
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/services-gardiennage\r\n/services-hors-gardiennage"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: 82209df3-0338-4288-9a64-9f50b9406d5d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_period
+    - node.type.service
+  module:
+    - options
+id: node.service.field_period
+field_name: field_period
+entity_type: node
+bundle: service
+label: Période
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
