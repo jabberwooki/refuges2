@@ -1,0 +1,16 @@
+blocks:
+  -
+    info: 'Bloc d''intro de la page Services'
+    langcode: fr
+    uuid: 6d6f6b90-7ad4-4506-91dd-efb85fe52a20
+    bundle: intro_block
+    fields:
+      field_intro_block_footer:
+        value: "<p>En période :</p>\r\n"
+        format: full_html
+      field_intro_block_header: null
+      field_intro_block_text:
+        value: "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, &nbsp;At vero eos et accusam et justo duo dolores et ea rebum. &nbsp;Lorem ipsum dolor sit amet, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;Stet clita kasd gubergren, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;sed diam voluptua. &nbsp;</p>\r\n"
+        format: full_html
+      field_intro_block_title:
+        value: 'Sous-titre de la page Services'
