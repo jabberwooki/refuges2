@@ -1,0 +1,16 @@
+uuid: fc763225-cbe6-4fc7-873c-16a02de5ef79
+langcode: fr
+status: true
+dependencies:
+  module:
+    - video_embed_media
+id: external_video
+label: 'Vidéo externe'
+description: 'Vidéo hébergé sur un serveur externe : Youtube, Vimeo, Facebook...'
+source: video_embed_field
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_video_embed_field
+field_map:
+  source_name: name

@@ -1,0 +1,22 @@
+uuid: ebea961c-e54d-401c-813d-d94eb376424f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_description
+    - media.type.external_video
+  module:
+    - text
+id: media.external_video.field_description
+field_name: field_description
+entity_type: media
+bundle: external_video
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
