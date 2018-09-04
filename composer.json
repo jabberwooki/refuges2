@@ -80,6 +80,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+            "drupal/structure_sync": {
+            "Structure Sync custom blocks export Notices": "https://www.drupal.org/files/issues/2018-07-05/structure_sync-2981825-5_1.patch"
+            }
         }
     }
 }
