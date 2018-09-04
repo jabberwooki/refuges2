@@ -4,6 +4,8 @@ blocks:
     langcode: fr
     uuid: 6d6f6b90-7ad4-4506-91dd-efb85fe52a20
     bundle: intro_block
+    revision_id: null
+    rev_id_current: null
     fields:
       field_intro_block_footer:
         value: "<p>En période :</p>\r\n"
@@ -14,3 +16,17 @@ blocks:
         format: full_html
       field_intro_block_title:
         value: 'Sous-titre de la page Services'
+menus:
+  -
+    menu_name: main
+    title: Media
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '12'
+    langcode: fr
+    uuid: a1fb0259-be99-4312-8c6f-348aa4ec261e
+    options: null
