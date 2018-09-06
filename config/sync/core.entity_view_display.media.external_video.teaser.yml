@@ -6,12 +6,11 @@ dependencies:
     - core.entity_view_mode.media.teaser
     - field.field.media.external_video.field_description
     - field.field.media.external_video.field_media_video_embed_field
-    - image.style.medium
     - media.type.external_video
   module:
     - ds
-    - image
     - text
+    - video_embed_field
 third_party_settings:
   ds:
     layout:
@@ -35,7 +34,7 @@ third_party_settings:
         - created
         - field_description
       right:
-        - thumbnail
+        - field_media_video_embed_field
 id: media.external_video.teaser
 targetEntityType: media
 bundle: external_video
@@ -59,24 +58,29 @@ content:
     settings:
       trim_length: 200
     third_party_settings: {  }
+  field_media_video_embed_field:
+    type: video_embed_field_colorbox
+    weight: 3
+    region: right
+    label: hidden
+    settings:
+      image_style: ''
+      link_image_to: ''
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+      modal_max_width: 1200
+    third_party_settings: {  }
   name:
     type: string
     weight: 0
     region: left
     label: hidden
     settings:
-      link_to_entity: true
-    third_party_settings: {  }
-  thumbnail:
-    type: image
-    weight: 3
-    region: right
-    label: hidden
-    settings:
-      image_style: medium
-      image_link: content
+      link_to_entity: false
     third_party_settings: {  }
 hidden:
-  field_media_video_embed_field: true
   langcode: true
+  thumbnail: true
   uid: true
