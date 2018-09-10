@@ -1,0 +1,29 @@
+uuid: fc94b6d9-4b34-49d7-ad6e-4087618bfc54
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icone
+    - node.type.service
+    - taxonomy.vocabulary.icons
+id: node.service.field_icone
+field_name: field_icone
+entity_type: node
+bundle: service
+label: Icône
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      icons: icons
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

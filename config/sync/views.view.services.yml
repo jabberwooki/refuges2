@@ -381,6 +381,7 @@ display:
         filters: false
         filter_groups: false
         header: false
+        use_ajax: false
       path: services-gardiennage
       filters:
         status:
@@ -457,6 +458,7 @@ display:
         weight: 0
         context: '0'
         menu_name: services
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -479,6 +481,7 @@ display:
         filters: false
         filter_groups: false
         header: false
+        use_ajax: false
       path: services-hors-gardiennage
       filters:
         status:
@@ -555,6 +558,7 @@ display:
         weight: 1
         context: '0'
         menu_name: services
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:

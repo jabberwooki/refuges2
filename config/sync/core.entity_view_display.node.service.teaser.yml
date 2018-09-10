@@ -5,11 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.service.field_displayed_text
+    - field.field.node.service.field_frontpage_promoted
+    - field.field.node.service.field_icone
     - field.field.node.service.field_image
     - field.field.node.service.field_period
     - node.type.service
   module:
     - ds
+    - icon_select
     - image
     - user
 third_party_settings:
@@ -31,6 +34,7 @@ third_party_settings:
     regions:
       ds_content:
         - field_image
+        - field_icone
         - field_displayed_text
 id: node.service.teaser
 targetEntityType: node
@@ -39,11 +43,21 @@ mode: teaser
 content:
   field_displayed_text:
     type: string
-    weight: 1
+    weight: 2
     region: ds_content
     label: hidden
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+  field_icone:
+    type: icon_select_formatter_default
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      apply_dimensions: true
+      width: 25
+      height: 25
     third_party_settings: {  }
   field_image:
     type: image
@@ -55,6 +69,7 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  field_frontpage_promoted: true
   field_period: true
   langcode: true
   links: true

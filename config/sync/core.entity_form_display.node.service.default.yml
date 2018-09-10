@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.service.field_displayed_text
     - field.field.node.service.field_frontpage_promoted
+    - field.field.node.service.field_icone
     - field.field.node.service.field_image
     - field.field.node.service.field_period
     - image.style.thumbnail
     - node.type.service
   module:
+    - icon_select
     - image
     - path
 id: node.service.default
@@ -19,12 +21,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   field_displayed_text:
-    weight: 3
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -32,10 +34,16 @@ content:
     type: string_textfield
     region: content
   field_frontpage_promoted:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_icone:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: icon_select_widget_default
     region: content
   field_image:
     weight: 2
@@ -46,7 +54,7 @@ content:
     type: image_image
     region: content
   field_period:
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -60,7 +68,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -68,21 +76,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 9
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 12
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 10
     region: content
     third_party_settings: {  }
   title:
@@ -95,7 +103,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
