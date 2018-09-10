@@ -1,0 +1,20 @@
+uuid: 1fc5e863-9880-4549-addd-68bd940066fd
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - arpont
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: arpont_local_actions
+theme: arpont
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

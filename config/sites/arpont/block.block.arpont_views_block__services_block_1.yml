@@ -1,0 +1,30 @@
+uuid: e851d47e-3c6e-483b-984f-94c0a691521b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.services
+  module:
+    - system
+    - views
+  theme:
+    - arpont
+id: arpont_views_block__services_block_1
+theme: arpont
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:services-block_1'
+settings:
+  id: 'views_block:services-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

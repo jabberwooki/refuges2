@@ -1,0 +1,20 @@
+uuid: 7c2dbb87-2c9d-4ba3-8cb6-6d58bb603f06
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - arpont
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: arpont_page_title
+theme: arpont
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titre de page'
+  provider: core
+  label_display: '0'
+visibility: {  }

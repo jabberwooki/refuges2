@@ -1,0 +1,25 @@
+uuid: 18509ee1-1cca-4956-8d50-12af6154d67d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arpont
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: arpont_branding
+theme: arpont
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marque du site'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

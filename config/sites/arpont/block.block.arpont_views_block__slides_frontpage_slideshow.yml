@@ -1,0 +1,30 @@
+uuid: fab3661e-9706-44a8-aa9f-d7b03665b7e0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.slides
+  module:
+    - system
+    - views
+  theme:
+    - arpont
+id: arpont_views_block__slides_frontpage_slideshow
+theme: arpont
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:slides-frontpage_slideshow'
+settings:
+  id: 'views_block:slides-frontpage_slideshow'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

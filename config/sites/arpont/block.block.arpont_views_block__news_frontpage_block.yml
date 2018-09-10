@@ -1,0 +1,30 @@
+uuid: 885bffb2-7285-4eeb-8f00-b36b6252d42f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - arpont
+id: arpont_views_block__news_frontpage_block
+theme: arpont
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:news-frontpage_block'
+settings:
+  id: 'views_block:news-frontpage_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

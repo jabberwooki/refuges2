@@ -1,7 +1,7 @@
 framework:
-  css:
-    theme:
-      css/style.css: {}
+#  css:
+#    theme:
+#      css/style.css: {}
   js:
     bootstrap/assets/javascripts/bootstrap/affix.js: {}
     bootstrap/assets/javascripts/bootstrap/alert.js: {}

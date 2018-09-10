@@ -10,6 +10,9 @@ theme: {  }
 blacklist: {  }
 graylist:
   - system.site
+  - system.theme
+  - arpont.settings
+  - 'block.block.arpont_*'
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
