@@ -1,0 +1,22 @@
+uuid: 045c614b-7fc1-41a6-a5fe-c6ce93832fee
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bois
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: bois_local_tasks
+theme: bois
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

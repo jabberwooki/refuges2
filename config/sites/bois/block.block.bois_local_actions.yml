@@ -1,0 +1,20 @@
+uuid: 53c9245c-6a90-42f6-8c78-1ed389a59f6f
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bois
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bois_local_actions
+theme: bois
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

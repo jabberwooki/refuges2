@@ -1,0 +1,22 @@
+uuid: c05de20d-a4c0-4590-b966-f9a38e8b605f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bois
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: bois_content
+theme: bois
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }

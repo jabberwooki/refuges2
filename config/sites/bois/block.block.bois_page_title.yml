@@ -1,0 +1,20 @@
+uuid: 1867c893-a226-4d27-9074-aa162d97030a
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bois
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: bois_page_title
+theme: bois
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titre de page'
+  provider: core
+  label_display: '0'
+visibility: {  }
