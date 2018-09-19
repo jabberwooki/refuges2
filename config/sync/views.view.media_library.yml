@@ -11,6 +11,7 @@ dependencies:
     - ds
     - media
     - user
+    - views_bootstrap
 id: media_library
 label: Médiathèque
 module: views
@@ -73,7 +74,7 @@ display:
         type: grid
         options:
           uses_fields: false
-          columns: 2
+          columns: 3
           automatic_width: true
           alignment: horizontal
           col_class_default: true
@@ -338,6 +339,43 @@ display:
         context: '0'
         menu_name: main
       display_description: ''
+      style:
+        type: views_bootstrap_grid
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          alignment: horizontal
+          columns: '3'
+          col_xs: col-xs-12
+          col_sm: col-sm-6
+          col_md: col-md-4
+          col_lg: col-lg-4
+      defaults:
+        style: false
+        row: false
+      row:
+        type: 'ds_entity:media'
+        options:
+          relationship: none
+          view_mode: teaser
+          alternating_fieldset:
+            alternating: false
+            allpages: false
+            item_0: teaser
+            item_1: teaser
+            item_2: teaser
+            item_3: teaser
+            item_4: teaser
+            item_5: teaser
+            item_6: teaser
+            item_7: teaser
+            item_8: teaser
+            item_9: teaser
+          grouping_fieldset:
+            group: false
+          advanced_fieldset:
+            advanced: false
     cache_metadata:
       max-age: -1
       contexts:

@@ -4,24 +4,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.full
-    - field.field.media.external_video.field_description
     - field.field.media.external_video.field_media_video_embed_field
     - media.type.external_video
   module:
-    - text
     - video_embed_field
 id: media.external_video.full
 targetEntityType: media
 bundle: external_video
 mode: full
 content:
-  field_description:
-    type: text_default
-    weight: 1
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_media_video_embed_field:
     weight: 0
     label: hidden
@@ -34,6 +25,7 @@ content:
     type: video_embed_field_video
     region: content
 hidden:
+  addtoany: true
   created: true
   langcode: true
   name: true

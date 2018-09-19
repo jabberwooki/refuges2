@@ -4,24 +4,21 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.teaser
-    - field.field.media.external_video.field_description
     - field.field.media.external_video.field_media_video_embed_field
     - media.type.external_video
   module:
     - ds
-    - text
     - video_embed_field
 third_party_settings:
   ds:
     layout:
-      id: ds_2col
-      library: ds/ds_2col
+      id: ds_1col
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
         wrappers:
-          left: div
-          right: div
+          ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
@@ -29,39 +26,18 @@ third_party_settings:
         classes:
           layout_class: {  }
     regions:
-      left:
+      ds_content:
         - name
-        - created
-        - field_description
-      right:
         - field_media_video_embed_field
 id: media.external_video.teaser
 targetEntityType: media
 bundle: external_video
 mode: teaser
 content:
-  created:
-    type: timestamp
-    weight: 1
-    region: left
-    label: hidden
-    settings:
-      date_format: custom
-      custom_date_format: 'd F Y'
-      timezone: ''
-    third_party_settings: {  }
-  field_description:
-    type: text_summary_or_trimmed
-    weight: 2
-    region: left
-    label: hidden
-    settings:
-      trim_length: 200
-    third_party_settings: {  }
   field_media_video_embed_field:
     type: video_embed_field_colorbox
-    weight: 3
-    region: right
+    weight: 1
+    region: ds_content
     label: hidden
     settings:
       image_style: ''
@@ -75,12 +51,14 @@ content:
   name:
     type: string
     weight: 0
-    region: left
+    region: ds_content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
+  addtoany: true
+  created: true
   langcode: true
   thumbnail: true
   uid: true

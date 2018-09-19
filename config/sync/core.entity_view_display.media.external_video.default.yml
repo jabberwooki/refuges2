@@ -3,24 +3,15 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.media.external_video.field_description
     - field.field.media.external_video.field_media_video_embed_field
     - media.type.external_video
   module:
-    - text
     - video_embed_field
 id: media.external_video.default
 targetEntityType: media
 bundle: external_video
 mode: default
 content:
-  field_description:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_media_video_embed_field:
     weight: 0
     label: hidden
@@ -33,6 +24,7 @@ content:
     type: video_embed_field_video
     region: content
 hidden:
+  addtoany: true
   created: true
   langcode: true
   name: true
