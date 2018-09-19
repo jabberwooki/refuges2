@@ -31,12 +31,13 @@ third_party_settings:
     regions:
       ds_content:
         - field_media_image
+        - addtoany
         - node_title
         - field_content
     fields:
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 2
         label: hidden
         formatter: default
 id: node.news.full
@@ -44,9 +45,14 @@ targetEntityType: node
 bundle: news
 mode: full
 content:
+  addtoany:
+    weight: 1
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
   field_content:
     type: entity_reference_revisions_entity_view
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       view_mode: default
@@ -63,7 +69,6 @@ content:
       link: false
     third_party_settings: {  }
 hidden:
-  addtoany: true
   field_summary: true
   langcode: true
   links: true
