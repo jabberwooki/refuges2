@@ -1,0 +1,21 @@
+uuid: f00e3e52-6e58-4610-9953-ad38398886ec
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_copyright
+    - media.type.image
+  module:
+    - text
+id: media.image.field_copyright
+field_name: field_copyright
+entity_type: media
+bundle: image
+label: Copyright
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

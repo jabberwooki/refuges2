@@ -3,12 +3,15 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_copyright
     - field.field.media.image.field_media_image
     - image.style.thumbnail
     - media.type.image
   module:
     - image
     - path
+    - text
 _core:
   default_config_hash: nZlttO4YMwMCpkhYMz7bQ1ZMjABGc59YY1us3eSfvTY
 id: media.image.default
@@ -18,28 +21,44 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_caption:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_copyright:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
   field_media_image:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-    weight: 0
+    weight: 2
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -47,7 +66,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -55,7 +74,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 100
+    weight: 8
     region: content
     third_party_settings: {  }
   uid:

@@ -1,8 +1,9 @@
-uuid: 82b567cd-9728-47f7-a586-c77d363a02cc
+uuid: 731e9a02-862d-44b8-8c61-0d3d0ff669de
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.teaser
     - field.field.media.image.field_caption
     - field.field.media.image.field_copyright
     - field.field.media.image.field_media_image
@@ -12,25 +13,25 @@ dependencies:
     - text
 _core:
   default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
-id: media.image.default
+id: media.image.teaser
 targetEntityType: media
 bundle: image
-mode: default
+mode: teaser
 content:
   field_caption:
+    type: text_default
     weight: 2
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   field_copyright:
+    type: text_default
     weight: 1
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   field_media_image:
     label: visually_hidden
     settings:

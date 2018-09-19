@@ -2,6 +2,8 @@ uuid: 1867c893-a226-4d27-9074-aa162d97030a
 langcode: fr
 status: true
 dependencies:
+  module:
+    - ctools
   theme:
     - bois
 _core:
@@ -17,4 +19,11 @@ settings:
   label: 'Titre de page'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      news: news
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
