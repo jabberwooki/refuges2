@@ -6,11 +6,9 @@ dependencies:
     - field.field.node.service.field_displayed_text
     - field.field.node.service.field_frontpage_promoted
     - field.field.node.service.field_icone
-    - field.field.node.service.field_image
     - field.field.node.service.field_period
     - node.type.service
   module:
-    - image
     - options
     - user
 id: node.service.default
@@ -40,15 +38,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_image:
-    weight: 1
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
     region: content
   field_period:
     weight: 6

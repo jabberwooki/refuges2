@@ -6,13 +6,10 @@ dependencies:
     - field.field.node.service.field_displayed_text
     - field.field.node.service.field_frontpage_promoted
     - field.field.node.service.field_icone
-    - field.field.node.service.field_image
     - field.field.node.service.field_period
-    - image.style.thumbnail
     - node.type.service
   module:
     - icon_select
-    - image
     - path
 id: node.service.default
 targetEntityType: node
@@ -44,14 +41,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: icon_select_widget_default
-    region: content
-  field_image:
-    weight: 2
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: content
   field_period:
     weight: 5

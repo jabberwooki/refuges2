@@ -7,13 +7,11 @@ dependencies:
     - field.field.node.service.field_displayed_text
     - field.field.node.service.field_frontpage_promoted
     - field.field.node.service.field_icone
-    - field.field.node.service.field_image
     - field.field.node.service.field_period
     - node.type.service
   module:
     - ds
     - icon_select
-    - image
     - user
 third_party_settings:
   ds:
@@ -58,15 +56,6 @@ content:
       apply_dimensions: true
       width: 25
       height: 25
-    third_party_settings: {  }
-  field_image:
-    type: image
-    weight: 0
-    region: ds_content
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
     third_party_settings: {  }
 hidden:
   field_frontpage_promoted: true
