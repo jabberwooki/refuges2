@@ -3,28 +3,19 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.slide.field_credit
+    - entity_browser.browser.media_browser
     - field.field.node.slide.field_description
-    - field.field.node.slide.field_image_file
     - field.field.node.slide.field_link
-    - image.style.thumbnail
+    - field.field.node.slide.field_media_image
     - node.type.slide
   module:
-    - image
+    - entity_browser
     - link
 id: node.slide.default
 targetEntityType: node
 bundle: slide
 mode: default
 content:
-  field_credit:
-    weight: 4
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_description:
     weight: 3
     settings:
@@ -33,32 +24,39 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
-  field_image_file:
-    weight: 2
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
   field_link:
-    weight: 5
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
+  field_media_image:
+    weight: 2
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_replace: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
   langcode:
     type: language_select
-    weight: 0
+    weight: 1
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60

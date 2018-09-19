@@ -4,7 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.slide.field_image_file
+    - field.field.node.slide.field_description
+    - field.field.node.slide.field_link
     - node.type.slide
   module:
     - user
@@ -17,8 +18,8 @@ content:
     weight: 100
     region: content
 hidden:
+  addtoany: true
   field_credit: true
   field_description: true
-  field_image_file: true
   field_link: true
   langcode: true
