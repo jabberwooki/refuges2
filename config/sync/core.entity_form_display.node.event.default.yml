@@ -5,15 +5,12 @@ dependencies:
   config:
     - field.field.node.event.field_content
     - field.field.node.event.field_event_dates
-    - field.field.node.event.field_image
     - field.field.node.event.field_location
     - field.field.node.event.field_pub_dates
     - field.field.node.event.field_summary
-    - image.style.thumbnail
     - node.type.event
   module:
     - datetime_range
-    - image
     - paragraphs
     - path
     - text
@@ -45,14 +42,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
-    region: content
-  field_image:
-    weight: 3
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: content
   field_location:
     weight: 6
