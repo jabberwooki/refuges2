@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.field_content
     - field.field.node.event.field_event_dates
     - field.field.node.event.field_location
+    - field.field.node.event.field_media_image
     - field.field.node.event.field_pub_dates
     - field.field.node.event.field_summary
     - node.type.event
@@ -32,24 +33,34 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_image
+        - field_media_image
+        - addtoany
         - field_event_dates
         - node_title
         - field_summary
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 3
         label: hidden
         formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
 id: node.event.teaser
 targetEntityType: node
 bundle: event
 mode: teaser
 content:
+  addtoany:
+    weight: 1
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
   field_event_dates:
     type: daterange_custom
-    weight: 1
+    weight: 2
     region: ds_content
     label: hidden
     settings:
@@ -59,9 +70,18 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
   field_summary:
     type: basic_string
-    weight: 3
+    weight: 4
     region: ds_content
     label: hidden
     settings: {  }
