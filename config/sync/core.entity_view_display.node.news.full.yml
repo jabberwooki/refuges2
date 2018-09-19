@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.news.field_content
-    - field.field.node.news.field_image
     - field.field.node.news.field_summary
     - node.type.news
   module:
@@ -59,6 +58,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_image: true
   field_summary: true
   langcode: true

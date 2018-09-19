@@ -4,12 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.news.field_content
-    - field.field.node.news.field_image
     - field.field.node.news.field_summary
-    - image.style.thumbnail
     - node.type.news
   module:
-    - image
     - paragraphs
     - path
 id: node.news.default
@@ -34,14 +31,6 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
-  field_image:
-    weight: 2
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: content
   field_summary:
     weight: 3

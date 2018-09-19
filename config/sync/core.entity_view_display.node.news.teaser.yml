@@ -5,12 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.news.field_content
-    - field.field.node.news.field_image
     - field.field.node.news.field_summary
     - node.type.news
   module:
     - ds
-    - image
     - user
 third_party_settings:
   ds:
@@ -50,15 +48,6 @@ targetEntityType: node
 bundle: news
 mode: teaser
 content:
-  field_image:
-    type: image
-    weight: 0
-    region: ds_content
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
   field_summary:
     type: basic_string
     weight: 3
