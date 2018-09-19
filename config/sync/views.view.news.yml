@@ -9,6 +9,7 @@ dependencies:
   module:
     - node
     - user
+    - views_bootstrap
 id: news
 label: Actualités
 module: views
@@ -252,6 +253,25 @@ display:
         weight: 10
         context: '0'
         menu_name: main
+      style:
+        type: views_bootstrap_grid
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          alignment: horizontal
+          columns: '3'
+          col_xs: col-xs-12
+          col_sm: col-sm-6
+          col_md: col-md-4
+          col_lg: col-lg-4
+      defaults:
+        style: false
+        row: false
+      row:
+        type: 'entity:node'
+        options:
+          view_mode: teaser
     cache_metadata:
       max-age: -1
       contexts:
