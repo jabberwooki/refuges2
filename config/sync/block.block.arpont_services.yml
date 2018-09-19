@@ -1,0 +1,29 @@
+uuid: 98c18b34-b825-4b98-a97b-b5afbab46703
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.services
+  module:
+    - system
+  theme:
+    - arpont
+id: arpont_services
+theme: arpont
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:services'
+settings:
+  id: 'system_menu_block:services'
+  label: Services
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/services-gardiennage\r\n/services-hors-gardiennage"
+    negate: false
+    context_mapping: {  }

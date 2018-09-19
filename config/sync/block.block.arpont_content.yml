@@ -1,0 +1,22 @@
+uuid: 2ae7643a-777a-4420-bce9-c8c70a4d1492
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arpont
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: arpont_content
+theme: arpont
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }

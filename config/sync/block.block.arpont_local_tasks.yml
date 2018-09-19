@@ -1,0 +1,22 @@
+uuid: 3ff0d9cb-1613-4d6c-a26d-e26744a0820e
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - arpont
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: arpont_local_tasks
+theme: arpont
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

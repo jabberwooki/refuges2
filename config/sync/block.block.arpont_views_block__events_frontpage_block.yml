@@ -1,0 +1,30 @@
+uuid: 0ed6473b-a921-4370-bfda-91be7903457b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - views
+  theme:
+    - arpont
+id: arpont_views_block__events_frontpage_block
+theme: arpont
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:events-frontpage_block'
+settings:
+  id: 'views_block:events-frontpage_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
