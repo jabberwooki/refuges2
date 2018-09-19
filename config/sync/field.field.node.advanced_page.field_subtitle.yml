@@ -1,0 +1,19 @@
+uuid: 34e150eb-3506-403b-9030-886a9a8b86ec
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.advanced_page
+id: node.advanced_page.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: advanced_page
+label: Sous-titre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

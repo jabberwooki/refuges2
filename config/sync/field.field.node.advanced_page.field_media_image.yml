@@ -1,0 +1,28 @@
+uuid: 35fbe91e-2147-4401-b1f7-0b19d5d03061
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_image
+    - media.type.image
+    - node.type.advanced_page
+id: node.advanced_page.field_media_image
+field_name: field_media_image
+entity_type: node
+bundle: advanced_page
+label: 'Bandeau Image'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
