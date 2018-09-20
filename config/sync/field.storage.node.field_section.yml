@@ -1,0 +1,39 @@
+uuid: b826f765-d762-41a5-821b-2708d47f477f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_section
+field_name: field_section
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Actualités
+      label: Actualités
+    -
+      value: Agenda
+      label: Agenda
+    -
+      value: Services
+      label: Services
+    -
+      value: Documents
+      label: Documents
+    -
+      value: Photos
+      label: Photos
+    -
+      value: Videos
+      label: Videos
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

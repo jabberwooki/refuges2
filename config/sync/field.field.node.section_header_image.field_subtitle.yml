@@ -1,0 +1,19 @@
+uuid: 48c8dee5-4cb2-4030-8720-b0de301c4b06
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.section_header_image
+id: node.section_header_image.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: section_header_image
+label: Sous-titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

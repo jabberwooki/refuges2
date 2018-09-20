@@ -1,0 +1,21 @@
+uuid: 30d1271a-c834-401f-8e69-fd32c44ea25a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.section_header_image
+  module:
+    - options
+id: node.section_header_image.field_section
+field_name: field_section
+entity_type: node
+bundle: section_header_image
+label: Rubrique
+description: 'Sélectionnez la rubrique en tête de laquelle doit apparaître ce bandeau.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

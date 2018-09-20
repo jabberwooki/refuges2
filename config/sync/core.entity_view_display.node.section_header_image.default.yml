@@ -1,0 +1,73 @@
+uuid: 41d6c66b-efff-4323-a571-4144d562c0f2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.section_header_image.field_media_image
+    - field.field.node.section_header_image.field_section
+    - field.field.node.section_header_image.field_subtitle
+    - node.type.section_header_image
+  module:
+    - ds
+    - options
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_media_image
+        - node_title
+        - field_subtitle
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.section_header_image.default
+targetEntityType: node
+bundle: section_header_image
+mode: default
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: ds_content
+  field_section:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_subtitle:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true
