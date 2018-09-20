@@ -1,30 +1,30 @@
-uuid: cc12bdbc-ecfb-4bc2-a485-392544e674d9
+uuid: dd517dc5-1b67-48f2-926b-e57798b083dc
 langcode: fr
 status: true
 dependencies:
   config:
-    - views.view.slides
+    - views.view.section_headers
   module:
     - system
     - views
   theme:
     - bois
-id: bois_views_block__slides_frontpage_slideshow
+id: views_block__section_headers_block_6
 theme: bois
 region: highlighted
-weight: -10
+weight: -5
 provider: null
-plugin: 'views_block:slides-frontpage_slideshow'
+plugin: 'views_block:section_headers-block_6'
 settings:
-  id: 'views_block:slides-frontpage_slideshow'
+  id: 'views_block:section_headers-block_6'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /videos
     negate: false
     context_mapping: {  }

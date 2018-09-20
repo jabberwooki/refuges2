@@ -274,12 +274,7 @@ display:
         type: 'entity:node'
         options:
           view_mode: teaser
-      header:
-        entity_paragraph:
-          id: entity_paragraph
-          table: views
-          field: entity_paragraph
-          plugin_id: entity
+      header: {  }
     cache_metadata:
       max-age: -1
       contexts:

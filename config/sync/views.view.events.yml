@@ -296,20 +296,7 @@ display:
     display_options:
       display_extenders: {  }
       path: agenda
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: 'Les événements du refuge'
-            format: basic_html
-          plugin_id: text
+      header: {  }
       defaults:
         header: false
         style: false
