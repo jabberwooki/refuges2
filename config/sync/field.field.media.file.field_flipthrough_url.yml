@@ -11,11 +11,16 @@ id: media.file.field_flipthrough_url
 field_name: field_flipthrough_url
 entity_type: media
 bundle: file
-label: 'Url de feuilletage'
-description: ''
+label: Feuilleter
+description: 'Saisir l''url de feuilletage du document (url calameo, issuu, etc...).'
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    attributes: {  }
+    uri: 'http://example.com'
+    title: Feuilleter
+    options: {  }
 default_value_callback: ''
 settings:
   link_type: 16

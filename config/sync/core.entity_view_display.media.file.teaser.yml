@@ -32,6 +32,7 @@ third_party_settings:
           layout_class: {  }
     regions:
       left:
+        - addtoany
         - name
         - field_description
       right:
@@ -44,17 +45,22 @@ targetEntityType: media
 bundle: file
 mode: teaser
 content:
+  addtoany:
+    weight: 0
+    region: left
+    settings: {  }
+    third_party_settings: {  }
   field_description:
     type: text_summary_or_trimmed
-    weight: 1
+    weight: 2
     region: left
     label: hidden
     settings:
       trim_length: 200
     third_party_settings: {  }
   field_flipthrough_url:
-    weight: 2
-    label: hidden
+    weight: 3
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -65,16 +71,16 @@ content:
     type: link
     region: right
   field_media_file:
-    label: visually_hidden
+    label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
-    weight: 3
+    weight: 4
     region: right
   name:
     type: string
-    weight: 0
+    weight: 1
     region: left
     label: hidden
     settings:

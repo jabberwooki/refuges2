@@ -18,3 +18,4 @@ function refuges_preprocess_field(&$variables, $hook) {
     $variables['current_view_mode'] = 'full';
   }
 }
+

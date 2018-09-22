@@ -30,21 +30,23 @@ content:
     label: above
     settings:
       trim_length: 80
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
+      rel: '0'
     third_party_settings: {  }
     type: link
     region: content
   field_media_file:
-    label: visually_hidden
-    settings: {  }
+    label: above
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_url_plain
+    type: file_default
     weight: 1
     region: content
 hidden:
+  addtoany: true
   created: true
   langcode: true
   name: true
