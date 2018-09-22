@@ -1,0 +1,40 @@
+uuid: 1189a14d-1cbe-452f-a874-479f92ba18c6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.photo_gallery.body
+    - field.field.node.photo_gallery.field_photos
+    - node.type.photo_gallery
+  module:
+    - ds
+    - text
+    - user
+id: node.photo_gallery.full
+targetEntityType: node
+bundle: photo_gallery
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_photos:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

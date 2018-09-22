@@ -1,0 +1,17 @@
+uuid: bc01e1b0-b37d-46e4-bf34-d5203b1c1400
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Galerie photo'
+type: photo_gallery
+description: 'Une galerie permet de regrouper des photos par thème. Les galeries sont visibles dans la rubrique Media > Photos.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

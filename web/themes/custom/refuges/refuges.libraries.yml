@@ -20,6 +20,7 @@ slick:
   js:
     libraries/slick/slick/slick.min.js: {}
     js/slick.frontpage.js: {}
+    js/slick.photo-galleries.js: {}
   css:
     theme:
       libraries/slick/slick/slick.css: {}
