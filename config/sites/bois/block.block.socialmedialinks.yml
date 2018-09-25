@@ -1,0 +1,112 @@
+uuid: 5a067284-7ac4-49a8-b398-39e47ac93d32
+langcode: fr
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - bois
+id: socialmedialinks
+theme: bois
+region: navigation
+weight: -11
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: Suivez-nous
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    facebook:
+      value: refugedubois/
+      description: ''
+      weight: '-30'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-29'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-28'
+    github:
+      value: ''
+      description: ''
+      weight: '-27'
+    email:
+      value: ''
+      description: ''
+      weight: '-26'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-25'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-24'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-23'
+    rss:
+      value: ''
+      description: ''
+      weight: '-22'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-21'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '-20'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-19'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-18'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-17'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-16'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-15'
+    behance:
+      value: ''
+      description: ''
+      weight: '-14'
+    contact:
+      value: ''
+      description: ''
+      weight: '-13'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-12'
+    twitter:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: _blank
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

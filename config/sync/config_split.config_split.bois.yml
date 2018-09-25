@@ -9,9 +9,7 @@ module: {  }
 theme: {  }
 blacklist: {  }
 graylist:
-  - bois.settings
-  - system.site
-  - system.theme
+  - block.block.socialmedialinks
   - 'block.block.bois_*'
 graylist_dependents: true
 graylist_skip_equal: true
