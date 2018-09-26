@@ -1,0 +1,22 @@
+uuid: 3fe9ac94-d872-4acb-b937-14d1d19200ea
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photos_carrousel.field_carrousel
+    - paragraphs.paragraphs_type.photos_carrousel
+id: paragraph.photos_carrousel.default
+targetEntityType: paragraph
+bundle: photos_carrousel
+mode: default
+content:
+  field_carrousel:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }
