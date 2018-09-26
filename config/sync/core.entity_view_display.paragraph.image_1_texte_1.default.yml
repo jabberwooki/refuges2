@@ -7,49 +7,61 @@ dependencies:
     - field.field.paragraph.image_1_texte_1.field_raw_text
     - paragraphs.paragraphs_type.image_1_texte_1
   module:
-    - ds
+    - field_group
     - image
 third_party_settings:
-  ds:
-    layout:
-      id: ds_2col
-      library: ds/ds_2col
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        wrappers:
-          left: div
-          right: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      left:
+  field_group:
+    group_left:
+      children:
         - field_image
-      right:
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-6
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: left
+    group_right:
+      children:
         - field_raw_text
+      parent_name: ''
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-6
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: right
 id: paragraph.image_1_texte_1.default
 targetEntityType: paragraph
 bundle: image_1_texte_1
 mode: default
 content:
   field_image:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: left
+    region: content
   field_raw_text:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: right
+    region: content
 hidden: {  }

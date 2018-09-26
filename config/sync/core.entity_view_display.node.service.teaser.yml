@@ -58,6 +58,7 @@ content:
       height: 25
     third_party_settings: {  }
 hidden:
+  addtoany: true
   field_frontpage_promoted: true
   field_period: true
   langcode: true

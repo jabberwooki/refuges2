@@ -22,4 +22,5 @@ hidden:
   field_credit: true
   field_description: true
   field_link: true
+  field_media_image: true
   langcode: true

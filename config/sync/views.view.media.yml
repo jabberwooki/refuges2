@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: TFUfJMkC5E-HhafRL20wJK0EdtJotDtqb_9kJw2att4
 id: media
-label: Media
+label: Média
 module: views
 description: ''
 tag: ''
@@ -144,7 +144,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Thumbnail
+          label: Vignette
           exclude: false
           alter:
             alter_text: false
@@ -226,7 +226,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Media name'
+          label: 'Nom du média'
           exclude: false
           element_type: ''
           element_class: ''
@@ -579,7 +579,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: 'Media name'
+            label: 'Nom du média'
             description: ''
             use_operator: false
             operator: name_op
@@ -660,7 +660,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'True'
+            label: Vrai
             description: null
             use_operator: false
             operator: status_op
@@ -750,7 +750,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Media
+      title: Média
       header: {  }
       footer: {  }
       empty:
@@ -780,14 +780,14 @@ display:
   media_page_list:
     display_plugin: page
     id: media_page_list
-    display_title: Media
+    display_title: Média
     position: 1
     display_options:
       display_extenders: {  }
       path: admin/content/media
       menu:
         type: tab
-        title: Media
+        title: Média
         description: ''
         expanded: false
         parent: ''
