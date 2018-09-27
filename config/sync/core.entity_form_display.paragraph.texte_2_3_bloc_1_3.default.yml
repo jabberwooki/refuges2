@@ -1,0 +1,35 @@
+uuid: df45bc2d-c8c9-46de-bbb0-391973bbfa4a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texte_2_3_bloc_1_3.field_text
+    - field.field.paragraph.texte_2_3_bloc_1_3.field_texte
+    - paragraphs.paragraphs_type.texte_2_3_bloc_1_3
+  module:
+    - text
+id: paragraph.texte_2_3_bloc_1_3.default
+targetEntityType: paragraph
+bundle: texte_2_3_bloc_1_3
+mode: default
+content:
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_texte:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

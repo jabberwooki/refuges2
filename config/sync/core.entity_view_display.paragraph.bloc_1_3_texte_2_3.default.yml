@@ -1,24 +1,25 @@
-uuid: 7a5aaf38-a943-4293-9ed1-5ab9e0d2ca0c
+uuid: 783dc8a0-b3d9-43f8-9791-5c1068d4b01f
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.paragraph.texte_1_image_1.field_image_media
-    - field.field.paragraph.texte_1_image_1.field_raw_text
-    - paragraphs.paragraphs_type.texte_1_image_1
+    - field.field.paragraph.bloc_1_3_texte_2_3.field_text
+    - field.field.paragraph.bloc_1_3_texte_2_3.field_texte
+    - paragraphs.paragraphs_type.bloc_1_3_texte_2_3
   module:
     - field_group
+    - text
 third_party_settings:
   field_group:
     group_left:
       children:
-        - field_raw_text
+        - field_text
       parent_name: group_row
-      weight: 0
+      weight: 1
       format_type: html_element
       format_settings:
         id: ''
-        classes: col-md-6
+        classes: col-md-4
         element: div
         show_label: false
         label_element: h3
@@ -28,13 +29,13 @@ third_party_settings:
       label: left
     group_right:
       children:
-        - field_image_media
+        - field_texte
       parent_name: group_row
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
         id: ''
-        classes: col-md-6
+        classes: col-md-8
         element: div
         show_label: false
         label_element: h3
@@ -47,7 +48,7 @@ third_party_settings:
         - group_left
         - group_right
       parent_name: ''
-      weight: 20
+      weight: 0
       format_type: html_element
       format_settings:
         id: ''
@@ -59,25 +60,23 @@ third_party_settings:
         effect: none
         speed: fast
       label: row
-id: paragraph.texte_1_image_1.default
+id: paragraph.bloc_1_3_texte_2_3.default
 targetEntityType: paragraph
-bundle: texte_1_image_1
+bundle: bloc_1_3_texte_2_3
 mode: default
 content:
-  field_image_media:
-    weight: 21
-    label: hidden
-    settings:
-      link: true
-      view_mode: default
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: content
-  field_raw_text:
+  field_text:
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
+    region: content
+  field_texte:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
 hidden: {  }

@@ -1,17 +1,18 @@
-uuid: 83722b29-f052-4f52-9ba1-a1084ab16376
+uuid: b69484b2-4a62-4b04-bbfa-216a6619423e
 langcode: fr
 status: true
 dependencies:
   config:
     - entity_browser.browser.media_browser
-    - field.field.paragraph.texte_1_image_1.field_image_media
-    - field.field.paragraph.texte_1_image_1.field_raw_text
-    - paragraphs.paragraphs_type.texte_1_image_1
+    - field.field.paragraph.texte_2_3_image_1_3.field_image_media
+    - field.field.paragraph.texte_2_3_image_1_3.field_texte
+    - paragraphs.paragraphs_type.texte_2_3_image_1_3
   module:
     - entity_browser
-id: paragraph.texte_1_image_1.default
+    - text
+id: paragraph.texte_2_3_image_1_3.default
 targetEntityType: paragraph
-bundle: texte_1_image_1
+bundle: texte_2_3_image_1_3
 mode: default
 content:
   field_image_media:
@@ -29,13 +30,13 @@ content:
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
-  field_raw_text:
+  field_texte:
     weight: 0
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
     region: content
 hidden:
   created: true

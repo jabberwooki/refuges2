@@ -6,7 +6,26 @@ dependencies:
     - field.field.paragraph.text.field_text
     - paragraphs.paragraphs_type.text
   module:
+    - field_group
     - text
+third_party_settings:
+  field_group:
+    group_row:
+      children:
+        - field_text
+      parent_name: ''
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: row
 id: paragraph.text.default
 targetEntityType: paragraph
 bundle: text

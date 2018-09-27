@@ -1,0 +1,12 @@
+uuid: ba9a60e4-9b9a-4bb6-afb2-182e870bea6e
+langcode: fr
+status: true
+dependencies: {  }
+label: 'teaser actu'
+id: test_crop
+description: ''
+aspect_ratio: '480:350'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

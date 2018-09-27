@@ -1,24 +1,25 @@
-uuid: 7a5aaf38-a943-4293-9ed1-5ab9e0d2ca0c
+uuid: 1254b168-979c-4aef-ad15-e7316c2aedbc
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.paragraph.texte_1_image_1.field_image_media
-    - field.field.paragraph.texte_1_image_1.field_raw_text
-    - paragraphs.paragraphs_type.texte_1_image_1
+    - field.field.paragraph.image_1_3_2_3_texte.field_image_media
+    - field.field.paragraph.image_1_3_2_3_texte.field_texte
+    - paragraphs.paragraphs_type.image_1_3_2_3_texte
   module:
     - field_group
+    - text
 third_party_settings:
   field_group:
     group_left:
       children:
-        - field_raw_text
+        - field_image_media
       parent_name: group_row
-      weight: 0
+      weight: 2
       format_type: html_element
       format_settings:
         id: ''
-        classes: col-md-6
+        classes: col-md-4
         element: div
         show_label: false
         label_element: h3
@@ -28,13 +29,13 @@ third_party_settings:
       label: left
     group_right:
       children:
-        - field_image_media
+        - field_texte
       parent_name: group_row
-      weight: 1
+      weight: 3
       format_type: html_element
       format_settings:
         id: ''
-        classes: col-md-6
+        classes: col-md-8
         element: div
         show_label: false
         label_element: h3
@@ -47,7 +48,7 @@ third_party_settings:
         - group_left
         - group_right
       parent_name: ''
-      weight: 20
+      weight: 0
       format_type: html_element
       format_settings:
         id: ''
@@ -59,25 +60,25 @@ third_party_settings:
         effect: none
         speed: fast
       label: row
-id: paragraph.texte_1_image_1.default
+id: paragraph.image_1_3_2_3_texte.default
 targetEntityType: paragraph
-bundle: texte_1_image_1
+bundle: image_1_3_2_3_texte
 mode: default
 content:
   field_image_media:
-    weight: 21
+    type: entity_reference_entity_view
+    weight: 0
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
     region: content
-  field_raw_text:
+  field_texte:
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
 hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 97dfea4e-ccd4-4451-8a15-b5da2f4af0da
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.bloc_1_3_texte_2_3
+  module:
+    - text
+id: paragraph.bloc_1_3_texte_2_3.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: bloc_1_3_texte_2_3
+label: 'Bloc texte'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

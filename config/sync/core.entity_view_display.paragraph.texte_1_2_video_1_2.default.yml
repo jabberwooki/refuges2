@@ -1,20 +1,22 @@
-uuid: 7a5aaf38-a943-4293-9ed1-5ab9e0d2ca0c
+uuid: 874f81d6-83b0-41e7-94f4-fa7c730d5d32
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.paragraph.texte_1_image_1.field_image_media
-    - field.field.paragraph.texte_1_image_1.field_raw_text
-    - paragraphs.paragraphs_type.texte_1_image_1
+    - field.field.paragraph.texte_1_2_video_1_2.field_texte
+    - field.field.paragraph.texte_1_2_video_1_2.field_video
+    - paragraphs.paragraphs_type.texte_1_2_video_1_2
   module:
     - field_group
+    - text
+    - video_embed_field
 third_party_settings:
   field_group:
     group_left:
       children:
-        - field_raw_text
+        - field_texte
       parent_name: group_row
-      weight: 0
+      weight: 1
       format_type: html_element
       format_settings:
         id: ''
@@ -28,9 +30,9 @@ third_party_settings:
       label: left
     group_right:
       children:
-        - field_image_media
+        - field_video
       parent_name: group_row
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
         id: ''
@@ -47,7 +49,7 @@ third_party_settings:
         - group_left
         - group_right
       parent_name: ''
-      weight: 20
+      weight: 0
       format_type: html_element
       format_settings:
         id: ''
@@ -59,25 +61,27 @@ third_party_settings:
         effect: none
         speed: fast
       label: row
-id: paragraph.texte_1_image_1.default
+id: paragraph.texte_1_2_video_1_2.default
 targetEntityType: paragraph
-bundle: texte_1_image_1
+bundle: texte_1_2_video_1_2
 mode: default
 content:
-  field_image_media:
-    weight: 21
-    label: hidden
-    settings:
-      link: true
-      view_mode: default
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: content
-  field_raw_text:
-    weight: 1
+  field_texte:
+    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
+    region: content
+  field_video:
+    weight: 1
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
     region: content
 hidden: {  }
