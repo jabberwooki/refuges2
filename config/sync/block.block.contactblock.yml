@@ -1,0 +1,23 @@
+uuid: 5ad641b0-f73c-4118-b610-68f114e63080
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+  theme:
+    - bois
+id: contactblock
+theme: bois
+region: pre_footer
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact block'
+  provider: contact_block
+  label_display: '0'
+  contact_form: feedback
+visibility: {  }
