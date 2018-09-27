@@ -18,13 +18,20 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  langcode:
+    type: language
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
   message:
-    type: string
+    type: basic_string
     weight: 0
     label: above
     region: content
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-hidden:
-  langcode: true
+hidden: {  }

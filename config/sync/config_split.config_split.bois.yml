@@ -10,6 +10,9 @@ theme: {  }
 blacklist: {  }
 graylist:
   - block.block.socialmedialinks
+  - bois.settings
+  - system.site
+  - system.theme
   - 'block.block.bois_*'
 graylist_dependents: true
 graylist_skip_equal: true
