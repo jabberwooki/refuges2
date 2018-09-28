@@ -1,0 +1,71 @@
+menus:
+  -
+    menu_name: main
+    title: Media
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '12'
+    langcode: fr
+    uuid: a1fb0259-be99-4312-8c6f-348aa4ec261e
+    options: null
+blocks:
+  -
+    info: 'Coordonnées du refuge'
+    langcode: und
+    uuid: 50ce15fb-0214-4fcb-8c36-91f3c7ed7899
+    bundle: contact_details
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_email:
+        value: refuge.lebois@vanoise-parcnational.fr
+      field_phone:
+        value: '+33 6 64 28 05 79'
+      field_postal_address:
+        value: "Rue Michel Ruffier-Lanche\r\nLe Bois - Champagny le Haut\r\n73350 Champagny-en-Vanoise"
+  -
+    info: Partenaires
+    langcode: und
+    uuid: 9b2300b4-38a4-407d-bf8f-14cc8c61fbc5
+    bundle: bloc_partenaires
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_partner_logo:
+        target_id: '38'
+        alt: 'Parc nationale de la Vanoise'
+        title: ''
+        width: '305'
+        height: '172'
+        link_uri: 'http://www.vanoise-parcnational.fr/'
+        link_title: null
+        link_options: {  }
+        link_display_settings:
+          formatter_settings: false
+          image_link: ''
+          link_title_display: false
+          link_title_tag: ''
+          link_title_position: ''
+          link_rel: false
+          link_target: false
+  -
+    info: 'Bloc d''intro de la page Services'
+    langcode: fr
+    uuid: 6d6f6b90-7ad4-4506-91dd-efb85fe52a20
+    bundle: intro_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_intro_block_footer:
+        value: "<p>En période :</p>\r\n"
+        format: full_html
+      field_intro_block_header: null
+      field_intro_block_text:
+        value: "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, &nbsp;At vero eos et accusam et justo duo dolores et ea rebum. &nbsp;Lorem ipsum dolor sit amet, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;Stet clita kasd gubergren, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;sed diam voluptua. &nbsp;</p>\r\n"
+        format: full_html
+      field_intro_block_title:
+        value: 'Sous-titre de la page Services'
