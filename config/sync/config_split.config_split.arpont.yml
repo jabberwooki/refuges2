@@ -9,6 +9,7 @@ module: {  }
 theme: {  }
 blacklist: {  }
 graylist:
+  - block.block.socialmedialinks
   - system.site
   - system.theme
   - arpont.settings
