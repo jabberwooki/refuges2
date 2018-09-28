@@ -1,0 +1,8 @@
+uuid: 4dbb87f8-a634-43d6-a3a7-56da57d7dc72
+langcode: fr
+status: true
+dependencies: {  }
+id: bloc_partenaires
+label: 'Bloc Partenaires'
+revision: 0
+description: 'Permet d''afficher les logos des organismes partenaires.'
