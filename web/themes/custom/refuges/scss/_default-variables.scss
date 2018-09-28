@@ -14,5 +14,7 @@
 $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$brand-primary:         darken(#ff0000, 6.5%)
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:  Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif !default;

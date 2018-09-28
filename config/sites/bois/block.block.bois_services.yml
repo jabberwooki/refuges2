@@ -11,7 +11,7 @@ dependencies:
 id: bois_services
 theme: bois
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:services'
 settings:

@@ -19,6 +19,9 @@ regions:
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
+libraries:
+  - 'refuges/fonts'
+
 libraries-extend:
   bootstrap/framework:
     - refuges/framework
