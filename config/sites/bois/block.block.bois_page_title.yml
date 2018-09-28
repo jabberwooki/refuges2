@@ -11,7 +11,7 @@ _core:
 id: bois_page_title
 theme: bois
 region: content
-weight: -7
+weight: -12
 provider: null
 plugin: page_title_block
 settings:

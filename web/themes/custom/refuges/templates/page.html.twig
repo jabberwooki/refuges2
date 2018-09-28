@@ -92,19 +92,49 @@
   {% endblock %}
 {% endif %}
 
+
+
+  <section>
+    <div class='container-fluid'>
+
+      <div class='row'>
+        {# Header #}
+        {% if page.top %}
+          {% block top %}
+            <div class="top">
+              {{ page.top }}
+            </div>
+          {% endblock %}
+        {% endif %}
+      </div>
+
+      <div class='row'>
+        {# Header #}
+        {% if page.header %}
+          {% block header %}
+            <div class="col-sm-12" role="heading">
+              {{ page.header }}
+            </div>
+          {% endblock %}
+        {% endif %}
+      </div>
+
+      <div class='row'>
+        {# Highlighted #}
+          {% if page.highlighted %}
+            {% block highlighted %}
+              <div class="highlighted">{{ page.highlighted }}</div>
+            {% endblock %}
+          {% endif %}
+      </div>
+
+    </div>
+  </section>
+
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
-
-      {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
-            {{ page.header }}
-          </div>
-        {% endblock %}
-      {% endif %}
 
       {# Sidebar First #}
       {% if page.sidebar_first %}
@@ -125,13 +155,6 @@
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
-
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
-          {% endblock %}
-        {% endif %}
 
         {# Help #}
         {% if page.help %}
@@ -159,18 +182,49 @@
   </div>
 {% endblock %}
 
-{% if page.pre_footer %}
-  {% block pre_footer %}
-    <section class="pre-footer {{ container }}" role="contentinfo">
-      {{ page.pre_footer }}
-    </section>
-  {% endblock %}
-{% endif %}
+<section class='container-fluid'>
+  {# Post content 1 #}
+    {% if page.post_content_1 %}
+      {% block post_content_1 %}
+        <div class="post-content-1">{{ page.post_content_1 }}</div>
+      {% endblock %}
+    {% endif %}
+</section>
 
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endblock %}
-{% endif %}
+
+<section>
+  <div class='container-fluid'>
+    {# Post content 2 #}
+      {% if page.post_content_2 %}
+        {% block post_content_2 %}
+          <div class='container'>
+            <div class="post-content-2">{{ page.post_content_2 }}</div>
+          </div>
+        {% endblock %}
+      {% endif %}
+  </div>
+</section>
+
+<section>
+  <div class='container-fluid'>
+    {% if page.pre_footer %}
+      {% block pre_footer %}
+        <section class="pre-footer {{ container }}" role="contentinfo">
+          {{ page.pre_footer }}
+        </section>
+      {% endblock %}
+    {% endif %}
+  </div>
+</section>
+
+<section>
+  <div class='container-fluid'>
+    {% if page.footer %}
+      {% block footer %}
+        <footer class="footer {{ container }}" role="contentinfo">
+          {{ page.footer }}
+        </footer>
+      {% endblock %}
+    {% endif %}
+  </div>
+</section>

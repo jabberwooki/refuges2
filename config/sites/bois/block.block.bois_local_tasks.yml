@@ -9,7 +9,7 @@ _core:
 id: bois_local_tasks
 theme: bois
 region: content
-weight: -6
+weight: -11
 provider: null
 plugin: local_tasks_block
 settings:
