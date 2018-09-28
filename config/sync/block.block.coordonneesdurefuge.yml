@@ -11,7 +11,7 @@ dependencies:
 id: coordonneesdurefuge
 theme: bois
 region: footer
-weight: -11
+weight: -12
 provider: null
 plugin: 'block_content:50ce15fb-0214-4fcb-8c36-91f3c7ed7899'
 settings:
