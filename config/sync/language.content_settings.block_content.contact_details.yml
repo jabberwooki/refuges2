@@ -1,0 +1,11 @@
+uuid: 23aecfec-faf4-4764-a2a5-6ada830a21e7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_details
+id: block_content.contact_details
+target_entity_type_id: block_content
+target_bundle: contact_details
+default_langcode: und
+language_alterable: false

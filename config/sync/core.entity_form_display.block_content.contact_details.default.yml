@@ -1,0 +1,55 @@
+uuid: e8892c8f-43e1-4616-83a5-5a97d1ac4258
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_details
+    - field.field.block_content.contact_details.field_email
+    - field.field.block_content.contact_details.field_phone
+    - field.field.block_content.contact_details.field_postal_address
+  module:
+    - telephone
+id: block_content.contact_details.default
+targetEntityType: block_content
+bundle: contact_details
+mode: default
+content:
+  field_email:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_phone:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_postal_address:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }
