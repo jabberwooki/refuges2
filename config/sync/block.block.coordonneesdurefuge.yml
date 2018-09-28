@@ -1,0 +1,25 @@
+uuid: a8d4825e-caa8-48c7-b84a-6c696746b3f2
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_details:50ce15fb-0214-4fcb-8c36-91f3c7ed7899'
+  module:
+    - block_content
+  theme:
+    - bois
+id: coordonneesdurefuge
+theme: bois
+region: footer
+weight: -11
+provider: null
+plugin: 'block_content:50ce15fb-0214-4fcb-8c36-91f3c7ed7899'
+settings:
+  id: 'block_content:50ce15fb-0214-4fcb-8c36-91f3c7ed7899'
+  label: 'Coordonnées du refuge'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
