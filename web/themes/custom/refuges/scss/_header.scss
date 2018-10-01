@@ -1,3 +1,19 @@
 .top{
-	background-color: lighten($brand-primary,15%);
+	//background-color: lighten($brand-primary,15%);
+	background-image: linear-gradient(to right, $brand-secondary, $brand-primary);
+}
+
+#block-bois-views-block-slides-frontpage-slideshow{
+position: relative;
+ /* facultatif : résoud un bug non systématique de blur sur IE */
+ transform-style: preserve-3d;
+
+  	.infos-diapo{
+  	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%); /* compatibilité : ie9+ */
+	  text-align:center;
+  	}
+
 }

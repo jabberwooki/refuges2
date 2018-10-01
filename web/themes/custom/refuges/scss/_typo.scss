@@ -1,0 +1,23 @@
+.title-diapo a{
+	font-family: $font-family-title;
+	font-size: 64px;
+	text-shadow: 1px 1px 12px #555;
+	color: #fff;
+	  	&:hover{
+	  		text-decoration: none;
+	  		opacity: 0.7;
+	  	}
+}
+
+h2.block-title{
+	font-family: $font-family-title;
+	color: #3E3E3E;
+	font-size: 64px;
+	text-align:center;
+}
+
+.view-header{
+	text-transform: uppercase;
+	color:$brand-primary;
+	text-align:center;
+}

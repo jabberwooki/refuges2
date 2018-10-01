@@ -10,6 +10,18 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+@font-face {
+  font-family: "Misses";
+  src: url("../fonts/Misses/Misses.eot?#iefix") format("embedded-opentype"), url("../fonts/Misses/Misses.woff") format("woff"), url("../fonts/Misses/Misses.ttf") format("truetype"), url("../fonts/Misses/Misses.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+
 /**
  * Default Variables.
  *
@@ -26,7 +38,48 @@
 }
 
 .top {
-  background-color: #d23bd6;
+  background-image: -webkit-linear-gradient(left, #d030d4, #9F22A2);
+  background-image: linear-gradient(to right, #d030d4, #9F22A2);
+}
+
+#block-bois-views-block-slides-frontpage-slideshow {
+  position: relative;
+  /* facultatif : résoud un bug non systématique de blur sur IE */
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+#block-bois-views-block-slides-frontpage-slideshow .infos-diapo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /* compatibilité : ie9+ */
+  text-align: center;
+}
+#block-bois-views-block-slides-frontpage-slideshow .infos-diapo .title-diapo a {
+  font-family: Misses, "Times New Roman", Times, serif;
+  font-size: 64px;
+  text-shadow: 1px 1px 12px #555;
+  color: #fff;
+}
+#block-bois-views-block-slides-frontpage-slideshow .infos-diapo .title-diapo a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+h2.block-title {
+  font-family: Misses, "Times New Roman", Times, serif;
+  color: #3E3E3E;
+  font-size: 64px;
+  text-align: center;
+}
+
+.view-header {
+  text-transform: uppercase;
+  color: #9F22A2;
+  text-align: center;
 }
 
 .prefooter {
@@ -37,7 +90,10 @@
   background: #3E3E3E;
   color: #fff;
   margin-top: 0 !important;
-  border: none;
+}
+.section-footer .footer {
+  margin-top: 0 !important;
+  border-top: none;
 }
 
 /*!
