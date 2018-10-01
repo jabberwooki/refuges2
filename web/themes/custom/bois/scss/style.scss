@@ -4,6 +4,12 @@
 // Default variables du site.
 @import "default-variables";
 
+// Headers des sites.
+@import '../../refuges/scss/header';
+
+// Footers des sites.
+@import '../../refuges/scss/footer';
+
 // Bootstrap Framework.
 @import '../../refuges/bootstrap/assets/stylesheets/bootstrap';
 

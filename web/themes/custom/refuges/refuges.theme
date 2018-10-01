@@ -19,3 +19,11 @@ function refuges_preprocess_field(&$variables, $hook) {
   }
 }
 
+function refuges_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+	// dpm($variables); return;
+	
+  if (isset($variables['elements']['content']['#block_content'])) {
+    array_splice($suggestions, 1, 0, 'block__' . $variables['elements']['content']['#block_content']->bundle());
+  }
+}
+

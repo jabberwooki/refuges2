@@ -119,6 +119,16 @@
         {% endif %}
       </div>
 
+      {# Hamburger #}
+        {% if page.hamburger %}
+          {% block hamburger %}
+            <div class='hamburger'>
+              {{ page.hamburger }}
+            </div>
+          {% endblock %}
+        {% endif %}
+      </div>
+
       <div class='row'>
         {# Highlighted #}
           {% if page.highlighted %}
@@ -205,7 +215,7 @@
   </div>
 </section>
 
-<section>
+<section class='prefooter'>
   <div class='container-fluid'>
     {% if page.pre_footer %}
       {% block pre_footer %}
@@ -217,7 +227,7 @@
   </div>
 </section>
 
-<section>
+<section class='section-footer'>
   <div class='container-fluid'>
     {% if page.footer %}
       {% block footer %}
