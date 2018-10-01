@@ -1,0 +1,8 @@
+uuid: 52c0ab97-46c9-44f1-81ab-0afba20e6716
+langcode: fr
+status: true
+dependencies: {  }
+id: contact_details
+label: 'Bloc Coordonnées'
+revision: 0
+description: 'Coordonnées du refuge (tél, adresse postale, adresse mail).'

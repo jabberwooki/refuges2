@@ -14,6 +14,20 @@ menus:
     options: null
 blocks:
   -
+    info: 'Coordonnées du refuge'
+    langcode: und
+    uuid: 50ce15fb-0214-4fcb-8c36-91f3c7ed7899
+    bundle: contact_details
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_email:
+        value: refuge.lebois@vanoise-parcnational.fr
+      field_phone:
+        value: '+33 6 64 28 05 79'
+      field_postal_address:
+        value: "Rue Michel Ruffier-Lanche\r\nLe Bois - Champagny le Haut\r\n73350 Champagny-en-Vanoise"
+  -
     info: Partenaires
     langcode: und
     uuid: 9b2300b4-38a4-407d-bf8f-14cc8c61fbc5
