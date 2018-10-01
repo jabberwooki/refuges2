@@ -21,6 +21,17 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+.top {
+  background-color: #d23bd6;
+}
+
+.footer {
+  background: #3E3E3E;
+  color: #fff;
+  margin-top: 0;
+  border: none;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
