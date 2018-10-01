@@ -21,3 +21,18 @@ h2.block-title{
 	color:$brand-primary;
 	text-align:center;
 }
+
+.node--type-event.node--view-mode-teaser,
+.node--type-news.node--view-mode-teaser{
+	h2 a{
+		font-size: 20px;
+		font-weight: 700;
+		text-transform:uppercase;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.field--name-node-post-date{
+		text-transform: uppercase;
+	}
+}

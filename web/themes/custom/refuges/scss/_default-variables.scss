@@ -38,4 +38,7 @@ a{
 transition : all .25s ease-in-out;
 -moz-transition : all .25s ease-in-out;
 -webkit-transition : all .25s ease-in-out;
+	&:hover{
+		text-decoration: none;
+	}
 }

@@ -21,6 +21,9 @@ a {
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
 }
+a:hover {
+  text-decoration: none;
+}
 
 /**
  * Default Variables.
@@ -81,6 +84,25 @@ h2.block-title {
   text-transform: uppercase;
   color: #9F22A2;
   text-align: center;
+}
+
+.node--type-event.node--view-mode-teaser h2 a,
+.node--type-news.node--view-mode-teaser h2 a {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.node--type-event.node--view-mode-teaser h2 a:hover,
+.node--type-news.node--view-mode-teaser h2 a:hover {
+  text-decoration: none;
+}
+.node--type-event.node--view-mode-teaser .field--name-node-post-date,
+.node--type-news.node--view-mode-teaser .field--name-node-post-date {
+  text-transform: uppercase;
+}
+
+.node--type-news.node--view-mode-teaser {
+  background: #f2f2f2;
 }
 
 .prefooter {
