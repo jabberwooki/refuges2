@@ -1,9 +1,9 @@
-uuid: 17b6c9ef-aa41-44fc-8324-3b9608c2f1f0
+uuid: 1c38bde9-5ece-43cc-a6e3-6424734ab23b
 langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.front_block
     - field.field.node.news.field_content
     - field.field.node.news.field_media_image
     - field.field.node.news.field_summary
@@ -14,7 +14,7 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: ds_1col_wrapper
+      id: ds_1col
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -49,10 +49,10 @@ third_party_settings:
         weight: 2
         label: hidden
         formatter: ds_post_date_long
-id: node.news.teaser
+id: node.news.front_block
 targetEntityType: node
 bundle: news
-mode: teaser
+mode: front_block
 content:
   addtoany:
     weight: 1
@@ -62,19 +62,19 @@ content:
   field_media_image:
     type: entity_reference_entity_view
     weight: 0
-    region: ds_content
     label: hidden
     settings:
-      view_mode: news_teaser
+      view_mode: news_front
       link: false
     third_party_settings: {  }
-  field_summary:
-    type: basic_string
-    weight: 4
     region: ds_content
+  field_summary:
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    type: basic_string
+    region: ds_content
 hidden:
   field_content: true
   langcode: true

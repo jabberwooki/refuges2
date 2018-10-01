@@ -1,0 +1,10 @@
+uuid: 1d6900ca-cf9c-4d73-84ee-25f53f39ec6e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.agenda_full
+label: 'Agenda page'
+targetEntityType: media
+cache: true

@@ -1,0 +1,12 @@
+uuid: c90aee2f-6bd8-4583-b0be-58e59f8c37c1
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Agenda accroche'
+id: agenda_teaser
+description: ''
+aspect_ratio: '4:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

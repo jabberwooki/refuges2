@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.front_block
     - core.entity_view_mode.node.teaser
     - node.type.news
     - system.menu.main
@@ -213,7 +214,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: front_block
       header:
         area:
           id: area

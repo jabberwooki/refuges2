@@ -1,0 +1,10 @@
+uuid: b25f3a83-4e12-4364-a603-b46b54f56534
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.agenda_teaser
+label: 'Agenda accroche'
+targetEntityType: media
+cache: true
