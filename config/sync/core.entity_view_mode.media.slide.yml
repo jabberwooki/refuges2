@@ -1,0 +1,10 @@
+uuid: ae4f7341-e742-439c-b509-92e29ee40896
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.slide
+label: Diapo
+targetEntityType: media
+cache: true

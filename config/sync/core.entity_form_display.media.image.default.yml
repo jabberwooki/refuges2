@@ -9,7 +9,7 @@ dependencies:
     - image.style.medium
     - media.type.image
   module:
-    - image
+    - image_widget_crop
     - path
     - text
 _core:
@@ -43,10 +43,17 @@ content:
     region: content
   field_media_image:
     settings:
+      show_crop_area: true
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: medium
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - slides_desktop
       progress_indicator: throbber
+      crop_types_required: {  }
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     weight: 2
     region: content
   langcode:
