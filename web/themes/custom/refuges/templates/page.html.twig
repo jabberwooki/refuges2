@@ -119,6 +119,16 @@
         {% endif %}
       </div>
 
+      {# Hamburger #}
+        {% if page.hamburger %}
+          {% block hamburger %}
+            <div class='hamburger'>
+              {{ page.hamburger }}
+            </div>
+          {% endblock %}
+        {% endif %}
+      </div>
+
       <div class='row'>
         {# Highlighted #}
           {% if page.highlighted %}
