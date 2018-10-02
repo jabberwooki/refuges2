@@ -135,16 +135,20 @@ h2.block-title {
   text-align: center;
 }
 
+.node--type-news.node--view-mode-teaser h2 a,
 .node--type-event.node--view-mode-teaser h2 a,
 .node--type-news.node--view-mode-front-block h2 a {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
 }
+.node--type-news.node--view-mode-teaser h2 a:hover,
 .node--type-event.node--view-mode-teaser h2 a:hover,
 .node--type-news.node--view-mode-front-block h2 a:hover {
   text-decoration: none;
 }
+.node--type-news.node--view-mode-teaser .field--name-field-event-dates,
+.node--type-news.node--view-mode-teaser .field--name-node-post-date,
 .node--type-event.node--view-mode-teaser .field--name-field-event-dates,
 .node--type-event.node--view-mode-teaser .field--name-node-post-date,
 .node--type-news.node--view-mode-front-block .field--name-field-event-dates,
@@ -175,6 +179,7 @@ h2.block-title {
   padding-top: 30px;
 }
 
+.node--type-news.node--view-mode-teaser,
 .node--type-event.node--view-mode-teaser .wrapper,
 .node--type-news.node--view-mode-front-block {
   background: #f2f2f2;
@@ -206,6 +211,16 @@ h2.block-title {
   float: left;
   padding: 15px 10px;
   opacity: 1;
+}
+
+.field--name-field-copyright {
+  margin-top: -15px;
+  background: #00000054;
+  color: #fff;
+  font-size: 12px;
+  z-index: 100;
+  position: relative;
+  margin-bottom: 0;
 }
 
 .prefooter {
