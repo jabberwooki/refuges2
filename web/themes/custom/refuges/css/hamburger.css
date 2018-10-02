@@ -1,6 +1,7 @@
 /*
     DEMO STYLE
 */
+/*
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
@@ -44,6 +45,7 @@ a, a:hover, a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
+*/
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -123,17 +125,17 @@ a, a:hover, a:focus {
     background: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+#sidebar ul li.active > a, /*a[aria-expanded="true"]*/ {
     color: #fff;
     background: #6d7fcc;
 }
 
 
-a[data-toggle="collapse"] {
+#sidebar a[data-toggle="collapse"] {
     position: relative;
 }
 
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+#sidebar a[aria-expanded="false"]::before, #sidebar a[aria-expanded="true"]::before {
     content: '\e259';
     display: block;
     position: absolute;
@@ -141,33 +143,33 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     font-family: 'Glyphicons Halflings';
     font-size: 0.6em;
 }
-a[aria-expanded="true"]::before {
+#sidebar a[aria-expanded="true"]::before {
     content: '\e260';
 }
 
 
-ul ul a {
+#sidebar ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #6d7fcc;
 }
 
-ul.CTAs {
+#sidebar ul.CTAs {
     padding: 20px;
 }
 
-ul.CTAs a {
+#sidebar ul.CTAs a {
     text-align: center;
     font-size: 0.9em !important;
     display: block;
     border-radius: 5px;
     margin-bottom: 5px;
 }
-a.download {
+#sidebar a.download {
     background: #fff;
     color: #7386D5;
 }
-a.article, a.article:hover {
+#sidebar a.article, #sidebar a.article:hover {
     background: #6d7fcc !important;
     color: #fff !important;
 }
@@ -175,7 +177,7 @@ a.article, a.article:hover {
 
 /* ---------------------------------------------------
     CONTENT STYLE
------------------------------------------------------ */
+----------------------------------------------------- 
 #content {
     width: 100%;
     padding: 20px;
@@ -185,6 +187,7 @@ a.article, a.article:hover {
     top: 0;
     right: 0;
 }
+*/
 
 
 /* ---------------------------------------------------
