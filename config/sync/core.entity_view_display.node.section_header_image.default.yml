@@ -9,6 +9,7 @@ dependencies:
     - node.type.section_header_image
   module:
     - ds
+    - field_group
     - user
 third_party_settings:
   ds:
@@ -29,14 +30,33 @@ third_party_settings:
     regions:
       ds_content:
         - field_media_image
+        - group_infos
         - node_title
         - field_subtitle
     fields:
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 2
         label: hidden
         formatter: default
+  field_group:
+    group_infos:
+      children:
+        - node_title
+        - field_subtitle
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: infos
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: infos
 id: node.section_header_image.default
 targetEntityType: node
 bundle: section_header_image
@@ -52,7 +72,7 @@ content:
     type: entity_reference_entity_view
     region: ds_content
   field_subtitle:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false

@@ -1,3 +1,4 @@
+.node--type-section-header-image .infos h2,
 .title-diapo a{
 	font-family: $font-family-title;
 	font-size: 64px;
@@ -8,6 +9,11 @@
 	  		opacity: 0.7;
 	  	}
 }
+.node--type-section-header-image .infos h2:hover{
+	  		opacity: 1;
+}
+
+.node--type-section-header-image .infos .field--name-field-subtitle,
 .description-diapo{
 	font-size:16px;
 	font-weight:700;
