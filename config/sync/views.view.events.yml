@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.event
-    - system.menu.main
+    - system.menu.menu-hamburger
   module:
     - ds
     - node
@@ -309,7 +309,7 @@ display:
         parent: ''
         weight: 11
         context: '0'
-        menu_name: main
+        menu_name: menu-hamburger
       style:
         type: views_bootstrap_grid
         options:

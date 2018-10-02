@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+  ]
+%}
+{% if content %}
+  <div id="sidebar"{{ attributes.addClass(classes) }}>
+    <div id="dismiss">
+      <i class="glyphicon glyphicon-remove"></i>
+    </div>
+
+    <div class="sidebar-header">
+      <h3>Bootstrap Sidebar</h3>
+    </div>
+
+    {{ content }}
+  </div>
+{% endif %}

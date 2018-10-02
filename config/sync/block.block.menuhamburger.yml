@@ -1,0 +1,24 @@
+uuid: 053c7f7f-899d-47be-9e98-a77f286c45cf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.menu-hamburger
+  module:
+    - system
+  theme:
+    - bois
+id: menuhamburger
+theme: bois
+region: hamburger
+weight: -13
+provider: null
+plugin: 'system_menu_block:menu-hamburger'
+settings:
+  id: 'system_menu_block:menu-hamburger'
+  label: 'Menu Hamburger'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }
