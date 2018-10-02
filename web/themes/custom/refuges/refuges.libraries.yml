@@ -35,6 +35,12 @@ hamburger:
     theme:
       css/hamburger.css: {}
 
+searchbar:
+  js:
+    js/searchbar.js: {}
+  dependencies:
+    - core/jquery
+
 fonts:
   css:
     theme:
