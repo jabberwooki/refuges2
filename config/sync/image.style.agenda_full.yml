@@ -1,0 +1,17 @@
+uuid: 7701f82b-2a4b-4ad8-a150-50674e1a1a15
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.3_1
+  module:
+    - crop
+name: agenda_full
+label: 'Agenda page'
+effects:
+  ce164d86-ee3c-480d-aaec-851fd0296e69:
+    uuid: ce164d86-ee3c-480d-aaec-851fd0296e69
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '3_1'

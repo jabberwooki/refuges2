@@ -1,0 +1,17 @@
+uuid: e0dc2a85-cb8b-4bfa-b96f-2e8904848e70
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.news_front
+  module:
+    - crop
+name: news_front
+label: 'Actus accueil'
+effects:
+  15666aa6-100b-4717-91bd-4f0ab5518e56:
+    uuid: 15666aa6-100b-4717-91bd-4f0ab5518e56
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: news_front

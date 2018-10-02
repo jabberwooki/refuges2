@@ -49,6 +49,10 @@ content:
       preview_image_style: medium
       crop_preview_image_style: crop_thumbnail
       crop_list:
+        - '3_1'
+        - agenda_teaser
+        - news_front
+        - news_teaser
         - slides_desktop
       progress_indicator: throbber
       crop_types_required: {  }

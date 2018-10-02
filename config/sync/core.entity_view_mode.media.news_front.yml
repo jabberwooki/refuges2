@@ -1,0 +1,10 @@
+uuid: 3d5149ce-3103-4a22-b8fa-6ff2dd711f82
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.news_front
+label: 'Actus accueil'
+targetEntityType: media
+cache: true
