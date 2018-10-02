@@ -1,0 +1,17 @@
+uuid: 0f5d47ce-3c4a-4ba7-98f2-ab74f6ecfe86
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.square
+  module:
+    - crop
+name: square
+label: Carré
+effects:
+  920158d3-d695-4997-9552-465015911b0a:
+    uuid: 920158d3-d695-4997-9552-465015911b0a
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: square

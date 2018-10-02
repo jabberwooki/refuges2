@@ -1,0 +1,12 @@
+uuid: 372ca7c7-cb5e-48a8-a304-3e4287cb4eb4
+langcode: fr
+status: true
+dependencies: {  }
+label: Carré
+id: square
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
