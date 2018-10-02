@@ -49,13 +49,14 @@ content:
       preview_image_style: medium
       crop_preview_image_style: crop_thumbnail
       crop_list:
-        - square
+        - photo_landscape
         - '3_1'
         - agenda_teaser
         - bandeau_desktop
         - news_front
         - news_teaser
         - slides_desktop
+        - square
       progress_indicator: throbber
       crop_types_required: {  }
     third_party_settings: {  }

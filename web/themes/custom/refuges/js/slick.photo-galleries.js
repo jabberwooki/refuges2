@@ -21,7 +21,7 @@
 
       // Photo gallery slider : navigator
       $('.slider-nav').slick({
-        slidesToShow: 2,
+        slidesToShow: 6,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         arrows: true,

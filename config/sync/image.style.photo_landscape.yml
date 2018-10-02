@@ -1,0 +1,17 @@
+uuid: 1659125a-2c20-4588-8ce2-3aafd9c058db
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.photo_landscape
+  module:
+    - crop
+name: photo_landscape
+label: 'Photo paysage'
+effects:
+  fa8ac347-5634-4be0-a1fa-1055afba6b5c:
+    uuid: fa8ac347-5634-4be0-a1fa-1055afba6b5c
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: photo_landscape
