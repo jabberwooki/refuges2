@@ -22,9 +22,16 @@
 %}
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
-    <div>
+    <div class="hamburger hamburger-open">
       <button type="button" id="sidebarCollapse" class="btn navbar-btn">
         <i class="glyphicon glyphicon-align-justify"></i>
+      </button>
+    </div>
+
+    <div class="hamburger hamburger-close">
+      <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+        <i class="glyphicon glyphicon-remove"></i>
+        <span>Menu</span>
       </button>
     </div>
 

@@ -185,3 +185,14 @@ a.article, a.article:hover {
     top: 0;
     right: 0;
 }
+
+
+/* ---------------------------------------------------
+    Espiau
+----------------------------------------------------- */
+div.hamburger {
+    float: left;
+}
+div.hamburger-close {
+    display: none;
+}
