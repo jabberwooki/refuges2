@@ -29,6 +29,8 @@
     padding-top: 30px;
 }
 
+.view-display-id-out_keeping_page,
+.view-display-id-keeping_page,
 .view-display-id-documents_page .wrapper,
 .node--type-event.node--view-mode-teaser-list .wrapper,
 .node--type-news.node--view-mode-teaser,
@@ -78,4 +80,20 @@
     z-index: 100;
     position: relative;
     margin-bottom: 0;
+}
+
+//SERVICES
+.menu--services {
+    li{
+        display: inline-block !important;
+        width: 49.8%;
+        a{
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        &.active a{
+            background:$brand-primary;
+            color: #fff;
+        }
+    }
 }
