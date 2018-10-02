@@ -1,17 +1,3 @@
-menus:
-  -
-    menu_name: main
-    title: Media
-    parent: null
-    uri: 'internal:/'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '12'
-    langcode: fr
-    uuid: a1fb0259-be99-4312-8c6f-348aa4ec261e
-    options: null
 blocks:
   -
     info: 'Coordonnées du refuge'
@@ -282,3 +268,17 @@ taxonomies:
       parent: '0'
       uuid: ac2689fe-4acc-471d-b974-4ebcfdabf7b2
   tags: {  }
+menus:
+  -
+    menu_name: menu-hamburger
+    title: Media
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '12'
+    langcode: fr
+    uuid: 33dd4068-3750-4636-99fe-cccb079eb74e
+    options: null
