@@ -8,6 +8,21 @@
 	  		opacity: 0.7;
 	  	}
 }
+.description-diapo{
+	font-size:16px;
+	font-weight:700;
+	color:#fff;
+	text-transform:uppercase;
+	text-shadow: 1px 1px 12px #555;
+}
+
+.link-diapo {
+	margin-top:30px;
+	a{
+		@include btn-refuge;
+	}
+}
+
 
 h2.block-title{
 	font-family: $font-family-title;
@@ -23,7 +38,7 @@ h2.block-title{
 }
 
 .node--type-event.node--view-mode-teaser,
-.node--type-news.node--view-mode-teaser{
+.node--type-news.node--view-mode-front-block{
 	h2 a{
 		font-size: 20px;
 		font-weight: 700;
