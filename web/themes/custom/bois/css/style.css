@@ -81,9 +81,11 @@ a:hover {
   text-shadow: 1px 1px 12px #555;
 }
 
+.view-footer,
 .link-diapo {
   margin-top: 30px;
 }
+.view-footer a,
 .link-diapo a {
   background-image: -webkit-linear-gradient(bottom, #d030d4, #9F22A2);
   background-image: linear-gradient(to top, #d030d4, #9F22A2);
@@ -95,6 +97,7 @@ a:hover {
   font-size: 12px;
   border: 1px solid #9F22A2;
 }
+.view-footer a:hover,
 .link-diapo a:hover {
   background-image: -webkit-linear-gradient(top, #d030d4, #9F22A2);
   background-image: linear-gradient(to bottom, #d030d4, #9F22A2);
