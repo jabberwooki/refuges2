@@ -1,0 +1,8 @@
+uuid: 3b38e671-5d39-404b-a54e-bfc466cfb485
+langcode: fr
+status: true
+dependencies: {  }
+id: menu-hamburger
+label: 'Menu Hamburger'
+description: 'Liens d''accès aux sections du site'
+locked: false

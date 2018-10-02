@@ -28,6 +28,13 @@ slick:
   dependencies:
     - core/jquery
 
+hamburger:
+  js:
+    js/bootstrap.hamburger-menu.js: {}
+  css:
+    theme:
+      css/hamburger.css: {}
+
 fonts:
   css:
     theme:
