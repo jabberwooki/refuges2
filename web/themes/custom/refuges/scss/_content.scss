@@ -22,6 +22,7 @@
     padding-top: 30px;
 }
 
+.node--type-news.node--view-mode-teaser,
 .node--type-event.node--view-mode-teaser .wrapper,
 .node--type-news.node--view-mode-front-block{
 	background: #f2f2f2;
@@ -55,4 +56,15 @@
     float: left;
     padding: 15px 10px; 
     opacity:1;
+}
+
+
+.field--name-field-copyright {
+    margin-top: -15px;
+    background: #00000054;
+    color: #fff;
+    font-size: 12px;
+    z-index: 100;
+    position: relative;
+    margin-bottom: 0;
 }

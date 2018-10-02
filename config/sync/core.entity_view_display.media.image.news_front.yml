@@ -19,13 +19,6 @@ targetEntityType: media
 bundle: image
 mode: news_front
 content:
-  field_caption:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_copyright:
     weight: 1
     label: hidden
@@ -45,6 +38,7 @@ content:
 hidden:
   addtoany: true
   created: true
+  field_caption: true
   langcode: true
   name: true
   thumbnail: true
