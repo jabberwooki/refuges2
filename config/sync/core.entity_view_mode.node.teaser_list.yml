@@ -1,0 +1,10 @@
+uuid: d02f42be-bde8-4e94-b640-384946d09bf5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_list
+label: 'Accroche liste'
+targetEntityType: node
+cache: true

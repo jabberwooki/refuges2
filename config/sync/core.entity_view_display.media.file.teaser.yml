@@ -60,18 +60,18 @@ content:
     third_party_settings: {  }
   field_flipthrough_url:
     weight: 3
-    label: above
+    label: hidden
     settings:
       trim_length: 80
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
+      rel: '0'
     third_party_settings: {  }
     type: link
     region: right
   field_media_file:
-    label: above
+    label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
