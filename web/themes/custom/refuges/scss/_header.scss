@@ -3,6 +3,17 @@
 	background-image: linear-gradient(to right, $brand-secondary, $brand-primary);
 }
 
+.region-header{
+    position: relative;
+    transform-style: preserve-3d;
+}
+.branding {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -10px;
+}
+
 .node--type-section-header-image.node--view-mode-default,
 #block-bois-views-block-slides-frontpage-slideshow{
 position: relative;

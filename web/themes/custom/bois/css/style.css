@@ -45,6 +45,21 @@ a:hover {
   background-image: linear-gradient(to right, #d030d4, #9F22A2);
 }
 
+.region-header {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.branding {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: -10px;
+}
+
 .node--type-section-header-image.node--view-mode-default,
 #block-bois-views-block-slides-frontpage-slideshow {
   position: relative;

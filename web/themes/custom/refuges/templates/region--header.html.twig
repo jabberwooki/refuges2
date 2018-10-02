@@ -23,7 +23,7 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     <div class="hamburger hamburger-open">
-      <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+      <button type="button" id="sidebarCollapse" class="btn">
         <i class="glyphicon glyphicon-align-justify"></i>
       </button>
     </div>
@@ -35,6 +35,7 @@
       </button>
     </div>
 
-    {{ content }}
+    <div class="branding">{{ content }}</div>
+
   </div>
 {% endif %}
