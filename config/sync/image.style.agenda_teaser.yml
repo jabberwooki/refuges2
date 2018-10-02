@@ -15,3 +15,11 @@ effects:
     weight: 1
     data:
       crop_type: agenda_teaser
+  6a555077-641f-4588-ab77-1df3456f7490:
+    uuid: 6a555077-641f-4588-ab77-1df3456f7490
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 215
+      upscale: false

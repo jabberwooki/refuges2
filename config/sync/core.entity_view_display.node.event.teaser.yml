@@ -14,6 +14,7 @@ dependencies:
   module:
     - datetime_range
     - ds
+    - field_group
     - user
 third_party_settings:
   ds:
@@ -33,7 +34,10 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
+        - group_wrapper
+        - group_left
         - field_media_image
+        - group_right
         - addtoany
         - field_event_dates
         - node_title
@@ -41,26 +45,82 @@ third_party_settings:
     fields:
       node_title:
         plugin_id: node_title
-        weight: 3
+        weight: 6
         label: hidden
         formatter: default
         settings:
           link: true
           wrapper: h2
           class: ''
+  field_group:
+    group_wrapper:
+      children:
+        - group_left
+        - group_right
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'wrapper col-md-8 col-md-offset-2'
+      label: wrapper
+    group_left:
+      children:
+        - field_media_image
+      parent_name: group_wrapper
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: left
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'pull-left col-md-3'
+      label: left
+    group_right:
+      children:
+        - addtoany
+        - field_event_dates
+        - node_title
+        - field_summary
+      parent_name: group_wrapper
+      weight: 3
+      format_type: html_element
+      format_settings:
+        label: right
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'pull-right col-md-9'
+      label: right
 id: node.event.teaser
 targetEntityType: node
 bundle: event
 mode: teaser
 content:
   addtoany:
-    weight: 1
+    weight: 4
     region: ds_content
     settings: {  }
     third_party_settings: {  }
   field_event_dates:
     type: daterange_custom
-    weight: 2
+    weight: 5
     region: ds_content
     label: hidden
     settings:
@@ -72,7 +132,7 @@ content:
         ds_limit: ''
   field_media_image:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 2
     region: ds_content
     label: hidden
     settings:
@@ -81,7 +141,7 @@ content:
     third_party_settings: {  }
   field_summary:
     type: basic_string
-    weight: 4
+    weight: 7
     region: ds_content
     label: hidden
     settings: {  }
