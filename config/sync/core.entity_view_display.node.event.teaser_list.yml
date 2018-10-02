@@ -1,8 +1,9 @@
-uuid: 79b6619e-b465-4640-a88d-b288566977a6
+uuid: 0ec76d1c-6662-46c6-b141-5efa3f73f964
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser_list
     - field.field.node.event.field_content
     - field.field.node.event.field_event_dates
     - field.field.node.event.field_location
@@ -68,7 +69,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'wrapper col-md-8 col-md-offset-2'
+        classes: wrapper
       label: wrapper
     group_left:
       children:
@@ -85,7 +86,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'pull-left col-md-3'
+        classes: 'pull-left col-md-4'
       label: left
     group_right:
       children:
@@ -105,12 +106,12 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'pull-right col-md-9'
+        classes: 'pull-right col-md-8'
       label: right
-id: node.event.default
+id: node.event.teaser_list
 targetEntityType: node
 bundle: event
-mode: default
+mode: teaser_list
 content:
   addtoany:
     weight: 4

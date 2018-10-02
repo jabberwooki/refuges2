@@ -11,6 +11,13 @@
     text-align: center;
 }
 
+.highlighted {
+    margin-bottom: 80px;
+}
+.path-frontpage .highlighted {
+    margin-bottom: 0px;
+}
+
 .block-views-blockservices-block-1{
     .view-footer{
         text-align: center;
@@ -22,6 +29,7 @@
     padding-top: 30px;
 }
 
+.node--type-event.node--view-mode-teaser-list .wrapper,
 .node--type-news.node--view-mode-teaser,
 .node--type-event.node--view-mode-teaser .wrapper,
 .node--type-news.node--view-mode-front-block{
@@ -52,6 +60,7 @@
     background-size: cover;
 }
 
+.node--type-event.node--view-mode-teaser-list .wrapper,
 .node--type-event.node--view-mode-teaser .wrapper{
     float: left;
     padding: 15px 10px; 

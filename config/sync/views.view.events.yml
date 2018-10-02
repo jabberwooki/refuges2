@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.teaser_list
     - node.type.event
     - system.menu.main
   module:
@@ -321,16 +322,16 @@ display:
           default_row_class: true
           uses_fields: false
           alignment: horizontal
-          columns: '3'
+          columns: '2'
           col_xs: col-xs-12
-          col_sm: col-sm-6
-          col_md: col-md-4
-          col_lg: col-lg-4
+          col_sm: col-sm-12
+          col_md: col-md-6
+          col_lg: col-lg-6
       row:
         type: 'ds_entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: teaser_list
           alternating_fieldset:
             alternating: false
             allpages: false
