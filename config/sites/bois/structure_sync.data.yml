@@ -69,3 +69,216 @@ blocks:
         format: full_html
       field_intro_block_title:
         value: 'Sous-titre de la page Services'
+taxonomies:
+  icons:
+    -
+      vid: icons
+      tid: '1'
+      langcode: fr
+      name: 'Plaque de cuisson'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 3febec7f-e4fc-474b-bf73-ed0e309cbbee
+    -
+      vid: icons
+      tid: '2'
+      langcode: fr
+      name: Bar
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: fc427cbe-f67e-4247-8b4c-01d63477153f
+    -
+      vid: icons
+      tid: '3'
+      langcode: fr
+      name: 'Accès handicapé'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1c271641-d827-444e-8194-fba0cd9ddf56
+    -
+      vid: icons
+      tid: '4'
+      langcode: fr
+      name: 'Balise radio'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 6f7a5ad2-c073-4c48-b904-f410ab9739cb
+    -
+      vid: icons
+      tid: '5'
+      langcode: fr
+      name: Bivouac
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ee3b42ba-0cb6-433a-9481-614255f0ac9f
+    -
+      vid: icons
+      tid: '6'
+      langcode: fr
+      name: CB
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 6041b5e6-3cd8-406c-8f87-1df93ad495e7
+    -
+      vid: icons
+      tid: '7'
+      langcode: fr
+      name: Chauffage
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: cb12f158-ae9b-4145-8262-8f5d1c56f6db
+    -
+      vid: icons
+      tid: '8'
+      langcode: fr
+      name: Couverture
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: e4225b36-0730-4438-8ddd-2ce30fe680c7
+    -
+      vid: icons
+      tid: '9'
+      langcode: fr
+      name: Defebrilateur
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 79f98c94-e2c8-4541-bf29-756d870f8f40
+    -
+      vid: icons
+      tid: '10'
+      langcode: fr
+      name: Dortoirs
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 3fa74ffc-cece-4ca6-8de7-839a21de0219
+    -
+      vid: icons
+      tid: '11'
+      langcode: fr
+      name: Douche
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f1861314-cd63-4104-9975-76f2b985e326
+    -
+      vid: icons
+      tid: '12'
+      langcode: fr
+      name: 'Eau potable'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 40b07de6-2d96-4527-8311-2fc97eb26bac
+    -
+      vid: icons
+      tid: '13'
+      langcode: fr
+      name: Lumière
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 8c5980b7-f89c-4487-9d0c-c20ea351886e
+    -
+      vid: icons
+      tid: '14'
+      langcode: fr
+      name: 'Nombre de couchage'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 8affeb74-6df6-4713-bef4-08e8d13e5912
+    -
+      vid: icons
+      tid: '15'
+      langcode: fr
+      name: Pharmacie
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: a192e9a5-4090-464f-9ff8-b93fd4ffd70c
+    -
+      vid: icons
+      tid: '16'
+      langcode: fr
+      name: 'Prise electrique'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d78ba69d-d255-45b3-80b7-b2c3801e8fb8
+    -
+      vid: icons
+      tid: '17'
+      langcode: fr
+      name: Restauration
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 3aef8c31-6bbf-4c78-a7ba-774ae0074a81
+    -
+      vid: icons
+      tid: '18'
+      langcode: fr
+      name: 'Salle hors sac'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f6ac8642-1dae-4c99-b154-f20b467bf5e6
+    -
+      vid: icons
+      tid: '19'
+      langcode: fr
+      name: Toilettes
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 874ba14f-71dc-48d6-97c8-f62d98ec5b65
+    -
+      vid: icons
+      tid: '20'
+      langcode: fr
+      name: Vaisselle
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ac4e747b-dc62-4aea-8cb2-635202c05907
+    -
+      vid: icons
+      tid: '21'
+      langcode: fr
+      name: Wifi
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ac2689fe-4acc-471d-b974-4ebcfdabf7b2
+  tags: {  }

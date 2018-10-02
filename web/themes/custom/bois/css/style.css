@@ -104,6 +104,10 @@ a:hover {
   text-decoration: none;
 }
 
+.icon-refuge path {
+  fill: #9F22A2;
+}
+
 h2.block-title {
   font-family: Misses, "Times New Roman", Times, serif;
   color: #3E3E3E;
