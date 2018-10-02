@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.bloc_partenaires
     - field.field.block_content.bloc_partenaires.field_partner_logo
+    - image.style.partners
   module:
     - ds
     - field_image_link
@@ -17,7 +18,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: partners
       image_link: link
       link_title_tag: ''
       link_title_position: ''
