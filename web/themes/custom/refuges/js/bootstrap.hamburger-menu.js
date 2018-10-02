@@ -5,6 +5,13 @@
 (function ($) {
   Drupal.behaviors.hamburgerMenu = {
     attach: function (context, settings) {
+      // Permet de descendre le menu hamburger sous le header.
+      var position = $('.dialog-off-canvas-main-canvas > section:nth-child(1) > div:nth-child(2)').position();
+      var bodyMarginTop = $('body').css('margin-top');
+      bodyMarginTop = 0;
+      var verticalOffset = Math.round(parseFloat(position.top) + parseFloat(bodyMarginTop));
+      $('#sidebar').css('top', verticalOffset + 'px');
+
       $('.hamburger-close, .overlay').on('click', function () {
         $(this).hide();
         $('.hamburger-open').show();
@@ -17,10 +24,10 @@
         $('.hamburger-close').show();
 
         // Permet de descendre le menu hamburger sous le header.
-        var position = $('.dialog-off-canvas-main-canvas > section:nth-child(1) > div:nth-child(2)').position();
-        var bodyMarginTop = $('body').css('margin-top');
-        var verticalOffset = Math.round(parseFloat(position.top) + parseFloat(bodyMarginTop));
-        $('#sidebar').css('top', verticalOffset + 'px');
+        //var position = $('.dialog-off-canvas-main-canvas > section:nth-child(1) > div:nth-child(2)').position();
+        //var bodyMarginTop = $('body').css('margin-top');
+        //var verticalOffset = Math.round(parseFloat(position.top) + parseFloat(bodyMarginTop));
+        //$('#sidebar').css('top', verticalOffset + 'px');
 
         $('#sidebar').addClass('active');
         $('.hbg-overlay').fadeIn();
