@@ -134,11 +134,37 @@ h2.block-title {
 .node--type-news.node--view-mode-front-block h2 a:hover {
   text-decoration: none;
 }
+.node--type-event.node--view-mode-teaser .field--name-field-event-dates,
 .node--type-event.node--view-mode-teaser .field--name-node-post-date,
+.node--type-news.node--view-mode-front-block .field--name-field-event-dates,
 .node--type-news.node--view-mode-front-block .field--name-node-post-date {
   text-transform: uppercase;
 }
 
+.row-centered {
+  text-align: center;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none !important;
+  /* reset the text-align */
+  text-align: left;
+  /* inline-block space fix */
+  margin-right: -4px;
+  text-align: center;
+}
+
+.block-views-blockservices-block-1 .view-footer {
+  text-align: center;
+}
+
+.post-content-1 {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.node--type-event.node--view-mode-teaser .wrapper,
 .node--type-news.node--view-mode-front-block {
   background: #f2f2f2;
 }
@@ -163,6 +189,12 @@ h2.block-title {
   background-position: 50% 0;
   -ms-background-size: cover;
   background-size: cover;
+}
+
+.node--type-event.node--view-mode-teaser .wrapper {
+  float: left;
+  padding: 15px 10px;
+  opacity: 1;
 }
 
 .prefooter {
