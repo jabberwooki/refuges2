@@ -49,10 +49,12 @@ h2.block-title{
 	text-align:center;
 }
 
+.view-display-id-documents_page .wrapper,
 .node--type-event.node--view-mode-teaser-list,
 .node--type-news.node--view-mode-teaser,
 .node--type-event.node--view-mode-teaser,
 .node--type-news.node--view-mode-front-block{
+	.field--name-name,
 	h2 a{
 		font-size: 20px;
 		font-weight: 700;
@@ -65,4 +67,8 @@ h2.block-title{
 	.field--name-node-post-date{
 		text-transform: uppercase;
 	}
+}
+
+.field--name-name{
+	color:$brand-primary;
 }

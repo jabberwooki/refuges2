@@ -135,20 +135,34 @@ h2.block-title {
   text-align: center;
 }
 
+.view-display-id-documents_page .wrapper .field--name-name,
+.view-display-id-documents_page .wrapper h2 a,
+.node--type-event.node--view-mode-teaser-list .field--name-name,
 .node--type-event.node--view-mode-teaser-list h2 a,
+.node--type-news.node--view-mode-teaser .field--name-name,
 .node--type-news.node--view-mode-teaser h2 a,
+.node--type-event.node--view-mode-teaser .field--name-name,
 .node--type-event.node--view-mode-teaser h2 a,
+.node--type-news.node--view-mode-front-block .field--name-name,
 .node--type-news.node--view-mode-front-block h2 a {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
 }
+.view-display-id-documents_page .wrapper .field--name-name:hover,
+.view-display-id-documents_page .wrapper h2 a:hover,
+.node--type-event.node--view-mode-teaser-list .field--name-name:hover,
 .node--type-event.node--view-mode-teaser-list h2 a:hover,
+.node--type-news.node--view-mode-teaser .field--name-name:hover,
 .node--type-news.node--view-mode-teaser h2 a:hover,
+.node--type-event.node--view-mode-teaser .field--name-name:hover,
 .node--type-event.node--view-mode-teaser h2 a:hover,
+.node--type-news.node--view-mode-front-block .field--name-name:hover,
 .node--type-news.node--view-mode-front-block h2 a:hover {
   text-decoration: none;
 }
+.view-display-id-documents_page .wrapper .field--name-field-event-dates,
+.view-display-id-documents_page .wrapper .field--name-node-post-date,
 .node--type-event.node--view-mode-teaser-list .field--name-field-event-dates,
 .node--type-event.node--view-mode-teaser-list .field--name-node-post-date,
 .node--type-news.node--view-mode-teaser .field--name-field-event-dates,
@@ -158,6 +172,10 @@ h2.block-title {
 .node--type-news.node--view-mode-front-block .field--name-field-event-dates,
 .node--type-news.node--view-mode-front-block .field--name-node-post-date {
   text-transform: uppercase;
+}
+
+.field--name-name {
+  color: #9F22A2;
 }
 
 .row-centered {
@@ -191,6 +209,7 @@ h2.block-title {
   padding-top: 30px;
 }
 
+.view-display-id-documents_page .wrapper,
 .node--type-event.node--view-mode-teaser-list .wrapper,
 .node--type-news.node--view-mode-teaser,
 .node--type-event.node--view-mode-teaser .wrapper,
@@ -220,6 +239,7 @@ h2.block-title {
   background-size: cover;
 }
 
+.view-display-id-documents_page .wrapper,
 .node--type-event.node--view-mode-teaser-list .wrapper,
 .node--type-event.node--view-mode-teaser .wrapper {
   float: left;

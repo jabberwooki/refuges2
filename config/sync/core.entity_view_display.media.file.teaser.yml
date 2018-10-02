@@ -9,35 +9,81 @@ dependencies:
     - field.field.media.file.field_media_file
     - media.type.file
   module:
-    - ds
+    - field_group
     - file
     - link
     - text
 third_party_settings:
-  ds:
-    layout:
-      id: ds_2col
-      library: ds/ds_2col
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        wrappers:
-          left: div
-          right: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      left:
+  field_group:
+    group_left:
+      children:
         - addtoany
         - name
         - field_description
-      right:
+      parent_name: group_wrapper
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-6
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: left
+    group_middle:
+      children:
         - field_flipthrough_url
+      parent_name: group_wrapper
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-3
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: middle
+    group_right:
+      children:
         - field_media_file
+      parent_name: group_wrapper
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-3
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: right
+    group_wrapper:
+      children:
+        - group_left
+        - group_middle
+        - group_right
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: wrapper
+      label: wrapper
 _core:
   default_config_hash: 9s0lWIanCnW5Xrrkmedxohs9F0yk4LO8ZcmVQ9xyuu4
 id: media.file.teaser
@@ -46,20 +92,20 @@ bundle: file
 mode: teaser
 content:
   addtoany:
-    weight: 0
-    region: left
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
   field_description:
     type: text_summary_or_trimmed
-    weight: 2
-    region: left
+    weight: 3
+    region: content
     label: hidden
     settings:
       trim_length: 200
     third_party_settings: {  }
   field_flipthrough_url:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -69,19 +115,19 @@ content:
       rel: '0'
     third_party_settings: {  }
     type: link
-    region: right
+    region: content
   field_media_file:
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
-    weight: 4
-    region: right
+    weight: 5
+    region: content
   name:
     type: string
-    weight: 1
-    region: left
+    weight: 2
+    region: content
     label: hidden
     settings:
       link_to_entity: false
