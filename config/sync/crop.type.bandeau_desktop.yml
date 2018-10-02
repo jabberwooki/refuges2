@@ -1,0 +1,12 @@
+uuid: 064decc9-6ddc-4219-89dc-7b1d200e5605
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Bandeau desktop'
+id: bandeau_desktop
+description: ''
+aspect_ratio: '64:13'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

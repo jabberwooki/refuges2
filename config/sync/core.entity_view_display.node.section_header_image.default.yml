@@ -9,7 +9,6 @@ dependencies:
     - node.type.section_header_image
   module:
     - ds
-    - options
     - user
 third_party_settings:
   ds:
@@ -47,18 +46,11 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: full
+      view_mode: bandeau
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: ds_content
-  field_section:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_subtitle:
     weight: 2
     label: hidden
@@ -69,5 +61,6 @@ content:
     region: ds_content
 hidden:
   addtoany: true
+  field_section: true
   langcode: true
   links: true

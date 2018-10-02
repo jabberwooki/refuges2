@@ -1,0 +1,10 @@
+uuid: 55598ee5-260e-4590-8bda-1c71a686d73a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.bandeau
+label: Bandeau
+targetEntityType: media
+cache: true

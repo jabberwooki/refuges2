@@ -49,6 +49,7 @@ content:
       preview_image_style: medium
       crop_preview_image_style: crop_thumbnail
       crop_list:
+        - bandeau_desktop
         - '3_1'
         - agenda_teaser
         - news_front
