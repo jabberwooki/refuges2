@@ -4,8 +4,17 @@
 // Default variables du site.
 @import "default-variables";
 
+// Mixin des sites.
+@import '../../refuges/scss/mixin';
+
 // Headers des sites.
 @import '../../refuges/scss/header';
+
+// Typo des sites.
+@import '../../refuges/scss/typo';
+
+// Contenu des sites.
+@import '../../refuges/scss/content';
 
 // Footers des sites.
 @import '../../refuges/scss/footer';

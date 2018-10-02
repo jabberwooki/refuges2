@@ -1,0 +1,25 @@
+uuid: 6d649aec-dcf1-420c-9345-fc05ee236e6d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.bandeau_desktop
+  module:
+    - crop
+name: bandeau_desktop
+label: 'Bandeau desktop'
+effects:
+  a8ee2c20-dd3b-4799-b058-6fa8b3a9fc43:
+    uuid: a8ee2c20-dd3b-4799-b058-6fa8b3a9fc43
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: bandeau_desktop
+  5bcd238e-3d7f-4fae-9772-093de3ce7d00:
+    uuid: 5bcd238e-3d7f-4fae-9772-093de3ce7d00
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 390
+      upscale: false

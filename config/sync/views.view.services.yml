@@ -318,6 +318,8 @@ display:
         header: false
         footer: false
         query: false
+        style: false
+        row: false
       filter_groups:
         operator: AND
         groups:
@@ -359,6 +361,29 @@ display:
           replica: false
           query_comment: ''
           query_tags: null
+      style:
+        type: html_list
+        options:
+          row_class: 'col-xs-6 col-md-1 col-centered'
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: item-list
+          class: 'row row-centered'
+      row:
+        type: 'ds_entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+          alternating_fieldset:
+            alternating: false
+            allpages: false
+          grouping_fieldset:
+            group: false
+            group_field: node_field_data|title
+            group_field_function: ''
+          advanced_fieldset:
+            advanced: false
     cache_metadata:
       max-age: -1
       contexts:

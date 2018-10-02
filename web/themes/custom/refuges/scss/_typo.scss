@@ -1,0 +1,66 @@
+.node--type-section-header-image .infos h2,
+.title-diapo a{
+	font-family: $font-family-title;
+	font-size: 64px;
+	text-shadow: 1px 1px 12px #555;
+	color: #fff;
+	  	&:hover{
+	  		text-decoration: none;
+	  		opacity: 0.7;
+	  	}
+}
+.node--type-section-header-image .infos h2:hover{
+	  		opacity: 1;
+}
+
+.node--type-section-header-image .infos .field--name-field-subtitle,
+.description-diapo{
+	font-size:16px;
+	font-weight:700;
+	color:#fff;
+	text-transform:uppercase;
+	text-shadow: 1px 1px 12px #555;
+}
+
+.view-footer,
+.link-diapo {
+	margin-top:30px;
+	a{
+		@include btn-refuge;
+	}
+}
+
+//icon SVG
+.icon-refuge path {
+    fill: $brand-primary;
+}
+
+
+h2.block-title{
+	font-family: $font-family-title;
+	color: #3E3E3E;
+	font-size: 64px;
+	text-align:center;
+}
+
+.view-header{
+	text-transform: uppercase;
+	color:$brand-primary;
+	text-align:center;
+}
+
+.node--type-event.node--view-mode-teaser,
+.node--type-news.node--view-mode-front-block{
+	h2 a{
+		font-size: 20px;
+		font-weight: 700;
+		text-transform:uppercase;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.field--name-field-event-dates,
+	.field--name-node-post-date{
+		text-transform: uppercase;
+	}
+}

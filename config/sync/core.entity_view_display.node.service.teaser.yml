@@ -31,7 +31,6 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_image
         - field_icone
         - field_displayed_text
 id: node.service.teaser
@@ -53,9 +52,9 @@ content:
     region: ds_content
     label: hidden
     settings:
-      apply_dimensions: true
-      width: 25
-      height: 25
+      apply_dimensions: '1'
+      width: '47'
+      height: '47'
     third_party_settings: {  }
 hidden:
   addtoany: true
