@@ -11,7 +11,7 @@ dependencies:
 id: menuhamburger
 theme: bois
 region: hamburger
-weight: -13
+weight: -14
 provider: null
 plugin: 'system_menu_block:menu-hamburger'
 settings:

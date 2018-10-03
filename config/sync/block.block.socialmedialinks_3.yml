@@ -1,0 +1,112 @@
+uuid: 4ed89a94-5d3e-4b86-bf04-9800144305b7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - bois
+id: socialmedialinks_3
+theme: bois
+region: hamburger
+weight: -13
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    behance:
+      value: ''
+      description: ''
+      weight: '-10'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-9'
+    contact:
+      value: ''
+      description: ''
+      weight: '-8'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-7'
+    email:
+      value: ''
+      description: ''
+      weight: '-6'
+    facebook:
+      value: 'https://www.facebook.com/'
+      description: ''
+      weight: '-5'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-4'
+    github:
+      value: ''
+      description: ''
+      weight: '-3'
+    googleplus:
+      value: "\t Google+https://plus.google.com/"
+      description: ''
+      weight: '-2'
+    instagram:
+      value: 'https://www.instagram.com/'
+      description: ''
+      weight: '-1'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '0'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '1'
+    rss:
+      value: ''
+      description: ''
+      weight: '2'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '3'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '4'
+    twitter:
+      value: 'https://www.twitter.com/'
+      description: ''
+      weight: '5'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '6'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '7'
+    youtube:
+      value: 'https://www.youtube.com/'
+      description: ''
+      weight: '8'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '9'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: _blank
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }
