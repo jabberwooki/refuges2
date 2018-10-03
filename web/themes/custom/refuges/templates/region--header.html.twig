@@ -22,20 +22,29 @@
 %}
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
+
+  <div class="col-md-2">
     <div class="hamburger hamburger-open">
-      <button type="button" id="sidebarCollapse" class="btn">
-        <i class="glyphicon glyphicon-align-justify"></i>
+      <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+        <i class="glyphicon glyphicon-menu-hamburger"></i>
+        <span class="name-menu">Menu</span>
       </button>
     </div>
 
     <div class="hamburger hamburger-close">
       <button type="button" id="sidebarCollapse" class="btn navbar-btn">
         <i class="glyphicon glyphicon-remove"></i>
-        <span>Menu</span>
+        <span class="name-menu">Menu</span>
       </button>
     </div>
-
+  </div>
+  
+  <div class="col-md-7 col-brand">
     <div class="branding">{{ content }}</div>
+  </div>
+
+  <div class="col-md-3">
+  </div>
 
   </div>
 {% endif %}

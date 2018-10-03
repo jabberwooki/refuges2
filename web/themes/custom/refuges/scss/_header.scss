@@ -6,12 +6,41 @@
 .region-header{
     position: relative;
     transform-style: preserve-3d;
-}
-.branding {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: -10px;
+    .col-brand{
+      text-align: center;
+    }
+    .hamburger{
+      margin-top: 30px;
+        .name-menu{
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #000;
+        }
+        button{
+          background: none;
+        }
+        .glyphicon{
+          color: $brand-primary;
+          font-size: 20px;
+        }
+    }
+    .branding {
+      display: inline-block;
+      a.name{
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #000;
+        margin-top: 35px;
+        &:hover{
+          color: $brand-primary;
+        }
+      }
+      .logo img {
+        height: 87px;
+        width: auto;
+      }
+    }
 }
 
 .node--type-section-header-image.node--view-mode-default,

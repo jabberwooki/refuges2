@@ -50,14 +50,40 @@ a:hover {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
-
-.branding {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin-top: -10px;
+.region-header .col-brand {
+  text-align: center;
+}
+.region-header .hamburger {
+  margin-top: 30px;
+}
+.region-header .hamburger .name-menu {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+.region-header .hamburger button {
+  background: none;
+}
+.region-header .hamburger .glyphicon {
+  color: #9F22A2;
+  font-size: 20px;
+}
+.region-header .branding {
+  display: inline-block;
+}
+.region-header .branding a.name {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 35px;
+}
+.region-header .branding a.name:hover {
+  color: #9F22A2;
+}
+.region-header .branding .logo img {
+  height: 87px;
+  width: auto;
 }
 
 .node--type-section-header-image.node--view-mode-default,
