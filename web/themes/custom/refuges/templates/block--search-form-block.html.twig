@@ -48,14 +48,15 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    {{ content }}
 
-    {#
-    <button type="button" id="searchformclose" class="btn">
-      <i class="glyphicon glyphicon-remove"></i>
-    </button>
-    #}
-    
+    <div class="wrapper">
+        {{ content }}
+
+        <button type="button" id="searchformclose" class="btn">
+          <i class="glyphicon glyphicon-remove"></i>
+        </button>
+    </div>    
+
   {% endblock %}
 
 </div>
