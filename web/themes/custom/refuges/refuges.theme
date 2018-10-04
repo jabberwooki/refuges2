@@ -27,3 +27,13 @@ function refuges_theme_suggestions_block_alter(array &$suggestions, array $varia
   }
 }
 
+function refuges_preprocess_block(&$variables) {
+  //dpm($variables['elements']);
+  if (isset($variables["elements"]["#id"])) {
+    $block_id = $variables["elements"]["#id"];
+    $theme = \Drupal::theme()->getActiveTheme()->getName();
+    if (str_replace($theme . '_', '', $block_id) == 'search') {
+      $variables['region'] = 'top';
+    }
+  }
+}
