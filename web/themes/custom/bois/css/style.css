@@ -44,6 +44,10 @@ body {
   margin-top: 0 !important;
 }
 
+.path-frontpage .main-container {
+  margin-top: -100px;
+}
+
 .top {
   background-image: -webkit-linear-gradient(left, #d030d4, #9F22A2);
   background-image: linear-gradient(to right, #d030d4, #9F22A2);
@@ -93,6 +97,42 @@ body {
 .highlighted .search-block-form #searchformclose .glyphicon-remove {
   color: #9F22A2;
   font-size: 20px;
+}
+.highlighted .slick-dots {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10%;
+  width: 10px;
+}
+.highlighted .slick-dots li {
+  list-style: none;
+}
+.highlighted .slick-dots li.slick-active button {
+  border-radius: 50%;
+  width: 2px;
+  height: 2px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  text-indent: -9999px;
+  outline: 0;
+}
+.highlighted .slick-dots li.slick-active button:hover {
+  opacity: 0.5;
+}
+.highlighted .slick-dots button {
+  border-radius: 50%;
+  width: 2px;
+  height: 2px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  text-indent: -9999px;
+  outline: 0;
+}
+.highlighted .slick-dots button:hover {
+  background-color: #fff;
 }
 
 .region-header {
@@ -155,6 +195,15 @@ body {
           transform: translate(-50%, -50%);
   /* compatibilité : ie9+ */
   text-align: center;
+}
+
+.mountain {
+  background: url("../../refuges/images/montagnes.png") no-repeat;
+  position: relative;
+  z-index: 1000;
+  height: 113px;
+  width: 100%;
+  top: -120px;
 }
 
 .node--type-section-header-image .infos h2,
@@ -329,6 +378,10 @@ h2.block-title {
   position: relative;
   overflow: hidden;
 }
+.postcontent2 .block-views-blockevents-frontpage-block .view-content {
+  position: relative;
+  z-index: 1000;
+}
 
 .postcontent2:before {
   content: ' ';
@@ -385,6 +438,18 @@ h2.block-title {
   padding: 35px;
   background: rgba(255, 255, 255, 0.8);
   margin: 100px 0;
+}
+
+.position-footer {
+  margin-top: -120px;
+}
+
+.mountain2 {
+  background: url("../../refuges/images/montagnes-grises.png") no-repeat;
+  position: relative;
+  z-index: 1000;
+  height: 169px;
+  width: 100%;
 }
 
 .section-footer {
