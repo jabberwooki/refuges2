@@ -12,7 +12,7 @@ dependencies:
 id: views_block__section_headers_block_1
 theme: bois
 region: highlighted
-weight: -9
+weight: -12
 provider: null
 plugin: 'views_block:section_headers-block_1'
 settings:
