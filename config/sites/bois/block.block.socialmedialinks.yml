@@ -9,7 +9,7 @@ dependencies:
 id: socialmedialinks
 theme: bois
 region: top
-weight: -11
+weight: -15
 provider: null
 plugin: social_media_links_block
 settings:
