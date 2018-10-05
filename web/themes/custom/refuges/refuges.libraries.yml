@@ -28,6 +28,16 @@ slick:
   dependencies:
     - core/jquery
 
+sliding-menu:
+  js:
+    libraries/sliding-menu/sliding-menu.min.js: {}
+    js/sliding-menu.js: {}
+  css:
+    theme:
+      libraries/sliding-menu/sliding-menu.css: {}
+  dependencies:
+    - core/jquery
+
 hamburger:
   js:
     js/bootstrap.hamburger-menu.js: {}
