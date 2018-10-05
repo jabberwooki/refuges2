@@ -10,7 +10,7 @@
       $('span.glyphicon-search').on('click', function(event){
         $('.region-highlighted .search-block-form').slideToggle();
         event.stopImmediatePropagation();
-        $('#search-block-form input[type="search"]').focus();
+        $('.region-highlighted input[type="search"]').focus();
       });
 
       $('#searchformclose').on('click', function(event){
