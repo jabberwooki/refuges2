@@ -1,6 +1,9 @@
 body {
     margin-top: 0 !important;
 }
+.path-frontpage .main-container{
+    margin-top: -100px;
+}
 
 .top{
 	//background-color: lighten($brand-primary,15%);
@@ -49,6 +52,42 @@ body {
       .glyphicon-remove{
         color: $brand-primary;
         font-size: 20px;
+      }
+    }
+  }
+  .slick-dots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    width: 10px;
+    li {
+      list-style: none;
+    }
+    li.slick-active{
+      button {
+        border-radius: 50%;
+        width: 2px;
+        height: 2px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        text-indent: -9999px;
+        outline: 0;
+        &:hover {
+          opacity:0.5;
+        }
+      }
+    }
+    button {
+      border-radius: 50%;
+      width: 2px;
+      height: 2px;
+      border: 2px solid #fff;
+      background-color: transparent;
+      text-indent: -9999px;
+      outline: 0;
+      &:hover {
+        background-color: #fff;
       }
     }
   }
@@ -109,4 +148,13 @@ position: relative;
   	  text-align:center;
   	}
 
+}
+
+.mountain{
+  background: url("../../refuges/images/montagnes.png") no-repeat;
+  position: relative;
+  z-index: 1000;
+  height: 113px;
+  width: 100%;
+  top: -120px;
 }
