@@ -10,7 +10,6 @@ theme: {  }
 blacklist: {  }
 graylist:
   - block.block.contactblock
-  - block.block.socialmedialinks
   - bois.settings
   - contact.form.feedback
   - core.entity_form_display.contact_message.feedback.default
@@ -19,6 +18,7 @@ graylist:
   - system.site
   - system.theme
   - 'block.block.bois_*'
+  - 'block.block.socialmedialinks*'
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0

@@ -1,21 +1,22 @@
-uuid: 1db3de7b-8364-4a61-94d4-5ad9e92dbc60
+uuid: ca1c4e67-bd56-4617-b4d5-58c74a816704
 langcode: fr
 status: false
 dependencies: {  }
-id: arpont
-label: 'Refuge de l''Arpont'
-folder: ../config/sites/arpont
+id: lac
+label: 'Refuge-porte de Plan du Lac'
+folder: ../config/sites/lac
 module: {  }
 theme: {  }
 blacklist: {  }
 graylist:
+  - block.block.contactblock
   - contact.form.feedback
   - core.entity_form_display.contact_message.feedback.default
+  - core.entity_view_display.contact_message.feedback.default
   - structure_sync.data
   - system.site
   - system.theme
-  - arpont.settings
-  - 'block.block.arpont_*'
+  - 'block.block.lac_*'
   - 'block.block.socialmedialinks*'
 graylist_dependents: true
 graylist_skip_equal: true
