@@ -7,8 +7,8 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
-      - main
-    parent: 'main:'
+      - menu-hamburger
+    parent: 'menu-hamburger:'
 name: 'Page avancée'
 type: advanced_page
 description: ''
