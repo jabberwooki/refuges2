@@ -25,3 +25,6 @@ libraries:
 libraries-extend:
   bootstrap/framework:
     - refuges/framework
+
+ckeditor_stylesheets:
+  - css/style.css
