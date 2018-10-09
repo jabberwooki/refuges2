@@ -12,7 +12,7 @@ dependencies:
 id: arpont_blocdintrodelapageservices
 theme: arpont
 region: content
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_content:6d6f6b90-7ad4-4506-91dd-efb85fe52a20'
 settings:

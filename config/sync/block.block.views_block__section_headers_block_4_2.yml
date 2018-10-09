@@ -1,0 +1,24 @@
+uuid: 9019af02-9fb7-446f-8d33-4d4926561f31
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.section_headers
+  module:
+    - views
+  theme:
+    - arpont
+id: views_block__section_headers_block_4_2
+theme: arpont
+region: highlighted
+weight: -5
+provider: null
+plugin: 'views_block:section_headers-block_4'
+settings:
+  id: 'views_block:section_headers-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

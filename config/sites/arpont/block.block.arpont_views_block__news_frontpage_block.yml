@@ -11,8 +11,8 @@ dependencies:
     - arpont
 id: arpont_views_block__news_frontpage_block
 theme: arpont
-region: content
-weight: -2
+region: post_content_1
+weight: -12
 provider: null
 plugin: 'views_block:news-frontpage_block'
 settings:

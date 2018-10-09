@@ -9,14 +9,16 @@ module: {  }
 theme: {  }
 blacklist: {  }
 graylist:
+  - arpont.settings
+  - block.block.coordonneesdurefuge_ar
+  - block.block.partenaires_ar
   - contact.form.feedback
   - core.entity_form_display.contact_message.feedback.default
   - structure_sync.data
   - system.site
   - system.theme
-  - arpont.settings
   - 'block.block.arpont_*'
-  - 'block.block.socialmedialinks*'
+  - 'block.block.socialmedialinks_ar_*'
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0

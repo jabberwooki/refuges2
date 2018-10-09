@@ -11,7 +11,7 @@ _core:
 id: arpont_content
 theme: arpont
 region: content
-weight: 1
+weight: -6
 provider: null
 plugin: system_main_block
 settings:
