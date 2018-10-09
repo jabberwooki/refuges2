@@ -58,6 +58,7 @@
         "drupal/shield": "^1.2",
         "drupal/social_media_links": "^2.6",
         "drupal/structure_sync": "^1.12",
+        "drupal/twig_tweak": "^2.1",
         "drupal/video_embed_field": "^2.0",
         "drupal/views_bootstrap": "^3.1",
         "drush/drush": "^9.0.0",
