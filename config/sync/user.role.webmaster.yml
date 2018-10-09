@@ -12,6 +12,7 @@ permissions:
   - 'access media_browser entity browser pages'
   - 'access site in maintenance mode'
   - 'access site reports'
+  - 'access toolbar'
   - 'administer contact forms'
   - 'administer menu-hamburger menu items'
   - 'administer services menu items'
