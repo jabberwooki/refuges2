@@ -1,0 +1,25 @@
+uuid: a18a6572-7b63-4b04-a817-55d0728cf8df
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_details:6a48bd26-d78d-4f62-92c0-b0cfc8b9e2c0'
+  module:
+    - block_content
+  theme:
+    - arpont
+id: coordonneesdurefuge_ar
+theme: arpont
+region: footer
+weight: -13
+provider: null
+plugin: 'block_content:6a48bd26-d78d-4f62-92c0-b0cfc8b9e2c0'
+settings:
+  id: 'block_content:6a48bd26-d78d-4f62-92c0-b0cfc8b9e2c0'
+  label: 'Coordonnées du refuge'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
