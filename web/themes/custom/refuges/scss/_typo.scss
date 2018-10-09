@@ -80,3 +80,111 @@ h2.block-title{
 	color:$brand-primary;
 	text-align:center;
 }
+
+//BUNDLES PARAGRAPHS
+p.intro{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $brand-primary;
+}
+p.color{
+    color: $brand-primary;
+}
+h3.titre{
+    color: $brand-primary;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h4.titre{
+    color: $brand-primary;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h4.titredebloc{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+h5.titre{
+    color: $brand-primary;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h6.titre{
+    color: $brand-primary;
+    font-size: 18px;
+    font-weight: 700;
+}
+blockquote {
+    margin: 0 auto;
+    width: 50%;
+    color: $brand-primary;
+    font-weight: 300;
+    font-style: italic;
+    border-left: 0;
+    font-size: 24px;
+    line-height: 26px;
+}
+.field--name-body ul,
+.paragraph ul {
+    padding-left: 0.8em;
+}
+.paragraph ul li,
+.field--name-body li{
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+ }
+ .paragraph ul li:before,
+ .field--name-body li:before {
+    content: '\f054';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -1em;
+    color: $brand-primary;
+    font-size: 10px;
+    margin-top: 3px;
+}
+.paragraph {
+  margin-bottom: 20px;
+}
+
+.content_page .bloc_right{
+    background-color: $brand-primary;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.1);
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    padding: 20px 25px;
+}
+.content_page .bloc_left{
+    background-color: #3e3e3e;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.1);
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    padding: 20px 25px;
+}
+.content_page .bloc_left table,
+.content_page .bloc_right table,
+.content_page .bloc_left ul li,
+.content_page .bloc_left ul li a,
+.content_page .bloc_right ul li,
+.content_page .bloc_right ul li a,
+.content_page .bloc_right a,
+.content_page .bloc_left a,
+.content_page .bloc_left p a,
+.content_page .bloc_right p a,
+.content_page .bloc_left p,
+.content_page .bloc_right p{
+    color: #fff; 
+}
+.content_page .bloc_left ul li a:hover,
+.content_page .bloc_right ul li a:hover,
+.content_page .bloc_left p a:hover,
+.content_page .bloc_right p a:hover{
+    color: #003365;
+}
+
