@@ -1,0 +1,9 @@
+uuid: 600e390e-0edc-4e22-949f-740c786426f0
+langcode: fr
+status: true
+dependencies: {  }
+id: redacteur
+label: Rédacteur
+weight: -8
+is_admin: null
+permissions: {  }
