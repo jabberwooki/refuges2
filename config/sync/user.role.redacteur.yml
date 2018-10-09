@@ -6,4 +6,30 @@ id: redacteur
 label: Rédacteur
 weight: -8
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media_browser entity browser pages'
+  - 'bypass honeypot protection'
+  - 'delete own advanced_page content'
+  - 'delete own event content'
+  - 'delete own external_video media'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own photo_gallery content'
+  - 'delete own section_header_image content'
+  - 'delete own service content'
+  - 'delete own slide content'
+  - 'edit own advanced_page content'
+  - 'edit own event content'
+  - 'edit own external_video media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own photo_gallery content'
+  - 'edit own section_header_image content'
+  - 'edit own service content'
+  - 'edit own slide content'
