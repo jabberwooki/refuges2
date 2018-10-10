@@ -286,7 +286,7 @@ menus:
     menu_name: menu-hamburger
     title: Services
     parent: null
-    uri: 'internal:/servives-gardiennage'
+    uri: 'internal:/services-gardiennage'
     link_title: ''
     description: null
     enabled: '1'
