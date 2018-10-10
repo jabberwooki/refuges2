@@ -11,7 +11,7 @@ dependencies:
 id: arpont_services
 theme: arpont
 region: content
-weight: 0
+weight: -7
 provider: null
 plugin: 'system_menu_block:services'
 settings:

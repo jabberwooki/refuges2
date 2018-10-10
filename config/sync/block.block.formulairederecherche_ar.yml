@@ -1,4 +1,4 @@
-uuid: 220c7b38-da44-4c94-ac9b-f803cad643ba
+uuid: f2ee5da6-e523-4cb6-8489-e4145445d00b
 langcode: fr
 status: true
 dependencies:
@@ -6,17 +6,15 @@ dependencies:
     - search
   theme:
     - arpont
-_core:
-  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
-id: arpont_search
+id: formulairederecherche_ar
 theme: arpont
-region: highlighted
-weight: -13
+region: hamburger
+weight: -8
 provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: Search
+  label: 'Formulaire de recherche'
   provider: search
-  label_display: visible
+  label_display: '0'
 visibility: {  }

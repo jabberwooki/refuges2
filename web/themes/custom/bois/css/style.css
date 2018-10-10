@@ -231,7 +231,7 @@ body {
 }
 
 .node--type-section-header-image.node--view-mode-default,
-#block-bois-views-block-slides-frontpage-slideshow {
+.block-views-blockslides-frontpage-slideshow {
   position: relative;
   /* facultatif : résoud un bug non systématique de blur sur IE */
   -webkit-transform-style: preserve-3d;
@@ -239,8 +239,8 @@ body {
 }
 .node--type-section-header-image.node--view-mode-default .infos,
 .node--type-section-header-image.node--view-mode-default .infos-diapo,
-#block-bois-views-block-slides-frontpage-slideshow .infos,
-#block-bois-views-block-slides-frontpage-slideshow .infos-diapo {
+.block-views-blockslides-frontpage-slideshow .infos,
+.block-views-blockslides-frontpage-slideshow .infos-diapo {
   position: absolute;
   top: 50%;
   left: 50%;

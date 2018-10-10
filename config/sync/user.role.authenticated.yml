@@ -6,16 +6,37 @@ _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
 label: 'Utilisateur authentifié'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
+  - 'access administration pages'
   - 'access comments'
   - 'access content'
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'access media overview'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'change own username'
+  - 'create advanced_page content'
+  - 'create event content'
+  - 'create external_video media'
+  - 'create file media'
+  - 'create image media'
+  - 'create news content'
+  - 'create page content'
+  - 'create photo_gallery content'
+  - 'create section_header_image content'
+  - 'create service content'
+  - 'create slide content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'use advanced search'
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'view media'
+  - 'view own unpublished content'
+  - 'view unpublished paragraphs'

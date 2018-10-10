@@ -1,22 +1,22 @@
-uuid: fab3661e-9706-44a8-aa9f-d7b03665b7e0
+uuid: 3d242a5c-1008-4728-98ec-1a5b46595a78
 langcode: fr
 status: true
 dependencies:
   config:
-    - views.view.slides
+    - views.view.section_headers
   module:
     - system
     - views
   theme:
     - arpont
-id: arpont_views_block__slides_frontpage_slideshow
+id: views_block__section_headers_block_1_ar
 theme: arpont
 region: highlighted
-weight: -12
+weight: -11
 provider: null
-plugin: 'views_block:slides-frontpage_slideshow'
+plugin: 'views_block:section_headers-block_1'
 settings:
-  id: 'views_block:slides-frontpage_slideshow'
+  id: 'views_block:section_headers-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /actualites
     negate: false
     context_mapping: {  }

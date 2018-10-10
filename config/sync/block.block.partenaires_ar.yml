@@ -1,0 +1,25 @@
+uuid: 2b877e29-3803-4e74-97e5-990ac1e7ecf6
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:bloc_partenaires:9b2300b4-38a4-407d-bf8f-14cc8c61fbc5'
+  module:
+    - block_content
+  theme:
+    - arpont
+id: partenaires_ar
+theme: arpont
+region: footer
+weight: -14
+provider: null
+plugin: 'block_content:9b2300b4-38a4-407d-bf8f-14cc8c61fbc5'
+settings:
+  id: 'block_content:9b2300b4-38a4-407d-bf8f-14cc8c61fbc5'
+  label: Partenaires
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
