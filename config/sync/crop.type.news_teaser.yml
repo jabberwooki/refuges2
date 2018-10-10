@@ -2,7 +2,7 @@ uuid: 437551a0-ad29-461e-be77-4f59e52c57dd
 langcode: fr
 status: true
 dependencies: {  }
-label: 'Actus accroche'
+label: 'Rubrique actus'
 id: news_teaser
 description: ''
 aspect_ratio: '480:350'
