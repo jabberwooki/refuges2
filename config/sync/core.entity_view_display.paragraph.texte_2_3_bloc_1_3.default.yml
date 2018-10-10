@@ -34,14 +34,15 @@ third_party_settings:
       weight: 2
       format_type: html_element
       format_settings:
-        id: ''
-        classes: col-md-4
+        label: right
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
+        id: ''
+        classes: 'col-md-4 bloc_right'
       label: right
     group_row:
       children:

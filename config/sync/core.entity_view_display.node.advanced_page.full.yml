@@ -11,6 +11,7 @@ dependencies:
   module:
     - ds
     - entity_reference_revisions
+    - field_group
     - user
 third_party_settings:
   ds:
@@ -31,22 +32,33 @@ third_party_settings:
     regions:
       ds_content:
         - field_media_image
-        - node_title
         - field_subtitle
+        - group_contenu
         - field_content
-    fields:
-      node_title:
-        plugin_id: node_title
-        weight: 1
-        label: hidden
-        formatter: default
+  field_group:
+    group_contenu:
+      children:
+        - field_content
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'content_page col-md-offset-2 col-md-8'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Contenu
 id: node.advanced_page.full
 targetEntityType: node
 bundle: advanced_page
 mode: full
 content:
   field_content:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       view_mode: default
@@ -58,13 +70,13 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: full
+      view_mode: bandeau
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: ds_content
   field_subtitle:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false

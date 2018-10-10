@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d83e0c8a585e267fa0a78d56f0285a0",
+    "content-hash": "7a8ac9bab7e5e43ffd36bfbfde5b66b4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3098,7 +3098,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/field_image_link"
             },
-            "time": "2018-07-18 22:56:21"
+            "time": "2018-07-18T22:56:21+00:00"
         },
         {
             "name": "drupal/honeypot",
@@ -3407,57 +3407,6 @@
             }
         },
         {
-            "name": "drupal/menu_admin_per_menu",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/menu_admin_per_menu",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menu_admin_per_menu-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "27dbef0025146a382feab67db5e93eaf280b8de4"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1507184944",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "anrikun",
-                    "homepage": "https://www.drupal.org/user/410199"
-                },
-                {
-                    "name": "mkdok",
-                    "homepage": "https://www.drupal.org/user/3308753"
-                }
-            ],
-            "description": "Allows to give roles per menu admin permissions without giving them full administer menu permission.",
-            "homepage": "https://www.drupal.org/project/menu_admin_per_menu",
-            "support": {
-                "source": "http://cgit.drupalcode.org/menu_admin_per_menu"
-            }
-        },
-        {
             "name": "drupal/paragraphs",
             "version": "1.3.0",
             "source": {
@@ -3708,6 +3657,61 @@
             "homepage": "https://www.drupal.org/project/structure_sync",
             "support": {
                 "source": "http://cgit.drupalcode.org/structure_sync"
+            }
+        },
+        {
+            "name": "drupal/twig_tweak",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/twig_tweak",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "ce1534d3270d916b55902c686057c0b5038d6b1d"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "better dump() function for debugging Twig variables"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1531889025",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chi",
+                    "homepage": "https://www.drupal.org/user/556138"
+                }
+            ],
+            "description": "A Twig extension with some useful functions and filters for Drupal development.",
+            "homepage": "https://www.drupal.org/project/twig_tweak",
+            "keywords": [
+                "Drupal",
+                "Twig"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/twig_tweak",
+                "issues": "https://www.drupal.org/project/issues/twig_tweak"
             }
         },
         {
@@ -7177,7 +7181,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2018-06-24 20:08:51"
+            "time": "2018-06-24T20:08:51+00:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -7349,7 +7353,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-07-23 10:51:47"
+            "time": "2018-07-23T10:51:47+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -9225,17 +9229,6 @@
         {
             "name": "webflo/drupal-core-require-dev",
             "version": "8.5.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webflo/drupal-core-require-dev.git",
-                "reference": "d44ea0ed342256d1036962069afd0518fa92449e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/d44ea0ed342256d1036962069afd0518fa92449e",
-                "reference": "d44ea0ed342256d1036962069afd0518fa92449e",
-                "shasum": ""
-            },
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",
