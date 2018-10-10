@@ -11,6 +11,7 @@ dependencies:
     - node
     - options
     - user
+    - views_bootstrap
 id: services
 label: Services
 module: views
@@ -407,6 +408,8 @@ display:
         filter_groups: false
         header: false
         use_ajax: false
+        style: false
+        row: false
       path: services-gardiennage
       filters:
         status:
@@ -484,6 +487,32 @@ display:
         context: '0'
         menu_name: services
       use_ajax: true
+      style:
+        type: views_bootstrap_grid
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          alignment: horizontal
+          columns: '4'
+          col_xs: col-xs-6
+          col_sm: col-sm-4
+          col_md: col-md-3
+          col_lg: col-lg-3
+      row:
+        type: 'ds_entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+          alternating_fieldset:
+            alternating: false
+            allpages: false
+          grouping_fieldset:
+            group: false
+            group_field: node_field_data|title
+            group_field_function: ''
+          advanced_fieldset:
+            advanced: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -507,6 +536,8 @@ display:
         filter_groups: false
         header: false
         use_ajax: false
+        style: false
+        row: false
       path: services-hors-gardiennage
       filters:
         status:
@@ -584,6 +615,32 @@ display:
         context: '0'
         menu_name: services
       use_ajax: true
+      style:
+        type: views_bootstrap_grid
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          alignment: horizontal
+          columns: '4'
+          col_xs: col-xs-6
+          col_sm: col-sm-4
+          col_md: col-md-3
+          col_lg: col-lg-3
+      row:
+        type: 'ds_entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+          alternating_fieldset:
+            alternating: false
+            allpages: false
+          grouping_fieldset:
+            group: false
+            group_field: node_field_data|title
+            group_field_function: ''
+          advanced_fieldset:
+            advanced: false
     cache_metadata:
       max-age: -1
       contexts:
