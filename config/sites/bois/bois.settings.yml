@@ -13,7 +13,7 @@ features:
   favicon: 1
   node_user_picture: 1
 logo:
-  path: 'public://refuge-logo.png'
+  path: 'public://pn_logo.jpg'
   url: ''
   use_default: 0
 region_wells:
