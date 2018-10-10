@@ -2,7 +2,7 @@ uuid: c60a3cf2-7ce4-4279-a33f-98251236f892
 langcode: fr
 status: true
 dependencies: {  }
-label: 'Diapo desktop'
+label: 'Diapo (pc)'
 id: slides_desktop
 description: ''
 aspect_ratio: '3:1'

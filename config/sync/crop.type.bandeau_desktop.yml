@@ -2,7 +2,7 @@ uuid: 064decc9-6ddc-4219-89dc-7b1d200e5605
 langcode: fr
 status: true
 dependencies: {  }
-label: 'Bandeau desktop'
+label: 'En-tête de rubrique (pc)'
 id: bandeau_desktop
 description: ''
 aspect_ratio: '64:13'
