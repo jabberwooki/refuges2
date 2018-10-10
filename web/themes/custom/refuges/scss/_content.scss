@@ -46,6 +46,9 @@
         position: relative;
         z-index: 1000;
     }
+    .slick-prev:before, .slick-next:before{
+        color: $brand-primary;
+    }
 }
 .postcontent2:before {
     content: ' ';

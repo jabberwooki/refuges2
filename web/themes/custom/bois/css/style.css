@@ -561,6 +561,9 @@ blockquote {
   position: relative;
   z-index: 1000;
 }
+.postcontent2 .slick-prev:before, .postcontent2 .slick-next:before {
+  color: #001489;
+}
 
 .postcontent2:before {
   content: ' ';
