@@ -1,17 +1,3 @@
-menus:
-  -
-    menu_name: main
-    title: Media
-    parent: null
-    uri: 'internal:/'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '12'
-    langcode: fr
-    uuid: a1fb0259-be99-4312-8c6f-348aa4ec261e
-    options: null
 taxonomies:
   icons:
     -
@@ -281,3 +267,69 @@ blocks:
         format: full_html
       field_intro_block_title:
         value: 'Sous-titre de la page Services'
+menus:
+  -
+    menu_name: menu-hamburger
+    title: Media
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '12'
+    langcode: fr
+    uuid: 790df3e6-6aa7-473a-8934-eecf9fd0de8c
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Services
+    parent: null
+    uri: 'internal:/services-gardiennage'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '13'
+    langcode: fr
+    uuid: 1e19d94e-6fad-4913-b088-1e94dbf62ffb
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Photos
+    parent: 'menu_link_content:790df3e6-6aa7-473a-8934-eecf9fd0de8c'
+    uri: 'internal:/galeries-photo'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: fr
+    uuid: 9e6d01ea-30cb-4eb6-91a8-57980a8bd53c
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Vidéos
+    parent: 'menu_link_content:790df3e6-6aa7-473a-8934-eecf9fd0de8c'
+    uri: 'internal:/videos'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '1'
+    langcode: fr
+    uuid: 3ab232b2-385d-4df7-bffc-d1459b54ec4f
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Documents
+    parent: 'menu_link_content:790df3e6-6aa7-473a-8934-eecf9fd0de8c'
+    uri: 'internal:/documents'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: fr
+    uuid: 592c38c5-a551-43a0-9258-30e0341ef176
+    options: null

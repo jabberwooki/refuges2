@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.media.teaser
     - media.type.external_video
     - media.type.file
-    - system.menu.menu-hamburger
   module:
     - ds
     - media
@@ -228,11 +227,11 @@ display:
       display_extenders: {  }
       path: documents
       menu:
-        type: normal
+        type: none
         title: Documents
         description: ''
-        expanded: true
-        parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+        expanded: false
+        parent: ''
         weight: 2
         context: '0'
         menu_name: menu-hamburger
@@ -353,11 +352,11 @@ display:
       display_extenders: {  }
       path: videos
       menu:
-        type: normal
+        type: none
         title: Vidéos
         description: ''
-        expanded: true
-        parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+        expanded: false
+        parent: ''
         weight: 0
         context: '0'
         menu_name: menu-hamburger

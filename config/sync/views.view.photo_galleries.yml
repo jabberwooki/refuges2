@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.photo_gallery
-    - system.menu.menu-hamburger
   module:
     - ds
     - node
@@ -215,11 +214,11 @@ display:
       path: galeries-photo
       display_description: ''
       menu:
-        type: normal
+        type: none
         title: Photos
         description: ''
         expanded: false
-        parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+        parent: ''
         weight: -2
         context: '0'
         menu_name: menu-hamburger
