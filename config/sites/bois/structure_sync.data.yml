@@ -295,3 +295,42 @@ menus:
     langcode: fr
     uuid: 4c3dd96b-81f2-4cd1-88cf-53f8535da8be
     options: null
+  -
+    menu_name: menu-hamburger
+    title: Photos
+    parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+    uri: 'internal:/galeries-photo'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: fr
+    uuid: 07590579-de18-4678-b3b6-52944f9a39fa
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Vidéos
+    parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+    uri: 'internal:/videos'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '1'
+    langcode: fr
+    uuid: 619e4599-8e63-4c71-b1f2-a22fbefb5d6b
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Documents
+    parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+    uri: 'internal:/documents'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: fr
+    uuid: 7a4d8b92-0a43-43e9-9cb0-5b8d83ec3698
+    options: null
