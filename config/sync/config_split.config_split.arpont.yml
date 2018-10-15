@@ -12,6 +12,7 @@ graylist:
   - refuges.settings
   - structure_sync.data
   - system.site
+  - 'block.block.socialmedialinks*'
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
