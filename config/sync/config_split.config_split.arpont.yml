@@ -9,6 +9,8 @@ module: {  }
 theme: {  }
 blacklist: {  }
 graylist:
+  - refuges.settings
+  - structure_sync.data
   - system.site
 graylist_dependents: true
 graylist_skip_equal: true
