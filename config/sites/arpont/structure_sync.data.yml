@@ -1,0 +1,335 @@
+menus:
+  -
+    menu_name: menu-hamburger
+    title: Media
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '12'
+    langcode: fr
+    uuid: 33dd4068-3750-4636-99fe-cccb079eb74e
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Services
+    parent: null
+    uri: 'internal:/services-gardiennage'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '13'
+    langcode: fr
+    uuid: 4c3dd96b-81f2-4cd1-88cf-53f8535da8be
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Photos
+    parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+    uri: 'internal:/galeries-photo'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: fr
+    uuid: 07590579-de18-4678-b3b6-52944f9a39fa
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Vidéos
+    parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+    uri: 'internal:/videos'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '1'
+    langcode: fr
+    uuid: 619e4599-8e63-4c71-b1f2-a22fbefb5d6b
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Documents
+    parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+    uri: 'internal:/documents'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: fr
+    uuid: 7a4d8b92-0a43-43e9-9cb0-5b8d83ec3698
+    options: null
+taxonomies:
+  icons:
+    -
+      vid: icons
+      tid: '1'
+      langcode: fr
+      name: 'Plaque de cuisson'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1a278a97-6ce8-4ba7-9e7a-43ffd39d7484
+    -
+      vid: icons
+      tid: '2'
+      langcode: fr
+      name: Bar
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 48df6786-300c-4376-aae1-baeaf6e7f121
+    -
+      vid: icons
+      tid: '3'
+      langcode: fr
+      name: 'Accès handicapé'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d0291a95-b585-40cc-b07a-5cff444ecc7c
+    -
+      vid: icons
+      tid: '4'
+      langcode: fr
+      name: 'Balise radio'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 6f57a6de-0982-4b5d-bd6e-a81e6092d354
+    -
+      vid: icons
+      tid: '5'
+      langcode: fr
+      name: Bivouac
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 037e3ec4-87a8-4944-ae28-5315688a031e
+    -
+      vid: icons
+      tid: '6'
+      langcode: fr
+      name: CB
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ed9feb22-41f4-4151-bb42-dd3d12346594
+    -
+      vid: icons
+      tid: '7'
+      langcode: fr
+      name: Chauffage
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 15a66a05-a193-48b7-a99a-1bf14c332907
+    -
+      vid: icons
+      tid: '8'
+      langcode: fr
+      name: Couverture
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1e3361a5-ad67-4394-b611-75092e653954
+    -
+      vid: icons
+      tid: '9'
+      langcode: fr
+      name: Defebrilateur
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 4dc01705-2ff6-41e7-9c0b-a02d2393b522
+    -
+      vid: icons
+      tid: '10'
+      langcode: fr
+      name: Dortoirs
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 70b7c3a7-fb55-4529-b597-72e755e3858d
+    -
+      vid: icons
+      tid: '11'
+      langcode: fr
+      name: Douche
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1afb253a-8e5d-435d-b544-75ee57891dea
+    -
+      vid: icons
+      tid: '12'
+      langcode: fr
+      name: 'Eau potable'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f2419efc-c117-4d9d-b7ff-b50e47759c38
+    -
+      vid: icons
+      tid: '13'
+      langcode: fr
+      name: Lumière
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 4c0b712c-19e9-4e62-8182-bbf9e7b48e50
+    -
+      vid: icons
+      tid: '14'
+      langcode: fr
+      name: 'Nombre de couchage'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ffc6bc7a-774f-4700-a408-22964de953ef
+    -
+      vid: icons
+      tid: '15'
+      langcode: fr
+      name: Pharmacie
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 44f3bacf-2863-42a0-be38-82d766fb1ad9
+    -
+      vid: icons
+      tid: '16'
+      langcode: fr
+      name: 'Prise electrique'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 2f463a7f-7004-424e-bfe2-eb6950f9a0a9
+    -
+      vid: icons
+      tid: '17'
+      langcode: fr
+      name: Restauration
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b815589b-919d-46fe-ab0c-79917255689a
+    -
+      vid: icons
+      tid: '18'
+      langcode: fr
+      name: 'Salle hors sac'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 30aba1d1-282c-4bf2-87cb-03990b7c096b
+    -
+      vid: icons
+      tid: '19'
+      langcode: fr
+      name: Toilettes
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 81db971c-315d-44ae-9fe9-a1780e52ee08
+    -
+      vid: icons
+      tid: '20'
+      langcode: fr
+      name: Vaisselle
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 7f93e49a-6c8d-4f26-af6a-0efdf2bd016f
+    -
+      vid: icons
+      tid: '21'
+      langcode: fr
+      name: Wifi
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 220fc1a5-9e9a-4eed-afd2-328d05551700
+blocks:
+  -
+    info: 'Coordonnées du refuge'
+    langcode: und
+    uuid: 50ce15fb-0214-4fcb-8c36-91f3c7ed7899
+    bundle: contact_details
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_email:
+        value: refuge.arpont@vanoise-parcnational.fr
+      field_phone:
+        value: '+33 9 82 12 42 13'
+      field_postal_address:
+        value: "rue Parrachée\r\n73500 TERMIGNON"
+  -
+    info: Partenaires
+    langcode: und
+    uuid: 9b2300b4-38a4-407d-bf8f-14cc8c61fbc5
+    bundle: bloc_partenaires
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_partner_logo:
+        target_id: '4'
+        alt: 'Esprit Parc National'
+        title: ''
+        width: '280'
+        height: '202'
+        link_uri: 'http://www.espritparcnational.com/parcs-nationaux/parc-national-de-la-vanoise'
+        link_title: null
+        link_options: {  }
+        link_display_settings:
+          formatter_settings: false
+          image_link: ''
+          link_title_display: false
+          link_title_tag: ''
+          link_title_position: ''
+          link_rel: false
+          link_target: false
+  -
+    info: 'Bloc d''intro de la page Services'
+    langcode: fr
+    uuid: 6d6f6b90-7ad4-4506-91dd-efb85fe52a20
+    bundle: intro_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_intro_block_footer:
+        value: "<p>En période :</p>\r\n"
+        format: full_html
+      field_intro_block_header: null
+      field_intro_block_text:
+        value: "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, &nbsp;At vero eos et accusam et justo duo dolores et ea rebum. &nbsp;Lorem ipsum dolor sit amet, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;Stet clita kasd gubergren, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;sed diam voluptua. &nbsp;</p>\r\n"
+        format: full_html
+      field_intro_block_title:
+        value: 'Sous-titre de la page Services'
