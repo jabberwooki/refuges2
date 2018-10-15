@@ -9,6 +9,7 @@ module: {  }
 theme: {  }
 blacklist: {  }
 graylist:
+  - structure_sync.data
   - system.site
   - 'block.block.socialmedialinks*'
 graylist_dependents: true
