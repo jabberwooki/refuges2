@@ -1,6 +1,219 @@
+taxonomies:
+  icons:
+    -
+      vid: icons
+      tid: '1'
+      langcode: fr
+      name: 'Plaque de cuisson'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 3febec7f-e4fc-474b-bf73-ed0e309cbbee
+    -
+      vid: icons
+      tid: '2'
+      langcode: fr
+      name: Bar
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: fc427cbe-f67e-4247-8b4c-01d63477153f
+    -
+      vid: icons
+      tid: '3'
+      langcode: fr
+      name: 'Accès handicapé'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1c271641-d827-444e-8194-fba0cd9ddf56
+    -
+      vid: icons
+      tid: '4'
+      langcode: fr
+      name: 'Balise radio'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 6f7a5ad2-c073-4c48-b904-f410ab9739cb
+    -
+      vid: icons
+      tid: '5'
+      langcode: fr
+      name: Bivouac
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ee3b42ba-0cb6-433a-9481-614255f0ac9f
+    -
+      vid: icons
+      tid: '6'
+      langcode: fr
+      name: CB
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 6041b5e6-3cd8-406c-8f87-1df93ad495e7
+    -
+      vid: icons
+      tid: '7'
+      langcode: fr
+      name: Chauffage
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: cb12f158-ae9b-4145-8262-8f5d1c56f6db
+    -
+      vid: icons
+      tid: '8'
+      langcode: fr
+      name: Couverture
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: e4225b36-0730-4438-8ddd-2ce30fe680c7
+    -
+      vid: icons
+      tid: '9'
+      langcode: fr
+      name: Defebrilateur
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 79f98c94-e2c8-4541-bf29-756d870f8f40
+    -
+      vid: icons
+      tid: '10'
+      langcode: fr
+      name: Dortoirs
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 3fa74ffc-cece-4ca6-8de7-839a21de0219
+    -
+      vid: icons
+      tid: '11'
+      langcode: fr
+      name: Douche
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f1861314-cd63-4104-9975-76f2b985e326
+    -
+      vid: icons
+      tid: '12'
+      langcode: fr
+      name: 'Eau potable'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 40b07de6-2d96-4527-8311-2fc97eb26bac
+    -
+      vid: icons
+      tid: '13'
+      langcode: fr
+      name: Lumière
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 8c5980b7-f89c-4487-9d0c-c20ea351886e
+    -
+      vid: icons
+      tid: '14'
+      langcode: fr
+      name: 'Nombre de couchage'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 8affeb74-6df6-4713-bef4-08e8d13e5912
+    -
+      vid: icons
+      tid: '15'
+      langcode: fr
+      name: Pharmacie
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: a192e9a5-4090-464f-9ff8-b93fd4ffd70c
+    -
+      vid: icons
+      tid: '16'
+      langcode: fr
+      name: 'Prise electrique'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d78ba69d-d255-45b3-80b7-b2c3801e8fb8
+    -
+      vid: icons
+      tid: '17'
+      langcode: fr
+      name: Restauration
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 3aef8c31-6bbf-4c78-a7ba-774ae0074a81
+    -
+      vid: icons
+      tid: '18'
+      langcode: fr
+      name: 'Salle hors sac'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f6ac8642-1dae-4c99-b154-f20b467bf5e6
+    -
+      vid: icons
+      tid: '19'
+      langcode: fr
+      name: Toilettes
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 874ba14f-71dc-48d6-97c8-f62d98ec5b65
+    -
+      vid: icons
+      tid: '20'
+      langcode: fr
+      name: Vaisselle
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ac4e747b-dc62-4aea-8cb2-635202c05907
+    -
+      vid: icons
+      tid: '21'
+      langcode: fr
+      name: Wifi
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ac2689fe-4acc-471d-b974-4ebcfdabf7b2
+  tags: {  }
 menus:
   -
-    menu_name: main
+    menu_name: menu-hamburger
     title: Media
     parent: null
     uri: 'internal:/'
@@ -10,34 +223,61 @@ menus:
     expanded: '1'
     weight: '12'
     langcode: fr
-    uuid: a1fb0259-be99-4312-8c6f-348aa4ec261e
+    uuid: 33dd4068-3750-4636-99fe-cccb079eb74e
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Services
+    parent: null
+    uri: 'internal:/services-gardiennage'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '13'
+    langcode: fr
+    uuid: 4c3dd96b-81f2-4cd1-88cf-53f8535da8be
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Photos
+    parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+    uri: 'internal:/galeries-photo'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: fr
+    uuid: 07590579-de18-4678-b3b6-52944f9a39fa
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Vidéos
+    parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+    uri: 'internal:/videos'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '1'
+    langcode: fr
+    uuid: 619e4599-8e63-4c71-b1f2-a22fbefb5d6b
+    options: null
+  -
+    menu_name: menu-hamburger
+    title: Documents
+    parent: 'menu_link_content:33dd4068-3750-4636-99fe-cccb079eb74e'
+    uri: 'internal:/documents'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: fr
+    uuid: 7a4d8b92-0a43-43e9-9cb0-5b8d83ec3698
     options: null
 blocks:
-  -
-    info: Partenaires
-    langcode: und
-    uuid: 9b2300b4-38a4-407d-bf8f-14cc8c61fbc5
-    bundle: bloc_partenaires
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_partner_logo:
-        target_id: '38'
-        alt: 'Parc nationale de la Vanoise'
-        title: ''
-        width: '305'
-        height: '172'
-        link_uri: 'http://www.vanoise-parcnational.fr/'
-        link_title: null
-        link_options: {  }
-        link_display_settings:
-          formatter_settings: false
-          image_link: ''
-          link_title_display: false
-          link_title_tag: ''
-          link_title_position: ''
-          link_rel: false
-          link_target: false
   -
     info: 'Bloc d''intro de la page Services'
     langcode: fr
@@ -55,3 +295,42 @@ blocks:
         format: full_html
       field_intro_block_title:
         value: 'Sous-titre de la page Services'
+  -
+    info: Partenaires
+    langcode: und
+    uuid: 9b2300b4-38a4-407d-bf8f-14cc8c61fbc5
+    bundle: bloc_partenaires
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_partner_logo:
+        target_id: '3'
+        alt: 'Esprit Parc National'
+        title: ''
+        width: '280'
+        height: '202'
+        link_uri: 'http://www.espritparcnational.com/parcs-nationaux/parc-national-de-la-vanoise'
+        link_title: null
+        link_options: {  }
+        link_display_settings:
+          formatter_settings: false
+          image_link: ''
+          link_title_display: false
+          link_title_tag: ''
+          link_title_position: ''
+          link_rel: false
+          link_target: false
+  -
+    info: 'Coordonnées du refuge'
+    langcode: und
+    uuid: 50ce15fb-0214-4fcb-8c36-91f3c7ed7899
+    bundle: contact_details
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_email:
+        value: refuge.lebois@vanoise-parcnational.fr
+      field_phone:
+        value: '+33 6 64 28 05 79'
+      field_postal_address:
+        value: "Rue Michel Ruffier-Lanche\r\nLe Bois - Champagny le Haut\r\n73350 Champagny-en-Vanoise"

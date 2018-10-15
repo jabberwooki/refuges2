@@ -9,16 +9,7 @@ module: {  }
 theme: {  }
 blacklist: {  }
 graylist:
-  - block.block.contactblock
-  - block.block.coordonneesdurefuge
-  - block.block.partenaires
-  - contact.form.feedback
-  - core.entity_form_display.contact_message.feedback.default
-  - core.entity_view_display.contact_message.feedback.default
-  - structure_sync.data
   - system.site
-  - system.theme
-  - 'block.block.socialmedialinks_*'
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0

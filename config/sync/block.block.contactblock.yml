@@ -1,4 +1,4 @@
-uuid: 5ad641b0-f73c-4118-b610-68f114e63080
+uuid: 3ff50a6c-7f09-4ca0-a24c-b89e18a0de2f
 langcode: fr
 status: true
 dependencies:
@@ -6,6 +6,7 @@ dependencies:
     - contact.form.feedback
   module:
     - contact_block
+    - system
   theme:
     - refuges
 id: contactblock
@@ -16,8 +17,13 @@ provider: null
 plugin: contact_block
 settings:
   id: contact_block
-  label: 'Contact block'
+  label: Contact
   provider: contact_block
-  label_display: '0'
+  label_display: visible
   contact_form: feedback
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
