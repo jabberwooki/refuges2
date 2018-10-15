@@ -9,6 +9,7 @@ module: {  }
 theme: {  }
 blacklist: {  }
 graylist:
+  - refuges.settings
   - structure_sync.data
   - system.site
   - 'block.block.socialmedialinks*'
