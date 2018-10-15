@@ -16,8 +16,7 @@ graylist:
   - structure_sync.data
   - system.site
   - system.theme
-  - 'block.block.lac_*'
-  - 'block.block.socialmedialinks*'
+  - 'block.block.socialmedialinks_*'
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
