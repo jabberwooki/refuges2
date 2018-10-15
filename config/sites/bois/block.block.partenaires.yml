@@ -1,4 +1,4 @@
-uuid: 2b877e29-3803-4e74-97e5-990ac1e7ecf6
+uuid: 8c83e3fa-c75b-4785-bf83-a7450c790f24
 langcode: fr
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - arpont
-id: partenaires_ar
-theme: arpont
+    - refuges
+id: partenaires
+theme: refuges
 region: footer
 weight: -14
 provider: null

@@ -1,4 +1,4 @@
-uuid: 0b40d2dc-f6d6-4e78-8dbe-52f779e3ea7e
+uuid: 9991bec9-7ab8-49f5-90b3-c384c2afd7cb
 langcode: fr
 status: true
 dependencies:
@@ -8,15 +8,15 @@ dependencies:
     - system
     - views
   theme:
-    - bois
-id: views_block__section_headers_block_5
-theme: bois
+    - refuges
+id: views_block__section_headers_block_documents
+theme: refuges
 region: highlighted
-weight: -9
+weight: -4
 provider: null
-plugin: 'views_block:section_headers-block_5'
+plugin: 'views_block:section_headers-block_4'
 settings:
-  id: 'views_block:section_headers-block_5'
+  id: 'views_block:section_headers-block_4'
   label: ''
   provider: views
   label_display: '0'
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /galeries-photo
+    pages: /documents
     negate: false
     context_mapping: {  }

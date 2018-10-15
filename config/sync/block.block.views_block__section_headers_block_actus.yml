@@ -1,4 +1,4 @@
-uuid: 2d965aba-8929-4d10-a3ee-a3ec8af117ec
+uuid: 394a80af-ac98-4ec9-9ad1-e01c2abda4a6
 langcode: fr
 status: true
 dependencies:
@@ -8,15 +8,15 @@ dependencies:
     - system
     - views
   theme:
-    - arpont
-id: views_block__section_headers_block_4_ar
-theme: arpont
+    - refuges
+id: views_block__section_headers_block_actus
+theme: refuges
 region: highlighted
-weight: -6
+weight: -9
 provider: null
-plugin: 'views_block:section_headers-block_4'
+plugin: 'views_block:section_headers-block_1'
 settings:
-  id: 'views_block:section_headers-block_4'
+  id: 'views_block:section_headers-block_1'
   label: ''
   provider: views
   label_display: '0'
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /documents
+    pages: /actualites
     negate: false
     context_mapping: {  }

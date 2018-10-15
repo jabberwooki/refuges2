@@ -11,8 +11,8 @@ dependencies:
     - refuges
 id: views_block__events_frontpage_block
 theme: refuges
-region: content
-weight: -1
+region: post_content_2
+weight: -11
 provider: null
 plugin: 'views_block:events-frontpage_block'
 settings:

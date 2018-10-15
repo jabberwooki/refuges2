@@ -1,4 +1,4 @@
-uuid: 5b88060b-4f31-4189-84f1-01341593c308
+uuid: 4d5799a1-38f8-49aa-8c2d-aef8a7b3ea7c
 langcode: fr
 status: true
 dependencies:
@@ -8,15 +8,15 @@ dependencies:
     - system
     - views
   theme:
-    - bois
-id: views_block__section_headers_block_2
-theme: bois
+    - refuges
+id: views_block__section_headers_block_services
+theme: refuges
 region: highlighted
-weight: -11
+weight: -7
 provider: null
-plugin: 'views_block:section_headers-block_2'
+plugin: 'views_block:section_headers-block_3'
 settings:
-  id: 'views_block:section_headers-block_2'
+  id: 'views_block:section_headers-block_3'
   label: ''
   provider: views
   label_display: '0'
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /agenda
+    pages: "/services-gardiennage\r\n/services-hors-gardiennage"
     negate: false
     context_mapping: {  }

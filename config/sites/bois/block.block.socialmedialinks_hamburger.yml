@@ -1,108 +1,108 @@
-uuid: 4ed89a94-5d3e-4b86-bf04-9800144305b7
+uuid: 9fc42755-00e6-4a7b-a01b-2dd6fb1b35a2
 langcode: fr
 status: true
 dependencies:
   module:
     - social_media_links
   theme:
-    - bois
-id: socialmedialinks_3
-theme: bois
+    - refuges
+id: socialmedialinks_hamburger
+theme: refuges
 region: hamburger
-weight: -13
+weight: -12
 provider: null
 plugin: social_media_links_block
 settings:
   id: social_media_links_block
-  label: 'Social Media Links'
+  label: Suivez-nous
   provider: social_media_links
   label_display: '0'
   platforms:
-    behance:
+    facebook:
+      value: parcnationaldelavanoise/
+      description: ''
+      weight: '-30'
+    twitter:
+      value: pnvanoise
+      description: ''
+      weight: '-29'
+    youtube:
+      value: user/ParcNationalVanoise
+      description: ''
+      weight: '-28'
+    googleplus:
       value: ''
       description: ''
-      weight: '-10'
-    bitbucket:
-      value: ''
-      description: ''
-      weight: '-9'
-    contact:
-      value: ''
-      description: ''
-      weight: '-8'
+      weight: '-27'
     drupal:
       value: ''
       description: ''
-      weight: '-7'
-    email:
-      value: ''
-      description: ''
-      weight: '-6'
-    facebook:
-      value: 'https://www.facebook.com/'
-      description: ''
-      weight: '-5'
-    flickr:
-      value: ''
-      description: ''
-      weight: '-4'
+      weight: '-26'
     github:
       value: ''
       description: ''
-      weight: '-3'
-    googleplus:
-      value: "\t Google+https://plus.google.com/"
-      description: ''
-      weight: '-2'
-    instagram:
-      value: 'https://www.instagram.com/'
-      description: ''
-      weight: '-1'
-    linkedin:
+      weight: '-25'
+    email:
       value: ''
       description: ''
-      weight: '0'
-    pinterest:
-      value: ''
-      description: ''
-      weight: '1'
-    rss:
-      value: ''
-      description: ''
-      weight: '2'
-    slideshare:
-      value: ''
-      description: ''
-      weight: '3'
-    tumblr:
-      value: ''
-      description: ''
-      weight: '4'
-    twitter:
-      value: 'https://www.twitter.com/'
-      description: ''
-      weight: '5'
+      weight: '-24'
     vimeo:
       value: ''
       description: ''
-      weight: '6'
-    vkontakte:
+      weight: '-23'
+    slideshare:
       value: ''
       description: ''
-      weight: '7'
-    youtube:
-      value: 'https://www.youtube.com/'
+      weight: '-22'
+    rss:
+      value: ''
       description: ''
-      weight: '8'
+      weight: '-21'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-20'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '-19'
     youtube_channel:
       value: ''
       description: ''
-      weight: '9'
+      weight: '-18'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-17'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-16'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-15'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-14'
+    behance:
+      value: ''
+      description: ''
+      weight: '-13'
+    contact:
+      value: ''
+      description: ''
+      weight: '-12'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-11'
   appearance:
     orientation: h
     show_name: 0
   link_attributes:
-    target: _blank
+    target: '<none>'
     rel: '<none>'
   iconset:
     style: 'fontawesome:2x'

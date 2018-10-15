@@ -11,8 +11,8 @@ dependencies:
     - refuges
 id: views_block__news_frontpage_block
 theme: refuges
-region: content
-weight: -2
+region: post_content_1
+weight: -11
 provider: null
 plugin: 'views_block:news-frontpage_block'
 settings:

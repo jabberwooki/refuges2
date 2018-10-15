@@ -29,6 +29,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  addtoany: true
   created: true
   langcode: true
   name: true

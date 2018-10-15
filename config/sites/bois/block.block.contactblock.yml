@@ -1,4 +1,4 @@
-uuid: 5ad641b0-f73c-4118-b610-68f114e63080
+uuid: 3ff50a6c-7f09-4ca0-a24c-b89e18a0de2f
 langcode: fr
 status: true
 dependencies:
@@ -8,18 +8,18 @@ dependencies:
     - contact_block
     - system
   theme:
-    - bois
+    - refuges
 id: contactblock
-theme: bois
+theme: refuges
 region: pre_footer
 weight: 0
 provider: null
 plugin: contact_block
 settings:
   id: contact_block
-  label: Contact
+  label: 'Contact block'
   provider: contact_block
-  label_display: visible
+  label_display: '0'
   contact_form: feedback
 visibility:
   request_path:

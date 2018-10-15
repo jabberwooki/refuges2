@@ -1,4 +1,4 @@
-uuid: 053c7f7f-899d-47be-9e98-a77f286c45cf
+uuid: 1c4c2cae-6172-46f3-87d2-00f47308b5f3
 langcode: fr
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - bois
+    - refuges
 id: menuhamburger
-theme: bois
+theme: refuges
 region: hamburger
-weight: -14
+weight: -13
 provider: null
 plugin: 'system_menu_block:menu-hamburger'
 settings:

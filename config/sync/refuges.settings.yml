@@ -1,10 +1,7 @@
-cdn_provider: ''
-_core:
-  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://www.arpont.localhost/themes/contrib/bootstrap/favicon.ico'
+  url: 'http://www.bois2.localhost/themes/contrib/bootstrap/favicon.ico'
   use_default: true
 features:
   comment_user_picture: true
@@ -18,4 +15,3 @@ logo:
 schemas:
   bootstrap: 8000
   refuges: 8000
-langcode: fr

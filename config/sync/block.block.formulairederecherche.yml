@@ -1,15 +1,15 @@
-uuid: c3a77d74-892e-49fe-bb76-883b4f5d161e
+uuid: ae4ecf2e-4f04-4a3c-802c-44a42cc68543
 langcode: fr
 status: true
 dependencies:
   module:
     - search
   theme:
-    - bois
+    - refuges
 id: formulairederecherche
-theme: bois
+theme: refuges
 region: hamburger
-weight: -12
+weight: -11
 provider: null
 plugin: search_form_block
 settings:

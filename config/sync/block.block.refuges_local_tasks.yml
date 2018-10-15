@@ -9,7 +9,7 @@ _core:
 id: refuges_local_tasks
 theme: refuges
 region: content
-weight: -6
+weight: -11
 provider: null
 plugin: local_tasks_block
 settings:

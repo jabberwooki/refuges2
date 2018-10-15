@@ -1,15 +1,15 @@
-uuid: 5a067284-7ac4-49a8-b398-39e47ac93d32
+uuid: bc5dbb9b-2df0-497a-aefd-5fcf2a6c57ac
 langcode: fr
 status: true
 dependencies:
   module:
     - social_media_links
   theme:
-    - bois
-id: socialmedialinks
-theme: bois
-region: top
-weight: -15
+    - refuges
+id: socialmedialinks_footer
+theme: refuges
+region: footer
+weight: -12
 provider: null
 plugin: social_media_links_block
 settings:
@@ -19,82 +19,82 @@ settings:
   label_display: '0'
   platforms:
     facebook:
-      value: refugedubois/
+      value: parcnationaldelavanoise/
       description: ''
       weight: '-30'
-    drupal:
-      value: ''
+    twitter:
+      value: pnvanoise
       description: ''
       weight: '-29'
     youtube:
-      value: ''
+      value: user/ParcNationalVanoise
       description: ''
       weight: '-28'
-    github:
-      value: ''
-      description: ''
-      weight: '-27'
-    email:
-      value: ''
-      description: ''
-      weight: '-26'
     googleplus:
       value: ''
       description: ''
+      weight: '-27'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-26'
+    github:
+      value: ''
+      description: ''
       weight: '-25'
-    vimeo:
+    email:
       value: ''
       description: ''
       weight: '-24'
-    slideshare:
+    vimeo:
       value: ''
       description: ''
       weight: '-23'
-    rss:
+    slideshare:
       value: ''
       description: ''
       weight: '-22'
-    instagram:
+    rss:
       value: ''
       description: ''
       weight: '-21'
-    linkedin:
+    instagram:
       value: ''
       description: ''
       weight: '-20'
-    youtube_channel:
+    linkedin:
       value: ''
       description: ''
       weight: '-19'
-    bitbucket:
+    youtube_channel:
       value: ''
       description: ''
       weight: '-18'
-    pinterest:
+    bitbucket:
       value: ''
       description: ''
       weight: '-17'
-    flickr:
+    pinterest:
       value: ''
       description: ''
       weight: '-16'
-    vkontakte:
+    flickr:
       value: ''
       description: ''
       weight: '-15'
-    behance:
+    vkontakte:
       value: ''
       description: ''
       weight: '-14'
-    contact:
+    behance:
       value: ''
       description: ''
       weight: '-13'
-    tumblr:
+    contact:
       value: ''
       description: ''
       weight: '-12'
-    twitter:
+    tumblr:
       value: ''
       description: ''
       weight: '-11'
@@ -102,7 +102,7 @@ settings:
     orientation: h
     show_name: 0
   link_attributes:
-    target: _blank
+    target: '<none>'
     rel: '<none>'
   iconset:
     style: 'fontawesome:2x'
