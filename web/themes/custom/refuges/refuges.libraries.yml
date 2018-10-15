@@ -21,10 +21,75 @@ arpont:
     theme:
       css/arpont.css: {}
 
-bois :
+bois:
   css:
     theme:
       css/bois.css: {}
+
+femma:
+  css:
+    theme:
+      css/femma.css: {}
+
+fours:
+  css:
+    theme:
+      css/fours.css: {}
+
+lac:
+  css:
+    theme:
+      css/lac.css: {}
+
+leisse:
+  css:
+    theme:
+      css/leisse.css: {}
+
+martin:
+  css:
+    theme:
+      css/martin.css: {}
+
+orgere:
+  css:
+    theme:
+      css/orgere.css: {}
+
+palet:
+  css:
+    theme:
+      css/palet.css: {}
+
+plaisance:
+  css:
+    theme:
+      css/plaisance.css: {}
+
+prariond:
+  css:
+    theme:
+      css/prariond.css: {}
+
+rosuel:
+  css:
+    theme:
+      css/rosuel.css: {}
+
+turia:
+  css:
+    theme:
+      css/turia.css: {}
+
+valette:
+  css:
+    theme:
+      css/valette.css: {}
+
+vallonbrun:
+  css:
+    theme:
+      css/vallonbrun.css: {}
 
 slick:
   js:
