@@ -7,9 +7,9 @@ dependencies:
   module:
     - contact_block
   theme:
-    - bois
+    - refuges
 id: contactblock
-theme: bois
+theme: refuges
 region: pre_footer
 weight: 0
 provider: null
