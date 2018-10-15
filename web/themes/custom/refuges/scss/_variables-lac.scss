@@ -1,0 +1,11 @@
+/**
+ * Variables du refuge-port du Plan du Lac.
+ */
+
+$brand-primary:         #001489;
+$brand-secondary:		lighten($brand-primary, 12.5%) !default; // #cf2ed3
+
+///FOOTER
+.prefooter{
+  background:url("../images/carte-google-lac.jpg") no-repeat;
+}

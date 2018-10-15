@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ba24343cc652bb05e26f182e0bfd619",
+    "content-hash": "996e12b47f8bcff8934e29a966391938",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4460,6 +4460,17 @@
             },
             "require": {
                 "composer/installers": "^1.2.0"
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "jackmoore/colorbox",
+            "version": "1.6.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "drupal-library"
         },

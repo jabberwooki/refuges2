@@ -16,6 +16,16 @@ framework:
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
+arpont:
+  css:
+    theme:
+      css/arpont.css: {}
+
+bois :
+  css:
+    theme:
+      css/bois.css: {}
+
 slick:
   js:
     libraries/slick/slick/slick.min.js: {}
