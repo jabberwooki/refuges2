@@ -1,6 +1,6 @@
 uuid: f1d865d9-292a-466d-907c-f1a24585b6cc
 langcode: fr
-status: true
+status: false
 dependencies: {  }
 id: femma
 label: 'Refuge de la Femma'
@@ -8,7 +8,11 @@ folder: ../config/sites/femma
 module: {  }
 theme: {  }
 blacklist: {  }
-graylist: {  }
+graylist:
+  - refuges.settings
+  - structure_sync.data
+  - system.site
+  - 'block.block.socialmedialinks*'
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
