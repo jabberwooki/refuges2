@@ -1,0 +1,14 @@
+uuid: 10305e5a-7f5c-4b03-8427-9d67c69a3a2b
+langcode: fr
+status: false
+dependencies: {  }
+id: rosuel
+label: 'Refuge de Rosuel'
+folder: ../config/sites/rosuel
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

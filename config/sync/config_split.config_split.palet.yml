@@ -1,0 +1,14 @@
+uuid: fba25844-c0d7-470c-9095-dcbedafcead2
+langcode: fr
+status: false
+dependencies: {  }
+id: palet
+label: 'Refuge du Col du Palet'
+folder: ../config/sites/palet
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -1,0 +1,14 @@
+uuid: 2cd00a98-766f-4372-b7b9-46f9e414d3a1
+langcode: fr
+status: false
+dependencies: {  }
+id: turia
+label: 'Refuge de Turia'
+folder: ../config/sites/turia
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

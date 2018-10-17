@@ -1,0 +1,14 @@
+uuid: 251316d6-f890-4838-a72c-1d80955d8473
+langcode: fr
+status: false
+dependencies: {  }
+id: valette
+label: 'Refuge de la Valette'
+folder: ../config/sites/valette
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
