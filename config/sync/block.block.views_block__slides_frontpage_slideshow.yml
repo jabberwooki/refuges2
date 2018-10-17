@@ -12,7 +12,7 @@ dependencies:
 id: views_block__slides_frontpage_slideshow
 theme: refuges
 region: highlighted
-weight: -10
+weight: -14
 provider: null
 plugin: 'views_block:slides-frontpage_slideshow'
 settings:
