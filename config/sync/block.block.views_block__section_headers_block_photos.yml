@@ -12,7 +12,7 @@ dependencies:
 id: views_block__section_headers_block_photos
 theme: refuges
 region: highlighted
-weight: -6
+weight: -10
 provider: null
 plugin: 'views_block:section_headers-block_5'
 settings:
