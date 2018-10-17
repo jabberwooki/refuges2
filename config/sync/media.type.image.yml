@@ -1,7 +1,12 @@
 uuid: 9fce5d57-e41c-4a9d-8eac-8735376c7ade
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - crop
+third_party_settings:
+  crop:
+    image_field: _none
 _core:
   default_config_hash: u7OxrscEED35iDR3R0akmw7QNvBSMEPJXFtKP57qBh8
 id: image
@@ -12,4 +17,6 @@ queue_thumbnail_downloads: false
 new_revision: true
 source_configuration:
   source_field: field_media_image
-field_map: {  }
+field_map:
+  width: field_image_width
+  height: field_image_height
