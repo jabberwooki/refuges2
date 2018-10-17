@@ -33,3 +33,4 @@ permissions:
   - 'edit own section_header_image content'
   - 'edit own service content'
   - 'edit own slide content'
+  - 'view the administration theme'

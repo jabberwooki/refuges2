@@ -43,3 +43,4 @@ permissions:
   - 'edit any service content'
   - 'edit any slide content'
   - 'translate interface'
+  - 'view the administration theme'
