@@ -44,6 +44,8 @@ content:
 hidden:
   addtoany: true
   created: true
+  field_image_height: true
+  field_image_width: true
   langcode: true
   name: true
   thumbnail: true
