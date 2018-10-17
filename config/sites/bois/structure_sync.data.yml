@@ -278,22 +278,19 @@ taxonomies:
       uuid: 220fc1a5-9e9a-4eed-afd2-328d05551700
 blocks:
   -
-    info: 'Bloc d''intro de la page Services'
-    langcode: fr
-    uuid: 6d6f6b90-7ad4-4506-91dd-efb85fe52a20
-    bundle: intro_block
+    info: 'Coordonnées du refuge'
+    langcode: und
+    uuid: 50ce15fb-0214-4fcb-8c36-91f3c7ed7899
+    bundle: contact_details
     revision_id: null
     rev_id_current: null
     fields:
-      field_intro_block_footer:
-        value: "<p>En période :</p>\r\n"
-        format: full_html
-      field_intro_block_header: null
-      field_intro_block_text:
-        value: "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, &nbsp;At vero eos et accusam et justo duo dolores et ea rebum. &nbsp;Lorem ipsum dolor sit amet, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;Stet clita kasd gubergren, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;sed diam voluptua. &nbsp;</p>\r\n"
-        format: full_html
-      field_intro_block_title:
-        value: 'Sous-titre de la page Services'
+      field_email:
+        value: refuge.lebois@vanoise-parcnational.fr
+      field_phone:
+        value: '+33 6 64 28 05 79'
+      field_postal_address:
+        value: "Rue Michel Ruffier-Lanche\r\nLe Bois - Champagny le Haut\r\n73350 Champagny-en-Vanoise"
   -
     info: Partenaires
     langcode: und
@@ -320,16 +317,19 @@ blocks:
           link_rel: false
           link_target: false
   -
-    info: 'Coordonnées du refuge'
-    langcode: und
-    uuid: 50ce15fb-0214-4fcb-8c36-91f3c7ed7899
-    bundle: contact_details
+    info: 'Bloc d''intro de la page Services'
+    langcode: fr
+    uuid: 6d6f6b90-7ad4-4506-91dd-efb85fe52a20
+    bundle: intro_block
     revision_id: null
     rev_id_current: null
     fields:
-      field_email:
-        value: refuge.lebois@vanoise-parcnational.fr
-      field_phone:
-        value: '+33 6 64 28 05 79'
-      field_postal_address:
-        value: "Rue Michel Ruffier-Lanche\r\nLe Bois - Champagny le Haut\r\n73350 Champagny-en-Vanoise"
+      field_intro_block_footer:
+        value: "<p>En période :</p>\r\n"
+        format: full_html
+      field_intro_block_header: null
+      field_intro_block_text:
+        value: "<p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, &nbsp;At vero eos et accusam et justo duo dolores et ea rebum. &nbsp;Lorem ipsum dolor sit amet, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;Stet clita kasd gubergren, &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;no sea takimata sanctus est Lorem ipsum dolor sit amet. &nbsp;sed diam voluptua. &nbsp;</p>\r\n"
+        format: full_html
+      field_intro_block_title:
+        value: 'Sous-titre de la page Services'
