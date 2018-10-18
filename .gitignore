@@ -24,5 +24,4 @@
 /.env
 
 #Ignore prepros files
-/web/themes/custom/*/prepros*
-/web/themes/custom/*/prepros-6.config
+/web/themes/custom/refuges/prepros-6.config
