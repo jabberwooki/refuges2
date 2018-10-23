@@ -1,0 +1,18 @@
+uuid: dba3b730-a661-4320-9c65-0d6fd3b06890
+langcode: fr
+status: false
+dependencies: {  }
+id: leisse
+label: 'Refuge de la Leisse'
+folder: ../config/sites/leisse
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - refuges.settings
+  - structure_sync.data
+  - system.site
+  - 'block.block.socialmedialinks*'
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
