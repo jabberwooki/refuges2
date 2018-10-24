@@ -1,0 +1,56 @@
+#!/usr/bin/php
+
+<?php
+/**
+ * Command "archive-dump" doesn't exist anymore in Drush 9.x
+ * The following script makes the job.
+ * It has to be placed in the DRUPAL_ROOT to work.
+ */
+
+$file_path = '/home/ubuntu/drush-backups/';
+
+// Folder containing the current script (corresponding to the project name).
+$project_name = basename(__DIR__);
+
+// Full path of directory which will store backups. // Will be created if doesn't exist.
+$dir = $file_path . $project_name;
+if (!file_exists($dir)) {
+  if (mkdir($dir)) {
+    print "Folder " . $dir . " created\n";
+  }
+}
+
+// Path to sites.php file (for Drupal Composer based projects).
+include('web/sites/sites.php');
+
+// For each unique site name, launches db and file backups.
+$CacheCommandPattern = "drush --uri=:key cr";
+$DbCommandPattern = "drush sql:dump --uri=:key --gzip --result-file=:filename";
+$FilesCommandPattern = "tar czf :filename web/sites/:site/files/*";
+$done = [];
+foreach ($sites as $key => $site) {
+  if (!in_array($site, $done)) {
+    // Cache clearing.
+    $command = str_replace(':key', $key, $CacheCommandPattern);
+    print "Executing command : `$command` on $site\n";
+    `$command`;
+
+    $datetime = date('Ymd_His');
+
+    // Database backup.
+    $filename = $dir . '/'. $site . '_' . $datetime . '.sql';
+    $command = str_replace(array(':key',':filename'), array($key, $filename), $DbCommandPattern);
+    print "Executing command `$command` on $site\n";
+    `$command`;
+
+    // Files backup.
+    $filename = $dir . '/'. $site . '_' . $datetime . '.tar.gz';
+    $command = str_replace(array(':filename',':site'), array($filename, $site), $FilesCommandPattern);
+    print "Executing command `$command` on $site\n";
+    `$command`;
+    print "\n";
+    $done[] = $site;
+  }
+}
+
+print "Databases and files backups completed.\n";
