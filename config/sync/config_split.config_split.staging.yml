@@ -6,6 +6,7 @@ id: staging
 label: Recette
 folder: ../config/envs/staging
 module:
+  config_ignore: 0
   shield: 0
 theme: {  }
 blacklist: {  }

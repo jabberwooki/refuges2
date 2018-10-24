@@ -1,0 +1,9 @@
+ignored_config_entities:
+  0: system.site
+  2: structure_sync.data
+  4: refuges.settings
+  6: 'block.block.socialmedialinks*'
+  8: contact.form.feedback
+_core:
+  default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
+langcode: fr
