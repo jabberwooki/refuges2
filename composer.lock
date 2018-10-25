@@ -3711,17 +3711,17 @@
         },
         {
             "name": "drupal/structure_sync",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/structure_sync",
-                "reference": "8.x-1.12"
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/structure_sync-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "cc0d939a3891c2573994e98de3ce24c837dee5b0"
+                "url": "https://ftp.drupal.org/files/projects/structure_sync-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "5f525eeb739a9fd4eea3b8e66235f6e1c0137a93"
             },
             "require": {
                 "drupal/core": "*"
@@ -3732,16 +3732,14 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1523370184",
+                    "version": "8.x-1.13",
+                    "datestamp": "1537432081",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": {
-                    "Structure Sync custom blocks export Notices": "https://www.drupal.org/files/issues/2018-07-05/structure_sync-2981825-5_1.patch"
-                }
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -3757,8 +3755,16 @@
                     "homepage": "https://www.drupal.org/user/2480548"
                 },
                 {
+                    "name": "pdenooijer",
+                    "homepage": "https://www.drupal.org/user/3175437"
+                },
+                {
                     "name": "timKruijsen",
                     "homepage": "https://www.drupal.org/user/3513437"
+                },
+                {
+                    "name": "vinlaurens",
+                    "homepage": "https://www.drupal.org/user/2945689"
                 }
             ],
             "description": "Tool for syncing structural data that is stored as content.",
