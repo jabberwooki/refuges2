@@ -4,8 +4,8 @@ ignored_config_entities:
   4: refuges.settings
   6: 'block.block.socialmedialinks*'
   8: contact.form.feedback
-  10: 'views.view.news:display.list.display_options.menu.weight'
-  12: 'views.view.events:display.list.display_options.menu.weight'
+  10: 'views.view.news:display.list.display_options.menu'
+  12: 'views.view.events:display.list.display_options.menu'
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 langcode: fr
