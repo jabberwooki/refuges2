@@ -20,9 +20,12 @@
     'region-' ~ region|clean_class,
   ]
 %}
+
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
 	  <div class="col-md-2">
+		 {#{{ drupal_block('system_menu_block:refuges') }}#}
+		  {{ refuges_block_output }}
 	  </div>
 
 	  <div class="col-md-2">

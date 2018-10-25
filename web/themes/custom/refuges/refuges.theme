@@ -15,6 +15,9 @@
  * @param $variables
  */
 function refuges_preprocess_page(&$variables) {
+
+  // Charge la feuille de style (définie dans une librairie D8)
+  // en fonction du site visité.
   $current_host = Drupal::request()->getHttpHost();
 
   if (strpos($current_host, 'arpont') !== FALSE) {
@@ -99,5 +102,22 @@ function refuges_theme_suggestions_page_alter(array &$suggestions, array $variab
     $content_type = $node->bundle();
     $suggestions[] = 'page__type__'.$content_type;
     $suggestions[] = 'page__node__' . $node->id();
+  }
+}
+
+function refuges_preprocess_region(&$variables) {
+  if ($variables['elements']['#region'] == 'top') {
+
+    $refuges_block_instance = \Drupal::service('plugin.manager.block')->createInstance('system_menu_block:refuges', []);
+    $refuges_block_output = $refuges_block_instance->build();
+
+    // Traitement du block de menu 'Les autres refuges' en fonction de l'environnement dev, staging ou prod.
+    // A terminer.
+//    $first_level_item_key = key($refuges_block_output['#items']);
+//    foreach ($refuges_block_output['#items'][$first_level_item_key]['below'] as $item) {
+//
+//    }
+
+    $variables['refuges_block_output'] = $refuges_block_output;
   }
 }
