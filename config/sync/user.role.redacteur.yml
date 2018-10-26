@@ -12,6 +12,7 @@ permissions:
   - 'access media_browser entity browser pages'
   - 'administer footer menu items'
   - 'administer menu-hamburger menu items'
+  - 'administer services menu items'
   - 'bypass honeypot protection'
   - 'delete own advanced_page content'
   - 'delete own event content'
