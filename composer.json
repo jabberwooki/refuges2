@@ -48,6 +48,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/addtoany": "^1.10",
         "drupal/admin_toolbar": "^1.24",
+        "drupal/block_content_permissions": "^1.6",
         "drupal/bootstrap": "^3.11",
         "drupal/chosen": "^2.6",
         "drupal/colorbox": "^1.4",

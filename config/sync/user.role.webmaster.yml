@@ -44,4 +44,7 @@ permissions:
   - 'edit any service content'
   - 'edit any slide content'
   - 'translate interface'
+  - 'update any bloc_partenaires block content'
+  - 'update any contact_details block content'
+  - 'update any intro_block block content'
   - 'view the administration theme'
