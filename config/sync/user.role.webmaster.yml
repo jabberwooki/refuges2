@@ -17,6 +17,7 @@ permissions:
   - 'administer menu-hamburger menu items'
   - 'administer services menu items'
   - 'administer shortcuts'
+  - 'administer themes'
   - 'administer users'
   - 'bypass honeypot protection'
   - 'create url aliases'
