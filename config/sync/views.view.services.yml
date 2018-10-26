@@ -479,13 +479,14 @@ display:
       header: {  }
       menu:
         type: normal
-        title: 'de gardiennage'
+        title: gardiennage
         description: ''
         expanded: false
         parent: ''
         weight: 0
         context: '0'
         menu_name: services
+        enabled: true
       use_ajax: true
       style:
         type: views_bootstrap_grid
