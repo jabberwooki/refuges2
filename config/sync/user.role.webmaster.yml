@@ -13,6 +13,7 @@ permissions:
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access toolbar'
+  - 'administer blocks'
   - 'administer contact forms'
   - 'administer menu-hamburger menu items'
   - 'administer services menu items'
