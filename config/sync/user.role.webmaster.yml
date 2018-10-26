@@ -15,6 +15,7 @@ permissions:
   - 'access toolbar'
   - 'administer blocks'
   - 'administer contact forms'
+  - 'administer footer menu items'
   - 'administer menu-hamburger menu items'
   - 'administer services menu items'
   - 'administer shortcuts'
