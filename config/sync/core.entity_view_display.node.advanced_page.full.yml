@@ -31,8 +31,6 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_media_image
-        - field_subtitle
         - group_contenu
         - field_content
   field_group:
@@ -40,7 +38,7 @@ third_party_settings:
       children:
         - field_content
       parent_name: ''
-      weight: 2
+      weight: 0
       format_type: html_element
       format_settings:
         id: ''
@@ -66,24 +64,9 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: ds_content
-  field_media_image:
-    weight: 0
-    label: hidden
-    settings:
-      view_mode: bandeau
-      link: false
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: ds_content
-  field_subtitle:
-    weight: 1
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: ds_content
 hidden:
   addtoany: true
+  field_media_image: true
+  field_subtitle: true
   langcode: true
   links: true
