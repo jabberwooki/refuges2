@@ -2,6 +2,8 @@ uuid: f79a010d-548a-4ef3-8adf-6f464b2e6ee0
 langcode: fr
 status: true
 dependencies:
+  module:
+    - ctools
   theme:
     - refuges
 _core:
@@ -17,4 +19,15 @@ settings:
   label: 'Titre de page'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      advanced_page: advanced_page
+      event: event
+      news: news
+      photo_gallery: photo_gallery
+      service: service
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
