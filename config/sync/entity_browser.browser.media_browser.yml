@@ -12,7 +12,7 @@ display: modal
 display_configuration:
   width: ''
   height: ''
-  link_text: 'Select entities'
+  link_text: Sélectionner
   auto_open: false
 selection_display: no_display
 selection_display_configuration: {  }
@@ -25,18 +25,18 @@ widgets:
       media_type: image
       upload_location: 'public://'
       multiple: '1'
-      submit_text: 'Select files'
+      submit_text: 'Sélectionner ces images'
     uuid: e5e747bc-2fba-482f-96c4-2b8927cffc1e
     weight: 1
-    label: 'Upload images'
+    label: 'Charger des images'
     id: media_image_upload
   f2882ad4-9ad6-4936-9625-6823592b2f76:
     settings:
       view: media_browser
       view_display: entity_browser_1
-      submit_text: 'Select entities'
+      submit_text: 'Sélectionner ces images'
       auto_select: false
     uuid: f2882ad4-9ad6-4936-9625-6823592b2f76
     weight: 2
-    label: 'Browse images'
+    label: 'Parcourir les images existantes'
     id: view
