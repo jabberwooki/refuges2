@@ -21,22 +21,21 @@
   ]
 %}
 
-{% if content %}
-  <div{{ attributes.addClass(classes) }}>
-	  <div class="col-md-2">
-		 {#{{ drupal_block('system_menu_block:refuges') }}#}
-		  {{ refuges_block_output }}
-	  </div>
-
-	  <div class="col-md-2">
-	  	<a class="btn btn-top" href="http://www.vanoise-parcnational.fr" title="Parc national de la Vanoise" target="_blank">vanoise-parcnational.fr</a>
-	  </div>
-
-      <div class="col-md-2 col-md-offset-5">
-      	{{ content }}
-  	  </div>
-  	  <div class="col-md-1">
-  	  	<span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
-  	  </div>
+<div{{ attributes.addClass(classes) }}>
+  <div class="col-md-2">
+	 {#{{ drupal_block('system_menu_block:refuges') }}#}
+	  {{ refuges_block_output }}
   </div>
-{% endif %}
+
+  <div class="col-md-2">
+	<a class="btn btn-top" href="http://www.vanoise-parcnational.fr" title="Parc national de la Vanoise" target="_blank">vanoise-parcnational.fr</a>
+  </div>
+
+  <div class="col-md-2 col-md-offset-5">
+	{{ content }}
+  </div>
+  <div class="col-md-1">
+	<span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+  </div>
+</div>
+
