@@ -23,28 +23,46 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
 
-  <div class="col-md-2">
-    <div class="hamburger hamburger-open">
-      <button type="button" id="sidebarCollapse" class="btn navbar-btn">
-        <i class="glyphicon glyphicon-menu-hamburger"></i>
-        <span class="name-menu">Menu</span>
-      </button>
-    </div>
+    <div class="col-md-2">
+      <div class="hamburger hamburger-open">
+        <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+          <i class="glyphicon glyphicon-menu-hamburger"></i>
+          <span class="name-menu">Menu</span>
+        </button>
+      </div>
 
-    <div class="hamburger hamburger-close">
-      <button type="button" id="sidebarCollapse" class="btn navbar-btn">
-        <i class="glyphicon glyphicon-remove"></i>
-        <span class="name-menu">Menu</span>
-      </button>
+      <div class="hamburger hamburger-close">
+        <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+          <i class="glyphicon glyphicon-remove"></i>
+          <span class="name-menu">Menu</span>
+        </button>
+      </div>
     </div>
-  </div>
   
-  <div class="col-md-7 col-brand">
-    <div class="branding">{{ content }}</div>
-  </div>
+    <div class="col-md-7 col-brand">
+      <div class="branding">{{ content }}</div>
+    </div>
 
-  <div class="col-md-3">
-  </div>
+    <div class="col-md-3">
+      {% if resa_code %}
+        <button type="button" class="btn btn-default btn-resa">Reservation</button>
+      {% endif %}
+    </div>
 
-  </div>
+    {% if resa_code %}
+      <div class="col-md-6 col-md-offset-3 col widget-resa-1">
+        {# Début du code widget AllianceReseaux #}
+        <script type="text/javascript" src="http://gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js"></script>
+        <script type="text/javascript">
+          ( function() {
+          var widgetProduit = AllianceReseaux.Widget.Instance( "Produit", { idPanier:"s5Czs7M", idIntegration:301, langue:"fr", ui:"{{ resa_code }}" } );
+          widgetProduit.Initialise();
+          })();
+        </script>
+        <div id="widget-produit-{{ resa_code }}"></div>
+        {# Fin du code widget AllianceReseaux #}
+      </div>
+    {% endif %}
+
+</div>
 {% endif %}

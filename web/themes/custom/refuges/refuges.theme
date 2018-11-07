@@ -106,18 +106,32 @@ function refuges_theme_suggestions_page_alter(array &$suggestions, array $variab
 }
 
 function refuges_preprocess_region(&$variables) {
-  if ($variables['elements']['#region'] == 'top') {
-
-    $refuges_block_instance = \Drupal::service('plugin.manager.block')->createInstance('system_menu_block:refuges', []);
-    $refuges_block_output = $refuges_block_instance->build();
-
-    // Traitement du block de menu 'Les autres refuges' en fonction de l'environnement dev, staging ou prod.
-    // A terminer.
-//    $first_level_item_key = key($refuges_block_output['#items']);
-//    foreach ($refuges_block_output['#items'][$first_level_item_key]['below'] as $item) {
-//
-//    }
-
-    $variables['refuges_block_output'] = $refuges_block_output;
+  $region = $variables['elements']['#region'];
+  switch($region) {
+    case 'top':
+      $refuges_block_instance = \Drupal::service('plugin.manager.block')->createInstance('system_menu_block:refuges', []);
+      $refuges_block_output = $refuges_block_instance->build();
+      $variables['refuges_block_output'] = $refuges_block_output;
+      break;
+    case 'header':
+      $reservation_codes = array(
+        'arpont' => 'OPRF-92950',
+        'bois' => '',
+        'femma' => 'OPRF-92951',
+        'fours' => '',
+        'lac' => 'OPRF-92949',
+        'leisse' => 'OPRF-92948',
+        'martin' => '',
+        'orgere' => 'OPRF-92947',
+        'palet' => '',
+        'plaisance' => '',
+        'prariond' => '',
+        'rosuel' => '',
+        'turia' => '',
+        'valette' => '',
+        'vallonbrun' => 'OPRF-92996',
+      );
+      $variables['resa_code'] = $reservation_codes[str_replace('sites/', '', \Drupal::service('site.path'))];
+      break;
   }
 }
