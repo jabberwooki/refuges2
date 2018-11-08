@@ -15,19 +15,23 @@ settings:
     rows:
       -
         -
+          name: 'Supprimer les styles'
+          items:
+            - RemoveFormat
+        -
           name: 'Style de texte'
           items:
             - Styles
         -
           name: Formatting
           items:
+            - Blockquote
             - Bold
             - Italic
             - Strike
             - Superscript
             - Subscript
             - '-'
-            - RemoveFormat
         -
           name: Linking
           items:
@@ -38,22 +42,6 @@ settings:
           items:
             - BulletedList
             - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-            - Table
-            - HorizontalRule
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
-          name: Tools
-          items:
-            - ShowBlocks
-            - Source
   plugins:
     language:
       language_list: un
