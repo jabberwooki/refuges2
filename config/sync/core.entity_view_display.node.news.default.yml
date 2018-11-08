@@ -1,4 +1,4 @@
-uuid: 44255cdb-10fb-4515-b565-3c0806077191
+uuid: 37bc71c1-01a1-448c-84db-df607c02398c
 langcode: fr
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.news.field_summary
     - node.type.news
   module:
-    - entity_reference_revisions
+    - paragraphs
     - user
 id: node.news.default
 targetEntityType: node
@@ -16,26 +16,24 @@ bundle: news
 mode: default
 content:
   field_content:
-    type: entity_reference_revisions_entity_view
+    type: paragraph_summary
     weight: 102
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
     region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_media_image:
     type: entity_reference_entity_view
     weight: 104
-    label: above
+    label: hidden
     settings:
-      view_mode: default
+      view_mode: news_front
       link: false
     third_party_settings: {  }
     region: content
   field_summary:
     weight: 103
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string

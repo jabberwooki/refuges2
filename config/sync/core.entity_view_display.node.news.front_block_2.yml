@@ -1,9 +1,9 @@
-uuid: 1c38bde9-5ece-43cc-a6e3-6424734ab23b
+uuid: 6686948a-b03a-417a-ae5c-2b261e8a5d81
 langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.front_block
+    - core.entity_view_mode.node.front_block_2
     - field.field.node.news.field_content
     - field.field.node.news.field_media_image
     - field.field.node.news.field_summary
@@ -30,8 +30,8 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_media_image
         - group_text_teaser
+        - field_media_image
         - addtoany
         - node_post_date
         - node_title
@@ -59,7 +59,7 @@ third_party_settings:
         - node_title
         - field_summary
       parent_name: ''
-      weight: 1
+      weight: 0
       format_type: html_element
       format_settings:
         id: ''
@@ -71,10 +71,10 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Texte teaser'
-id: node.news.front_block
+id: node.news.front_block_2
 targetEntityType: node
 bundle: news
-mode: front_block
+mode: front_block_2
 content:
   addtoany:
     weight: 2
@@ -83,7 +83,7 @@ content:
     third_party_settings: {  }
   field_media_image:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       view_mode: news_front
