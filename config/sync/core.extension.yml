@@ -57,6 +57,7 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
+  refuges_utils: 0
   responsive_image: 0
   search: 0
   shortcut: 0
