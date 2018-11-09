@@ -38,4 +38,5 @@ permissions:
   - 'edit own slide content'
   - 'update any bloc_partenaires block content'
   - 'update any contact_details block content'
+  - 'update any intro_block block content'
   - 'view the administration theme'
