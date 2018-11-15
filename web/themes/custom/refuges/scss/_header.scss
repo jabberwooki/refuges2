@@ -225,7 +225,10 @@ position: relative;
 .path-frontpage .mountain{
   top: -120px;
 }
-.page-node-type-event .mountain,
-.page-node-type-news .mountain{
-  display:none;
+.page-node-type-event,
+.page-node-type-news{
+  .highlighted{
+    background-color: $brand-primary;
+    min-height: 250px;
+  }
 }

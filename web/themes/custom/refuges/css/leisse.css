@@ -262,9 +262,10 @@ body {
   top: -120px;
 }
 
-.page-node-type-event .mountain,
-.page-node-type-news .mountain {
-  display: none;
+.page-node-type-event .highlighted,
+.page-node-type-news .highlighted {
+  background-color: #669900;
+  min-height: 250px;
 }
 
 .node--type-section-header-image .infos h2,
@@ -286,14 +287,24 @@ body {
   opacity: 1;
 }
 
+.page-node-type-event .group-titles h2,
+.page-node-type-news .group-titles h2,
 .group-titles h3,
 .node--type-section-header-image .infos .field--name-field-subtitle,
 .description-diapo {
+  font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
   text-shadow: 1px 1px 12px #555;
+}
+
+.page-node-type-event .group-titles h2,
+.page-node-type-news .group-titles h2 {
+  font-size: 28px;
+  text-transform: none;
+  margin: 0;
 }
 
 .view-footer,
