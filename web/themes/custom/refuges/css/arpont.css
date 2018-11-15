@@ -176,16 +176,22 @@ body {
   border: none;
   border-radius: 0; }
 
+.highlighted,
 .node--type-section-header-image.node--view-mode-default,
 .block-views-blockslides-frontpage-slideshow {
   position: relative;
   /* facultatif : résoud un bug non systématique de blur sur IE */
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d; }
+  .highlighted .infos,
+  .highlighted .infos-diapo,
+  .highlighted .group-titles,
   .node--type-section-header-image.node--view-mode-default .infos,
   .node--type-section-header-image.node--view-mode-default .infos-diapo,
+  .node--type-section-header-image.node--view-mode-default .group-titles,
   .block-views-blockslides-frontpage-slideshow .infos,
-  .block-views-blockslides-frontpage-slideshow .infos-diapo {
+  .block-views-blockslides-frontpage-slideshow .infos-diapo,
+  .block-views-blockslides-frontpage-slideshow .group-titles {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -211,19 +217,22 @@ body {
   display: none; }
 
 .node--type-section-header-image .infos h2,
-.title-diapo a {
+.title-diapo a,
+.group-titles h2 {
   font-family: Misses, "Times New Roman", Times, serif;
   font-size: 64px;
   text-shadow: 1px 1px 12px #555;
   color: #fff; }
   .node--type-section-header-image .infos h2:hover,
-  .title-diapo a:hover {
+  .title-diapo a:hover,
+  .group-titles h2:hover {
     text-decoration: none;
     opacity: 0.7; }
 
 .node--type-section-header-image .infos h2:hover {
   opacity: 1; }
 
+.group-titles h3,
 .node--type-section-header-image .infos .field--name-field-subtitle,
 .description-diapo {
   font-size: 16px;
