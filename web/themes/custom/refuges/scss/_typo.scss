@@ -47,13 +47,13 @@ h2.block-title{
 	text-transform: uppercase;
 	color:$brand-primary;
 	text-align:center;
+    margin-bottom: 25px;
 }
 
 .view-display-id-documents_page .wrapper,
 .node--type-event.node--view-mode-teaser-list,
-.node--type-news.node--view-mode-teaser,
-.node--type-event.node--view-mode-teaser,
-.node--type-news.node--view-mode-front-block{
+.node--type-news .text-teaser,
+.node--type-event.node--view-mode-teaser{
 
 	.field--name-field-intro-block-title,
 	.field--name-name,
@@ -61,6 +61,7 @@ h2.block-title{
 		font-size: 20px;
 		font-weight: 700;
 		text-transform:uppercase;
+        line-height: 20px;
 		&:hover{
 			text-decoration: none;
 		}
@@ -69,6 +70,10 @@ h2.block-title{
 	.field--name-node-post-date{
 		text-transform: uppercase;
 	}
+    .field--name-field-summary{
+        font-size:13px;
+        line-height: 20px;
+    }
 
 }
 

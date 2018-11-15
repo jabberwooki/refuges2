@@ -59,6 +59,9 @@ display:
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -67,9 +70,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
       style:
         type: grid
         options:
@@ -200,10 +200,14 @@ display:
         style: false
         row: false
         header: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        pager: false
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: no-gutters
           default_row_class: true
           uses_fields: false
           alignment: horizontal
@@ -237,12 +241,19 @@ display:
             value: 'En direct du [site:name] '
             format: full_html
           plugin_id: text
+      use_more: false
+      use_more_always: true
+      use_more_text: more
+      pager:
+        type: some
+        options:
+          items_per_page: 4
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -266,7 +277,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: no-gutters
           default_row_class: true
           uses_fields: false
           alignment: horizontal
@@ -280,9 +291,16 @@ display:
         row: false
         header: false
       row:
-        type: 'entity:node'
+        type: 'views_parity_row_entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: front_block
+          views_parity_row_enable: 1
+          views_parity_row:
+            frequency: '2'
+            start: '0'
+            end: '0'
+            view_mode: front_block_2
       header: {  }
     cache_metadata:
       max-age: -1

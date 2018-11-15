@@ -1,3 +1,10 @@
+
+.row > [class^="col-"].no-gutters,
+.row > [class*=" col-"].no-gutters {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .row-centered {
     text-align:center;
 }
@@ -40,7 +47,7 @@
 .view-display-id-keeping_page,
 .view-display-id-documents_page .wrapper,
 .node--type-event.node--view-mode-teaser-list .wrapper,
-.node--type-news.node--view-mode-teaser,
+.node--type-news .text-teaser,
 .node--type-event.node--view-mode-teaser .wrapper{
 	background: #f2f2f2;
 }
@@ -112,8 +119,17 @@
 }
 
 //ACTUALITES VIEWS
-#block-views-block-news-frontpage-block{
+.node--type-news{
     .text-teaser{
         background:#F2F2F2;
+        padding: 25px;
+        h2{
+            margin-top: 8px;
+            margin-bottom: 20px;
+            line-height: 20px;
+        }
+        .field--name-node-post-date{
+            padding-top: 20px;
+        }
     }
 }
