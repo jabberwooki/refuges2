@@ -14,7 +14,8 @@ dependencies:
   module:
     - datetime_range
     - ds
-    - entity_reference_revisions
+    - field_group
+    - paragraphs
     - user
 third_party_settings:
   ds:
@@ -34,6 +35,7 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
+        - group_content
         - field_media_image
         - addtoany
         - node_title
@@ -43,31 +45,51 @@ third_party_settings:
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 3
         label: hidden
         formatter: default
+  field_group:
+    group_content:
+      children:
+        - field_media_image
+        - addtoany
+        - node_title
+        - field_event_dates
+        - field_location
+        - field_content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'content_page col-md-offset-2 col-md-8'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Contenu
 id: node.event.full
 targetEntityType: node
 bundle: event
 mode: full
 content:
   addtoany:
-    weight: 1
+    weight: 2
     region: ds_content
     settings: {  }
     third_party_settings: {  }
   field_content:
-    weight: 5
+    weight: 6
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    type: paragraph_summary
     region: ds_content
   field_event_dates:
     type: daterange_custom
-    weight: 3
+    weight: 4
     region: ds_content
     label: hidden
     settings:
@@ -79,7 +101,7 @@ content:
         ds_limit: ''
   field_location:
     type: string
-    weight: 4
+    weight: 5
     region: ds_content
     label: above
     settings:
@@ -87,7 +109,7 @@ content:
     third_party_settings: {  }
   field_media_image:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
     region: ds_content
     label: hidden
     settings:
