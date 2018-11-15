@@ -321,6 +321,7 @@ display:
         query: false
         style: false
         row: false
+        pager: false
       filter_groups:
         operator: AND
         groups:
@@ -363,14 +364,17 @@ display:
           query_comment: ''
           query_tags: null
       style:
-        type: html_list
+        type: views_bootstrap_grid
         options:
-          row_class: 'col-xs-6 col-md-1 col-centered'
+          row_class: col-centered
           default_row_class: false
           uses_fields: false
-          type: ul
-          wrapper_class: item-list
-          class: 'row row-centered'
+          alignment: horizontal
+          columns: '6'
+          col_xs: col-xs-6
+          col_sm: col-sm-4
+          col_md: col-md-2
+          col_lg: col-lg-2
       row:
         type: 'ds_entity:node'
         options:
@@ -385,6 +389,11 @@ display:
             group_field_function: ''
           advanced_fieldset:
             advanced: false
+      pager:
+        type: some
+        options:
+          items_per_page: 6
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
