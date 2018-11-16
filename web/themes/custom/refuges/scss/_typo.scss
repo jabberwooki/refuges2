@@ -41,6 +41,22 @@
 	}
 }
 
+
+//SERVICES
+.field--name-field-intro-block-title{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $brand-primary;
+}
+.field--name-field-intro-block-footer p{
+    font-weight: 300;
+    font-size: 24px;
+    color: $brand-primary;
+    text-align:center;
+    margin-top: 40px;
+    margin-bottom: 20px !important;
+}
+
 //icon SVG
 .icon-refuge path {
     fill: $brand-primary;

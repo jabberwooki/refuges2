@@ -337,6 +337,21 @@ body {
   text-decoration: none;
 }
 
+.field--name-field-intro-block-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #001489;
+}
+
+.field--name-field-intro-block-footer p {
+  font-weight: 300;
+  font-size: 24px;
+  color: #001489;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px !important;
+}
+
 .icon-refuge path {
   fill: #001489;
 }
@@ -637,6 +652,15 @@ blockquote {
 .menu--services li.active a {
   background: #001489;
   color: #fff;
+}
+
+.view-display-id-out_keeping_page,
+.view-display-id-keeping_page {
+  padding-top: 40px;
+}
+.view-display-id-out_keeping_page .row,
+.view-display-id-keeping_page .row {
+  padding-bottom: 40px;
 }
 
 .node--type-news .text-teaser {

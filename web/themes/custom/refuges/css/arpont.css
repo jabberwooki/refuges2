@@ -277,6 +277,19 @@ body {
               transition: all 0.3s ease;
       text-decoration: none; }
 
+.field--name-field-intro-block-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #127271; }
+
+.field--name-field-intro-block-footer p {
+  font-weight: 300;
+  font-size: 24px;
+  color: #127271;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px !important; }
+
 .icon-refuge path {
   fill: #127271; }
 
@@ -535,6 +548,13 @@ blockquote {
   .menu--services li.active a {
     background: #127271;
     color: #fff; }
+
+.view-display-id-out_keeping_page,
+.view-display-id-keeping_page {
+  padding-top: 40px; }
+  .view-display-id-out_keeping_page .row,
+  .view-display-id-keeping_page .row {
+    padding-bottom: 40px; }
 
 .node--type-news .text-teaser {
   background: #F2F2F2;
