@@ -165,7 +165,8 @@
           page.sidebar_first and page.sidebar_second ? 'col-sm-6',
           page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
           page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+          page.sidebar_first is empty and page.sidebar_second is empty and not is_service_view ? 'col-sm-12',
+          is_service_view ? 'col-md-9 col-md-offset-1'
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>

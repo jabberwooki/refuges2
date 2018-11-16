@@ -541,7 +541,7 @@ blockquote {
 
 .menu--services li {
   display: inline-block !important;
-  width: 49.8%; }
+  width: 49.7%; }
   .menu--services li a {
     text-transform: uppercase;
     font-weight: 700; }
@@ -555,6 +555,11 @@ blockquote {
   .view-display-id-out_keeping_page .row,
   .view-display-id-keeping_page .row {
     padding-bottom: 40px; }
+  .view-display-id-out_keeping_page .field--name-field-displayed-text,
+  .view-display-id-keeping_page .field--name-field-displayed-text {
+    text-align: left;
+    position: absolute;
+    bottom: 0; }
 
 .node--type-news .text-teaser {
   background: #F2F2F2;

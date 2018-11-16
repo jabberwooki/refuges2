@@ -1,0 +1,10 @@
+uuid: 34dc2ad6-8fb3-4ee8-97a7-0aeb9ee5725c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.front_teaser
+label: 'Accroche accueil'
+targetEntityType: node
+cache: true

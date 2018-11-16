@@ -65,6 +65,15 @@ function refuges_preprocess_page(&$variables) {
   elseif (strpos($current_host, 'vallonbrun') !== FALSE) {
     $variables['#attached']['library'][] = 'refuges/vallonbrun';
   }
+
+  $current_path = \Drupal::service('path.current')->getPath();
+  $path_args = explode('/', $current_path);
+  $is_service_view = false;
+  if (isset($path_args[1]) && in_array($path_args[1], array('services-gardiennage','services-hors-gardiennage'))) {
+    $is_service_view = true;
+  }
+  $variables['is_service_view'] = $is_service_view;
+
 }
 
 /**

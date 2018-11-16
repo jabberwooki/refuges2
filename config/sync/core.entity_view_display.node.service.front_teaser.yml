@@ -1,9 +1,9 @@
-uuid: 7caff633-2a10-4e35-bca4-d675f6e464d9
+uuid: 3b4163a2-775f-46db-9adc-914095209b51
 langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.front_teaser
     - field.field.node.service.field_displayed_text
     - field.field.node.service.field_frontpage_promoted
     - field.field.node.service.field_icone
@@ -16,14 +16,13 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: ds_2col
-      library: ds/ds_2col
+      id: ds_1col
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
         wrappers:
-          left: div
-          right: div
+          ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
@@ -31,19 +30,18 @@ third_party_settings:
         classes:
           layout_class: {  }
     regions:
-      left:
+      ds_content:
         - field_icone
-      right:
         - field_displayed_text
-id: node.service.teaser
+id: node.service.front_teaser
 targetEntityType: node
 bundle: service
-mode: teaser
+mode: front_teaser
 content:
   field_displayed_text:
     type: string
     weight: 1
-    region: right
+    region: ds_content
     label: hidden
     settings:
       link_to_entity: false
@@ -51,7 +49,7 @@ content:
   field_icone:
     type: icon_select_formatter_default
     weight: 0
-    region: left
+    region: ds_content
     label: hidden
     settings:
       apply_dimensions: '1'

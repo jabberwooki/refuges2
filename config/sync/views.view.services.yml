@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.front_teaser
     - core.entity_view_mode.node.teaser
     - node.type.service
     - system.menu.services
@@ -379,10 +380,16 @@ display:
         type: 'ds_entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: front_teaser
           alternating_fieldset:
             alternating: false
             allpages: false
+            item_0: teaser
+            item_1: teaser
+            item_2: teaser
+            item_3: teaser
+            item_4: teaser
+            item_5: teaser
           grouping_fieldset:
             group: false
             group_field: node_field_data|title
@@ -500,7 +507,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: col-centered
           default_row_class: true
           uses_fields: false
           alignment: horizontal
@@ -628,7 +635,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: col-centered
           default_row_class: true
           uses_fields: false
           alignment: horizontal
