@@ -308,15 +308,19 @@ h2.block-title {
 .view-display-id-documents_page .wrapper .field--name-field-intro-block-title,
 .view-display-id-documents_page .wrapper .field--name-name,
 .view-display-id-documents_page .wrapper h2 a,
+.view-display-id-documents_page .wrapper h2,
 .node--type-event.node--view-mode-teaser-list .field--name-field-intro-block-title,
 .node--type-event.node--view-mode-teaser-list .field--name-name,
 .node--type-event.node--view-mode-teaser-list h2 a,
+.node--type-event.node--view-mode-teaser-list h2,
 .node--type-news .text-teaser .field--name-field-intro-block-title,
 .node--type-news .text-teaser .field--name-name,
 .node--type-news .text-teaser h2 a,
+.node--type-news .text-teaser h2,
 .node--type-event.node--view-mode-teaser .field--name-field-intro-block-title,
 .node--type-event.node--view-mode-teaser .field--name-name,
-.node--type-event.node--view-mode-teaser h2 a {
+.node--type-event.node--view-mode-teaser h2 a,
+.node--type-event.node--view-mode-teaser h2 {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -324,15 +328,19 @@ h2.block-title {
   .view-display-id-documents_page .wrapper .field--name-field-intro-block-title:hover,
   .view-display-id-documents_page .wrapper .field--name-name:hover,
   .view-display-id-documents_page .wrapper h2 a:hover,
+  .view-display-id-documents_page .wrapper h2:hover,
   .node--type-event.node--view-mode-teaser-list .field--name-field-intro-block-title:hover,
   .node--type-event.node--view-mode-teaser-list .field--name-name:hover,
   .node--type-event.node--view-mode-teaser-list h2 a:hover,
+  .node--type-event.node--view-mode-teaser-list h2:hover,
   .node--type-news .text-teaser .field--name-field-intro-block-title:hover,
   .node--type-news .text-teaser .field--name-name:hover,
   .node--type-news .text-teaser h2 a:hover,
+  .node--type-news .text-teaser h2:hover,
   .node--type-event.node--view-mode-teaser .field--name-field-intro-block-title:hover,
   .node--type-event.node--view-mode-teaser .field--name-name:hover,
-  .node--type-event.node--view-mode-teaser h2 a:hover {
+  .node--type-event.node--view-mode-teaser h2 a:hover,
+  .node--type-event.node--view-mode-teaser h2:hover {
     text-decoration: none; }
 .view-display-id-documents_page .wrapper .field--name-field-event-dates,
 .view-display-id-documents_page .wrapper .field--name-node-post-date,
@@ -477,6 +485,9 @@ blockquote {
 .path-frontpage .highlighted {
   margin-bottom: 0px; }
 
+.main-container {
+  margin-top: -140px; }
+
 .block-views-blockservices-block-1 .view-footer {
   text-align: center; }
 
@@ -570,6 +581,9 @@ blockquote {
     line-height: 20px; }
   .node--type-news .text-teaser .field--name-node-post-date {
     padding-top: 20px; }
+
+.node--type-event .node--view-mode-teaser .addtoany_list {
+  float: right; }
 
 .prefooter {
   background-size: cover; }

@@ -21,6 +21,9 @@
 .path-frontpage .highlighted {
     margin-bottom: 0px;
 }
+.main-container{
+    margin-top: -140px;
+}
 
 .block-views-blockservices-block-1{
     .view-footer{
@@ -142,6 +145,15 @@
         }
         .field--name-node-post-date{
             padding-top: 20px;
+        }
+    }
+}
+
+//AGENDA VIEWS
+.node--type-event{
+    .node--view-mode-teaser{
+        .addtoany_list{
+            float: right;
         }
     }
 }
