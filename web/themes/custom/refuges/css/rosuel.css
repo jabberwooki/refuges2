@@ -755,11 +755,13 @@ blockquote {
   text-decoration: none;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   z-index: 1000;
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   font-family: 'FontAwesome';
   font-size: 20px;
   line-height: 1;
@@ -790,6 +792,70 @@ blockquote {
 
 .node--type-event .node--view-mode-teaser .addtoany_list {
   float: right;
+}
+
+.node--type-photo-gallery.node--view-mode-teaser {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.node--type-photo-gallery.node--view-mode-teaser .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 1;
+}
+.node--type-photo-gallery.node--view-mode-teaser .content-overlay .field--name-node-post-date {
+  display: none;
+}
+.node--type-photo-gallery.node--view-mode-teaser .field--name-field-media-image {
+  width: 100%;
+}
+.node--type-photo-gallery.node--view-mode-teaser div.field--name-field-copyright {
+  display: none !important;
+}
+.node--type-photo-gallery.node--view-mode-teaser .content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 2;
+}
+.node--type-photo-gallery.node--view-mode-teaser .content-details h2 {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  font-size: 21px;
+}
+.node--type-photo-gallery.node--view-mode-teaser .fadeIn-bottom {
+  top: 80%;
+}
+
+.node--type-photo-gallery.node--view-mode-teaser:hover .content-overlay {
+  opacity: 1;
+}
+
+.node--type-photo-gallery.node--view-mode-teaser:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
 }
 
 .prefooter {

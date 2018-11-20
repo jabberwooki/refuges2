@@ -9,6 +9,7 @@ dependencies:
     - node.type.photo_gallery
   module:
     - ds
+    - field_group
     - user
 third_party_settings:
   ds:
@@ -28,18 +29,75 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_photos
+        - group_link
+        - node_post_date
+        - group_overlay
         - node_title
+        - field_photos
+        - group_details
     fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 0
+        label: hidden
+        formatter: ds_post_date_long
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 21
         label: hidden
         formatter: default
         settings:
-          link: true
           wrapper: h2
           class: ''
+          link: false
+  field_group:
+    group_link:
+      children:
+        - group_overlay
+        - field_photos
+        - group_details
+      parent_name: ''
+      weight: 0
+      format_type: link
+      format_settings:
+        id: ''
+        classes: ''
+        target: entity
+        custom_uri: ''
+        target_attribute: default
+      label: Lien
+    group_details:
+      children:
+        - node_title
+      parent_name: group_link
+      weight: 22
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'content-details fadeIn-bottom'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Details
+    group_overlay:
+      children:
+        - node_post_date
+      parent_name: group_link
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: content-overlay
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Overlay
 id: node.photo_gallery.teaser
 targetEntityType: node
 bundle: photo_gallery
@@ -47,7 +105,7 @@ mode: teaser
 content:
   field_photos:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 21
     region: ds_content
     label: hidden
     settings:
