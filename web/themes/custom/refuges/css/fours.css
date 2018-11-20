@@ -71,6 +71,26 @@ body {
   font-size: 1.5em;
 }
 
+.btn-resa {
+  background-image: -webkit-linear-gradient(bottom, #ff0d86, #cc0066);
+  background-image: linear-gradient(to top, #ff0d86, #cc0066);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 12px;
+  border: 1px solid #cc0066;
+}
+.btn-resa:hover {
+  background-image: -webkit-linear-gradient(top, #ff0d86, #cc0066);
+  background-image: linear-gradient(to bottom, #ff0d86, #cc0066);
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  text-decoration: none;
+}
+
 .highlighted {
   margin-bottom: 80px;
   min-height: 100px;

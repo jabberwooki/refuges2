@@ -32,7 +32,12 @@ body {
       font-size: 1.5em;
     }  
   }
+}
 
+.btn-resa{
+  @include btn-refuge;
+  margin-top: 30px;
+  float: right;
 }
 
 .highlighted{
