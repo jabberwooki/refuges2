@@ -63,6 +63,7 @@
         "drupal/ds": "^3.1",
         "drupal/entity_browser": "~2.0",
         "drupal/field_group": "^1.0",
+        "drupal/field_group_link": "1.0-rc3",
         "drupal/field_image_link": "1.x-dev",
         "drupal/honeypot": "^1.29",
         "drupal/icon_select": "^1.0",
