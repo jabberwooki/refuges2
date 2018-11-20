@@ -93,13 +93,15 @@
 
 
 .field--name-field-copyright {
-    margin-top: -15px;
+    margin-top: -25px;
     background: #00000054;
     color: #fff;
     font-size: 12px;
-    z-index: 100;
+    z-index: 10;
     position: relative;
     margin-bottom: 0;
+    text-align: right;
+    padding: 5px 10px;
 }
 
 //SERVICES
@@ -165,6 +167,7 @@
         margin-left: -21px;
         width: 0;
         height: 0;
+        z-index: 20;
     }
     &.node--view-mode-front-block-2 .field--name-field-media-image:before{
         border-top: 18px solid #F2F2F2;
@@ -177,6 +180,7 @@
         margin-left: -21px;
         width: 0;
         height: 0;
+        z-index: 20;
     }
 }
 
