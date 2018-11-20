@@ -798,6 +798,7 @@ blockquote {
   position: relative;
   margin: auto;
   overflow: hidden;
+  border: 2px solid #fff;
 }
 .node--type-photo-gallery.node--view-mode-teaser .content-overlay {
   background: rgba(0, 0, 0, 0.7);
