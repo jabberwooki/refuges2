@@ -581,6 +581,34 @@ blockquote {
     line-height: 20px; }
   .node--type-news .text-teaser .field--name-node-post-date {
     padding-top: 20px; }
+  .node--type-news .text-teaser .field.field--name-field-summary {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; }
+.node--type-news.node--view-mode-front-block .field--name-field-media-image:before {
+  border-bottom: 18px solid #F2F2F2;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  left: 15%;
+  margin-left: -21px;
+  width: 0;
+  height: 0; }
+.node--type-news.node--view-mode-front-block-2 .field--name-field-media-image:before {
+  border-top: 18px solid #F2F2F2;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  /*top: 0;*/
+  content: "";
+  position: absolute;
+  left: 15%;
+  margin-left: -21px;
+  width: 0;
+  height: 0; }
 
 .node--type-event .node--view-mode-teaser .addtoany_list {
   float: right; }
