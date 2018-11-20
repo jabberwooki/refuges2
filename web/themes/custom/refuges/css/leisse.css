@@ -755,9 +755,39 @@ blockquote {
   text-decoration: none;
 }
 
+.slick-prev,
+.slick-next {
+  z-index: 1000;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next:before {
+  content: '\f054';
+}
+
+.slick-prev:before {
+  content: '\f053';
+}
+
 .block-views-blockevents-frontpage-block h2.block-title {
   position: relative;
   z-index: 1000;
+}
+.block-views-blockevents-frontpage-block .slick-prev {
+  left: 10%;
+}
+.block-views-blockevents-frontpage-block .slick-next {
+  right: 10%;
 }
 
 .node--type-event .node--view-mode-teaser .addtoany_list {
