@@ -132,6 +132,12 @@ reservation:
   dependencies:
     - core/jquery
 
+news:
+  js:
+    js/news.js: {}
+  dependencies:
+    - core/jquery
+
 fonts:
   css:
     theme:

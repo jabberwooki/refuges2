@@ -74,6 +74,10 @@ function refuges_preprocess_page(&$variables) {
   }
   $variables['is_service_view'] = $is_service_view;
 
+  if (isset($path_args[1]) && (\Drupal::service('path.matcher')->isFrontPage() || $path_args[1] == 'actualites')) {
+    $variables['#attached']['library'][] = 'refuges/news';
+  }
+
 }
 
 /**
