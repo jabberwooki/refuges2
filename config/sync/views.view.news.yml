@@ -8,6 +8,7 @@ dependencies:
     - node.type.news
     - system.menu.menu-hamburger
   module:
+    - ds
     - node
     - user
     - views_bootstrap
@@ -291,16 +292,25 @@ display:
         row: false
         header: false
       row:
-        type: 'views_parity_row_entity:node'
+        type: 'ds_entity:node'
         options:
           relationship: none
           view_mode: front_block
-          views_parity_row_enable: 1
-          views_parity_row:
-            frequency: '2'
-            start: '0'
-            end: '0'
-            view_mode: front_block_2
+          alternating_fieldset:
+            alternating: true
+            allpages: true
+            item_0: front_block
+            item_1: front_block_2
+            item_2: front_block
+            item_3: front_block
+            item_4: front_block_2
+            item_5: front_block
+          grouping_fieldset:
+            group: false
+            group_field: node_field_data|created
+            group_field_function: ''
+          advanced_fieldset:
+            advanced: false
       header: {  }
     cache_metadata:
       max-age: -1
