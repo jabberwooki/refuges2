@@ -634,6 +634,13 @@ blockquote {
   height: 0;
   z-index: 20; }
 
+.path-frontpage h2.block-title a:hover {
+  text-decoration: none; }
+
+.block-views-blockevents-frontpage-block h2.block-title {
+  position: relative;
+  z-index: 1000; }
+
 .node--type-event .node--view-mode-teaser .addtoany_list {
   float: right; }
 

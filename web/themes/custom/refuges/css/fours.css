@@ -81,6 +81,8 @@ body {
   border-radius: 30px;
   font-size: 12px;
   border: 1px solid #cc0066;
+  margin-top: 30px;
+  float: right;
 }
 .btn-resa:hover {
   background-image: -webkit-linear-gradient(top, #ff0d86, #cc0066);
@@ -747,6 +749,15 @@ blockquote {
   width: 0;
   height: 0;
   z-index: 20;
+}
+
+.path-frontpage h2.block-title a:hover {
+  text-decoration: none;
+}
+
+.block-views-blockevents-frontpage-block h2.block-title {
+  position: relative;
+  z-index: 1000;
 }
 
 .node--type-event .node--view-mode-teaser .addtoany_list {
