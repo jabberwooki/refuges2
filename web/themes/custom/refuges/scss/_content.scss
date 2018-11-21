@@ -149,11 +149,12 @@
             padding-top: 20px;
         }
         .field.field--name-field-summary{
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            // display: -webkit-box;
+            // -webkit-line-clamp: 4;
+            // -webkit-box-orient: vertical;
+            
         }
     }
     &.node--view-mode-front-block .field--name-field-media-image:before {
@@ -306,3 +307,21 @@
   left: 50%;
   opacity: 1;
 }
+
+// JQUERY ELLIPSIS
+.ellip {
+    display: block;
+    height: 100%;
+  }
+  .ellip-line {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+  .ellip,
+  .ellip-line {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+  }
