@@ -940,6 +940,10 @@ blockquote {
   #sidebar.active {
     width: 100% !important;
   }
+
+  .menu--services li {
+    width: 100%;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
@@ -949,6 +953,10 @@ blockquote {
 
   #sidebar.active {
     width: 100% !important;
+  }
+
+  .menu--services li {
+    width: 100%;
   }
 }
 /*!
