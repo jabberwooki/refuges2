@@ -76,8 +76,8 @@ display:
           uses_fields: false
           alignment: horizontal
           columns: '3'
-          col_xs: col-xs-12
-          col_sm: col-sm-6
+          col_xs: col-xs-6
+          col_sm: col-sm-4
           col_md: col-md-4
           col_lg: col-lg-4
       row:
