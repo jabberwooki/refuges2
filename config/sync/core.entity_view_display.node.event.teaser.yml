@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.field_content
     - field.field.node.event.field_event_dates
+    - field.field.node.event.field_location
     - field.field.node.event.field_media_image
     - field.field.node.event.field_pub_dates
     - field.field.node.event.field_summary
@@ -85,7 +86,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'pull-left col-md-3'
+        classes: 'pull-left col-sm-3'
       label: left
     group_right:
       children:
@@ -105,7 +106,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'pull-right col-md-9'
+        classes: 'pull-right col-sm-9'
       label: right
 id: node.event.teaser
 targetEntityType: node

@@ -2,6 +2,12 @@
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #sidebar.active {
+    width: 40% !important;
+  }
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .logo {
