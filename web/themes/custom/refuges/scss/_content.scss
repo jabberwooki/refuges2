@@ -297,15 +297,29 @@
       top: 80%;
     }
 }
-
 .node--type-photo-gallery.node--view-mode-teaser:hover .content-overlay{
   opacity: 1;
 }
-
 .node--type-photo-gallery.node--view-mode-teaser:hover .content-details{
   top: 50%;
   left: 50%;
   opacity: 1;
+}
+
+//VIDEO TEASER
+.media--type-external-video.media--view-mode-teaser{
+    .field--name-field-media-video-embed-field img{
+      width: 100% !important;
+    }
+    .video-embed-field-launch-modal{
+      cursor: pointer;
+    }
+    .field--name-name{
+      color: $brand-primary;
+      font-weight: 500;
+      margin-bottom: 0.5em;
+      font-size: 16px;
+    }
 }
 
 // JQUERY ELLIPSIS

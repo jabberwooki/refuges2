@@ -852,6 +852,19 @@ blockquote {
   opacity: 1;
 }
 
+.media--type-external-video.media--view-mode-teaser .field--name-field-media-video-embed-field img {
+  width: 100% !important;
+}
+.media--type-external-video.media--view-mode-teaser .video-embed-field-launch-modal {
+  cursor: pointer;
+}
+.media--type-external-video.media--view-mode-teaser .field--name-name {
+  color: #993300;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  font-size: 16px;
+}
+
 .ellip {
   display: block;
   height: 100%;
