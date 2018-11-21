@@ -1,0 +1,36 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .logo{
+            display: none;
+        }
+        #sidebar.active {
+            width: 100% !important;
+        }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        .logo{
+            display: none;
+        }
+        #sidebar.active {
+            width: 100% !important;
+        }
+    }
