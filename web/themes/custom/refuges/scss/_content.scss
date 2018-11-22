@@ -45,7 +45,6 @@
 
 .view-display-id-out_keeping_page,
 .view-display-id-keeping_page,
-.view-display-id-documents_page .wrapper,
 .node--type-event.node--view-mode-teaser-list .wrapper,
 .node--type-news .text-teaser,
 .node--type-event.node--view-mode-teaser .wrapper{
@@ -83,7 +82,6 @@
     background-size: cover;
 }
 
-.view-display-id-documents_page .wrapper,
 .node--type-event.node--view-mode-teaser-list .wrapper,
 .node--type-event.node--view-mode-teaser .wrapper{
     float: left;
@@ -102,6 +100,59 @@
     margin-bottom: 0;
     text-align: right;
     padding: 5px 10px;
+}
+
+//DOCUMENTS VIEWS
+.view-display-id-documents_page .wrapper{
+    display: table;
+    [class*="col-"] {
+     float: none;
+     display: table-cell;
+     vertical-align: top;
+        padding: 15px;
+    }
+    .text{
+        background:#F2F2F2;
+        vertical-align: middle;
+    }
+    .read{
+        background: $brand-primary;
+        vertical-align: middle;
+        text-align: center;
+        .field--name-field-flipthrough-url{
+            text-align: center;
+            display: block;
+            &:before{
+                font-family: 'FontAwesome';
+                font-size: 20px;
+                content:'\f02d';
+                color: #fff;
+                display: block;
+            }
+            a{
+                color: #fff;
+                text-transform: uppercase;
+                display: block;
+            }
+        }
+    }
+    .download{
+        background: $brand-secondary;
+        vertical-align: middle;
+        .file {
+            display: block;
+        }
+        .file > span {
+            display: block;
+            background: transparent;
+            color: #fff;
+            border:none;
+            text-align: center;
+            .text-primary {
+                color: #fff;
+            }
+        }
+    }
 }
 
 //SERVICES

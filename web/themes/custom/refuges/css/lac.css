@@ -621,7 +621,6 @@ blockquote {
 
 .view-display-id-out_keeping_page,
 .view-display-id-keeping_page,
-.view-display-id-documents_page .wrapper,
 .node--type-event.node--view-mode-teaser-list .wrapper,
 .node--type-news .text-teaser,
 .node--type-event.node--view-mode-teaser .wrapper {
@@ -657,7 +656,6 @@ blockquote {
   background-size: cover;
 }
 
-.view-display-id-documents_page .wrapper,
 .node--type-event.node--view-mode-teaser-list .wrapper,
 .node--type-event.node--view-mode-teaser .wrapper {
   float: left;
@@ -675,6 +673,58 @@ blockquote {
   margin-bottom: 0;
   text-align: right;
   padding: 5px 10px;
+}
+
+.view-display-id-documents_page .wrapper {
+  display: table;
+}
+.view-display-id-documents_page .wrapper [class*="col-"] {
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+  padding: 15px;
+}
+.view-display-id-documents_page .wrapper .text {
+  background: #F2F2F2;
+  vertical-align: middle;
+}
+.view-display-id-documents_page .wrapper .read {
+  background: #001489;
+  vertical-align: middle;
+  text-align: center;
+}
+.view-display-id-documents_page .wrapper .read .field--name-field-flipthrough-url {
+  text-align: center;
+  display: block;
+}
+.view-display-id-documents_page .wrapper .read .field--name-field-flipthrough-url:before {
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  content: '\f02d';
+  color: #fff;
+  display: block;
+}
+.view-display-id-documents_page .wrapper .read .field--name-field-flipthrough-url a {
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+}
+.view-display-id-documents_page .wrapper .download {
+  background: #001dc9;
+  vertical-align: middle;
+}
+.view-display-id-documents_page .wrapper .download .file {
+  display: block;
+}
+.view-display-id-documents_page .wrapper .download .file > span {
+  display: block;
+  background: transparent;
+  color: #fff;
+  border: none;
+  text-align: center;
+}
+.view-display-id-documents_page .wrapper .download .file > span .text-primary {
+  color: #fff;
 }
 
 .menu--services li {
@@ -912,7 +962,7 @@ blockquote {
 .mountain2 {
   background: url("../../refuges/images/montagnes-grises.png") no-repeat;
   position: relative;
-  z-index: 1000;
+  z-index: 100;
   height: 169px;
   width: 100%;
 }
