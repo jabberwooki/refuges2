@@ -688,6 +688,7 @@ blockquote {
 .view-display-id-documents_page .wrapper {
   display: table;
   margin-bottom: 30px;
+  min-height: 200px;
 }
 .view-display-id-documents_page .wrapper [class*="col-"] {
   float: none;
@@ -697,7 +698,6 @@ blockquote {
 }
 .view-display-id-documents_page .wrapper .text {
   background: #F2F2F2;
-  vertical-align: middle;
 }
 .view-display-id-documents_page .wrapper .read {
   background: #cc0066;

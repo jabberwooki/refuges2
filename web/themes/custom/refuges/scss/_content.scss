@@ -106,6 +106,7 @@
 .view-display-id-documents_page .wrapper{
     display: table;
     margin-bottom: 30px;
+    min-height: 200px;
     [class*="col-"] {
      float: none;
      display: table-cell;
@@ -114,7 +115,6 @@
     }
     .text{
         background:#F2F2F2;
-        vertical-align: middle;
     }
     .read{
         background: $brand-primary;
