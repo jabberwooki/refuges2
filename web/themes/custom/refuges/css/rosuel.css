@@ -431,6 +431,12 @@ h2.block-title {
 .node--type-event.node--view-mode-teaser h2:hover {
   text-decoration: none;
 }
+.view-display-id-documents_page .wrapper .field--name-name,
+.node--type-event.node--view-mode-teaser-list .field--name-name,
+.node--type-news .text-teaser .field--name-name,
+.node--type-event.node--view-mode-teaser .field--name-name {
+  padding: 15px 0;
+}
 .view-display-id-documents_page .wrapper .field--name-field-event-dates,
 .view-display-id-documents_page .wrapper .field--name-node-post-date,
 .node--type-event.node--view-mode-teaser-list .field--name-field-event-dates,
@@ -441,9 +447,13 @@ h2.block-title {
 .node--type-event.node--view-mode-teaser .field--name-node-post-date {
   text-transform: uppercase;
 }
+.view-display-id-documents_page .wrapper .field--name-field-description p,
 .view-display-id-documents_page .wrapper .field--name-field-summary,
+.node--type-event.node--view-mode-teaser-list .field--name-field-description p,
 .node--type-event.node--view-mode-teaser-list .field--name-field-summary,
+.node--type-news .text-teaser .field--name-field-description p,
 .node--type-news .text-teaser .field--name-field-summary,
+.node--type-event.node--view-mode-teaser .field--name-field-description p,
 .node--type-event.node--view-mode-teaser .field--name-field-summary {
   font-size: 13px;
   line-height: 20px;
@@ -677,6 +687,7 @@ blockquote {
 
 .view-display-id-documents_page .wrapper {
   display: table;
+  margin-bottom: 30px;
 }
 .view-display-id-documents_page .wrapper [class*="col-"] {
   float: none;
@@ -699,7 +710,7 @@ blockquote {
 }
 .view-display-id-documents_page .wrapper .read .field--name-field-flipthrough-url:before {
   font-family: 'FontAwesome';
-  font-size: 20px;
+  font-size: 40px;
   content: '\f02d';
   color: #fff;
   display: block;
@@ -708,6 +719,7 @@ blockquote {
   color: #fff;
   text-transform: uppercase;
   display: block;
+  font-weight: 700;
 }
 .view-display-id-documents_page .wrapper .download {
   background: #96e043;
@@ -723,8 +735,18 @@ blockquote {
   border: none;
   text-align: center;
 }
+.view-display-id-documents_page .wrapper .download .file > span a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
 .view-display-id-documents_page .wrapper .download .file > span .text-primary {
   color: #fff;
+}
+.view-display-id-documents_page .wrapper .download .file > span .glyphicon-file:before {
+  font-family: 'FontAwesome';
+  font-size: 40px;
+  content: "\f019";
 }
 
 .menu--services li {
