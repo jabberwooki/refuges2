@@ -64,10 +64,10 @@ body {
   font-size: 18px;
   padding-top: 10px;
 }
-.top #block-socialmedialinks {
+.top #block-socialmedialinks-top {
   padding-top: 10px;
 }
-.top #block-socialmedialinks .fa-2x {
+.top #block-socialmedialinks-top .fa-2x {
   font-size: 1.5em;
 }
 
