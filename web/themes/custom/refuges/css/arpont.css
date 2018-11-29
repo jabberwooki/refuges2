@@ -863,31 +863,44 @@ blockquote {
   content: '\f053';
 }
 
+.paragraph--type--photos-carrousel .slick-prev:before,
+.paragraph--type--photos-carrousel .slick-next:before,
 .page-node-type-photo-gallery .slick-prev:before,
 .page-node-type-photo-gallery .slick-next:before {
   color: #127271;
 }
+.paragraph--type--photos-carrousel .field--name-field-media-image,
 .page-node-type-photo-gallery .field--name-field-media-image {
   text-align: center;
 }
+.paragraph--type--photos-carrousel .field--name-field-caption,
 .page-node-type-photo-gallery .field--name-field-caption {
   font-style: italic;
   font-size: 12px;
   margin-bottom: 20px;
 }
+.paragraph--type--photos-carrousel .field--name-body,
 .page-node-type-photo-gallery .field--name-body {
   margin-top: 30px;
 }
+.paragraph--type--photos-carrousel .slider-for,
+.page-node-type-photo-gallery .slider-for {
+  padding-bottom: 20px;
+}
+.paragraph--type--photos-carrousel .slider-for .slick-slide img,
 .page-node-type-photo-gallery .slider-for .slick-slide img {
   max-height: 546px;
   width: auto;
   display: inline-block;
   cursor: pointer;
 }
+.paragraph--type--photos-carrousel .slider-nav .field--name-field-copyright,
+.paragraph--type--photos-carrousel .slider-nav .field--name-field-caption,
 .page-node-type-photo-gallery .slider-nav .field--name-field-copyright,
 .page-node-type-photo-gallery .slider-nav .field--name-field-caption {
   display: none;
 }
+.paragraph--type--photos-carrousel .slider-nav .slick-slide img,
 .page-node-type-photo-gallery .slider-nav .slick-slide img {
   max-height: 75px;
   width: auto;

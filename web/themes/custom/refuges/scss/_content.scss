@@ -279,7 +279,8 @@
     content: '\f053';
 }
 
-//NODE GALERIE
+//NODE GALERIE & PARAGRAPH CARROUSEL
+.paragraph--type--photos-carrousel,
 .page-node-type-photo-gallery{
     .slick-prev:before,
     .slick-next:before {
@@ -297,6 +298,7 @@
         margin-top: 30px;
     }
     .slider-for{
+        padding-bottom: 20px;
         .slick-slide img {
             max-height: 546px;
             width: auto;
