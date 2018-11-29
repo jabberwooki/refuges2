@@ -1,0 +1,23 @@
+uuid: e94e0f27-5923-4632-9905-4675d3070ff1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - refuges
+id: marquedusite
+theme: refuges
+region: hamburger
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marque du site mobile'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
