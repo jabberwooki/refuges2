@@ -254,6 +254,16 @@ body {
   border-radius: 0;
 }
 
+.region-hamburger .logo {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.region-hamburger .logo img {
+  max-height: 100px;
+  width: auto;
+}
+
 .highlighted,
 .node--type-section-header-image.node--view-mode-default,
 .block-views-blockslides-frontpage-slideshow {
@@ -1050,7 +1060,17 @@ blockquote {
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1920px) {
+  .region-hamburger .logo {
+    display: none;
+  }
+}
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .region-hamburger .logo {
+    display: none;
+  }
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   #sidebar.active {
