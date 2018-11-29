@@ -26,7 +26,7 @@ body {
     font-size:18px;
     padding-top: 10px;
   }
-  #block-socialmedialinks {
+  #block-socialmedialinks-top {
     padding-top:10px;
     .fa-2x {
       font-size: 1.5em;
@@ -239,6 +239,7 @@ position: relative;
 .path-frontpage .mountain{
   top: -120px;
 }
+.page-node-type-photo-gallery,
 .page-node-type-event,
 .page-node-type-news{
   .highlighted{

@@ -58,7 +58,7 @@
         position: relative;
         z-index: 1000;
     }
-    .slick-prev:before, .slick-next:before{
+    .slick-prev:before, .slick-next:before {
         color: $brand-primary;
     }
 }
@@ -278,6 +278,46 @@
 .slick-prev:before {
     content: '\f053';
 }
+
+//NODE GALERIE
+.page-node-type-photo-gallery{
+    .slick-prev:before,
+    .slick-next:before {
+        color: $brand-primary;
+    }
+    .field--name-field-media-image{
+        text-align: center;
+    }
+    .field--name-field-caption{
+        font-style: italic;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .field--name-body{
+        margin-top: 30px;
+    }
+    .slider-for{
+        .slick-slide img {
+            max-height: 546px;
+            width: auto;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+    .slider-nav{
+        .field--name-field-copyright,
+        .field--name-field-caption{
+            display: none;
+        } 
+        .slick-slide img {
+            max-height: 75px;
+            width: auto;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+}
+
 
 //AGENDA ACCUEIL
 .block-views-blockevents-frontpage-block{
