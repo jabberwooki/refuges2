@@ -141,7 +141,7 @@ function refuges_preprocess_region(&$variables) {
         'prariond' => '',
         'rosuel' => 'OPRF-93149',
         'turia' => '',
-        'valette' => '',
+        'valette' => 'OPRF-93064',
         'vallonbrun' => 'OPRF-92996',
       );
       $variables['resa_code'] = $reservation_codes[str_replace('sites/', '', \Drupal::service('site.path'))];
