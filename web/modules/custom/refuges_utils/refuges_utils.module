@@ -12,3 +12,25 @@ function refuges_utils_ckeditor_css_alter(array &$css, Editor $editor) {
   $css[] = 'themes/custom/refuges/css/' . str_replace('sites/', '', \Drupal::service('site.path')) . '.css';
 }
 
+function refuges_utils_form_media_image_edit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Si on vient d'un node (et non pas de la librairie de media), donc de entity_browser
+  // il ne faut afficher que les crop types correspondant au type de node.
+  if (substr($_SERVER['REQUEST_URI'],1,14) == 'entity_browser') {
+    $nid = explode('/',$_SERVER['HTTP_REFERER'])[4];
+    $node = node_load($nid);
+    $node_type = $node->getType();
+
+    // tableau de correspondance node type / crop type
+    $node_types_crop_types = array(
+      'news' => array('news_front','news_teaser','3_1'),
+      'section_header_image' => array('bandeau_desktop'),
+      'slide' => array('slides_desktop'),
+      'event' => array('agenda_teaser','3_1'),
+      'photo_gallery' => array('square','photo_landscape'),
+      'advanced_page' => array('bandeau_desktop')
+    );
+
+    // On ne garde et on affiche dans le formulaire que les crop types qui correspondent au node type en cours de modif.
+    $form['field_media_image']['widget'][0]['#crop_list'] = $node_types_crop_types[$node_type];
+  }
+}
