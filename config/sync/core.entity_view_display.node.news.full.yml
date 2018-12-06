@@ -32,13 +32,11 @@ third_party_settings:
     regions:
       ds_content:
         - group_content
-        - addtoany
         - field_media_image
         - field_content
   field_group:
     group_content:
       children:
-        - addtoany
         - field_media_image
         - field_content
       parent_name: ''
@@ -59,11 +57,6 @@ targetEntityType: node
 bundle: news
 mode: full
 content:
-  addtoany:
-    weight: 1
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
   field_content:
     type: entity_reference_revisions_entity_view
     weight: 3
@@ -83,6 +76,7 @@ content:
       link: false
     third_party_settings: {  }
 hidden:
+  addtoany: true
   field_summary: true
   langcode: true
   links: true

@@ -78,6 +78,12 @@ function refuges_preprocess_page(&$variables) {
     $variables['#attached']['library'][] = 'refuges/news';
   }
 
+  if (isset($variables['node']) && $variables['node']->bundle() == 'news') {
+    //kint($variables);
+    $addtoany_block_instance = \Drupal::service('plugin.manager.block')->createInstance('addtoany_block', []);
+    $addtoany_block_output = $addtoany_block_instance->build();
+    $variables['addtoany_buttons'] = $addtoany_block_output;
+  }
 }
 
 /**
