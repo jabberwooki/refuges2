@@ -1,0 +1,12 @@
+uuid: db48f358-59b6-45cd-9e7a-331de0839665
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Photo paysage'
+id: photo_landscape
+description: ''
+aspect_ratio: '4:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

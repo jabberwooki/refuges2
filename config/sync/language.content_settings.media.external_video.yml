@@ -1,0 +1,11 @@
+uuid: 42793ec0-3bc3-403a-a428-641e5fadd4a0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.external_video
+id: media.external_video
+target_entity_type_id: media
+target_bundle: external_video
+default_langcode: site_default
+language_alterable: false

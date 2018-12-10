@@ -1,0 +1,17 @@
+uuid: f62ff746-09f3-4626-b46e-294daec2fd40
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Diapositive
+type: slide
+description: 'Les diapositives sont affichées dans le grand diaporama de la page d''accueil.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

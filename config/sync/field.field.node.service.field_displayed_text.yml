@@ -1,0 +1,19 @@
+uuid: 540ebd6f-3c22-4783-b0b0-ba9a8a9893c6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_displayed_text
+    - node.type.service
+id: node.service.field_displayed_text
+field_name: field_displayed_text
+entity_type: node
+bundle: service
+label: 'Texte affiché'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

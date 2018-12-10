@@ -1,0 +1,123 @@
+uuid: 6d05cc5b-5884-4acf-873c-e39037b680ac
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.field_content
+    - field.field.node.event.field_event_dates
+    - field.field.node.event.field_location
+    - field.field.node.event.field_media_image
+    - field.field.node.event.field_pub_dates
+    - field.field.node.event.field_summary
+    - node.type.event
+  module:
+    - datetime_range
+    - ds
+    - field_group
+    - paragraphs
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_content
+        - field_media_image
+        - addtoany
+        - node_title
+        - field_event_dates
+        - field_location
+        - field_content
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 3
+        label: hidden
+        formatter: default
+  field_group:
+    group_content:
+      children:
+        - field_media_image
+        - addtoany
+        - node_title
+        - field_event_dates
+        - field_location
+        - field_content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'content_page col-md-offset-2 col-md-8'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Contenu
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  addtoany:
+    weight: 2
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  field_content:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: paragraph_summary
+    region: ds_content
+  field_event_dates:
+    type: daterange_custom
+    weight: 4
+    region: ds_content
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd/m/Y (H:i)'
+      separator: '>'
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_location:
+    type: string
+    weight: 5
+    region: ds_content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: agenda_full
+      link: false
+    third_party_settings: {  }
+hidden:
+  field_pub_dates: true
+  field_summary: true
+  langcode: true
+  links: true

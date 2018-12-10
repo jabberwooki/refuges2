@@ -1,0 +1,10 @@
+uuid: 2375acd6-0088-465d-9f04-95323078cc9a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.news_teaser
+label: 'Actus accroche'
+targetEntityType: media
+cache: true

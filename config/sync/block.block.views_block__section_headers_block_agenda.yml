@@ -1,0 +1,30 @@
+uuid: d5166ed8-721f-4050-b6a3-0422fd8f72e8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.section_headers
+  module:
+    - system
+    - views
+  theme:
+    - refuges
+id: views_block__section_headers_block_agenda
+theme: refuges
+region: highlighted
+weight: -12
+provider: null
+plugin: 'views_block:section_headers-block_2'
+settings:
+  id: 'views_block:section_headers-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /agenda
+    negate: false
+    context_mapping: {  }

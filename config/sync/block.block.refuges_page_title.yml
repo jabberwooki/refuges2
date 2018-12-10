@@ -1,0 +1,33 @@
+uuid: f79a010d-548a-4ef3-8adf-6f464b2e6ee0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - refuges
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: refuges_page_title
+theme: refuges
+region: content
+weight: -13
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titre de page'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      advanced_page: advanced_page
+      event: event
+      news: news
+      photo_gallery: photo_gallery
+      service: service
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

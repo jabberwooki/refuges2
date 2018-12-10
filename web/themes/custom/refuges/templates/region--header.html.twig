@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+
+        <div class="row">
+            <div class="col-xs-3 col-sm-2">
+              <div class="hamburger hamburger-open">
+                <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+                  <i class="glyphicon glyphicon-menu-hamburger"></i>
+                  <span class="name-menu">Menu</span>
+                </button>
+              </div>
+
+              <div class="hamburger hamburger-close">
+                <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+                  <i class="glyphicon glyphicon-remove"></i>
+                  <span class="name-menu">Menu</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-xs-9 col-sm-7 col-brand">
+              <div class="branding">{{ content }}</div>
+            </div>
+
+            <div class="col-sm-1 hidden-xs">
+              {% if resa_code %}
+                <button type="button" class="btn-resa">Reservation</button>
+              {% endif %}
+            </div>
+            
+            <div class="col-sm-2 hidden-xs">
+                <a style="float:right" href="http://www.vanoise-parcnational.fr" title="Parc national de la Vanoise" target="_blank"><img src="/themes/custom/refuges/images/pnv_logo.png" alt="logo du parc national de la vanoise" class="img-responsive"></a>
+            </div>
+        </div>
+      
+        <div class="row widget-resa-1">
+            {% if resa_code %}
+              <div class="col-md-6 col-md-offset-3 col">
+                {# Début du code widget AllianceReseaux #}
+                <script type="text/javascript" src="http://gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js"></script>
+                <script type="text/javascript">
+                  ( function() {
+                  var widgetProduit = AllianceReseaux.Widget.Instance( "Produit", { idPanier:"s5Czs7M", idIntegration:301, langue:"fr", ui:"{{ resa_code }}" } );
+                  widgetProduit.Initialise();
+                  })();
+                </script>
+                <div id="widget-produit-{{ resa_code }}"></div>
+                {# Fin du code widget AllianceReseaux #}
+              </div>
+            {% endif %}
+        </div>
+  </div>
+{% endif %}

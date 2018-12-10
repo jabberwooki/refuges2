@@ -1,0 +1,34 @@
+uuid: 46bcb911-6557-46e4-96ee-b17ae33070c6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser
+    - field.field.paragraph.photos_carrousel.field_carrousel
+    - paragraphs.paragraphs_type.photos_carrousel
+  module:
+    - entity_browser
+id: paragraph.photos_carrousel.default
+targetEntityType: paragraph
+bundle: photos_carrousel
+mode: default
+content:
+  field_carrousel:
+    weight: 0
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_replace: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

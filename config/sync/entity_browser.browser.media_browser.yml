@@ -1,0 +1,42 @@
+uuid: cacbfaa8-91bb-4338-b690-ea788889c2f6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - views
+name: media_browser
+label: 'Media browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: Sélectionner
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  e5e747bc-2fba-482f-96c4-2b8927cffc1e:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Sélectionner ces images'
+    uuid: e5e747bc-2fba-482f-96c4-2b8927cffc1e
+    weight: 1
+    label: 'Charger des images'
+    id: media_image_upload
+  f2882ad4-9ad6-4936-9625-6823592b2f76:
+    settings:
+      view: media_browser
+      view_display: entity_browser_1
+      submit_text: 'Sélectionner ces images'
+      auto_select: false
+    uuid: f2882ad4-9ad6-4936-9625-6823592b2f76
+    weight: 2
+    label: 'Parcourir les images existantes'
+    id: view

@@ -1,0 +1,12 @@
+uuid: 437551a0-ad29-461e-be77-4f59e52c57dd
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Rubrique actus'
+id: news_teaser
+description: ''
+aspect_ratio: '480:350'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

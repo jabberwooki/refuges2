@@ -1,0 +1,21 @@
+uuid: cc90383c-be66-4266-aecf-137c9ff81293
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texte
+    - paragraphs.paragraphs_type.texte_1_2_video_1_2
+  module:
+    - text
+id: paragraph.texte_1_2_video_1_2.field_texte
+field_name: field_texte
+entity_type: paragraph
+bundle: texte_1_2_video_1_2
+label: Texte
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

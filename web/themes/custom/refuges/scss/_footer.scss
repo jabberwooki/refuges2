@@ -1,0 +1,55 @@
+
+.prefooter{
+	 background-size: cover;
+	 .block-contact-block{
+	 	padding: 35px;
+    	background: rgba(255, 255, 255, 0.8);
+    	margin: 100px 0;
+    	h2.block-title {
+		  color: $brand-primary;
+		  text-align: left;
+		}
+	 }
+}
+
+.position-footer{
+	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	/* Set the fixed height of the footer here */
+  	height: 70px;
+}
+
+.path-frontpage .position-footer{
+	height: 170px;
+}
+
+.mountain2{
+  background: url("../../refuges/images/montagnes-grises.png") no-repeat;
+  position: relative;
+  z-index: 100;
+  height: 169px;
+  width: 100%;
+}
+
+.section-footer{
+	background:#3E3E3E;
+	color:#fff;
+	margin-top: 0;
+	.footer{
+		margin-top: 0 !important;
+    	border-top:none;	
+	}
+	.field--name-field-partner-logo{
+		.field--item {
+		  float: left;
+		  padding-right: 10px;
+		}
+	}
+}
+
+.path-frontpage{
+	.section-footer{
+		margin-top: 0 !important;
+	}
+}

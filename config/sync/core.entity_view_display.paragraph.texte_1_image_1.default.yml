@@ -1,0 +1,83 @@
+uuid: 7a5aaf38-a943-4293-9ed1-5ab9e0d2ca0c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texte_1_image_1.field_image_media
+    - field.field.paragraph.texte_1_image_1.field_raw_text
+    - paragraphs.paragraphs_type.texte_1_image_1
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_left:
+      children:
+        - field_raw_text
+      parent_name: group_row
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-6
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: left
+    group_right:
+      children:
+        - field_image_media
+      parent_name: group_row
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-6
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: right
+    group_row:
+      children:
+        - group_left
+        - group_right
+      parent_name: ''
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: row
+id: paragraph.texte_1_image_1.default
+targetEntityType: paragraph
+bundle: texte_1_image_1
+mode: default
+content:
+  field_image_media:
+    weight: 21
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_raw_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

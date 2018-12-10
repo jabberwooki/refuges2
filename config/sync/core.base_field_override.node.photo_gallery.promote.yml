@@ -1,0 +1,22 @@
+uuid: ae2296de-e426-461e-9feb-9a13cb675245
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.photo_gallery
+id: node.photo_gallery.promote
+field_name: promote
+entity_type: node
+bundle: photo_gallery
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

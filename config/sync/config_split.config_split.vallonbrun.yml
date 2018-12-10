@@ -1,0 +1,18 @@
+uuid: d1fdd26e-1cdd-4503-8256-52d27aef654d
+langcode: fr
+status: false
+dependencies: {  }
+id: vallonbrun
+label: 'Refuge de Vallonbrun'
+folder: ../config/sites/vallonbrun
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - refuges.settings
+  - structure_sync.data
+  - system.site
+  - 'block.block.socialmedialinks*'
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

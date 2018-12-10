@@ -1,0 +1,30 @@
+uuid: e485c5c8-c8bf-40c9-82fc-d6a9f964a017
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_content
+    - field_image_link
+    - file
+id: block_content.field_partner_logo
+field_name: field_partner_logo
+entity_type: block_content
+type: image_link
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: field_image_link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

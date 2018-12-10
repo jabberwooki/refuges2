@@ -1,0 +1,35 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'Refuges PNV'
+description: 'Theme de base Bootstrap (SASS) pour les refuges de la Vanoise.'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  top: 'Top Bar'
+  header: 'Header'
+  hamburger: 'Hamburger'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  post_content_1: 'Post Content 1'
+  post_content_2: 'Post Content 2'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  pre_footer: 'Pre Footer'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - 'refuges/fonts'
+
+libraries-extend:
+  bootstrap/framework:
+    - refuges/framework
+
+ckeditor_stylesheets:
+  - css/style.css

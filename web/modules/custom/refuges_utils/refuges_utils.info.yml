@@ -1,0 +1,5 @@
+name: Utilitaires Refuges
+core: 8.x
+type: module
+package: Refuges
+description: Utilitaires pour les sites des refuges.

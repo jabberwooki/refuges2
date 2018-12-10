@@ -1,0 +1,87 @@
+uuid: 0190143e-87bb-4e76-bec9-347d1ca481b5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_2_3_texte_1_3.field_texte
+    - field.field.paragraph.video_2_3_texte_1_3.field_video
+    - paragraphs.paragraphs_type.video_2_3_texte_1_3
+  module:
+    - field_group
+    - text
+    - video_embed_field
+third_party_settings:
+  field_group:
+    group_left:
+      children:
+        - field_video
+      parent_name: group_row
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-8
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: left
+    group_right:
+      children:
+        - field_texte
+      parent_name: group_row
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-4
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: right
+    group_row:
+      children:
+        - group_left
+        - group_right
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: row
+id: paragraph.video_2_3_texte_1_3.default
+targetEntityType: paragraph
+bundle: video_2_3_texte_1_3
+mode: default
+content:
+  field_texte:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_video:
+    weight: 0
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden: {  }

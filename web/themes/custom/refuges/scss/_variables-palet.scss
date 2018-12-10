@@ -1,0 +1,11 @@
+/**
+ * Variables du refuge du Col du Palet.
+ */
+
+$brand-primary:         #04a8e0;
+$brand-secondary:		lighten($brand-primary, 12.5%) !default; //  #cf2ed3
+
+///FOOTER
+.prefooter{
+  background:url("../images/carte-google-palet.jpg") no-repeat;
+}

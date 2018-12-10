@@ -1,0 +1,11 @@
+uuid: 77ea8f55-7ce0-48f4-a069-8ac7960df0a4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icons
+id: taxonomy_term.icons
+target_entity_type_id: taxonomy_term
+target_bundle: icons
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: c2dbc2a6-e365-4822-a528-5df88667f006
+langcode: fr
+status: false
+dependencies: {  }
+id: orgere
+label: 'Refuge-porte de l''Orgère'
+folder: ../config/sites/orgere
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - refuges.settings
+  - structure_sync.data
+  - system.site
+  - 'block.block.socialmedialinks*'
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -1,0 +1,103 @@
+uuid: 1c38bde9-5ece-43cc-a6e3-6424734ab23b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.front_block
+    - field.field.node.news.field_content
+    - field.field.node.news.field_media_image
+    - field.field.node.news.field_summary
+    - node.type.news
+  module:
+    - ds
+    - field_group
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_media_image
+        - group_text_teaser
+        - addtoany
+        - node_post_date
+        - node_title
+        - field_summary
+    fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 3
+        label: hidden
+        formatter: ds_post_date_long
+      node_title:
+        plugin_id: node_title
+        weight: 4
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+  field_group:
+    group_text_teaser:
+      children:
+        - addtoany
+        - node_post_date
+        - node_title
+        - field_summary
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: text-teaser
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Texte teaser'
+id: node.news.front_block
+targetEntityType: node
+bundle: news
+mode: front_block
+content:
+  addtoany:
+    weight: 2
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: news_front
+      link: false
+    third_party_settings: {  }
+    region: ds_content
+  field_summary:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: ds_content
+hidden:
+  field_content: true
+  langcode: true
+  links: true

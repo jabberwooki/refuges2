@@ -1,0 +1,9 @@
+uuid: 148c49e5-59d3-4860-bd45-a531d8578fc6
+langcode: fr
+status: true
+dependencies: {  }
+id: image_1_3_2_3_texte
+label: 'Image 1/3 - 2/3 Texte'
+icon_uuid: null
+description: 'Image à gauche et texte à droite 40/80'
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: 9b4b4d98-99c5-422d-bd3b-de91926cd47c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - refuges
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: refuges_help
+theme: refuges
+region: content
+weight: -11
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aide
+  provider: help
+  label_display: '0'
+visibility: {  }

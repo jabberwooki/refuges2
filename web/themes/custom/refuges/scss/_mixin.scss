@@ -1,0 +1,22 @@
+@mixin btn-refuge {
+  background-image: linear-gradient(to top, $brand-secondary, $brand-primary);
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 12px;
+  border: 1px solid $brand-primary;
+  &:hover {
+    background-image: linear-gradient(to bottom, $brand-secondary, $brand-primary);
+    color:#fff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+}
+
+@mixin btn-top{
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding: 5px 10px;
+}

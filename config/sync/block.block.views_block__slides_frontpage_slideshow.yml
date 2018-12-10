@@ -1,0 +1,30 @@
+uuid: eebee2fd-54ad-46b3-9dc0-2ba4d8ac221d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.slides
+  module:
+    - system
+    - views
+  theme:
+    - refuges
+id: views_block__slides_frontpage_slideshow
+theme: refuges
+region: highlighted
+weight: -14
+provider: null
+plugin: 'views_block:slides-frontpage_slideshow'
+settings:
+  id: 'views_block:slides-frontpage_slideshow'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

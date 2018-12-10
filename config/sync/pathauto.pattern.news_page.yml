@@ -1,0 +1,22 @@
+uuid: 00dc1318-d29f-4da7-a9c3-1d946268e770
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: news_page
+label: 'Page actalité'
+type: 'canonical_entities:node'
+pattern: '/actualites/[node:title]'
+selection_criteria:
+  333ab01d-c711-4913-b29e-193dc8cb5d3b:
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 333ab01d-c711-4913-b29e-193dc8cb5d3b
+selection_logic: and
+weight: -5
+relationships: {  }

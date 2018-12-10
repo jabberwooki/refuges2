@@ -1,0 +1,11 @@
+/**
+ * Variables du refuge-porte de Vallonbrun.
+ */
+
+$brand-primary:         #666666;
+$brand-secondary:		lighten($brand-primary, 12.5%) !default; // #cf2ed3
+
+///FOOTER
+.prefooter{
+  background:url("../images/carte-google-vallonbrun.jpg") no-repeat;
+}

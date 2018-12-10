@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: ezK5Dw8P_4bqJdDQIiecSAJak9p1Wf1yDwHzTutGFuQ
 id: frontpage
-label: Frontpage
+label: 'Page d''accueil'
 module: node
-description: 'All content promoted to the front page.'
+description: 'Tout le contenu promu en page d''accueil.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -61,12 +61,12 @@ display:
           admin_label: ''
           label: ''
           empty: true
-          title: 'Welcome to [site:name]'
+          title: 'Bienvenue sur [site:name]'
           plugin_id: title
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Appliquer
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -255,7 +255,7 @@ display:
   feed_1:
     display_plugin: feed
     id: feed_1
-    display_title: Feed
+    display_title: Flux
     position: 2
     display_options:
       sitename_title: true
@@ -287,18 +287,78 @@ display:
         - user.permissions
       max-age: -1
       tags: {  }
-  page_1:
+  frontpage:
     display_options:
       path: node
       display_extenders: {  }
+      empty: {  }
+      defaults:
+        empty: false
+        filters: false
+        filter_groups: false
+        sorts: false
+        pager: false
+      filters:
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: '0'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: nid
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts: {  }
+      pager:
+        type: none
+        options:
+          offset: 0
     display_plugin: page
     display_title: Page
-    id: page_1
+    id: frontpage
     position: 1
     cache_metadata:
       contexts:
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1

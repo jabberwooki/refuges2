@@ -6,10 +6,12 @@ id: local
 label: Local
 folder: ../config/envs/local
 module:
+  chosen: 0
   devel: 0
 theme: {  }
 blacklist: {  }
-graylist: {  }
+graylist:
+  - system.performance
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0

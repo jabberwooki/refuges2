@@ -1,0 +1,148 @@
+framework:
+#  css:
+#    theme:
+#      css/style.css: {}
+  js:
+    bootstrap/assets/javascripts/bootstrap/affix.js: {}
+    bootstrap/assets/javascripts/bootstrap/alert.js: {}
+    bootstrap/assets/javascripts/bootstrap/button.js: {}
+    bootstrap/assets/javascripts/bootstrap/carousel.js: {}
+    bootstrap/assets/javascripts/bootstrap/collapse.js: {}
+    bootstrap/assets/javascripts/bootstrap/dropdown.js: {}
+    bootstrap/assets/javascripts/bootstrap/modal.js: {}
+    bootstrap/assets/javascripts/bootstrap/tooltip.js: {}
+    bootstrap/assets/javascripts/bootstrap/popover.js: {}
+    bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
+    bootstrap/assets/javascripts/bootstrap/tab.js: {}
+    bootstrap/assets/javascripts/bootstrap/transition.js: {}
+    js/jquery.ellipsis.min.js: {}
+
+arpont:
+  css:
+    theme:
+      css/arpont.css: {}
+
+bois:
+  css:
+    theme:
+      css/bois.css: {}
+
+femma:
+  css:
+    theme:
+      css/femma.css: {}
+
+fours:
+  css:
+    theme:
+      css/fours.css: {}
+
+lac:
+  css:
+    theme:
+      css/lac.css: {}
+
+leisse:
+  css:
+    theme:
+      css/leisse.css: {}
+
+martin:
+  css:
+    theme:
+      css/martin.css: {}
+
+orgere:
+  css:
+    theme:
+      css/orgere.css: {}
+
+palet:
+  css:
+    theme:
+      css/palet.css: {}
+
+plaisance:
+  css:
+    theme:
+      css/plaisance.css: {}
+
+prariond:
+  css:
+    theme:
+      css/prariond.css: {}
+
+rosuel:
+  css:
+    theme:
+      css/rosuel.css: {}
+
+turia:
+  css:
+    theme:
+      css/turia.css: {}
+
+valette:
+  css:
+    theme:
+      css/valette.css: {}
+
+vallonbrun:
+  css:
+    theme:
+      css/vallonbrun.css: {}
+
+slick:
+  js:
+    libraries/slick/slick/slick.min.js: {}
+    js/slick.frontpage.js: {}
+    js/slick.photo-galleries.js: {}
+  css:
+    theme:
+      libraries/slick/slick/slick.css: {}
+      libraries/slick/slick/slick-theme.css: {}
+  dependencies:
+    - core/jquery
+
+sliding-menu:
+  js:
+    libraries/sliding-menu/sliding-menu.min.js: {}
+    js/sliding-menu.js: {}
+  css:
+    theme:
+      libraries/sliding-menu/sliding-menu.css: {}
+  dependencies:
+    - core/jquery
+
+hamburger:
+  js:
+    js/bootstrap.hamburger-menu.js: {}
+  css:
+    theme:
+      css/hamburger.css: {}
+
+searchbar:
+  js:
+    js/searchbar.js: {}
+  dependencies:
+    - core/jquery
+
+reservation:
+  js:
+    js/reservation.js: {}
+  dependencies:
+    - core/jquery
+
+news:
+  js:
+    js/news.js: {}
+  dependencies:
+    - core/jquery
+
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i': { type: external, minified: true }
+      '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css': {type: external}
+
+

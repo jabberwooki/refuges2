@@ -1,0 +1,142 @@
+uuid: a0bea8c4-08b3-4421-be36-f4cdb6a5d386
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.teaser
+    - field.field.media.file.field_description
+    - field.field.media.file.field_flipthrough_url
+    - field.field.media.file.field_media_file
+    - media.type.file
+  module:
+    - field_group
+    - file
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_left:
+      children:
+        - addtoany
+        - name
+        - field_description
+      parent_name: group_wrapper
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: left
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'text col-md-6'
+      label: left
+    group_right:
+      children:
+        - field_media_file
+      parent_name: group_wrapper
+      weight: 4
+      format_type: html_element
+      format_settings:
+        label: right
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'download col-md-3'
+      label: right
+    group_wrapper:
+      children:
+        - group_left
+        - group_middle
+        - group_right
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: wrapper
+      label: wrapper
+    group_middle:
+      children:
+        - field_flipthrough_url
+      parent_name: group_wrapper
+      weight: 2
+      format_type: html_element
+      format_settings:
+        label: middle
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'read col-md-3'
+      label: middle
+_core:
+  default_config_hash: 9s0lWIanCnW5Xrrkmedxohs9F0yk4LO8ZcmVQ9xyuu4
+id: media.file.teaser
+targetEntityType: media
+bundle: file
+mode: teaser
+content:
+  addtoany:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    type: text_summary_or_trimmed
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+  field_flipthrough_url:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media_file:
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    weight: 5
+    region: content
+  name:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  thumbnail: true
+  uid: true

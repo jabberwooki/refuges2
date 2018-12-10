@@ -1,0 +1,17 @@
+uuid: c37781e3-9be3-401f-abe2-4f51d0813821
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.3_1
+  module:
+    - crop
+name: new_full
+label: 'Actus page'
+effects:
+  4e7d078b-119b-47e1-9ba1-233c577ad661:
+    uuid: 4e7d078b-119b-47e1-9ba1-233c577ad661
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '3_1'

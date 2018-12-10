@@ -1,0 +1,23 @@
+uuid: 383cc36e-ceaf-4f0e-b208-a2f1d0821959
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_image_height
+    - media.type.image
+id: media.image.field_image_height
+field_name: field_image_height
+entity_type: media
+bundle: image
+label: Hauteur
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

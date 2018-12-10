@@ -1,0 +1,64 @@
+uuid: 3b4163a2-775f-46db-9adc-914095209b51
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.front_teaser
+    - field.field.node.service.field_displayed_text
+    - field.field.node.service.field_frontpage_promoted
+    - field.field.node.service.field_icone
+    - field.field.node.service.field_period
+    - node.type.service
+  module:
+    - ds
+    - icon_select
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_icone
+        - field_displayed_text
+id: node.service.front_teaser
+targetEntityType: node
+bundle: service
+mode: front_teaser
+content:
+  field_displayed_text:
+    type: string
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_icone:
+    type: icon_select_formatter_default
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      apply_dimensions: '1'
+      width: '47'
+      height: '47'
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_frontpage_promoted: true
+  field_period: true
+  langcode: true
+  links: true

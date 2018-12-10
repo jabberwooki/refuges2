@@ -1,0 +1,25 @@
+uuid: d6aa5ffe-a9a2-4ded-b1c8-ca945c9d6e55
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.agenda_teaser
+  module:
+    - crop
+name: agenda_teaser
+label: 'Agenda accroche'
+effects:
+  199f01b5-fc3b-42df-bb4e-6fb4d693766d:
+    uuid: 199f01b5-fc3b-42df-bb4e-6fb4d693766d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: agenda_teaser
+  6a555077-641f-4588-ab77-1df3456f7490:
+    uuid: 6a555077-641f-4588-ab77-1df3456f7490
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 215
+      upscale: false

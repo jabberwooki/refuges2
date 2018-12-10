@@ -1,0 +1,30 @@
+uuid: 64242c18-f228-4d64-b34b-e9557bc1c532
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.services
+  module:
+    - system
+    - views
+  theme:
+    - refuges
+id: views_block__services_block_1
+theme: refuges
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:services-block_1'
+settings:
+  id: 'views_block:services-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

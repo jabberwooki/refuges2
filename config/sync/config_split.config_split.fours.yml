@@ -1,0 +1,18 @@
+uuid: f6ff78f1-cddf-4f77-b14f-875e4f21867b
+langcode: fr
+status: false
+dependencies: {  }
+id: fours
+label: 'Refuge du Fond des Fours'
+folder: ../config/sites/fours
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - refuges.settings
+  - structure_sync.data
+  - system.site
+  - 'block.block.socialmedialinks*'
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

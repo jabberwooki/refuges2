@@ -1,0 +1,22 @@
+uuid: d113d004-f907-4a3a-b25d-5a487551b051
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - refuges
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: refuges_search
+theme: refuges
+region: highlighted
+weight: -15
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

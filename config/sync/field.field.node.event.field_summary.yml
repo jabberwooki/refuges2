@@ -1,0 +1,19 @@
+uuid: 36efcc11-d762-44a3-8890-2f9646be3087
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.event
+id: node.event.field_summary
+field_name: field_summary
+entity_type: node
+bundle: event
+label: Résumé
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

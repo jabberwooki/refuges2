@@ -1,0 +1,10 @@
+uuid: b0415ef7-fa78-4117-bd6c-c6758ae8d8a1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.front_block_2
+label: 'Bloc accueil 2'
+targetEntityType: node
+cache: true

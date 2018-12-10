@@ -1,0 +1,11 @@
+/**
+ * Variables du refuge du Fond des Fours.
+ */
+
+$brand-primary:         #cc0066;
+$brand-secondary:		lighten($brand-primary, 12.5%) !default; // #cf2ed3
+
+///FOOTER
+.prefooter{
+  background:url("../images/carte-google-fours.jpg") no-repeat;
+}

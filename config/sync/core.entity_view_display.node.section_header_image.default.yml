@@ -1,0 +1,86 @@
+uuid: 41d6c66b-efff-4323-a571-4144d562c0f2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.section_header_image.field_media_image
+    - field.field.node.section_header_image.field_section
+    - field.field.node.section_header_image.field_subtitle
+    - node.type.section_header_image
+  module:
+    - ds
+    - field_group
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_media_image
+        - group_infos
+        - node_title
+        - field_subtitle
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+  field_group:
+    group_infos:
+      children:
+        - node_title
+        - field_subtitle
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: infos
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: infos
+id: node.section_header_image.default
+targetEntityType: node
+bundle: section_header_image
+mode: default
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: bandeau
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: ds_content
+  field_subtitle:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+hidden:
+  addtoany: true
+  field_section: true
+  langcode: true
+  links: true

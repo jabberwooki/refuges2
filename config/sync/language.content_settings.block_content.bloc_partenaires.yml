@@ -1,0 +1,11 @@
+uuid: 6e9f68d4-8f4e-4e30-859b-ccead8a64ce9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_partenaires
+id: block_content.bloc_partenaires
+target_entity_type_id: block_content
+target_bundle: bloc_partenaires
+default_langcode: und
+language_alterable: false

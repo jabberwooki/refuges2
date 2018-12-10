@@ -1,0 +1,8 @@
+uuid: 91c074d4-e4c9-4e1b-b463-34de2afb9b3a
+langcode: fr
+status: true
+dependencies: {  }
+id: intro_block
+label: 'Bloc intro'
+revision: 0
+description: 'Bloc d''introduction d''une rubrique'

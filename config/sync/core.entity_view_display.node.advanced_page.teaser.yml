@@ -1,0 +1,26 @@
+uuid: 5016cf70-3fba-47a9-90e3-c69d757d6ac8
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.advanced_page.field_content
+    - field.field.node.advanced_page.field_media_image
+    - field.field.node.advanced_page.field_subtitle
+    - node.type.advanced_page
+  module:
+    - user
+id: node.advanced_page.teaser
+targetEntityType: node
+bundle: advanced_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_content: true
+  field_media_image: true
+  field_subtitle: true
+  langcode: true

@@ -1,0 +1,25 @@
+uuid: 1201f414-9fe9-4c55-9601-8754456093ab
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.section_header_image.field_media_image
+    - field.field.node.section_header_image.field_subtitle
+    - node.type.section_header_image
+  module:
+    - user
+id: node.section_header_image.teaser
+targetEntityType: node
+bundle: section_header_image
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_media_image: true
+  field_section: true
+  field_subtitle: true
+  langcode: true

@@ -1,0 +1,47 @@
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1920px) {
+  .region-hamburger .logo {
+    display: none;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .region-hamburger .logo {
+    display: none;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #sidebar.active {
+    width: 40% !important;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+  #sidebar.active {
+    width: 100% !important;
+  }
+  .menu--services li {
+    width: 100%;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .logo {
+    display: none;
+  }
+  #sidebar.active {
+    width: 100% !important;
+  }
+  .menu--services li {
+    width: 100%;
+  }
+}

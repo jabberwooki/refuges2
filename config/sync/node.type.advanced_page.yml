@@ -1,0 +1,18 @@
+uuid: aebfa7a0-3761-47a4-9ec5-f7a18dc08c63
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - menu-hamburger
+    parent: 'menu-hamburger:'
+name: 'Page avancée'
+type: advanced_page
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

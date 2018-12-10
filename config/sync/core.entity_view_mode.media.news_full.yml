@@ -1,0 +1,10 @@
+uuid: 15cef2a0-e963-49b1-8f32-e53da6a6425d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.news_full
+label: 'Actus page'
+targetEntityType: media
+cache: true

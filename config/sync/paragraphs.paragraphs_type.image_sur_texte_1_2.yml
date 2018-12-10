@@ -1,0 +1,9 @@
+uuid: f6a471eb-9653-4c1e-a78f-c3709c8bbe1c
+langcode: fr
+status: true
+dependencies: {  }
+id: image_sur_texte_1_2
+label: 'Image sur texte 1/2'
+icon_uuid: null
+description: 'Image sur texte en colonne sur 50% de la largeur totale du contenu, on peut mettre 2 bundles de ce type côte à côte'
+behavior_plugins: {  }

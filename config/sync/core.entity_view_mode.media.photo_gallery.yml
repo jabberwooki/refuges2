@@ -1,0 +1,10 @@
+uuid: 84fa3280-c00d-45cc-b664-f97a06625b90
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.photo_gallery
+label: 'Photo galerie'
+targetEntityType: media
+cache: true

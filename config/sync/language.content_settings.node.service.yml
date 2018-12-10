@@ -1,0 +1,11 @@
+uuid: 1392c2cc-ff20-4939-b198-07571453a93b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.service
+id: node.service
+target_entity_type_id: node
+target_bundle: service
+default_langcode: site_default
+language_alterable: false

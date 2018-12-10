@@ -1,0 +1,9 @@
+uuid: 378557ef-81d0-45a5-aed9-3db4016e3290
+langcode: fr
+status: true
+dependencies: {  }
+id: bloc_1_3_texte_2_3
+label: 'Bloc 1/3 - Texte 2/3'
+icon_uuid: null
+description: 'Un bloc avec fond de couleurs à gauche et du texte à droite'
+behavior_plugins: {  }

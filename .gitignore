@@ -22,3 +22,7 @@
 
 # Ignore .env files as they are personal
 /.env
+
+#Ignore prepros files
+/web/themes/custom/refuges/prepros-6.config
+web/themes/custom/refuges/prepros.cfg

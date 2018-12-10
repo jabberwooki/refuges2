@@ -1,0 +1,9 @@
+uuid: 21048f7f-0962-4694-975e-0378644c401c
+langcode: fr
+status: true
+dependencies: {  }
+id: texte_1_2_video_1_2
+label: 'Texte 1/2 - Video 1/2'
+icon_uuid: null
+description: 'Texte à gauche et Vidéo à droite 50/50'
+behavior_plugins: {  }

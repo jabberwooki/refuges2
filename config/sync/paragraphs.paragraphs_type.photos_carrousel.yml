@@ -1,0 +1,9 @@
+uuid: ed5b3594-3703-4206-b1b8-c479acbafc2b
+langcode: fr
+status: true
+dependencies: {  }
+id: photos_carrousel
+label: 'Carousel de photos'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,53 @@
+uuid: a3a14ff6-677d-43b1-aff9-efff9561439d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.news_full
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_copyright
+    - field.field.media.image.field_media_image
+    - image.style.new_full
+    - media.type.image
+  module:
+    - image
+    - text
+_core:
+  default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
+id: media.image.news_full
+targetEntityType: media
+bundle: image
+mode: news_full
+content:
+  field_caption:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_copyright:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: new_full
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_image_height: true
+  field_image_width: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

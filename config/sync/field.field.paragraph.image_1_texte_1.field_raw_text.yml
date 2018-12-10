@@ -1,0 +1,19 @@
+uuid: ffcda3f7-753a-41ac-a68b-3123ed581343
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_raw_text
+    - paragraphs.paragraphs_type.image_1_texte_1
+id: paragraph.image_1_texte_1.field_raw_text
+field_name: field_raw_text
+entity_type: paragraph
+bundle: image_1_texte_1
+label: Texte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

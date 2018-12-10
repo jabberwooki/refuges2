@@ -1,0 +1,21 @@
+uuid: a32cb032-776e-4d42-8ca3-4598a0e90a77
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_caption
+    - media.type.image
+  module:
+    - text
+id: media.image.field_caption
+field_name: field_caption
+entity_type: media
+bundle: image
+label: Légende
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

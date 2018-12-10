@@ -1,0 +1,21 @@
+uuid: 124f08de-4b13-446a-a1fe-71ecb5934ecb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.intro_block
+    - field.storage.block_content.field_intro_block_footer
+  module:
+    - text
+id: block_content.intro_block.field_intro_block_footer
+field_name: field_intro_block_footer
+entity_type: block_content
+bundle: intro_block
+label: 'Pied de bloc'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

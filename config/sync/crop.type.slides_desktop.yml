@@ -1,0 +1,12 @@
+uuid: c60a3cf2-7ce4-4279-a33f-98251236f892
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Diapo (pc)'
+id: slides_desktop
+description: ''
+aspect_ratio: '3:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

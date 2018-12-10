@@ -1,0 +1,26 @@
+uuid: f0051526-7ceb-44f2-b609-e3e6dfacf943
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pub_dates
+    - node.type.event
+  module:
+    - datetime_range
+id: node.event.field_pub_dates
+field_name: field_pub_dates
+entity_type: node
+bundle: event
+label: 'Début et fin de publication'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+ 1 year'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

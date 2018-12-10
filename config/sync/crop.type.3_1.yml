@@ -1,0 +1,12 @@
+uuid: 7759911c-e02b-484b-814a-91a5e5a19014
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Page actu ou page agenda'
+id: '3_1'
+description: 'Recadrage des images sur les types de pages actualité et événement'
+aspect_ratio: '3:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

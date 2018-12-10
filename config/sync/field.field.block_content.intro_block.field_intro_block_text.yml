@@ -1,0 +1,21 @@
+uuid: 3e1de583-8465-438b-90ba-8643ebaf3e82
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.intro_block
+    - field.storage.block_content.field_intro_block_text
+  module:
+    - text
+id: block_content.intro_block.field_intro_block_text
+field_name: field_intro_block_text
+entity_type: block_content
+bundle: intro_block
+label: Texte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

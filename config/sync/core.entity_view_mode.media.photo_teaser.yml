@@ -1,0 +1,10 @@
+uuid: 7c798147-5fed-41d6-a13f-8ba6b3a07d9b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.photo_teaser
+label: 'Photo accroche'
+targetEntityType: media
+cache: true

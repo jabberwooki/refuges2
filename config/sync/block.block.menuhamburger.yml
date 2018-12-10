@@ -1,0 +1,24 @@
+uuid: 1c4c2cae-6172-46f3-87d2-00f47308b5f3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.menu-hamburger
+  module:
+    - system
+  theme:
+    - refuges
+id: menuhamburger
+theme: refuges
+region: hamburger
+weight: -13
+provider: null
+plugin: 'system_menu_block:menu-hamburger'
+settings:
+  id: 'system_menu_block:menu-hamburger'
+  label: 'Menu Hamburger'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

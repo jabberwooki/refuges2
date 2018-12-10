@@ -1,0 +1,30 @@
+uuid: b73a68b5-74c0-4123-ad10-51e0a647a867
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.section_headers
+  module:
+    - system
+    - views
+  theme:
+    - refuges
+id: views_block__section_headers_block_videos
+theme: refuges
+region: highlighted
+weight: -9
+provider: null
+plugin: 'views_block:section_headers-block_6'
+settings:
+  id: 'views_block:section_headers-block_6'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /videos
+    negate: false
+    context_mapping: {  }

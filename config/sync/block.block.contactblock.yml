@@ -1,0 +1,29 @@
+uuid: 3ff50a6c-7f09-4ca0-a24c-b89e18a0de2f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+    - system
+  theme:
+    - refuges
+id: contactblock
+theme: refuges
+region: pre_footer
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: Contact
+  provider: contact_block
+  label_display: visible
+  contact_form: feedback
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

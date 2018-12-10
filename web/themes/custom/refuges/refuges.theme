@@ -1,0 +1,156 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ * Select which 'CSS library' to load depending on the domain name.
+ * See CSS libraries declarations in refuges.libraries.yml
+ *
+ * @param $variables
+ */
+function refuges_preprocess_page(&$variables) {
+
+  // Charge la feuille de style (définie dans une librairie D8)
+  // en fonction du site visité.
+  $current_host = Drupal::request()->getHttpHost();
+
+  if (strpos($current_host, 'arpont') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/arpont';
+  }
+  elseif (strpos($current_host, 'bois') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/bois';
+  }
+  elseif (strpos($current_host, 'femma') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/femma';
+  }
+  elseif (strpos($current_host, 'fours') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/fours';
+  }
+  elseif (strpos($current_host, 'lac') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/lac';
+  }
+  elseif (strpos($current_host, 'leisse') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/leisse';
+  }
+  elseif (strpos($current_host, 'martin') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/martin';
+  }
+  elseif (strpos($current_host, 'orgere') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/orgere';
+  }
+  elseif (strpos($current_host, 'palet') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/palet';
+  }
+  elseif (strpos($current_host, 'plaisance') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/plaisance';
+  }
+  elseif (strpos($current_host, 'prariond') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/prariond';
+  }
+  elseif (strpos($current_host, 'rosuel') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/rosuel';
+  }
+  elseif (strpos($current_host, 'turia') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/turia';
+  }
+  elseif (strpos($current_host, 'valette') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/valette';
+  }
+  elseif (strpos($current_host, 'vallonbrun') !== FALSE) {
+    $variables['#attached']['library'][] = 'refuges/vallonbrun';
+  }
+
+  $current_path = \Drupal::service('path.current')->getPath();
+  $path_args = explode('/', $current_path);
+  $is_service_view = false;
+  if (isset($path_args[1]) && in_array($path_args[1], array('services-gardiennage','services-hors-gardiennage'))) {
+    $is_service_view = true;
+  }
+  $variables['is_service_view'] = $is_service_view;
+
+  if (isset($path_args[1]) && (\Drupal::service('path.matcher')->isFrontPage() || $path_args[1] == 'actualites') || $path_args[1] == 'agenda') {
+    $variables['#attached']['library'][] = 'refuges/news';
+  }
+
+  if (isset($variables['node']) && $variables['node']->bundle() == 'news') {
+    //kint($variables);
+    $addtoany_block_instance = \Drupal::service('plugin.manager.block')->createInstance('addtoany_block', []);
+    $addtoany_block_output = $addtoany_block_instance->build();
+    $variables['addtoany_buttons'] = $addtoany_block_output;
+  }
+}
+
+/**
+* Implements hook_preprocess_HOOK() for field.html.twig.
+*/
+function refuges_preprocess_field(&$variables, $hook) {
+  if ($variables['element']['#field_name'] == 'field_photos' && $variables['element']['#view_mode'] == 'full') {
+    $variables['current_view_mode'] = 'full';
+  }
+}
+
+function refuges_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  if (isset($variables['elements']['content']['#block_content'])) {
+    array_splice($suggestions, 1, 0, 'block__' . $variables['elements']['content']['#block_content']->bundle());
+  }
+}
+
+function refuges_preprocess_block(&$variables) {
+  if (isset($variables["elements"]["#id"])) {
+    $block_id = $variables["elements"]["#id"];
+    $theme = \Drupal::theme()->getActiveTheme()->getName();
+    if (str_replace($theme . '_', '', $block_id) == 'search') {
+      $variables['region'] = 'top';
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ * Add suggestion template for page.html.twig
+ */
+function refuges_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Add template suggestion based on node type
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__type__'.$content_type;
+    $suggestions[] = 'page__node__' . $node->id();
+  }
+}
+
+function refuges_preprocess_region(&$variables) {
+  $region = $variables['elements']['#region'];
+  switch($region) {
+    case 'top':
+      $refuges_block_instance = \Drupal::service('plugin.manager.block')->createInstance('system_menu_block:refuges', []);
+      $refuges_block_output = $refuges_block_instance->build();
+      $variables['refuges_block_output'] = $refuges_block_output;
+      break;
+    case 'header':
+      $reservation_codes = array(
+        'arpont' => 'OPRF-92950',
+        'bois' => 'OPRF-93150',
+        'femma' => 'OPRF-92951',
+        'fours' => 'OPRF-93147',
+        'lac' => 'OPRF-92949',
+        'leisse' => 'OPRF-92948',
+        'martin' => 'OPRF-93146',
+        'orgere' => 'OPRF-92947',
+        'palet' => 'OPRF-93148',
+        'plaisance' => 'OPRF-93151',
+        'prariond' => '',
+        'rosuel' => 'OPRF-93149',
+        'turia' => '',
+        'valette' => 'OPRF-93064',
+        'vallonbrun' => 'OPRF-92996',
+      );
+      $variables['resa_code'] = $reservation_codes[str_replace('sites/', '', \Drupal::service('site.path'))];
+      break;
+  }
+}

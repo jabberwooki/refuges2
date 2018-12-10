@@ -1,0 +1,56 @@
+uuid: 8dbcd17e-15e1-4ac2-9ea9-18a4cc476397
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.service.field_displayed_text
+    - field.field.node.service.field_frontpage_promoted
+    - field.field.node.service.field_icone
+    - field.field.node.service.field_period
+    - node.type.service
+  module:
+    - options
+    - user
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  field_displayed_text:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_frontpage_promoted:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_icone:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_period:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true

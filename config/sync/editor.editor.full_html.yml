@@ -15,15 +15,23 @@ settings:
     rows:
       -
         -
+          name: 'Supprimer les styles'
+          items:
+            - RemoveFormat
+        -
+          name: 'Style de texte'
+          items:
+            - Styles
+        -
           name: Formatting
           items:
+            - Blockquote
             - Bold
             - Italic
             - Strike
             - Superscript
             - Subscript
             - '-'
-            - RemoveFormat
         -
           name: Linking
           items:
@@ -34,30 +42,16 @@ settings:
           items:
             - BulletedList
             - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-            - Table
-            - HorizontalRule
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
-          name: Tools
-          items:
-            - ShowBlocks
-            - Source
   plugins:
+    language:
+      language_list: un
     stylescombo:
-      styles: ''
+      styles: "p.intro|Intro\r\np.color|Texte de couleur\r\nh3.titre|Titre 3\r\nh4.titre|Titre 4\r\nh4.titredebloc|Titre de bloc\r\nh5.titre|Titre 5\r\nh6.titre|Titre 6"
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

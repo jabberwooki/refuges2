@@ -1,0 +1,30 @@
+uuid: 4d5799a1-38f8-49aa-8c2d-aef8a7b3ea7c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.section_headers
+  module:
+    - system
+    - views
+  theme:
+    - refuges
+id: views_block__section_headers_block_services
+theme: refuges
+region: highlighted
+weight: -11
+provider: null
+plugin: 'views_block:section_headers-block_3'
+settings:
+  id: 'views_block:section_headers-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/services-gardiennage\r\n/services-hors-gardiennage"
+    negate: false
+    context_mapping: {  }

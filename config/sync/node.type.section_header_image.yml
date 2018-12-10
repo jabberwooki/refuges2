@@ -1,0 +1,17 @@
+uuid: bb25ee41-57fb-4bda-82a5-3ae551af085b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Bandeau rubrique'
+type: section_header_image
+description: 'Image placée en haut de page d''une rubrique'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,19 @@
+uuid: cd3ceff0-6f27-4aed-820c-8a44dd5ab539
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.intro_block
+    - field.storage.block_content.field_intro_block_title
+id: block_content.intro_block.field_intro_block_title
+field_name: field_intro_block_title
+entity_type: block_content
+bundle: intro_block
+label: Titre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

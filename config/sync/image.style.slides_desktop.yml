@@ -1,0 +1,25 @@
+uuid: 61763ad3-c9e8-455f-b350-dcfcdf7e6d57
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.slides_desktop
+  module:
+    - crop
+name: slides_desktop
+label: 'Diapo desktop'
+effects:
+  182ed0f0-70a8-425c-8d1c-1fdaf622117b:
+    uuid: 182ed0f0-70a8-425c-8d1c-1fdaf622117b
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: slides_desktop
+  74ea0a44-81fc-4daf-80d0-b700169af08a:
+    uuid: 74ea0a44-81fc-4daf-80d0-b700169af08a
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 635
+      upscale: false

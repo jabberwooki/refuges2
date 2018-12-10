@@ -1,0 +1,30 @@
+uuid: 8703c930-9ac7-4886-abf0-df137b7dd848
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - views
+  theme:
+    - refuges
+id: views_block__events_frontpage_block
+theme: refuges
+region: post_content_2
+weight: -11
+provider: null
+plugin: 'views_block:events-frontpage_block'
+settings:
+  id: 'views_block:events-frontpage_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,18 @@
+uuid: 28f8243c-ae95-47e4-a017-b07e7d1f16c2
+langcode: fr
+status: false
+dependencies: {  }
+id: prariond
+label: 'Refuge de Prariond'
+folder: ../config/sites/prariond
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - refuges.settings
+  - structure_sync.data
+  - system.site
+  - 'block.block.socialmedialinks*'
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

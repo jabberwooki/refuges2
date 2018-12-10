@@ -1,0 +1,81 @@
+uuid: 1189a14d-1cbe-452f-a874-479f92ba18c6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.photo_gallery.body
+    - field.field.node.photo_gallery.field_photos
+    - node.type.photo_gallery
+  module:
+    - ds
+    - field_group
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - field_photos
+        - body
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-md-8 col-md-offset-2'
+      label: wrapper
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_wrapper
+        - field_photos
+        - body
+id: node.photo_gallery.full
+targetEntityType: node
+bundle: photo_gallery
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: ds_content
+  field_photos:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: photo_gallery
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: ds_content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

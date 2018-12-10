@@ -1,0 +1,18 @@
+uuid: 798752a2-a8dc-4fe3-bfb2-7cc2051fa752
+langcode: fr
+status: false
+dependencies: {  }
+id: plaisance
+label: 'Refuge de Plaisance'
+folder: ../config/sites/plaisance
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - refuges.settings
+  - structure_sync.data
+  - system.site
+  - 'block.block.socialmedialinks*'
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -1,0 +1,32 @@
+uuid: ca0e2cfd-a04a-4761-ae37-887e286853cd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.media.external_video.field_media_video_embed_field
+    - media.type.external_video
+  module:
+    - video_embed_field
+id: media.external_video.default
+targetEntityType: media
+bundle: external_video
+mode: default
+content:
+  field_media_video_embed_field:
+    weight: 0
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

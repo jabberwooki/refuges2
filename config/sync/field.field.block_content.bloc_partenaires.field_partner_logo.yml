@@ -1,0 +1,40 @@
+uuid: 052d0fea-18ac-4cfc-8b57-58c39115d45f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_partenaires
+    - field.storage.block_content.field_partner_logo
+  module:
+    - field_image_link
+id: block_content.bloc_partenaires.field_partner_logo
+field_name: field_partner_logo
+entity_type: block_content
+bundle: bloc_partenaires
+label: 'Logo partenaire'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg svg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  link_type: 16
+  link_title: 0
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image_link
