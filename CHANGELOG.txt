@@ -1,0 +1,3 @@
+Refuges PNV 1.0, 2018-12-10
+---------------------------
+Toute première version, déployée sur le serveur de production vmpg25 du BRGM.
