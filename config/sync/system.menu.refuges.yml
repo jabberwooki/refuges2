@@ -1,8 +1,0 @@
-uuid: 31699f1c-9320-4f28-9019-440e7d95b972
-langcode: fr
-status: true
-dependencies: {  }
-id: refuges
-label: 'Les autres refuges'
-description: 'Liens vers les autres refuges de la Vanoise'
-locked: false
