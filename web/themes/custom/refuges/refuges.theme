@@ -128,9 +128,6 @@ function refuges_preprocess_region(&$variables) {
   $region = $variables['elements']['#region'];
   switch($region) {
     case 'top':
-      $refuges_block_instance = \Drupal::service('plugin.manager.block')->createInstance('system_menu_block:refuges', []);
-      $refuges_block_output = $refuges_block_instance->build();
-      $variables['refuges_block_output'] = $refuges_block_output;
       break;
     case 'header':
       $reservation_codes = array(
