@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ *
+ * Available variables:
+ * - links_list : HTML unordered list (<li> items only) of links to all refuges, but current one.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{#
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdown-refuges" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Les autres refuges
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdown-refuges">
+        {% for item in items %}
+            <li><a href="http://{{ url_prefix }}.{{ item.root }}.{{ url_suffix }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+#}
+
+<div id="other-refuges">
+    <button class="btn btn-default" type="button" id="dropdown-refuges">
+        Les autres refuges
+        <span class="caret"></span>
+    </button>
+    <ul class="other-refuges-links">
+        {% for item in items %}
+            <li><a href="http://{{ url_prefix }}.{{ item.root }}.{{ url_suffix }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

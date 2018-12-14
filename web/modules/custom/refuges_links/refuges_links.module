@@ -1,0 +1,19 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ubuntu
+ * Date: 12/12/18
+ * Time: 15:00
+ */
+
+function refuges_links_theme($existing, $type, $theme, $path) {
+  return [
+    'refuges_links__block' => [
+      'variables' => [
+        'url_prefix' => '',
+        'url_suffix' => '',
+        'items' => NULL
+      ],
+    ],
+  ];
+}

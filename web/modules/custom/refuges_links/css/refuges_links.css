@@ -1,0 +1,14 @@
+#other-refuges .other-refuges-links {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 2000;
+}
+#other-refuges .other-refuges-links li {
+    line-height: 1.7;
+}
+#other-refuges .other-refuges-links a {
+    color: #333;
+}
