@@ -43,11 +43,6 @@ class RefugesLinksBlock extends BlockBase {
       'valette' => array('localhost' => 'valette2', 'remote' => 'valette', 'title' => 'Refuge de la Valette'),
       'vallonbrun' => array('localhost' => 'vallonbrun2', 'remote' => 'vallonbrun', 'title' => 'Refuge de Vallonbrun'),
     );
-    $url_elements = array(
-      'localhost' => array('prefix' => 'www', 'suffix' => 'localhost'),
-      'fr' => array('prefix' => 'pnv-refuge-', 'suffix' => 'brgm-rec.fr'),
-      'com' => array('prefix' => 'refuge-', 'suffix' => 'vanoise.com')
-    );
 
     $domain_parts = explode('.',$_SERVER['HTTP_HOST']);
     $domain_tld = array_pop($domain_parts);
@@ -59,13 +54,19 @@ class RefugesLinksBlock extends BlockBase {
     foreach ($subsites as $key=>$subsite) {
       if ($domain_tld == 'localhost') {
       $items[] = [
-        'root' => $subsites[$key]['localhost'],
+        'url' => 'www.' . $subsites[$key]['localhost'] . '.localhost',
         'title' => $subsites[$key]['title']
+        ];
+      }
+      elseif ($domain_tld == 'fr') {
+        $items[] = [
+          'url' => 'pnv-refuge-' . $subsites[$key]['remote'] . '.brgm-rec.fr',
+          'title' => $subsites[$key]['title']
         ];
       }
       else {
         $items[] = [
-          'root' => $subsites[$key]['remote'],
+          'url' => 'refuge-' . $subsites[$key]['remote'] . '.vanoise.com',
           'title' => $subsites[$key]['title']
         ];
       }
@@ -73,8 +74,6 @@ class RefugesLinksBlock extends BlockBase {
 
     return [
       '#theme' => 'refuges_links__block',
-      '#url_prefix' => $url_elements[$domain_tld]['prefix'],
-      '#url_suffix' => $url_elements[$domain_tld]['suffix'],
       '#items' => $items,
       '#attached' => ['library' => ['refuges_links/refuges_links']],
     ];
