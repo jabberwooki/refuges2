@@ -45,7 +45,7 @@
             </div>
 
             <div class="col-sm-1 hidden-xs">
-              {% if resa_code %}
+              {% if resa_data['code'] %}
                 <button type="button" class="btn-resa">Reservation</button>
               {% endif %}
             </div>
@@ -56,17 +56,25 @@
         </div>
       
         <div class="row widget-resa-1">
-            {% if resa_code %}
+            {% if resa_data['code'] %}
               <div class="col-md-6 col-md-offset-3 col">
                 {# Début du code widget AllianceReseaux #}
                 <script type="text/javascript" src="http://gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js"></script>
                 <script type="text/javascript">
                   ( function() {
-                  var widgetProduit = AllianceReseaux.Widget.Instance( "Produit", { idPanier:"s5Czs7M", idIntegration:301, langue:"fr", ui:"{{ resa_code }}" } );
+                  var widgetProduit = AllianceReseaux.Widget.Instance(
+                     "Produit",
+                     {
+                       idPanier:"{{ resa_data['idPanier'] }}",
+                       idIntegration:"{{ resa_data['idIntegration'] }}",
+                       langue:"fr",
+                       ui:"{{ resa_data.code }}"
+                     }
+                  );
                   widgetProduit.Initialise();
                   })();
                 </script>
-                <div id="widget-produit-{{ resa_code }}"></div>
+                <div id="widget-produit-{{ resa_data['code'] }}"></div>
                 {# Fin du code widget AllianceReseaux #}
               </div>
             {% endif %}
