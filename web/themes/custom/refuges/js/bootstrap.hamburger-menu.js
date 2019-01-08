@@ -6,11 +6,11 @@
   Drupal.behaviors.hamburgerMenu = {
     attach: function (context, settings) {
       // Permet de descendre le menu hamburger sous le header.
-      var position = $('.dialog-off-canvas-main-canvas > section:nth-child(1) > div:nth-child(2)').position();
-      var bodyMarginTop = $('body').css('margin-top');
-      bodyMarginTop = 0;
-      var verticalOffset = Math.round(parseFloat(position.top) + parseFloat(bodyMarginTop));
-      $('#sidebar').css('top', verticalOffset + 'px');
+      var hamburgerMenuOffset = $('.top.row').height() + $('.region-header .row').height();
+      if ($('#toolbar-bar').length) { // Si le visiteur est connecté
+        hamburgerMenuOffset += $('#toolbar-bar').height() + $('#toolbar-item-administration-tray').height();
+      }
+      $('#sidebar').css('top', hamburgerMenuOffset + 'px');
 
       // Referme le menu hamburger si l'on clique n'importe ou dans le document
       // sauf sur le menu lui-même ou le picto menu.

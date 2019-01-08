@@ -1,3 +1,14 @@
+Refuges PNV 1.1, 2019-01-08
+---------------------------
+  * Modification du code du bloc custom refuges_links. Ajout d'une condition pour lister en prod uniquement les sites qui sont passés en prod et non pas tous les sites.
+  * Correction du bug de positionnement du menu Hamburger lorsque l'utilisateur n'est pas connecté.
+  * Menu des autres refuges : intégration graphique provisoire pour pouvoir déployer les modifs du widget réservation.
+  * Debug du module custom refuges_links : correction de l'url malformé pour les sites de recette et de prod.
+  * Modification du code du widget réservation : prise en compte d'une seconde zone géographique (vallée de la Maurienne).
+  * Menu 'Les autre refuges' codé entièrement dans le module custom refuges_links.
+  * Suppression du menu custom 'Les autres refuges' et suppression du code custom correspondant dans refuges.theme.
+  * Suppression du menu 'Les autres refuges'.
+
 Refuges PNV 1.0, 2018-12-10
 ---------------------------
 Toute première version, déployée sur le serveur de production vmpg25 du BRGM.

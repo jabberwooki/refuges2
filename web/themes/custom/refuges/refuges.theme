@@ -128,29 +128,31 @@ function refuges_preprocess_region(&$variables) {
   $region = $variables['elements']['#region'];
   switch($region) {
     case 'top':
-      $refuges_block_instance = \Drupal::service('plugin.manager.block')->createInstance('system_menu_block:refuges', []);
-      $refuges_block_output = $refuges_block_instance->build();
-      $variables['refuges_block_output'] = $refuges_block_output;
       break;
     case 'header':
-      $reservation_codes = array(
-        'arpont' => 'OPRF-92950',
-        'bois' => 'OPRF-93150',
-        'femma' => 'OPRF-92951',
-        'fours' => 'OPRF-93147',
-        'lac' => 'OPRF-92949',
-        'leisse' => 'OPRF-92948',
-        'martin' => 'OPRF-93146',
-        'orgere' => 'OPRF-92947',
-        'palet' => 'OPRF-93148',
-        'plaisance' => 'OPRF-93151',
-        'prariond' => '',
-        'rosuel' => 'OPRF-93149',
-        'turia' => '',
-        'valette' => 'OPRF-93064',
-        'vallonbrun' => 'OPRF-92996',
-      );
-      $variables['resa_code'] = $reservation_codes[str_replace('sites/', '', \Drupal::service('site.path'))];
+      // Maurienne = orgere, arpont, leisse, femma, plan du lac et vallonbrun
+      // 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
+      //
+      // Les autres = bois, fours, martin, palet, plaisance, prariond, rosuel, turia, valette
+      // 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
+      $reservation_data = [
+        'arpont' => ['code' => 'OPRF-92950', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
+        'bois' => ['code' => 'OPRF-93150', 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
+        'femma' => ['code' => 'OPRF-92951', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
+        'fours' => ['code' => 'OPRF-93147', 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
+        'lac' => ['code' => 'OPRF-92949', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
+        'leisse' => ['code' => 'OPRF-92948', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
+        'martin' => ['code' => 'OPRF-93146', 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
+        'orgere' => ['code' => 'OPRF-92947', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
+        'palet' => ['code' => 'OPRF-93148', 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
+        'plaisance' => ['code' => 'OPRF-93151', 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
+        'prariond' => NULL,
+        'rosuel' => ['code' => 'OPRF-93149', 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
+        'turia' => NULL,
+        'valette' => ['code' => 'OPRF-93064', 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
+        'vallonbrun' => ['code' => 'OPRF-92996', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110']
+      ];
+      $variables['resa_data'] = $reservation_data[str_replace('sites/', '', \Drupal::service('site.path'))];
       break;
   }
 }
