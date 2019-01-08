@@ -44,6 +44,8 @@ class RefugesLinksBlock extends BlockBase {
       'vallonbrun' => array('localhost' => 'vallonbrun2', 'remote' => 'vallonbrun', 'title' => 'Refuge de Vallonbrun'),
     );
 
+    $delivered_sites = ['bois','palet','fours','leisse','martin','orgere','rosuel','valette'];
+
     $domain_parts = explode('.',$_SERVER['HTTP_HOST']);
     $domain_tld = array_pop($domain_parts);
 
@@ -53,9 +55,9 @@ class RefugesLinksBlock extends BlockBase {
     $items = array();
     foreach ($subsites as $key=>$subsite) {
       if ($domain_tld == 'localhost') {
-      $items[] = [
-        'url' => 'www.' . $subsites[$key]['localhost'] . '.localhost',
-        'title' => $subsites[$key]['title']
+        $items[] = [
+          'url' => 'www.' . $subsites[$key]['localhost'] . '.localhost',
+          'title' => $subsites[$key]['title']
         ];
       }
       elseif ($domain_tld == 'fr') {
@@ -65,11 +67,13 @@ class RefugesLinksBlock extends BlockBase {
         ];
       }
       else {
+      if (in_array($key, $delivered_sites)) {
         $items[] = [
           'url' => 'refuge-' . $subsites[$key]['remote'] . '.vanoise.com',
           'title' => $subsites[$key]['title']
         ];
       }
+    }
     }
 
     return [
