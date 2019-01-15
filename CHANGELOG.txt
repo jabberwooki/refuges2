@@ -1,3 +1,8 @@
+Refuges PNV 1.1.1, 2019-01-16
+-----------------------------
+  * Modification de la couleur primaire de Vallonbrun, passée à vert eau (#127271).
+  * Modification de la couleur primaire de Prariond, passée à violet (#3333cc).
+
 Refuges PNV 1.1, 2019-01-08
 ---------------------------
   * Modification du code du bloc custom refuges_links. Ajout d'une condition pour lister en prod uniquement les sites qui sont passés en prod et non pas tous les sites.
