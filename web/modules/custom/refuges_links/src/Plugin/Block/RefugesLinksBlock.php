@@ -44,7 +44,11 @@ class RefugesLinksBlock extends BlockBase {
       'vallonbrun' => array('localhost' => 'vallonbrun2', 'remote' => 'vallonbrun', 'title' => 'Refuge de Vallonbrun'),
     );
 
-    $delivered_sites = ['bois','palet','fours','leisse','martin','orgere','rosuel','valette'];
+    $delivered_sites = [
+      'arpont','bois','femma','fours','lac',
+      'leisse','martin','orgere','palet','plaisance',
+      'prariond','rosuel','turia','valette','vallonbrun'
+    ];
 
     $domain_parts = explode('.',$_SERVER['HTTP_HOST']);
     $domain_tld = array_pop($domain_parts);
