@@ -1,3 +1,7 @@
+Hotfix config_ignore_wrong_settings_fix, 2019-02-05
+---------------------------------------------------
+  * Correction dans le paramétrage de Config Ignore : google_analytics.settings.yml remplacé par google_analytics.settings (suppression de l'extension .yml).
+
 Refuges PNV 1.1.2, 2019-02-05
 -----------------------------
   * Paramétrages de google_analytics ajoutés à Config Ignore.
