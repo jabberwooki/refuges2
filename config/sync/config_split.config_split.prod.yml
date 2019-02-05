@@ -1,0 +1,15 @@
+uuid: 6137bfb3-90b6-4e54-8b15-bc785d218816
+langcode: fr
+status: false
+dependencies: {  }
+id: prod
+label: Production
+folder: ../config/envs/prod
+module:
+  google_analytics: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
