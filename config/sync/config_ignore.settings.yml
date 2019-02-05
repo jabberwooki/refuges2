@@ -9,7 +9,7 @@ ignored_config_entities:
   14: 'views.view.services:display.list.display_options.menu'
   16: 'views.view.services:display.keeping_page'
   18: 'views.view.services:display.out_keeping_page'
-  20: google_analytics.settings.yml
+  20: google_analytics.settings
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 langcode: fr
