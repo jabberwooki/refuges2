@@ -81,3 +81,69 @@
 		margin-top: 0 !important;
 	}
 }
+
+/*==========  Non-Mobile First Method  ==========*/
+
+@media (min-width: 1200px) {
+	.pull-right-lg {
+		float: right;
+	  }
+}
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 1024px) {
+		.top #dropdown-refuges {
+			margin-left: 20px;
+		  }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+		.btn-resa{
+			padding: 15px 15px;
+			border-radius: 50%;
+			width: 50px;
+			margin-top: 30px;
+			.fa.fa-calendar-check-o{
+			  font-size: 15px;
+			}
+		  }
+		.region-footer .block{
+			margin-bottom: 20px;
+		}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+		.btn-resa{
+			margin-top: 10px;
+		}
+		.TablePlanning .selectionmois .os_selection_precedent {
+			width: 50%;
+			position: absolute;
+			top: 30px;
+			left: 10px;
+		}
+		.TablePlanning .selectionmois .os_selection_suivant {
+			width: 50%;
+			position: absolute;
+			top: 30px;
+			right: 10px;
+		}
+		.region-header .hamburger,
+		.region-header .branding a.name{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }

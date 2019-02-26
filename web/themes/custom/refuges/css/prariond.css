@@ -57,6 +57,8 @@ body {
   border: 1px solid #fff;
   border-radius: 40px;
   padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 .top #dropdown-refuges {
   margin-top: 8px;
@@ -66,24 +68,28 @@ body {
   padding: 5px 10px;
   background-color: transparent;
   color: white;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 .top .other-refuges-links {
   position: absolute;
   left: 70px;
-  top: 55px;
+  top: 45px;
   display: none;
   list-style: none;
-  background-color: #fff;
+  background-color: #6666d9;
   padding: 10px;
   z-index: 2000;
   border: 1px solid #6666d9;
   border-radius: 0 0 20px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 .top .other-refuges-links li {
   line-height: 1.7;
 }
 .top .other-refuges-links li a {
-  color: #333;
+  color: #fff;
 }
 .top .glyphicon-search {
   color: #fff;
@@ -230,6 +236,13 @@ body {
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   padding: 50px 0 40px 0;
+}
+.region-header .widget-resa-1 .TablePlanning .selectionmois .moisencours {
+  background-color: #3333cc;
+  color: #fff;
+  font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
 
 #sliding-menu ul {
@@ -1124,6 +1137,63 @@ blockquote {
   margin-top: 0 !important;
 }
 
+/*==========  Non-Mobile First Method  ==========*/
+@media (min-width: 1200px) {
+  .pull-right-lg {
+    float: right;
+  }
+}
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1024px) {
+  .top #dropdown-refuges {
+    margin-left: 20px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .btn-resa {
+    padding: 15px 15px;
+    border-radius: 50%;
+    width: 50px;
+    margin-top: 30px;
+  }
+  .btn-resa .fa.fa-calendar-check-o {
+    font-size: 15px;
+  }
+
+  .region-footer .block {
+    margin-bottom: 20px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .btn-resa {
+    margin-top: 10px;
+  }
+
+  .TablePlanning .selectionmois .os_selection_precedent {
+    width: 50%;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+  }
+
+  .TablePlanning .selectionmois .os_selection_suivant {
+    width: 50%;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+
+  .region-header .hamburger,
+  .region-header .branding a.name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+/* Custom, iPhone Retina */
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1920px) {
