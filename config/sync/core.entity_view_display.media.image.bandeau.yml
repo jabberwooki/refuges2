@@ -6,11 +6,13 @@ dependencies:
     - core.entity_view_mode.media.bandeau
     - field.field.media.image.field_caption
     - field.field.media.image.field_copyright
+    - field.field.media.image.field_image_height
+    - field.field.media.image.field_image_width
     - field.field.media.image.field_media_image
-    - image.style.bandeau_desktop
     - media.type.image
+    - responsive_image.styles.bandeau_page_interne
   module:
-    - image
+    - responsive_image
     - text
 _core:
   default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
@@ -29,10 +31,10 @@ content:
   field_media_image:
     label: visually_hidden
     settings:
-      image_style: bandeau_desktop
+      responsive_image_style: bandeau_page_interne
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     weight: 0
     region: content
 hidden:

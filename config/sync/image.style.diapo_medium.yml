@@ -1,0 +1,15 @@
+uuid: 19dab57f-470c-4989-94b8-e859f4241d63
+langcode: fr
+status: true
+dependencies: {  }
+name: diapo_medium
+label: 'Diapo medium'
+effects:
+  ef84d017-175f-4c59-99d5-9e9585f1256c:
+    uuid: ef84d017-175f-4c59-99d5-9e9585f1256c
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: 490
+      upscale: false

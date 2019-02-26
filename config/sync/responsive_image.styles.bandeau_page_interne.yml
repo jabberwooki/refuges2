@@ -1,0 +1,34 @@
+uuid: cd06da47-7a68-42f8-bf1a-4173784c1b84
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.bandeau_desktop
+    - image.style.diapo_mobile
+  theme:
+    - bootstrap
+id: bandeau_page_interne
+label: 'bandeau page interne'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: bandeau_desktop
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: bandeau_desktop
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: diapo_mobile
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: diapo_mobile
+breakpoint_group: bootstrap
+fallback_image_style: bandeau_desktop
