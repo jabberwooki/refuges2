@@ -1,0 +1,10 @@
+refuges_links:
+  version: 1.x
+  css:
+    theme:
+      css/refuges_links.css: {}
+  js:
+    js/refuges_links.js: {}
+  dependencies:
+    - core/jquery
+    

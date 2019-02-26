@@ -1,0 +1,30 @@
+Hotfix config_ignore_wrong_settings_fix, 2019-02-05
+---------------------------------------------------
+  * Correction dans le paramétrage de Config Ignore : google_analytics.settings.yml remplacé par google_analytics.settings (suppression de l'extension .yml).
+
+Refuges PNV 1.1.2, 2019-02-05
+-----------------------------
+  * Paramétrages de google_analytics ajoutés à Config Ignore.
+  * Création du config split Production et activation de google_analytics en prod seulement (split prod mis à TRUE temporairement en dev).
+  * Installation du module google_analytics.
+  * o Merge tag 'v1.1.2' into develop
+
+Refuges PNV 1.1.1, 2019-01-16
+-----------------------------
+  * Modification de la couleur primaire de Vallonbrun, passée à vert eau (#127271).
+  * Modification de la couleur primaire de Prariond, passée à violet (#3333cc).
+
+Refuges PNV 1.1, 2019-01-08
+---------------------------
+  * Modification du code du bloc custom refuges_links. Ajout d'une condition pour lister en prod uniquement les sites qui sont passés en prod et non pas tous les sites.
+  * Correction du bug de positionnement du menu Hamburger lorsque l'utilisateur n'est pas connecté.
+  * Menu des autres refuges : intégration graphique provisoire pour pouvoir déployer les modifs du widget réservation.
+  * Debug du module custom refuges_links : correction de l'url malformé pour les sites de recette et de prod.
+  * Modification du code du widget réservation : prise en compte d'une seconde zone géographique (vallée de la Maurienne).
+  * Menu 'Les autre refuges' codé entièrement dans le module custom refuges_links.
+  * Suppression du menu custom 'Les autres refuges' et suppression du code custom correspondant dans refuges.theme.
+  * Suppression du menu 'Les autres refuges'.
+
+Refuges PNV 1.0, 2018-12-10
+---------------------------
+Toute première version, déployée sur le serveur de production vmpg25 du BRGM.

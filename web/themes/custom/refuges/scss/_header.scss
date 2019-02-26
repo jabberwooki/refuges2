@@ -20,6 +20,35 @@ body {
     margin-top: 8px;
     @include btn-top;
   }
+
+  // Menu des autres refuges
+  #dropdown-refuges {
+    margin-top: 8px;
+    margin-left: 50px;
+    @include btn-top;
+    background-color: transparent;
+    color: white;
+  }
+  .other-refuges-links {
+    position: absolute;
+    left: 70px;
+    top: 55px;
+    display: none;
+    list-style: none;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 2000;
+    border: 1px solid $brand-secondary;
+    border-radius: 0 0 20px 20px;
+    li {
+      line-height: 1.7;
+      a {
+        color: #333;
+      }
+    }
+  }
+  // Fin de Menu des autres refuges
+
   .glyphicon-search{
     color: #fff;
     cursor:pointer;
