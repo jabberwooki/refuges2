@@ -116,6 +116,12 @@
 		.region-footer .block{
 			margin-bottom: 20px;
 		}
+		.block-views-blockevents-frontpage-block .slick-next {
+			right: 0;
+		}
+		.block-views-blockevents-frontpage-block .slick-prev {
+			left: 0;
+		}
     }
 
     /* Extra Small Devices, Phones */ 
@@ -140,6 +146,12 @@
 			margin-top: 10px;
 			margin-bottom: 10px;
 			font-size: 16px;
+		}
+		.block-views-blockevents-frontpage-block .slick-next {
+			right: -8%;
+		}
+		.block-views-blockevents-frontpage-block .slick-prev {
+			left: -8%;
 		}
     }
 
