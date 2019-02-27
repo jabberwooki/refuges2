@@ -1,0 +1,22 @@
+uuid: fda4ef87-4228-4294-b11b-2ad848d4c29d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_seule.field_image_media
+    - paragraphs.paragraphs_type.image_seule
+id: paragraph.image_seule.default
+targetEntityType: paragraph
+bundle: image_seule
+mode: default
+content:
+  field_image_media:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

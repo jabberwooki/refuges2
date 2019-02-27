@@ -948,6 +948,10 @@ blockquote {
   cursor: pointer;
 }
 
+.paragraph--type--image-seule img {
+  width: 100%;
+}
+
 .block-views-blockevents-frontpage-block h2.block-title {
   position: relative;
   z-index: 1000;
