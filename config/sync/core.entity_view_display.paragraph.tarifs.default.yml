@@ -1,0 +1,92 @@
+uuid: e76b4552-553d-4c3b-bf13-2dd078ff0e25
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tarifs.field_text
+    - field.field.paragraph.tarifs.field_texte
+    - field.field.paragraph.tarifs.field_texte_tab3
+    - paragraphs.paragraphs_type.tarifs
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_tab_1:
+      children:
+        - field_texte
+      parent_name: group_tab_2
+      weight: 20
+      format_type: tab
+      format_settings:
+        label: Printemps
+        formatter: open
+        description: ''
+        id: ''
+        classes: ''
+      label: Printemps
+    group_tab_2:
+      children:
+        - group_tab_1
+        - group_ete
+        - group_hors_gardiennage
+      parent_name: ''
+      weight: 20
+      format_type: tabs
+      format_settings:
+        label: Onglets
+        direction: vertical
+        id: ''
+        classes: ''
+      label: Onglets
+    group_ete:
+      children:
+        - field_text
+      parent_name: group_tab_2
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: été
+    group_hors_gardiennage:
+      children:
+        - field_texte_tab3
+      parent_name: group_tab_2
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Hors gardiennage'
+id: paragraph.tarifs.default
+targetEntityType: paragraph
+bundle: tarifs
+mode: default
+content:
+  field_text:
+    weight: 22
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_texte:
+    weight: 21
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_texte_tab3:
+    weight: 23
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

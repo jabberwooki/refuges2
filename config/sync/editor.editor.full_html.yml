@@ -42,6 +42,10 @@ settings:
           items:
             - BulletedList
             - NumberedList
+        -
+          name: Tableau
+          items:
+            - Table
   plugins:
     language:
       language_list: un

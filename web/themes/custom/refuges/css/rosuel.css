@@ -952,6 +952,72 @@ blockquote {
   width: 100%;
 }
 
+.paragraph--type--tarifs .field-group-tabs-wrapper ul.nav.nav-tabs {
+  padding-bottom: 0;
+  width: 100%;
+}
+.paragraph--type--tarifs .field-group-tabs-wrapper ul.nav.nav-tabs > li {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #76c420;
+}
+.paragraph--type--tarifs .field-group-tabs-wrapper ul.nav.nav-tabs > li > a,
+.paragraph--type--tarifs .field-group-tabs-wrapper ul.nav.nav-tabs > li > a:hover,
+.paragraph--type--tarifs .field-group-tabs-wrapper ul.nav.nav-tabs > li.active > a {
+  margin-bottom: 0;
+}
+.paragraph--type--tarifs .field-group-tabs-wrapper ul.nav.nav-tabs > li.active > a {
+  background: #76c420;
+  color: #fff;
+}
+.paragraph--type--tarifs .field-group-tabs-wrapper ul.nav.nav-tabs > li > a {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+.paragraph--type--tarifs .field-group-tabs-wrapper ul.nav.nav-tabs > li > a:hover {
+  text-decoration: none;
+  background-color: #eeeeeec9;
+}
+.paragraph--type--tarifs .field-group-tabs-wrapper ul.nav.nav-tabs > li:before {
+  display: none;
+}
+.paragraph--type--tarifs .tabs-left > .tab-content, .paragraph--type--tarifs .tabs-right > .tab-content {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 10px 15px;
+  background: #f2f2f2;
+}
+.paragraph--type--tarifs table caption {
+  color: #76c420;
+  font-size: 18px;
+  font-weight: 700;
+}
+.paragraph--type--tarifs table thead tr {
+  background: #76c420 !important;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph--type--tarifs table th, .paragraph--type--tarifs table td {
+  padding: 10px;
+}
+.paragraph--type--tarifs table tr:nth-child(even) {
+  background: #eeeeeec9;
+}
+.paragraph--type--tarifs table tr:nth-child(odd) {
+  background: #fff;
+}
+.paragraph--type--tarifs table tr td:first-of-type {
+  font-weight: 700;
+  color: #76c420;
+  text-transform: uppercase;
+}
+
 .block-views-blockevents-frontpage-block h2.block-title {
   position: relative;
   z-index: 1000;
