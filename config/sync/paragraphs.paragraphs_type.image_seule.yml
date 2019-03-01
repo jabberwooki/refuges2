@@ -1,0 +1,9 @@
+uuid: ec5a54a5-0181-4597-9b4f-3e9378a57381
+langcode: fr
+status: true
+dependencies: {  }
+id: image_seule
+label: 'Image seule'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

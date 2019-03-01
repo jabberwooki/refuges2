@@ -1,0 +1,21 @@
+uuid: 493610b1-ba10-40e3-aab9-0ad860468bce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.tarifs
+  module:
+    - text
+id: paragraph.tarifs.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: tarifs
+label: 'Saison d''été'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

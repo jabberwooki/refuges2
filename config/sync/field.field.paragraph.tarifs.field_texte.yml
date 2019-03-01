@@ -1,0 +1,21 @@
+uuid: b405ccb8-21fb-4145-b9cd-629ad9aca0df
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texte
+    - paragraphs.paragraphs_type.tarifs
+  module:
+    - text
+id: paragraph.tarifs.field_texte
+field_name: field_texte
+entity_type: paragraph
+bundle: tarifs
+label: 'Saison de printemps'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

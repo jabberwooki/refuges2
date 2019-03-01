@@ -6,11 +6,13 @@ dependencies:
     - core.entity_view_mode.media.slide
     - field.field.media.image.field_caption
     - field.field.media.image.field_copyright
+    - field.field.media.image.field_image_height
+    - field.field.media.image.field_image_width
     - field.field.media.image.field_media_image
-    - image.style.slides_desktop
     - media.type.image
+    - responsive_image.styles.diapo_home
   module:
-    - image
+    - responsive_image
     - text
 _core:
   default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
@@ -29,10 +31,10 @@ content:
   field_media_image:
     label: visually_hidden
     settings:
-      image_style: slides_desktop
+      responsive_image_style: diapo_home
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     weight: 0
     region: content
 hidden:

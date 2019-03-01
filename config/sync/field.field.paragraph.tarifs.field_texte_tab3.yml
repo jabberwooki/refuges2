@@ -1,0 +1,21 @@
+uuid: a71a622c-e1b9-4dc8-892e-42bd9a9bf60f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texte_tab3
+    - paragraphs.paragraphs_type.tarifs
+  module:
+    - text
+id: paragraph.tarifs.field_texte_tab3
+field_name: field_texte_tab3
+entity_type: paragraph
+bundle: tarifs
+label: 'Période hors-gardiennage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
