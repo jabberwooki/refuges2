@@ -1,6 +1,14 @@
-Hotfix config_ignore_wrong_settings_fix, 2019-02-05
----------------------------------------------------
-  * Correction dans le paramétrage de Config Ignore : google_analytics.settings.yml remplacé par google_analytics.settings (suppression de l'extension .yml).
+
+Refuges PNV 1.1.3, 2019-03-01
+-----------------------------
+  * Création du bundle paragraph tarifs, CSS, install du module responsive tables filter pour rendre les tableau responsive
+  * Création et paramétrage des bundles paragraph image seul et vidéo
+  * Créationd es styles d'images responsive et application sur diapo home
+  * Flèches du slick agenda de l'accueil en sm et xs CSS
+  * CSS et Template pour gérer le responsive du header (+ reservation) et du footer
+  * Carte google prefooter commit ...?
+  * CSS footer pour les socials links et les logos
+  * Paramétrages de google_analytics ajoutés à Config Ignore.
 
 Refuges PNV 1.1.2, 2019-02-05
 -----------------------------
