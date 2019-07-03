@@ -1,3 +1,7 @@
+Refuges PNV - Hotfix rapatriement-5-refuges-tunnel-pnv, 2019-07-03
+------------------------------------------------------------------
+  * Rapatriement de arpont, femma, leisse, plan du lac et vallonbrun dans la destination PNV (cf mail Chloé du 3 juillet 2019 à 10h17).
+
 Refugs PNV - Hotfix correction-identifiants-resa, 2019-03-02
 ------------------------------------------------------------
  * Correction des identifiants de reservation selon les indications d'Alliance Réseau (cf mail Chloé du 2 avril à 12:00).
