@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.section_header_image.field_media_image
+    - field.field.node.section_header_image.field_section
     - field.field.node.section_header_image.field_subtitle
     - node.type.section_header_image
   module:
@@ -17,6 +18,8 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   addtoany: true
   field_media_image: true

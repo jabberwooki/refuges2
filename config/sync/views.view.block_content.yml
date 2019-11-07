@@ -19,7 +19,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Maître
     position: 0
     display_options:
       access:
@@ -42,8 +42,8 @@ display:
         options:
           submit_button: Appliquer
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -55,16 +55,16 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ Précédent'
+            next: 'Suivant ›'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Éléments par page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tout -'
             offset: false
-            offset_label: Offset
+            offset_label: Décalage
       style:
         type: table
         options:
@@ -252,7 +252,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: 'Mis à jour'
           exclude: false
           alter:
             alter_text: false
@@ -308,7 +308,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Actions
           exclude: false
           alter:
             alter_text: false
@@ -434,6 +434,42 @@ display:
           entity_type: block_content
           entity_field: type
           plugin_id: bundle
+        reusable:
+          id: reusable
+          table: block_content_field_data
+          field: reusable
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: block_content
+          entity_field: reusable
+          plugin_id: boolean
       sorts: {  }
       title: 'Bibliothèque de blocs personnalisés'
       header: {  }
