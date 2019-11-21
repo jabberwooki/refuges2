@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.slide.field_description
     - field.field.node.slide.field_link
+    - field.field.node.slide.field_media_image
     - node.type.slide
   module:
     - user
@@ -17,6 +18,8 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   addtoany: true
   field_credit: true
