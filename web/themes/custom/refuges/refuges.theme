@@ -154,14 +154,16 @@ function refuges_preprocess_region(&$variables) {
         'vallonbrun' => ['code' => 'OPRF-92996', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
 
         // Destination Haute Maurienne
-        'orgere' => ['code' => 'OPRF-92947', 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
+        // 'orgere' => ['code' => 'OPRF-92947', 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
+        // Mise à jour du 06/06/20
+        // Rapatriement Orgère de Maurienne vers PNV - voir mail Chloé du meme jour "Tunnel de résa".
+        'orgere' => ['code' => 'OPRF-92947', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
 
         // Refuges sans destination
         'prariond' => NULL,
       ];
-      
+
       $variables['resa_data'] = $reservation_data[str_replace('sites/', '', \Drupal::service('site.path'))];
       break;
   }
 }
-

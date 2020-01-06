@@ -1,3 +1,7 @@
+Refuges PNV - Hotfix rapatriement-orgere-vers-tunnel-pnv, 2020-01-06
+--------------------------------------------------------------------
+  * Rapatriement refuge Orgère dans la destination PNV au lieu de Maurienne.
+
 Refuges PNV 1.1.4, 2019-11-21
 -----------------------------
   * Mise à jour de sécurité du module contrib paragraphs (1.3 -> 1.6) et du thème Bootstrap (3.12 -> 3.14).
