@@ -14,7 +14,7 @@ bundle: video_1_2_texte_1_2
 label: Texte
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

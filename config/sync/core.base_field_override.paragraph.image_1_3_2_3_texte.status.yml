@@ -11,7 +11,7 @@ bundle: image_1_3_2_3_texte
 label: Published
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 1

@@ -11,7 +11,7 @@ bundle: bloc_1_3_texte_2_3
 label: Published
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 1

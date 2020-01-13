@@ -14,7 +14,7 @@ bundle: image_1_3_2_3_texte
 label: Texte
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

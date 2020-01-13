@@ -12,7 +12,7 @@ bundle: texte_1_image_1
 label: Texte
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
