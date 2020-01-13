@@ -1,20 +1,20 @@
-uuid: c42a0f21-d3b1-4897-9b27-968c7674778f
+uuid: 6f49797b-3e17-44d9-94e8-758b7947e962
 langcode: fr
 status: true
 dependencies:
   config:
     - node.type.news
-id: node.news.promote
-field_name: promote
+id: node.news.status
+field_name: status
 entity_type: node
 bundle: news
-label: 'Promu en page d''accueil'
+label: Published
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: Activé

@@ -1,14 +1,14 @@
-uuid: c42a0f21-d3b1-4897-9b27-968c7674778f
+uuid: e4a0e469-492a-44ac-a2da-0add7bbdd85d
 langcode: fr
 status: true
 dependencies:
   config:
     - node.type.news
-id: node.news.promote
-field_name: promote
+id: node.news.sticky
+field_name: sticky
 entity_type: node
 bundle: news
-label: 'Promu en page d''accueil'
+label: 'Epinglé en haut des listes'
 description: ''
 required: false
 translatable: false
