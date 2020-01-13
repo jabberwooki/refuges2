@@ -1,0 +1,22 @@
+uuid: f4fcd647-a988-4b71-9fd6-8bd2c4d10ce0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.texte_2_3_bloc_1_3
+id: paragraph.texte_2_3_bloc_1_3.status
+field_name: status
+entity_type: paragraph
+bundle: texte_2_3_bloc_1_3
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

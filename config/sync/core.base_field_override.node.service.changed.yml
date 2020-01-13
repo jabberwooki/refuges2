@@ -1,0 +1,18 @@
+uuid: 50398fe5-50c9-4b2b-8d53-c08bb0be666d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.service
+id: node.service.changed
+field_name: changed
+entity_type: node
+bundle: service
+label: Modifié
+description: 'Le moment auquel le nœud a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+uuid: 69606a95-0757-4b2c-81f1-d27e995d170c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.file
+  module:
+    - path
+id: media.file.path
+field_name: path
+entity_type: media
+bundle: file
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,22 @@
+uuid: ae7b53c7-5525-4b3d-b4cf-64b9874ad71a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.advanced_page
+id: node.advanced_page.status
+field_name: status
+entity_type: node
+bundle: advanced_page
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

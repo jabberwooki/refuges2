@@ -1,0 +1,20 @@
+uuid: 63abfd1a-8459-451c-bbd1-12b1b8260887
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.section_header_image
+  module:
+    - path
+id: node.section_header_image.path
+field_name: path
+entity_type: node
+bundle: section_header_image
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

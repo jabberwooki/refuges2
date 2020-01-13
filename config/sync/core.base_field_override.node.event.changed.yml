@@ -1,0 +1,18 @@
+uuid: cf883d96-1f06-4e0f-a93b-8e02de30dcc8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.event
+id: node.event.changed
+field_name: changed
+entity_type: node
+bundle: event
+label: Modifié
+description: 'Le moment auquel le nœud a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

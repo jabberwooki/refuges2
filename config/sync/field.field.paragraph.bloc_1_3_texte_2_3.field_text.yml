@@ -14,7 +14,7 @@ bundle: bloc_1_3_texte_2_3
 label: 'Bloc texte'
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

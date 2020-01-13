@@ -1,0 +1,18 @@
+uuid: 2fd839d9-10d6-410a-9092-56c57c5ef875
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.service
+id: node.service.created
+field_name: created
+entity_type: node
+bundle: service
+label: 'Écrit le'
+description: 'L''heure à laquelle le nœud a été créé.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

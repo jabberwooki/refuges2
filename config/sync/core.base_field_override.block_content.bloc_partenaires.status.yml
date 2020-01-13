@@ -1,0 +1,22 @@
+uuid: 797fca89-452a-455e-8e22-4285ca1eeeaf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_partenaires
+id: block_content.bloc_partenaires.status
+field_name: status
+entity_type: block_content
+bundle: bloc_partenaires
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

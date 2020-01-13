@@ -1,0 +1,18 @@
+uuid: e9f2995c-37e4-4c46-9ca1-bdf0a1cb294f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.photos_carrousel
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.photos_carrousel
+target_entity_type_id: paragraph
+target_bundle: photos_carrousel
+default_langcode: site_default
+language_alterable: false

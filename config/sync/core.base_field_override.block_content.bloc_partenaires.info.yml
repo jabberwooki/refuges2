@@ -1,0 +1,18 @@
+uuid: fd2e54de-e911-4aac-b2d6-b1ba53483551
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_partenaires
+id: block_content.bloc_partenaires.info
+field_name: info
+entity_type: block_content
+bundle: bloc_partenaires
+label: 'Description du bloc'
+description: 'Une brève description de votre bloc.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

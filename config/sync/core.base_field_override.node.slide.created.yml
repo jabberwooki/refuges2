@@ -1,0 +1,18 @@
+uuid: 3d6982e1-6dd9-44ec-b8ae-cd6db29176bd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.slide
+id: node.slide.created
+field_name: created
+entity_type: node
+bundle: slide
+label: 'Écrit le'
+description: 'L''heure à laquelle le nœud a été créé.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

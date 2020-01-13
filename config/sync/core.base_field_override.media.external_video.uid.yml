@@ -1,0 +1,20 @@
+uuid: da3d50ea-cc4d-4325-b1a8-df836a2fcca7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.external_video
+id: media.external_video.uid
+field_name: uid
+entity_type: media
+bundle: external_video
+label: 'Écrit par'
+description: 'L''identifiant (ID) de l''auteur.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

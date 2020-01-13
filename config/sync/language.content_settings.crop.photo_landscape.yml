@@ -1,0 +1,11 @@
+uuid: 4c6b20f2-0008-4a77-944f-3661d1198bcf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.photo_landscape
+id: crop.photo_landscape
+target_entity_type_id: crop
+target_bundle: photo_landscape
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: 7c426ef5-d6a0-47f3-8b34-cf03863d6d67
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_details
+id: block_content.contact_details.status
+field_name: status
+entity_type: block_content
+bundle: contact_details
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

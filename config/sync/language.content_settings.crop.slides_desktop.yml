@@ -1,0 +1,11 @@
+uuid: 73a18460-b476-41e1-9566-c7ae4a24af38
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.slides_desktop
+id: crop.slides_desktop
+target_entity_type_id: crop
+target_bundle: slides_desktop
+default_langcode: site_default
+language_alterable: false

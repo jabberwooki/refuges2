@@ -1,0 +1,11 @@
+uuid: d390de20-eb39-48e6-9081-080e3769d371
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.news_teaser
+id: crop.news_teaser
+target_entity_type_id: crop
+target_bundle: news_teaser
+default_langcode: site_default
+language_alterable: false

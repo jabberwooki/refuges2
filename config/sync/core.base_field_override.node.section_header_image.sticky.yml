@@ -1,0 +1,22 @@
+uuid: 044eac16-581e-4342-87e6-aa878c5b9fc2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.section_header_image
+id: node.section_header_image.sticky
+field_name: sticky
+entity_type: node
+bundle: section_header_image
+label: 'Epinglé en haut des listes'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

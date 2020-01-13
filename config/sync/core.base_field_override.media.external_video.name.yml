@@ -1,0 +1,20 @@
+uuid: 2dbcee7d-e4c7-4016-a335-801ac4027627
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.external_video
+id: media.external_video.name
+field_name: name
+entity_type: media
+bundle: external_video
+label: Nom
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

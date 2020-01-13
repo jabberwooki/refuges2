@@ -1,0 +1,22 @@
+uuid: cb5d4720-c2de-4ee9-a7e2-db10ccf0988d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tarifs
+id: paragraph.tarifs.status
+field_name: status
+entity_type: paragraph
+bundle: tarifs
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean
