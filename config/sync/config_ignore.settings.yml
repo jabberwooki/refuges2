@@ -1,15 +1,15 @@
 ignored_config_entities:
-  0: system.site
-  2: structure_sync.data
-  4: refuges.settings
-  6: 'block.block.socialmedialinks*'
-  8: contact.form.feedback
-  10: 'views.view.news:display.list.display_options.menu'
-  12: 'views.view.events:display.list.display_options.menu'
-  14: 'views.view.services:display.list.display_options.menu'
-  16: 'views.view.services:display.keeping_page'
-  18: 'views.view.services:display.out_keeping_page'
-  20: google_analytics.settings
+  - system.site
+  - structure_sync.data
+  - refuges.settings
+  - 'block.block.socialmedialinks*'
+  - contact.form.feedback
+  - 'views.view.news:display.list.display_options.menu'
+  - 'views.view.events:display.list.display_options.menu'
+  - 'views.view.services:display.list.display_options.menu'
+  - 'views.view.services:display.keeping_page'
+  - 'views.view.services:display.out_keeping_page'
+  - google_analytics.settings
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 langcode: fr
