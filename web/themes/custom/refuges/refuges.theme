@@ -109,6 +109,22 @@ function refuges_preprocess_block(&$variables) {
       $variables['region'] = 'top';
     }
   }
+
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  switch ($language) {
+    case 'en':
+      $news_page_path = '/en/news';
+      $events_page_path = '/en/agenda';
+      break;
+
+    default:
+      $news_page_path = '/actualites';
+      $events_page_path = '/agenda';
+  }
+  $variables['news_page_path'] = $news_page_path;
+  $variables['events_page_path'] = $events_page_path;
+
+
 }
 
 /**
