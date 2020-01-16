@@ -15,4 +15,4 @@ id: node.section_header_image
 target_entity_type_id: node
 target_bundle: section_header_image
 default_langcode: site_default
-language_alterable: true
+language_alterable: false
