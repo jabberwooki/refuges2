@@ -10,7 +10,8 @@ function refuges_links_theme($existing, $type, $theme, $path) {
   return [
     'refuges_links__block' => [
       'variables' => [
-        'items' => NULL
+        'block_title' => '',
+        'items' => NULL,
       ],
     ],
   ];

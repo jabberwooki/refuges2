@@ -26,6 +26,17 @@ class RefugesLinksBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+    $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    switch($language) {
+      case 'en':
+        $title = 'Other refuges';
+        $langcode = 'en';
+        break;
+      default:
+        $title = 'Les autres refuges';
+        $langcode = '';
+    }
+
     $subsites = array(
       'arpont' => array('localhost' => 'arpont2', 'remote' => 'arpont', 'title' => 'Refuge de l\'Arpont'),
       'bois' => array('localhost' => 'bois2', 'remote' => 'dubois', 'title' => 'Refuge du Bois'),
@@ -60,29 +71,30 @@ class RefugesLinksBlock extends BlockBase {
     foreach ($subsites as $key=>$subsite) {
       if ($domain_tld == 'localhost') {
         $items[] = [
-          'url' => 'www.' . $subsites[$key]['localhost'] . '.localhost',
+          'url' => 'www.' . $subsites[$key]['localhost'] . '.localhost/' . $langcode,
           'title' => $subsites[$key]['title']
         ];
       }
       elseif ($domain_tld == 'fr') {
         $items[] = [
-          'url' => 'pnv-refuge-' . $subsites[$key]['remote'] . '.brgm-rec.fr',
+          'url' => 'pnv-refuge-' . $subsites[$key]['remote'] . '.brgm-rec.fr/' . $langcode,
           'title' => $subsites[$key]['title']
         ];
       }
       else {
-      if (in_array($key, $delivered_sites)) {
-        $items[] = [
-          'url' => 'refuge-' . $subsites[$key]['remote'] . '.vanoise.com',
-          'title' => $subsites[$key]['title']
-        ];
+        if (in_array($key, $delivered_sites)) {
+          $items[] = [
+            'url' => 'refuge-' . $subsites[$key]['remote'] . '.vanoise.com/' . $langcode,
+            'title' => $subsites[$key]['title']
+          ];
+        }
       }
-    }
     }
 
     return [
       '#theme' => 'refuges_links__block',
       '#items' => $items,
+      '#block_title' => $title,
       '#attached' => ['library' => ['refuges_links/refuges_links']],
     ];
   }
