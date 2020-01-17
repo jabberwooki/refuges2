@@ -176,7 +176,10 @@ function refuges_preprocess_region(&$variables) {
         'orgere' => ['code' => 'OPRF-92947', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
 
         // Refuges sans destination
-        'prariond' => NULL,
+        // 'prariond' => NULL,
+        // Mise à jour du 17/01/2020
+        // Ajout Prariond au tunnel PNV
+        'prariond' => ['code' => 'OPRF-93152', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
       ];
 
       $variables['resa_data'] = $reservation_data[str_replace('sites/', '', \Drupal::service('site.path'))];

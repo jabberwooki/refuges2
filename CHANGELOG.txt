@@ -1,3 +1,7 @@
+Refuges PNV - Hotfix ajout-prariond-tunnel-pnv, 2020-01-17
+----------------------------------------------------------
+  * Ajout de Prariond à la destination PNV.
+
 Refuges PNV - Hotfix rapatriement-orgere-vers-tunnel-pnv, 2020-01-06
 --------------------------------------------------------------------
   * Rapatriement refuge Orgère dans la destination PNV au lieu de Maurienne.
