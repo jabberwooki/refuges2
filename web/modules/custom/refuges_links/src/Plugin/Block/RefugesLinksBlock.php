@@ -26,58 +26,52 @@ class RefugesLinksBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $subsites = array(
-      'arpont' => array('localhost' => 'arpont2', 'remote' => 'arpont', 'title' => 'Refuge de l\'Arpont'),
-      'bois' => array('localhost' => 'bois2', 'remote' => 'dubois', 'title' => 'Refuge du Bois'),
-      'femma' => array('localhost' => 'femma2', 'remote' => 'femma', 'title' => 'Refuge de la Femma'),
-      'fours' => array('localhost' => 'fours2', 'remote' => 'fonddesfours', 'title' => 'Refuge du Fond des Fours'),
-      'lac' => array('localhost' => 'lac2', 'remote' => 'plandulac', 'title' => 'Refuge de Plan du Lac'),
-      'leisse' => array('localhost' => 'leisse2', 'remote' => 'leisse', 'title' => 'Refuge de la Leisse'),
-      'martin' => array('localhost' => 'martin2', 'remote' => 'lamartin', 'title' => 'Refuge de la Martin'),
-      'orgere' => array('localhost' => 'orgere2', 'remote' => 'orgere', 'title' => 'Refuge de l\'Orgère'),
-      'palet' => array('localhost' => 'palet2', 'remote' => 'coldupalet', 'title' => 'Refuge du Col du Palet'),
-      'plaisance' => array('localhost' => 'plaisance2', 'remote' => 'plaisance', 'title' => 'Refuge de Plaisance'),
-      'prariond' => array('localhost' => 'prariond2', 'remote' => 'prariond', 'title' => 'Refuge de Prariond'),
-      'rosuel' => array('localhost' => 'rosuel2', 'remote' => 'rosuel', 'title' => 'Refuge de Rosuel'),
-      'turia' => array('localhost' => 'turia2', 'remote' => 'turia', 'title' => 'Refuge de Turia'),
-      'valette' => array('localhost' => 'valette2', 'remote' => 'valette', 'title' => 'Refuge de la Valette'),
-      'vallonbrun' => array('localhost' => 'vallonbrun2', 'remote' => 'vallonbrun', 'title' => 'Refuge de Vallonbrun'),
+    $sites = array(
+      'arpont' => array('name' => 'arpont', 'title' => 'Refuge de l\'Arpont'),
+      'bois' => array('name' => 'dubois', 'title' => 'Refuge du Bois'),
+      'femma' => array('name' => 'femma', 'title' => 'Refuge de la Femma'),
+      'fours' => array('name' => 'fonddesfours', 'title' => 'Refuge du Fond des Fours'),
+      'lac' => array('name' => 'plandulac', 'title' => 'Refuge de Plan du Lac'),
+      'leisse' => array('name' => 'leisse', 'title' => 'Refuge de la Leisse'),
+      'martin' => array('name' => 'lamartin', 'title' => 'Refuge de la Martin'),
+      'orgere' => array('name' => 'orgere', 'title' => 'Refuge de l\'Orgère'),
+      'palet' => array('name' => 'coldupalet', 'title' => 'Refuge du Col du Palet'),
+      'plaisance' => array('name' => 'plaisance', 'title' => 'Refuge de Plaisance'),
+      'prariond' => array('name' => 'prariond', 'title' => 'Refuge de Prariond'),
+      'rosuel' => array('name' => 'rosuel', 'title' => 'Refuge de Rosuel'),
+      'turia' => array('name' => 'turia', 'title' => 'Refuge de Turia'),
+      'valette' => array('name' => 'valette', 'title' => 'Refuge de la Valette'),
+      'vallonbrun' => array('name' => 'vallonbrun', 'title' => 'Refuge de Vallonbrun'),
     );
 
-    $delivered_sites = [
-      'arpont','bois','femma','fours','lac',
-      'leisse','martin','orgere','palet','plaisance',
-      'prariond','rosuel','turia','valette','vallonbrun'
-    ];
-
     $domain_parts = explode('.',$_SERVER['HTTP_HOST']);
-    $domain_tld = array_pop($domain_parts);
 
-    $current_subsite = str_replace('sites/', '', \Drupal::service('site.path'));
-    unset($subsites[$current_subsite]);
+    $sub_domain = $domain_parts[0];
+    $domain = $domain_parts[1];
+    $domain_tld = $domain_parts[2];
+    $current_site = str_replace('sites/', '', \Drupal::service('site.path'));
+
+    unset($sites[$current_site]);
 
     $items = array();
-    foreach ($subsites as $key=>$subsite) {
+    foreach ($sites as $key=>$site) {
       if ($domain_tld == 'localhost') {
-        $items[] = [
-          'url' => 'www.' . $subsites[$key]['localhost'] . '.localhost',
-          'title' => $subsites[$key]['title']
-        ];
-      }
-      elseif ($domain_tld == 'fr') {
-        $items[] = [
-          'url' => 'pnv-refuge-' . $subsites[$key]['remote'] . '.brgm-rec.fr',
-          'title' => $subsites[$key]['title']
-        ];
+        if ($domain == 'vanoise') {
+          $url = 'recette-' . $sites[$key]['name'] . '.vanoise.localhost';
+        }
+        else {
+          $url = 'www.' . $key . '2' . '.localhost';
+        }
       }
       else {
-      if (in_array($key, $delivered_sites)) {
-        $items[] = [
-          'url' => 'refuge-' . $subsites[$key]['remote'] . '.vanoise.com',
-          'title' => $subsites[$key]['title']
-        ];
+        $parts = explode('-', $sub_domain);
+        $url = $parts[0] . '-' . $sites[$key]['name'] . '.vanoise.com';
       }
-    }
+
+      $items[] = [
+        'url' => $url,
+        'title' => $sites[$key]['title']
+      ];
     }
 
     return [
