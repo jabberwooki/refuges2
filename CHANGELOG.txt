@@ -1,3 +1,19 @@
+Refuges PNV - Hotfix reservation-js-link-http-to-https, 2020-03-18
+------------------------------------------------------------------
+  * Lien Open System vers sa librairie js passé de http en https.
+
+Refuges PNV - Hotfix other-refuges-menu-update, 2020-03-18
+----------------------------------------------------------
+  * Recodage de la fonction build dans le module custom refuges_links (RefugesLinksBlock.php).
+
+Refuges PNV - Hotfix new-staging-urls-second-fix, 2020-03-11
+------------------------------------------------------------
+  * Seconde modif des urls des sites de recette : modification du nom de domaine aussi (brgm-rec.fr remplacé par vanoise.com).
+
+Refuges PNV - Hotfix new-staging-urls, 2020-03-11
+-------------------------------------------------
+  * Modification des urls des sites de recettes dans sites.php
+  
 Refuges PNV - Hotfix ajout-prariond-tunnel-pnv, 2020-01-17
 ----------------------------------------------------------
   * Ajout de Prariond à la destination PNV.
