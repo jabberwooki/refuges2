@@ -1,0 +1,17 @@
+aliases:
+  -
+    alias: /news
+    source: /actualites
+    langcode: en
+  -
+    alias: /services-keeping
+    source: /services-gardiennage
+    langcode: en
+  -
+    alias: /services-no-keeping
+    source: /services-hors-gardiennage
+    langcode: en
+  -
+    alias: /photo-galleries
+    source: /galeries-photo
+    langcode: en
