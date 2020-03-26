@@ -46,6 +46,10 @@ settings:
           name: Tableau
           items:
             - Table
+        -
+          name: Tools
+          items:
+            - Source
   plugins:
     language:
       language_list: un
