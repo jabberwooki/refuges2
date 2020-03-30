@@ -1,0 +1,11 @@
+uuid: b484bbff-94a0-48fc-a938-da8f856b673f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.bandeau_desktop
+id: crop.bandeau_desktop
+target_entity_type_id: crop
+target_bundle: bandeau_desktop
+default_langcode: site_default
+language_alterable: false

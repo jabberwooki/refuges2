@@ -1,0 +1,22 @@
+uuid: b1f5b8ff-4864-4563-b611-f582e3d4f074
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.file
+id: media.file.status
+field_name: status
+entity_type: media
+bundle: file
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

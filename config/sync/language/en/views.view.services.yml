@@ -1,0 +1,24 @@
+display:
+  block_1:
+    display_options:
+      footer:
+        area:
+          content:
+            value: "<p><a href=\"/en/services-keeping\">More services</a></p>\r\n"
+            format: full_html
+      header:
+        area:
+          content:
+            value: 'Our services vary depending on period : keeping or outside keeping'
+            format: restricted_html
+  default:
+    display_options:
+      title: Services
+  keeping_page:
+    display_options:
+      menu:
+        title: keeping
+  out_keeping_page:
+    display_options:
+      menu:
+        title: 'no keeping'

@@ -1,0 +1,20 @@
+uuid: 31a36233-e0f6-4e17-89da-6f0cc623f53d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.advanced_page
+id: node.advanced_page.uid
+field_name: uid
+entity_type: node
+bundle: advanced_page
+label: 'Écrit par'
+description: 'Le nom d''utilisateur de l''auteur du contenu.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

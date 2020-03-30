@@ -18,6 +18,7 @@ module:
   config_filter: 0
   config_ignore: 0
   config_split: 0
+  config_translation: 0
   contact: 0
   contact_block: 0
   contextual: 0
@@ -37,6 +38,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  fixed_path_alias: 0
   help: 0
   history: 0
   honeypot: 0
@@ -85,6 +87,7 @@ module:
   menu_admin_per_menu: 1
   menu_link_content: 1
   pathauto: 1
+  content_translation: 10
   views: 10
   paragraphs: 11
   standard: 1000

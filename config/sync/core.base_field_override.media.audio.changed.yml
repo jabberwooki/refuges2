@@ -1,0 +1,18 @@
+uuid: 19415472-ca5b-48a2-ae0a-709caef468db
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.changed
+field_name: changed
+entity_type: media
+bundle: audio
+label: Modifié
+description: 'Date à laquelle cet élément de média a été modifié.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

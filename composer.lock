@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7e8048ee24d0716c2d18322093acf39",
+    "content-hash": "cc713348070084d2ca10c51c79e759bc",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -179,7 +179,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2019-07-15 12:45:29"
+            "time": "2019-07-15T12:45:29+00:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -351,7 +351,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-10 12:39:06"
+            "time": "2018-10-10T12:39:06+00:00"
         },
         {
             "name": "brumann/polyfill-unserialize",
@@ -980,6 +980,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -2481,20 +2482,20 @@
         },
         {
             "name": "drupal/config_filter",
-            "version": "1.2.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_filter.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "ba3d76dc6bb1eb8644ce8997ca2890496a50ae0e"
+                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "81210684c378dab856b3c2bce5eeaa58992d2efc"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "suggest": {
                 "drupal/config_split": "Split site configuration for different environments."
@@ -2505,8 +2506,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1522943885",
+                    "version": "8.x-1.5",
+                    "datestamp": "1572542288",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2550,17 +2551,17 @@
         },
         {
             "name": "drupal/config_ignore",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_ignore.git",
-                "reference": "8.x-2.1"
+                "reference": "8.x-2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_ignore-8.x-2.1.zip",
-                "reference": "8.x-2.1",
-                "shasum": "07e00684930706632b3f2fc2a7433ffdae57cde7"
+                "url": "https://ftp.drupal.org/files/projects/config_ignore-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "18af5772087b90dd4b83c2c6e292d8ea2f8834e0"
             },
             "require": {
                 "drupal/config_filter": "1.*",
@@ -2572,8 +2573,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1507706044",
+                    "version": "8.x-2.2",
+                    "datestamp": "1576528386",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2595,6 +2596,10 @@
                     "name": "Fabian Bircher",
                     "homepage": "https://www.drupal.org/u/bircher",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "tlyngej",
+                    "homepage": "https://www.drupal.org/user/413139"
                 }
             ],
             "description": "Ignore certain configuration during import.",
@@ -3535,6 +3540,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Illegal offset type in isset or empty in _ds_field_ui_table_layouts": "https://www.drupal.org/files/issues/ds_layout_category-2875412-4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3877,7 +3885,59 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/field_image_link"
             },
-            "time": "2018-07-18 22:56:21"
+            "time": "2018-07-18T22:56:21+00:00"
+        },
+        {
+            "name": "drupal/fixed_path_alias",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fixed_path_alias.git",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fixed_path_alias-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "5535a4d2e4eb63a2679ae8515b8770bd290ad28d"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1541368684",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Manuel Adan",
+                    "homepage": "https://www.drupal.org/user/516420",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Exports path aliases to config to make them available in any environment.",
+            "homepage": "http://drupal.org/project/fixed_path_alias",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://cgit.drupalcode.org/fixed_path_alias",
+                "issues": "https://drupal.org/project/issues/fixed_path_alias"
+            }
         },
         {
             "name": "drupal/google_analytics",
@@ -4675,8 +4735,7 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -4957,20 +5016,23 @@
         },
         {
             "name": "drupal/views_parity_row",
-            "version": "1.3.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_parity_row.git",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_parity_row-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "6212a22e0bbdf1ff9677b13505c6239a4334ae52"
+                "url": "https://ftp.drupal.org/files/projects/views_parity_row-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "1f682d01541ca9ecb8cb4e3caac90970f54e7a4c"
             },
             "require": {
                 "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupol/drupal-conventions": "^1.7"
             },
             "type": "drupal-module",
             "extra": {
@@ -4978,28 +5040,37 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1490261284",
+                    "version": "8.x-1.8",
+                    "datestamp": "1564132385",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "grumphp": {
+                    "config-default-path": "vendor/drupol/drupal-conventions/config/drupal8/grumphp.yml"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "grumphp": [
+                    "./vendor/bin/grumphp run"
+                ]
+            },
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
-                    "name": "Pol",
-                    "homepage": "https://www.drupal.org/user/47194"
+                    "name": "Pol Dellaiera (@drupol)",
+                    "homepage": "https://www.drupal.org/u/pol",
+                    "role": "Maintainer"
                 }
             ],
-            "description": "Provide a new Views row plugin that enable alternate view mode on particular rows.",
-            "homepage": "https://www.drupal.org/project/views_parity_row",
+            "description": "This module provide a new Row Style Plugin for Views.",
+            "homepage": "https://drupal.org/project/views_parity_row",
             "support": {
-                "source": "http://cgit.drupalcode.org/views_parity_row"
+                "source": "https://git.drupalcode.org/project/views_parity_row"
             }
         },
         {
@@ -5636,9 +5707,7 @@
             "version": "1.8.2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -5709,9 +5778,7 @@
             "version": "1.6.4",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip"
             },
             "type": "drupal-library"
         },
@@ -10132,6 +10199,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "require-dev dependencies from drupal/core",
+            "abandoned": "drupal/core-dev",
             "time": "2019-11-06T18:31:43+00:00"
         },
         {
@@ -10327,6 +10395,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2019-08-06T17:53:53+00:00"
         },
         {
@@ -10372,6 +10441,7 @@
                 "escaper",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-escaper",
             "time": "2019-09-05T20:03:20+00:00"
         },
         {
@@ -10435,6 +10505,7 @@
                 "feed",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-feed",
             "time": "2019-03-05T20:08:49+00:00"
         },
         {
@@ -10481,6 +10552,7 @@
                 "stdlib",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-stdlib",
             "time": "2018-08-28T21:34:05+00:00"
         }
     ],
@@ -10489,6 +10561,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/field_image_link": 20,
+        "drupal/fixed_path_alias": 10,
         "drupal/inline_entity_form": 5
     },
     "prefer-stable": true,

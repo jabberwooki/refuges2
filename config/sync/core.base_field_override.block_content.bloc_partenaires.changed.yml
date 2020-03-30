@@ -1,0 +1,18 @@
+uuid: 7e465ba1-7ed7-4213-9fe3-5a1b27b9b43a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.bloc_partenaires
+id: block_content.bloc_partenaires.changed
+field_name: changed
+entity_type: block_content
+bundle: bloc_partenaires
+label: Modifié
+description: 'L''heure à laquelle le bloc personnalisé a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

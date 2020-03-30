@@ -1,0 +1,22 @@
+uuid: 0d33da6d-4f73-4e8f-8520-95913bd0902c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.section_header_image
+id: node.section_header_image.status
+field_name: status
+entity_type: node
+bundle: section_header_image
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

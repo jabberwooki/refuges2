@@ -1,0 +1,33 @@
+uuid: 1c31af08-25fc-438f-96ef-de1bdddf3cf0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: photo_gallery_en
+label: 'Galerie photo (en)'
+type: 'canonical_entities:node'
+pattern: 'photo-galleries/[node:title]'
+selection_criteria:
+  98894a0d-439c-4ad1-9cb4-bb35b0af4a37:
+    id: node_type
+    bundles:
+      photo_gallery: photo_gallery
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 98894a0d-439c-4ad1-9cb4-bb35b0af4a37
+  a91eafc1-ba9f-4239-89ce-e2c53b56db63:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: a91eafc1-ba9f-4239-89ce-e2c53b56db63
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

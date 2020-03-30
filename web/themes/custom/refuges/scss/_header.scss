@@ -65,7 +65,20 @@ body {
     padding-top:10px;
     .fa-2x {
       font-size: 1.5em;
-    }  
+    }
+
+    float: right;
+  }
+  .language-switcher-language-url ul {
+    padding-top: 10px;
+    li {
+      display: inline;
+      padding-right: 10px;
+      list-style: none;
+      .is-active {
+        
+      }
+    }
   }
 }
 

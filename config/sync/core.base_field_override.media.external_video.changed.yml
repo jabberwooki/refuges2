@@ -1,0 +1,18 @@
+uuid: ccbd4b84-95c2-4317-8141-46c51ba7dba3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.external_video
+id: media.external_video.changed
+field_name: changed
+entity_type: media
+bundle: external_video
+label: Modifié
+description: 'Date à laquelle cet élément de média a été modifié.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

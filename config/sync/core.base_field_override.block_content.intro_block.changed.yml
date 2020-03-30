@@ -1,0 +1,18 @@
+uuid: 63c176ff-01a9-4078-b4c1-c5d160cf2e6a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.intro_block
+id: block_content.intro_block.changed
+field_name: changed
+entity_type: block_content
+bundle: intro_block
+label: Modifié
+description: 'L''heure à laquelle le bloc personnalisé a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,37 @@
+uuid: eafa88c2-edd8-4e22-83ec-339604997328
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.external_video
+  module:
+    - image
+id: media.external_video.thumbnail
+field_name: thumbnail
+entity_type: media
+bundle: external_video
+label: Vignette
+description: 'Vignette de cet élément média.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: default
+  handler_settings: {  }
+field_type: image

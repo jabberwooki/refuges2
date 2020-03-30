@@ -1,0 +1,22 @@
+uuid: c0ec1c37-aa4c-4fb8-ad6f-f34152a95214
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.video_2_3_texte_1_3
+id: paragraph.video_2_3_texte_1_3.status
+field_name: status
+entity_type: paragraph
+bundle: video_2_3_texte_1_3
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

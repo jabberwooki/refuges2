@@ -1,0 +1,20 @@
+uuid: 57a8a28a-8fbc-4626-a9d7-78b29d6227c4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.photo_gallery
+  module:
+    - path
+id: node.photo_gallery.path
+field_name: path
+entity_type: node
+bundle: photo_gallery
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

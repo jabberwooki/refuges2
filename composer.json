@@ -65,6 +65,7 @@
         "drupal/field_group": "^1.0",
         "drupal/field_group_link": "1.0-rc3",
         "drupal/field_image_link": "1.x-dev",
+        "drupal/fixed_path_alias": "^1.0@beta",
         "drupal/google_analytics": "^3.0",
         "drupal/honeypot": "^1.29",
         "drupal/icon_select": "^1.0",
@@ -81,7 +82,7 @@
         "drupal/twig_tweak": "^2.1",
         "drupal/video_embed_field": "^2.0",
         "drupal/views_bootstrap": "^3.1",
-        "drupal/views_parity_row": "^1.3",
+        "drupal/views_parity_row": "^1.8",
         "drush/drush": "^9.0.0",
         "harvesthq/chosen": "^1.8",
         "jackmoore/colorbox": "^1.6",
@@ -133,6 +134,12 @@
             "initial": {
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
+            }
+        },
+        "enable-patching": true,
+        "patches": {
+            "drupal/ds": {
+                "Illegal offset type in isset or empty in _ds_field_ui_table_layouts": "https://www.drupal.org/files/issues/ds_layout_category-2875412-4.patch"
             }
         }
     }

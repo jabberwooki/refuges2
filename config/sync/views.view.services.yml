@@ -159,6 +159,46 @@ display:
           entity_field: type
           plugin_id: bundle
           group: 1
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       sorts:
         title:
           id: title
@@ -314,6 +354,46 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       defaults:
         filters: false
         filter_groups: false
@@ -427,6 +507,44 @@ display:
         style: false
         row: false
       path: services-gardiennage
+      header: {  }
+      menu:
+        type: normal
+        title: gardiennage
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: services
+        enabled: true
+      use_ajax: true
+      style:
+        type: views_bootstrap_grid
+        options:
+          row_class: col-centered
+          default_row_class: true
+          uses_fields: false
+          alignment: horizontal
+          columns: '4'
+          col_xs: col-xs-6
+          col_sm: col-sm-4
+          col_md: col-md-3
+          col_lg: col-lg-3
+      row:
+        type: 'ds_entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+          alternating_fieldset:
+            alternating: false
+            allpages: false
+          grouping_fieldset:
+            group: false
+            group_field: node_field_data|title
+            group_field_function: ''
+          advanced_fieldset:
+            advanced: false
       filters:
         status:
           value: '1'
@@ -488,48 +606,50 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       filter_groups:
         operator: AND
         groups:
           1: AND
-      header: {  }
-      menu:
-        type: normal
-        title: gardiennage
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
-        menu_name: services
-        enabled: true
-      use_ajax: true
-      style:
-        type: views_bootstrap_grid
-        options:
-          row_class: ''
-          default_row_class: true
-          uses_fields: false
-          alignment: horizontal
-          columns: '4'
-          col_xs: col-xs-6
-          col_sm: col-sm-4
-          col_md: col-md-3
-          col_lg: col-lg-3
-      row:
-        type: 'ds_entity:node'
-        options:
-          relationship: none
-          view_mode: teaser
-          alternating_fieldset:
-            alternating: false
-            allpages: false
-          grouping_fieldset:
-            group: false
-            group_field: node_field_data|title
-            group_field_function: ''
-          advanced_fieldset:
-            advanced: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -617,6 +737,46 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       filter_groups:
         operator: AND
         groups:
@@ -635,7 +795,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: col-centered
           default_row_class: true
           uses_fields: false
           alignment: horizontal

@@ -1,0 +1,18 @@
+uuid: 7fe6dd2f-9d62-4fb0-9399-f37cc56266e6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.intro_block
+id: block_content.intro_block.info
+field_name: info
+entity_type: block_content
+bundle: intro_block
+label: 'Description du bloc'
+description: 'Une brève description de votre bloc.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

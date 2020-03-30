@@ -1,0 +1,18 @@
+uuid: 7b84e8df-e7ab-46d8-b9c9-15e61382fff3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.photos_carrousel
+id: paragraph.photos_carrousel.created
+field_name: created
+entity_type: paragraph
+bundle: photos_carrousel
+label: 'Écrit le'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

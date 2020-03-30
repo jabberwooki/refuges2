@@ -1,0 +1,18 @@
+uuid: 523b3605-3ffe-4370-b7f5-8c7a1a1f5f91
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.section_header_image
+id: node.section_header_image.changed
+field_name: changed
+entity_type: node
+bundle: section_header_image
+label: Modifié
+description: 'Le moment auquel le nœud a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

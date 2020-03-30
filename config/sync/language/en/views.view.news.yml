@@ -1,0 +1,17 @@
+display:
+  frontpage_block:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<p>From [site:name]</p>\r\n"
+            format: full_html
+      title: News
+  list:
+    display_options:
+      menu:
+        title: News
+  default:
+    display_options:
+      title: News
+label: News

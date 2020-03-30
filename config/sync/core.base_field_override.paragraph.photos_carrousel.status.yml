@@ -1,0 +1,22 @@
+uuid: f05474b2-d440-4c98-92db-d94a22adc112
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.photos_carrousel
+id: paragraph.photos_carrousel.status
+field_name: status
+entity_type: paragraph
+bundle: photos_carrousel
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

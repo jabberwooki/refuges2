@@ -1,0 +1,11 @@
+uuid: 6a6ff441-0dd1-4fc8-a656-92bf09f41d5d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.agenda_teaser
+id: crop.agenda_teaser
+target_entity_type_id: crop
+target_bundle: agenda_teaser
+default_langcode: site_default
+language_alterable: false

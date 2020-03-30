@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - node.type.section_header_image
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
 id: node.section_header_image
 target_entity_type_id: node
 target_bundle: section_header_image

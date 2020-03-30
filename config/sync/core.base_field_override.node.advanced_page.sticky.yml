@@ -1,0 +1,22 @@
+uuid: 4c56bfa6-672c-4916-897a-680c9531f463
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.advanced_page
+id: node.advanced_page.sticky
+field_name: sticky
+entity_type: node
+bundle: advanced_page
+label: 'Epinglé en haut des listes'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

@@ -26,6 +26,17 @@ class RefugesLinksBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+    $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+    switch($language) {
+      case 'en':
+        $title = 'Other refuges';
+        $langcode = 'en';
+        break;
+      default:
+        $title = 'Les autres refuges';
+        $langcode = '';
+    }
+
     $sites = array(
       'arpont' => array('name' => 'arpont', 'title' => 'Refuge de l\'Arpont'),
       'bois' => array('name' => 'dubois', 'title' => 'Refuge du Bois'),
@@ -57,15 +68,15 @@ class RefugesLinksBlock extends BlockBase {
     foreach ($sites as $key=>$site) {
       if ($domain_tld == 'localhost') {
         if ($domain == 'vanoise') {
-          $url = 'recette-' . $sites[$key]['name'] . '.vanoise.localhost';
+          $url = 'recette-' . $sites[$key]['name'] . '.vanoise.localhost/' . $langcode;
         }
         else {
-          $url = 'www.' . $key . '2' . '.localhost';
+          $url = 'www.' . $key . '2' . '.localhost/' . $langcode;
         }
       }
       else {
         $parts = explode('-', $sub_domain);
-        $url = $parts[0] . '-' . $sites[$key]['name'] . '.vanoise.com';
+        $url = $parts[0] . '-' . $sites[$key]['name'] . '.vanoise.com/' . $langcode;
       }
 
       $items[] = [
@@ -76,7 +87,9 @@ class RefugesLinksBlock extends BlockBase {
 
     return [
       '#theme' => 'refuges_links__block',
+      '#request_scheme' => $_SERVER['REQUEST_SCHEME'],
       '#items' => $items,
+      '#block_title' => $title,
       '#attached' => ['library' => ['refuges_links/refuges_links']],
     ];
   }

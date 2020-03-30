@@ -1,0 +1,18 @@
+uuid: 2e696071-e1c4-4a3e-903e-fd601e340084
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.external_video
+id: media.external_video.created
+field_name: created
+entity_type: media
+bundle: external_video
+label: 'Écrit le'
+description: 'Date à laquelle cet élément de média a été créé.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

@@ -26,3 +26,7 @@
 #Ignore prepros files
 /web/themes/custom/refuges/prepros-6.config
 web/themes/custom/refuges/prepros.cfg
+
+# Ignore SSL certificate validation file
+/web/.well-known
+
