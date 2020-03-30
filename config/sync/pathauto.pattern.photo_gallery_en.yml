@@ -1,33 +1,33 @@
-uuid: 7675784f-5fb3-4a1f-8394-b36fb1f1cd58
+uuid: 1c31af08-25fc-438f-96ef-de1bdddf3cf0
 langcode: fr
 status: true
 dependencies:
   module:
     - language
     - node
-id: photo_gallery
-label: 'Galerie photo'
+id: photo_gallery_en
+label: 'Galerie photo (en)'
 type: 'canonical_entities:node'
-pattern: 'galeries-photo/[node:title]'
+pattern: 'photo-galleries/[node:title]'
 selection_criteria:
-  77405ab1-9645-41ab-aef8-ec0f5770e4e0:
+  98894a0d-439c-4ad1-9cb4-bb35b0af4a37:
     id: node_type
     bundles:
       photo_gallery: photo_gallery
     negate: false
     context_mapping:
       node: node
-    uuid: 77405ab1-9645-41ab-aef8-ec0f5770e4e0
-  faa3a6ea-4f88-4aa2-9c31-1d91921f0fe1:
+    uuid: 98894a0d-439c-4ad1-9cb4-bb35b0af4a37
+  a91eafc1-ba9f-4239-89ce-e2c53b56db63:
     id: language
     langcodes:
-      fr: fr
+      en: en
     negate: false
     context_mapping:
       language: 'node:langcode:language'
-    uuid: faa3a6ea-4f88-4aa2-9c31-1d91921f0fe1
+    uuid: a91eafc1-ba9f-4239-89ce-e2c53b56db63
 selection_logic: and
-weight: -5
+weight: -10
 relationships:
   'node:langcode:language':
     label: Language
