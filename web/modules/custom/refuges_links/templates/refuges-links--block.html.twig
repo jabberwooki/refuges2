@@ -22,15 +22,15 @@
     </ul>
 </div>
 #}
-
 <div id="other-refuges">
     <button class="btn btn-default" type="button" id="dropdown-refuges">
         {{ block_title }}
         <span class="caret"></span>
     </button>
+
     <ul class="other-refuges-links">
         {% for item in items %}
-            <li><a href="https://{{ item.url }}">{{ item.title }}</a></li>
+            <li><a href="{{ request_scheme }}://{{ item.url }}">{{ item.title }}</a></li>
         {% endfor %}
     </ul>
 </div>

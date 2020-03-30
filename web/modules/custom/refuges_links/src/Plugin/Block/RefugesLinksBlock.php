@@ -87,6 +87,7 @@ class RefugesLinksBlock extends BlockBase {
 
     return [
       '#theme' => 'refuges_links__block',
+      '#request_scheme' => $_SERVER['REQUEST_SCHEME'],
       '#items' => $items,
       '#block_title' => $title,
       '#attached' => ['library' => ['refuges_links/refuges_links']],
