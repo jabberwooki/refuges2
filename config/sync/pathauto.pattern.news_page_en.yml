@@ -1,33 +1,33 @@
-uuid: 00dc1318-d29f-4da7-a9c3-1d946268e770
+uuid: f7483915-b7fe-459b-9e99-e9143db3a71f
 langcode: fr
 status: true
 dependencies:
   module:
     - language
     - node
-id: news_page
-label: 'Page actalité'
+id: news_page_en
+label: 'Page actualité (en)'
 type: 'canonical_entities:node'
-pattern: '/actualites/[node:title]'
+pattern: '/news/[node:title]'
 selection_criteria:
-  c46826ec-bf51-4367-b8c7-e5587ff6879e:
+  4411edab-71e6-46ea-be0c-9819ee4d76a9:
     id: node_type
     bundles:
       news: news
     negate: false
     context_mapping:
       node: node
-    uuid: c46826ec-bf51-4367-b8c7-e5587ff6879e
-  d57c631f-4821-4ed0-9d4b-e58916c968cf:
+    uuid: 4411edab-71e6-46ea-be0c-9819ee4d76a9
+  a543a9f9-c33e-40ba-be24-48829d072663:
     id: language
     langcodes:
-      fr: fr
+      en: en
     negate: false
     context_mapping:
       language: 'node:langcode:language'
-    uuid: d57c631f-4821-4ed0-9d4b-e58916c968cf
+    uuid: a543a9f9-c33e-40ba-be24-48829d072663
 selection_logic: and
-weight: -5
+weight: -10
 relationships:
   'node:langcode:language':
     label: Language
