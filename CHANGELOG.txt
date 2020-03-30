@@ -1,4 +1,39 @@
-Refuges PNV - Hotfix other-refuges-links-http-to-https, 2020-03-25
+  * Ajout du motif pathauto pour les galeries photo.
+  * Ajout du motif pathauto anglais pour les actus.
+  * Mise à jour du module custom refuges_links : les liens sont soit en HTTP soit en HTTPS en fonction du contexte.
+  * Mise en forme css du sélecteur de langues (menu horizontal).
+  * Modif de paramétrage de config_ignore : dans les displays keeping_page et out_keeping_page, seul le paramètre display_options.menu est ignoré, au lieu de tout le display, sinon impossible de déployer le filtre de langue sur tous les sites.
+  * Ajout du filtre de langue (langue sélectionnée pour la page) dans les 3 displays de la vue Services.
+  * Activation de la traduction dans le type de contenu Service.
+  * Export des alias de vues anglais.
+  * Install et activation du module contrib fixed_path_alias.
+  * Traduction des vues Services.
+  * Reglage de conflit entre version FR/EN (dans develop) et nouvelle version liens Autres Refuges (dans hotfix) sur le fichier RefugesLinksBlock.php.
+  * Merge tag 'new-staging-urls-second-fix' into develop
+  * Réglage du conflit entre sites.php du hotfix et sites.php de la branche develop qui était déjà modifiée.
+  * Ajout du fichier de validation du certificat SSL à gitignore.
+  * modification des urls des sites de recette dans le fichier sites.php
+  * I18N : Traduction du menu Les autres refuges.
+  * I18N : Traduction du seul champ custom du formulaire de contact 'Votre prénom'.
+  * I18N : Traduction du type de contenu Diapositive et de la vue Diapositives.
+  * I18N : Traduction du type de contenu Page avancée.
+  * I18N : Traduction du menu Hamburger.
+  * I18N : Correction paramétrage Bandeau Image : Décochage de la case 'Afficher le sélecteur de langue...'.
+  * I18N : Traduction les liens de menu.
+  * I18N : Traduction du type de contenu Page de base.
+  * I18N : Traduction du type de contenu Evénement et des vue Evénements.
+  * I18N : Traduction du type de contenu Bandeau Rubrique.
+  * I18N : Traduction de la vue Actualités.
+  * I18N : Gestion multilingue des liens sur les titres des blocs Actualités et Agenda de la page d'accueil.
+  * Mise à jour du module config_ignore de 2.1 à 2.2 pour supprimer les bugs de synchronisation de config qui apparaissent dès qu'on traduit une vue qui est listée dans config_ignore.
+  * I18N : ajout du filtre de langue dans les displays de la vue Actualités.
+  * I18N : 1) Patch du module Display Suite pour corriger le pb 'Illegal offset type in isset or empty in _ds_field_ui_table_layouts'. Voir https://www.drupal.org/project/ds/issues/2875412 2) Mise à jour du module views_parity_row de 1.3 vers 1.8 (dernière version stable) pour corriger le fait que le bloc accueil des actus affiche les nodes FR quand on a switché sur la langue EN.
+  * I18N : Ajout du sélecteur de langues, avec traduction du nom des langues.
+  * I18N : Traduction du type de contenu Actualité : Désactivation des champs inutiles pour la traduction (Published, Ecrit le, Modifié, Promu en page d'accueil, Epinglé en haut des listes. Ils sont masqués dans le formulaire de traduction.
+  * I18N : Activation de la traduction de tous les types de paragraphe sauf Image seule, Carousel de photos et Video.
+  * I18N : Activation de la traduction du type de contenu Actualité.
+  * I18N : Ajout de la langue anglaise.
+  * I18N : Activation des modules content_translation et configuration_translation.
 ------------------------------------------------------------------
   * Modif des urls dans menu Autres Refuges : http -> https.
 
