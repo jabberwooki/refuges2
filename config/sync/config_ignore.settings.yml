@@ -7,8 +7,8 @@ ignored_config_entities:
   - 'views.view.news:display.list.display_options.menu'
   - 'views.view.events:display.list.display_options.menu'
   - 'views.view.services:display.list.display_options.menu'
-  - 'views.view.services:display.keeping_page'
-  - 'views.view.services:display.out_keeping_page'
+  - 'views.view.services:display.keeping_page.display_options.menu'
+  - 'views.view.services:display.out_keeping_page.display_options.menu'
   - google_analytics.settings
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
