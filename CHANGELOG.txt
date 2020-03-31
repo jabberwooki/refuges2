@@ -1,4 +1,10 @@
-  * Ajout du motif pathauto pour les galeries photo.
+
+Refuges PNV 1.2.1, 2020-03-31
+-----------------------------
+  * Ajout de la traduction des blocs custom de type intro_block.
+
+Refuges PNV 1.2, 2020-03-30
+---------------------------
   * Ajout du motif pathauto anglais pour les actus.
   * Mise à jour du module custom refuges_links : les liens sont soit en HTTP soit en HTTPS en fonction du contexte.
   * Mise en forme css du sélecteur de langues (menu horizontal).
