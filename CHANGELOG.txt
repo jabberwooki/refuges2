@@ -1,3 +1,6 @@
+Refuges PNV - Hotfix config_ignore_google_user_form_settings, 2020-03-31
+------------------------------------------------------------------------
+  * Mise à jour de config_ignore : ajout des parametres google du formulaire utilisateur.
 
 Refuges PNV 1.2.1, 2020-03-31
 -----------------------------
