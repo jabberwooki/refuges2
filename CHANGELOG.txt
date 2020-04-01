@@ -1,3 +1,7 @@
+Refuges PNV - Hotfix custom_block_intro_block_translation,  2020-04-01
+----------------------------------------------------------------------
+  * Ajout de la traduction des champs des blocs custom de type intro_block.
+
 Refuges PNV - Hotfix config_ignore_google_user_form_settings, 2020-03-31
 ------------------------------------------------------------------------
   * Mise à jour de config_ignore : ajout des parametres google du formulaire utilisateur.
