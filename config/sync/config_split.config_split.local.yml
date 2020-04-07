@@ -8,6 +8,7 @@ folder: ../config/envs/local
 module:
   chosen: 0
   devel: 0
+  update: 0
 theme: {  }
 blacklist: {  }
 graylist:

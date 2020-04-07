@@ -1,3 +1,8 @@
+Refuges PNV 1.3, 2020-04-07
+---------------------------
+  * Ajout de l'activation du module Update Manager (update) au split local.
+  * Mise à jour de sécurité 2020 n°1
+
 Refuges PNV - Hotfix custom_block_intro_block_translation,  2020-04-01
 ----------------------------------------------------------------------
   * Ajout de la traduction des champs des blocs custom de type intro_block.
