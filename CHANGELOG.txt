@@ -1,3 +1,7 @@
+Refuges PNV - Hotfix webmaster-permissions-on-translations, 2020-04-07
+----------------------------------------------------------------------
+  * Ajout à webmaster des permissions manquantes sur les traductions.
+
 Refuges PNV - Hotfix translation-permissions-addition, 2020-04-07
 -----------------------------------------------------------------
   * Ajout des permissions sur les traductions.
