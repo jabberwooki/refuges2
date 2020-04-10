@@ -1,3 +1,7 @@
+Refuges PNV - Hotfix webmaster-permissions-update, 2020-04-10
+-------------------------------------------------------------
+  * Ajout des droits 'Traduire la configuration' et 'Administrer les vues' au rôle webmaster.
+
 Refuges PNV 1.3.1, 2020-04-10
 -----------------------------
   * Affichage du sélecteur de langue uniquement pour les personnes connectées (tant que tout n'est pas traduit).
