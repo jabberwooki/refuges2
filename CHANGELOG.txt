@@ -1,3 +1,10 @@
+Refuges PNV 1.3.1, 2020-04-10
+-----------------------------
+  * Affichage du sélecteur de langue uniquement pour les personnes connectées (tant que tout n'est pas traduit).
+  * Activation de la traduction pour le champ Intitulé (title) du type de contenu Service.
+  * Activation de la traduction du champ 'Description du bloc' pour le type de bloc intro_block.
+  * Ajout du filtre de langue dans tous les displays de la vue Bandeaux Rubriques.
+
 Refuges PNV - Hotfix webmaster-permissions-on-translations, 2020-04-07
 ----------------------------------------------------------------------
   * Ajout à webmaster des permissions manquantes sur les traductions.
