@@ -60,6 +60,22 @@ $sites = array(
   'recette-vallonbrun.vanoise.com' => 'vallonbrun',
 
   // Production sites
+  'prod-arpont.vanoise.com' => 'arpont',
+  'prod-dubois.vanoise.com' => 'bois',
+  'prod-femma.vanoise.com' => 'femma',
+  'prod-fonddesfours.vanoise.com' => 'fours',
+  'prod-plandulac.vanoise.com' => 'lac',
+  'prod-leisse.vanoise.com' => 'leisse',
+  'prod-lamartin.vanoise.com' => 'martin',
+  'prod-orgere.vanoise.com' => 'orgere',
+  'prod-coldupalet.vanoise.com' => 'palet',
+  'prod-plaisance.vanoise.com' => 'plaisance',
+  'prod-prariond.vanoise.com' => 'prariond',
+  'prod-rosuel.vanoise.com' => 'rosuel',
+  'prod-turia.vanoise.com' => 'turia',
+  'prod-valette.vanoise.com' => 'valette',
+  'prod-vallonbrun.vanoise.com' => 'vallonbrun',
+
   'refuge-arpont.vanoise.com' => 'arpont',
   'refuge-dubois.vanoise.com' => 'bois',
   'refuge-femma.vanoise.com' => 'femma',

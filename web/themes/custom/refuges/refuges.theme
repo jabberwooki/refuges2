@@ -181,8 +181,15 @@ function refuges_preprocess_region(&$variables) {
         // Ajout Prariond au tunnel PNV
         'prariond' => ['code' => 'OPRF-93152', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
       ];
-
       $variables['resa_data'] = $reservation_data[str_replace('sites/', '', \Drupal::service('site.path'))];
+
+      $resa_button_labels = [
+        'fr' => 'Réservation',
+        'en' => 'Booking',
+      ];
+      $lang_id = \Drupal::languageManager()->getCurrentLanguage()->getId();
+      $variables['resa_button_label'] = $resa_button_labels[$lang_id];
+
       break;
   }
 }
