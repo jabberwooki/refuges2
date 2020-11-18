@@ -1,3 +1,10 @@
+Refuges PNV 1.4
+---------------
+  * Suppression du fichier config/envs/staging/shield.settings.yml devenu inutile.
+  * Modif du Config Split staging : retrait du module Shield du split complet.
+  * Activation de Google Analytics pour essayer de supprimer les pb d'import en recette.
+  * Export de la config après passage du noyau à la version 8.9.8.
+
 Refuges PNV 1.3.3, 2020-04-21
 -----------------------------
   * Modification du code du widget resa pour générer la version anglaise.
