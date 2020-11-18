@@ -14,7 +14,6 @@ description: 'Entrées récentes du journal'
 tag: ''
 base_table: watchdog
 base_field: wid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -40,7 +39,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: true
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
@@ -585,6 +584,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -624,6 +625,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -653,18 +656,7 @@ display:
       title: 'Entrées récentes du journal'
       header: {  }
       footer: {  }
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: 'Aucune entrée du journal n''est disponible.'
-          empty: true
-          tokenize: false
-          content: 'Aucune entrée du journal n''est disponible.'
-          plugin_id: text
+      empty: {  }
       relationships:
         uid:
           id: uid

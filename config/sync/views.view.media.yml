@@ -17,7 +17,6 @@ description: ''
 tag: ''
 base_table: media_field_data
 base_field: mid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -43,7 +42,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: false
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
@@ -68,8 +67,8 @@ display:
           tags:
             previous: '‹ Précédent'
             next: 'Suivant ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« Premier'
+            last: 'Dernier »'
           quantity: 9
       style:
         type: table
@@ -322,7 +321,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Author
+          label: Auteur
           exclude: false
           alter:
             alter_text: false
@@ -387,7 +386,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: Etat
           exclude: false
           alter:
             alter_text: false
@@ -432,8 +431,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: Publié
+            format_custom_false: 'Non publié'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -591,6 +590,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -632,6 +633,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -670,9 +673,11 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: 'Statut de publication'
             description: ''
             identifier: status
             optional: true
@@ -683,11 +688,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Publié
                 operator: '='
                 value: '1'
               2:
-                title: Unpublished
+                title: 'Non publié'
                 operator: '='
                 value: '0'
           plugin_id: boolean
@@ -706,7 +711,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Langue
             description: ''
             use_operator: false
             operator: langcode_op
@@ -719,6 +724,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -734,6 +741,45 @@ display:
           entity_type: media
           entity_field: langcode
           plugin_id: language
+        status_extra:
+          group_info:
+            widget: select
+            group_items: {  }
+            multiple: false
+            description: ''
+            default_group_multiple: {  }
+            default_group: All
+            label: ''
+            identifier: ''
+            optional: true
+            remember: false
+          group: 1
+          relationship: none
+          exposed: false
+          expose:
+            use_operator: false
+            remember: false
+            operator_id: ''
+            multiple: false
+            description: ''
+            required: false
+            label: ''
+            operator_limit_selection: false
+            operator: ''
+            identifier: ''
+            operator_list: {  }
+            remember_roles:
+              authenticated: authenticated
+          entity_type: media
+          value: ''
+          field: status_extra
+          is_grouped: false
+          admin_label: ''
+          operator: '='
+          table: media_field_data
+          plugin_id: media_status
+          id: status_extra
+          group_type: group
       sorts:
         created:
           id: created
@@ -775,6 +821,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - user.permissions
       tags: {  }
   media_page_list:
@@ -802,5 +849,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - user.permissions
       tags: {  }
