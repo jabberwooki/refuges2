@@ -25,6 +25,7 @@ third_party_settings:
         id: ''
         classes: ''
       label: Printemps
+      region: content
     group_tab_2:
       children:
         - group_tab_1
@@ -39,6 +40,7 @@ third_party_settings:
         id: ''
         classes: ''
       label: Onglets
+      region: content
     group_ete:
       children:
         - field_text
@@ -51,6 +53,7 @@ third_party_settings:
         formatter: closed
         description: ''
       label: été
+      region: content
     group_hors_gardiennage:
       children:
         - field_texte_tab3
@@ -63,6 +66,7 @@ third_party_settings:
         formatter: closed
         description: ''
       label: 'Hors gardiennage'
+      region: content
 id: paragraph.tarifs.default
 targetEntityType: paragraph
 bundle: tarifs

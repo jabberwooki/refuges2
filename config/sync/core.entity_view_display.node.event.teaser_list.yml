@@ -71,6 +71,7 @@ third_party_settings:
         id: ''
         classes: wrapper
       label: wrapper
+      region: ds_content
     group_left:
       children:
         - field_media_image
@@ -88,6 +89,7 @@ third_party_settings:
         id: ''
         classes: 'pull-left col-md-4'
       label: left
+      region: ds_content
     group_right:
       children:
         - addtoany
@@ -108,6 +110,7 @@ third_party_settings:
         id: ''
         classes: 'pull-right col-md-8'
       label: right
+      region: ds_content
 id: node.event.teaser_list
 targetEntityType: node
 bundle: event

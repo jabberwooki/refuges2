@@ -28,6 +28,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: div
+      region: content
 id: paragraph.image_sur_texte_1_2.default
 targetEntityType: paragraph
 bundle: image_sur_texte_1_2

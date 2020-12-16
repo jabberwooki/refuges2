@@ -52,6 +52,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Contenu
+      region: ds_content
 id: node.news.full
 targetEntityType: node
 bundle: news

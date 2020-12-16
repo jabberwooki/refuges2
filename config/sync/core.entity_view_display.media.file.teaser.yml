@@ -34,6 +34,7 @@ third_party_settings:
         id: ''
         classes: 'text col-md-6'
       label: left
+      region: content
     group_right:
       children:
         - field_media_file
@@ -51,6 +52,7 @@ third_party_settings:
         id: ''
         classes: 'download col-md-3'
       label: right
+      region: content
     group_wrapper:
       children:
         - group_left
@@ -70,6 +72,7 @@ third_party_settings:
         id: ''
         classes: wrapper
       label: wrapper
+      region: content
     group_middle:
       children:
         - field_flipthrough_url
@@ -87,6 +90,7 @@ third_party_settings:
         id: ''
         classes: 'read col-md-3'
       label: middle
+      region: content
 _core:
   default_config_hash: 9s0lWIanCnW5Xrrkmedxohs9F0yk4LO8ZcmVQ9xyuu4
 id: media.file.teaser

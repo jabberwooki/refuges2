@@ -27,6 +27,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: left
+      region: content
     group_right:
       children:
         - field_texte
@@ -43,6 +44,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: right
+      region: content
     group_row:
       children:
         - group_left
@@ -60,6 +62,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: row
+      region: content
 id: paragraph.image_1_3_2_3_texte.default
 targetEntityType: paragraph
 bundle: image_1_3_2_3_texte

@@ -66,6 +66,7 @@ third_party_settings:
         custom_uri: ''
         target_attribute: default
       label: Lien
+      region: ds_content
     group_details:
       children:
         - node_title
@@ -82,6 +83,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Details
+      region: ds_content
     group_overlay:
       children:
         - node_post_date
@@ -98,6 +100,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Overlay
+      region: ds_content
 id: node.photo_gallery.teaser
 targetEntityType: node
 bundle: photo_gallery

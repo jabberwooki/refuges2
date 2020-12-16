@@ -70,6 +70,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Contenu
+      region: ds_content
 id: node.event.full
 targetEntityType: node
 bundle: event

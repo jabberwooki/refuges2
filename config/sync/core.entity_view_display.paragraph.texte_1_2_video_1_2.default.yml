@@ -28,6 +28,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: left
+      region: content
     group_right:
       children:
         - field_video
@@ -44,6 +45,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: right
+      region: content
     group_row:
       children:
         - group_left
@@ -61,6 +63,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: row
+      region: content
 id: paragraph.texte_1_2_video_1_2.default
 targetEntityType: paragraph
 bundle: texte_1_2_video_1_2
