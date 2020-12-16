@@ -1,3 +1,12 @@
+Refuges PNV 1.4.1
+-----------------
+  * Modif du Config Split staging: retrait du module config_ignore du split complet.
+  * Export de la configuration après mise à jour noyau et modules non supportés.
+  * Mise à jour des 4 modules non supportés : Admin Toolbar, Devel, Field Group et Structure Sync.
+  * Mise à jour de sécurité du noyau Drupal : 8.9.8 => 8.9.11
+  * New drsqld PHP script (databases dump) added. Script drard modified with '--no-tablespaces' added to dump command.
+  * Merge tag 'v1.4' into developRefuges PNV 1.4
+
 Refuges PNV 1.4
 ---------------
   * Suppression du fichier config/envs/staging/shield.settings.yml devenu inutile.
