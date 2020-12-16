@@ -2,9 +2,7 @@
 
 <?php
 /**
- * Command "archive-dump" doesn't exist anymore in Drush 9.x
- * The following script makes the job.
- * It has to be placed in the DRUPAL_ROOT to work.
+ * Database only dump (sql:dump) of all PNV refuges sites.
  */
 
 $file_path = $_SERVER['HOME'] . '/drush-backups/';
@@ -26,7 +24,7 @@ include('web/sites/sites.php');
 // For each unique site name, launches cache clearing, db backup and files backups.
 $CacheCommandPattern = "drush --uri=:key cr";
 $DbCommandPattern = "drush sql:dump --uri=:key --gzip --no-tablespaces --result-file=:filename";
-$FilesCommandPattern = "tar czf :filename web/sites/:site/files/*";
+//$FilesCommandPattern = "tar czf :filename web/sites/:site/files/*";
 $done = [];
 
 foreach ($sites as $key => $site) {
@@ -51,10 +49,10 @@ foreach ($sites as $key => $site) {
     `$command`;
 
     // Files backup.
-    $filename = $site_dir . '/'. $site . '_' . $datetime . '.tar.gz';
-    $command = str_replace(array(':filename',':site'), array($filename, $site), $FilesCommandPattern);
-    print "Executing command `$command` on $site\n";
-    `$command`;
+    // $filename = $site_dir . '/'. $site . '_' . $datetime . '.tar.gz';
+    // $command = str_replace(array(':filename',':site'), array($filename, $site), $FilesCommandPattern);
+    // print "Executing command `$command` on $site\n";
+    // `$command`;
     print "\n";
     $done[] = $site;
   }
