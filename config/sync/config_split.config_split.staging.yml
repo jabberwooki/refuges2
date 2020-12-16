@@ -5,8 +5,7 @@ dependencies: {  }
 id: staging
 label: Recette
 folder: ../config/envs/staging
-module:
-  config_ignore: 0
+module: {  }
 theme: {  }
 blacklist: {  }
 graylist: {  }

@@ -27,6 +27,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: left
+      region: content
     group_right:
       children:
         - field_text
@@ -44,6 +45,7 @@ third_party_settings:
         id: ''
         classes: 'col-md-4 bloc_right'
       label: right
+      region: content
     group_row:
       children:
         - group_left
@@ -61,6 +63,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: row
+      region: content
 id: paragraph.texte_2_3_bloc_1_3.default
 targetEntityType: paragraph
 bundle: texte_2_3_bloc_1_3

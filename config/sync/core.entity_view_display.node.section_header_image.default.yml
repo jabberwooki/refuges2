@@ -57,6 +57,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: infos
+      region: ds_content
 id: node.section_header_image.default
 targetEntityType: node
 bundle: section_header_image

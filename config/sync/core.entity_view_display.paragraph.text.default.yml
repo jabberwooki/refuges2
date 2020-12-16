@@ -26,6 +26,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: row
+      region: content
 id: paragraph.text.default
 targetEntityType: paragraph
 bundle: text

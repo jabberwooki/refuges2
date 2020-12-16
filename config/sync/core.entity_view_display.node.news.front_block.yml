@@ -71,6 +71,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Texte teaser'
+      region: ds_content
 id: node.news.front_block
 targetEntityType: node
 bundle: news

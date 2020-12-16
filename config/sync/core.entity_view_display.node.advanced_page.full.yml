@@ -50,6 +50,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Contenu
+      region: ds_content
 id: node.advanced_page.full
 targetEntityType: node
 bundle: advanced_page
