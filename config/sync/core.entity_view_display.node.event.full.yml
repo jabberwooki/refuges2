@@ -14,8 +14,8 @@ dependencies:
   module:
     - datetime_range
     - ds
+    - entity_reference_revisions
     - field_group
-    - paragraphs
     - user
 third_party_settings:
   ds:
@@ -25,6 +25,7 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        label: ''
         wrappers:
           ds_content: div
         outer_wrapper: div
@@ -84,9 +85,11 @@ content:
   field_content:
     weight: 6
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: paragraph_summary
+    type: entity_reference_revisions_entity_view
     region: ds_content
   field_event_dates:
     type: daterange_custom
@@ -104,7 +107,7 @@ content:
     type: string
     weight: 5
     region: ds_content
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
