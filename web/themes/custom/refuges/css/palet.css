@@ -918,6 +918,9 @@ blockquote {
 .block-views-blockevents-frontpage-block .slick-next {
   right: 10%; }
 
+.page-node-type-event .node--view-mode-full .field--name-field-location {
+  margin-bottom: 15px; }
+
 .node--type-event .node--view-mode-teaser .addtoany_list {
   float: right; }
 

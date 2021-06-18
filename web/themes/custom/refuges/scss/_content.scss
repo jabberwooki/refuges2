@@ -85,7 +85,7 @@
 .node--type-event.node--view-mode-teaser-list .wrapper,
 .node--type-event.node--view-mode-teaser .wrapper{
     float: left;
-    padding: 15px 10px; 
+    padding: 15px 10px;
     opacity:1;
 }
 
@@ -253,8 +253,8 @@
     h2.block-title{
         a:hover{
             text-decoration: none;
-        }  
-    } 
+        }
+    }
 }
 
 //SLICK FLECHES
@@ -310,7 +310,7 @@
         .field--name-field-copyright,
         .field--name-field-caption{
             display: none;
-        } 
+        }
         .slick-slide img {
             max-height: 75px;
             width: auto;
@@ -411,6 +411,16 @@
         right: 10%;
     }
 }
+
+// AGENDA EVENT PAGE
+.page-node-type-event {
+  .node--view-mode-full {
+    .field--name-field-location {
+      margin-bottom: 15px;
+    }
+  }
+}
+
 
 //AGENDA VIEWS
 .node--type-event{
