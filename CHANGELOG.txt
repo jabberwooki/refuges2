@@ -1,3 +1,7 @@
+Refuge PNV 1.4.2
+----------------
+ * Correction du mauvais affichage du champ Contenu (Paragraphs) d'un node événement en mode full.
+
 Refuges PNV 1.4.1
 -----------------
   * Modif du Config Split staging: retrait du module config_ignore du split complet.
