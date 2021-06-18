@@ -1013,6 +1013,9 @@ blockquote {
   overflow: hidden;
   max-width: 100%; }
 
+#contact-message-feedback-form input#edit-field-phone-0-value {
+  display: block; }
+
 .prefooter {
   background-size: cover; }
   .prefooter .block-contact-block {
