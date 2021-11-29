@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Retours utilisateurs sur le site web'
 recipients:
-  - refuge.lebois@vanoise-parcnational.fr
+  - christophe.espiau@gmail.com
 reply: ''
 weight: 0
 message: 'Votre message a été envoyé.'

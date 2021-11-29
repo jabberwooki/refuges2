@@ -5,13 +5,16 @@ dependencies:
   config:
     - contact.form.feedback
     - field.field.contact_message.feedback.field_firstname
+    - field.field.contact_message.feedback.field_phone
+  module:
+    - telephone
 id: contact_message.feedback.default
 targetEntityType: contact_message
 bundle: feedback
 mode: default
 content:
   copy:
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -23,6 +26,13 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_phone:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
   mail:
     weight: 2
     region: content
@@ -30,7 +40,7 @@ content:
     third_party_settings: {  }
   message:
     type: string_textarea
-    weight: 4
+    weight: 5
     settings:
       rows: 12
       placeholder: ''
@@ -43,7 +53,7 @@ content:
     third_party_settings: {  }
   subject:
     type: string_textfield
-    weight: 3
+    weight: 4
     region: content
     settings:
       size: 60
