@@ -4,6 +4,7 @@ status: false
 dependencies: {  }
 id: staging
 label: Recette
+weight: 0
 folder: ../config/envs/staging
 module: {  }
 theme: {  }
@@ -11,4 +12,3 @@ blacklist: {  }
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

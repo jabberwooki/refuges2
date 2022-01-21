@@ -1,7 +1,34 @@
 uuid: 36c31a75-683f-49e3-b8ce-e4d4e1cc4016
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - media.type.external_video
+    - media.type.file
+    - media.type.image
+    - node.type.advanced_page
+    - node.type.event
+    - node.type.news
+    - node.type.page
+    - node.type.photo_gallery
+    - node.type.section_header_image
+    - node.type.service
+    - node.type.slide
+  module:
+    - comment
+    - contact
+    - filter
+    - google_analytics
+    - media
+    - node
+    - paragraphs
+    - quickedit
+    - search
+    - shortcut
+    - system
+    - toolbar
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated

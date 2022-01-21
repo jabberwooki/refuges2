@@ -13,30 +13,30 @@ third_party_settings:
     group_row:
       children:
         - field_text
+      label: row
       parent_name: ''
+      region: content
       weight: 20
       format_type: html_element
       format_settings:
-        id: ''
         classes: row
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: row
-      region: content
 id: paragraph.text.default
 targetEntityType: paragraph
 bundle: text
 mode: default
 content:
   field_text:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
 hidden: {  }

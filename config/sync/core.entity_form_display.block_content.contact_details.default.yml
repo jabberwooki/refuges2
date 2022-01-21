@@ -19,8 +19,8 @@ content:
     weight: 4
     region: content
     settings:
-      size: 60
       placeholder: ''
+      size: 60
     third_party_settings: {  }
   field_phone:
     type: telephone_default

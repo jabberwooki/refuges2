@@ -1,17 +1,17 @@
 aliases:
   -
-    alias: /news
     source: /actualites
+    alias: /news
     langcode: en
   -
-    alias: /services-keeping
     source: /services-gardiennage
+    alias: /services-keeping
     langcode: en
   -
-    alias: /services-no-keeping
     source: /services-hors-gardiennage
+    alias: /services-no-keeping
     langcode: en
   -
-    alias: /photo-galleries
     source: /galeries-photo
+    alias: /photo-galleries
     langcode: en

@@ -20,23 +20,23 @@ widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
   e5e747bc-2fba-482f-96c4-2b8927cffc1e:
+    id: media_image_upload
+    uuid: e5e747bc-2fba-482f-96c4-2b8927cffc1e
+    label: 'Charger des images'
+    weight: 1
     settings:
       extensions: 'jpg jpeg png gif'
       media_type: image
       upload_location: 'public://'
       multiple: '1'
       submit_text: 'Sélectionner ces images'
-    uuid: e5e747bc-2fba-482f-96c4-2b8927cffc1e
-    weight: 1
-    label: 'Charger des images'
-    id: media_image_upload
   f2882ad4-9ad6-4936-9625-6823592b2f76:
+    id: view
+    uuid: f2882ad4-9ad6-4936-9625-6823592b2f76
+    label: 'Parcourir les images existantes'
+    weight: 2
     settings:
-      view: media_browser
-      view_display: entity_browser_1
       submit_text: 'Sélectionner ces images'
       auto_select: false
-    uuid: f2882ad4-9ad6-4936-9625-6823592b2f76
-    weight: 2
-    label: 'Parcourir les images existantes'
-    id: view
+      view: media_browser
+      view_display: entity_browser_1

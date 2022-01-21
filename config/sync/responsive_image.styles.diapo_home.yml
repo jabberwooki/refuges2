@@ -11,24 +11,24 @@ id: diapo_home
 label: 'Diapo home'
 image_style_mappings:
   -
+    image_mapping_type: image_style
+    image_mapping: slides_desktop
     breakpoint_id: bootstrap.screen-lg-min
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: slides_desktop
-  -
     breakpoint_id: bootstrap.screen-md-min
     multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: slides_desktop
   -
+    image_mapping_type: image_style
+    image_mapping: diapo_mobile
     breakpoint_id: bootstrap.screen-sm-min
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: diapo_mobile
-  -
     breakpoint_id: bootstrap.screen-xs-max
     multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: diapo_mobile
 breakpoint_group: bootstrap
 fallback_image_style: slides_desktop

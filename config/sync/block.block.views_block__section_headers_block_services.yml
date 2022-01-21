@@ -18,13 +18,13 @@ plugin: 'views_block:section_headers-block_3'
 settings:
   id: 'views_block:section_headers-block_3'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: "/services-gardiennage\r\n/services-hors-gardiennage"
     negate: false
     context_mapping: {  }
+    pages: "/services-gardiennage\r\n/services-hors-gardiennage"

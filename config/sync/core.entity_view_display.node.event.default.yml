@@ -23,14 +23,14 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        classes:
+          layout_class: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
     regions:
       ds_content:
         - group_wrapper
@@ -56,74 +56,72 @@ third_party_settings:
       children:
         - group_left
         - group_right
+      label: wrapper
       parent_name: ''
+      region: ds_content
       weight: 0
       format_type: html_element
       format_settings:
         label: wrapper
+        classes: 'wrapper col-md-8 col-md-offset-2'
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'wrapper col-md-8 col-md-offset-2'
-      label: wrapper
-      region: ds_content
     group_left:
       children:
         - field_media_image
+      label: left
       parent_name: group_wrapper
+      region: ds_content
       weight: 1
       format_type: html_element
       format_settings:
         label: left
+        classes: 'pull-left col-md-3'
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'pull-left col-md-3'
-      label: left
-      region: ds_content
     group_right:
       children:
         - addtoany
         - field_event_dates
         - node_title
         - field_summary
+      label: right
       parent_name: group_wrapper
+      region: ds_content
       weight: 3
       format_type: html_element
       format_settings:
         label: right
+        classes: 'pull-right col-md-9'
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'pull-right col-md-9'
-      label: right
-      region: ds_content
 id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
 content:
   addtoany:
-    weight: 4
-    region: ds_content
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: ds_content
   field_event_dates:
     type: daterange_custom
-    weight: 5
-    region: ds_content
     label: hidden
     settings:
       timezone_override: ''
@@ -132,30 +130,32 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
+    weight: 5
+    region: ds_content
   field_location:
-    weight: 8
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 8
     region: content
   field_media_image:
     type: entity_reference_entity_view
-    weight: 2
-    region: ds_content
     label: hidden
     settings:
       view_mode: agenda_teaser
       link: false
     third_party_settings: {  }
+    weight: 2
+    region: ds_content
   field_summary:
     type: basic_string
-    weight: 7
-    region: ds_content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 7
+    region: ds_content
 hidden:
   field_content: true
   field_pub_dates: true

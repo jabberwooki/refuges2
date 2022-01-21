@@ -4,6 +4,7 @@ status: false
 dependencies: {  }
 id: valette
 label: 'Refuge de la Valette'
+weight: 0
 folder: ../config/sites/valette
 module: {  }
 theme: {  }
@@ -15,4 +16,3 @@ graylist:
   - 'block.block.socialmedialinks*'
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

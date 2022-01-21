@@ -11,12 +11,12 @@ pattern: '[node:menu-link:parents]/[node:title]'
 selection_criteria:
   53b8c5cd-0064-4dc1-ab90-69ad6c6b946d:
     id: node_type
-    bundles:
-      advanced_page: advanced_page
     negate: false
+    uuid: 53b8c5cd-0064-4dc1-ab90-69ad6c6b946d
     context_mapping:
       node: node
-    uuid: 53b8c5cd-0064-4dc1-ab90-69ad6c6b946d
+    bundles:
+      advanced_page: advanced_page
 selection_logic: and
 weight: -5
 relationships: {  }

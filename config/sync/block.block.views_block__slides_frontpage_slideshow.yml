@@ -18,13 +18,13 @@ plugin: 'views_block:slides-frontpage_slideshow'
 settings:
   id: 'views_block:slides-frontpage_slideshow'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

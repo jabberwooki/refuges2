@@ -12,20 +12,20 @@ pattern: 'galeries-photo/[node:title]'
 selection_criteria:
   77405ab1-9645-41ab-aef8-ec0f5770e4e0:
     id: node_type
-    bundles:
-      photo_gallery: photo_gallery
     negate: false
+    uuid: 77405ab1-9645-41ab-aef8-ec0f5770e4e0
     context_mapping:
       node: node
-    uuid: 77405ab1-9645-41ab-aef8-ec0f5770e4e0
+    bundles:
+      photo_gallery: photo_gallery
   faa3a6ea-4f88-4aa2-9c31-1d91921f0fe1:
     id: language
-    langcodes:
-      fr: fr
     negate: false
+    uuid: faa3a6ea-4f88-4aa2-9c31-1d91921f0fe1
     context_mapping:
       language: 'node:langcode:language'
-    uuid: faa3a6ea-4f88-4aa2-9c31-1d91921f0fe1
+    langcodes:
+      fr: fr
 selection_logic: and
 weight: -5
 relationships:

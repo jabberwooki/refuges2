@@ -1,7 +1,42 @@
 uuid: ba9828fb-1b1d-46fb-af79-09745d76a808
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - media.type.external_video
+    - media.type.file
+    - media.type.image
+    - node.type.advanced_page
+    - node.type.event
+    - node.type.news
+    - node.type.page
+    - node.type.photo_gallery
+    - node.type.section_header_image
+    - node.type.service
+    - node.type.slide
+  module:
+    - block
+    - block_content
+    - block_content_permissions
+    - config_translation
+    - contact
+    - content_translation
+    - contextual
+    - entity_browser
+    - file
+    - google_analytics
+    - honeypot
+    - locale
+    - media
+    - menu_admin_per_menu
+    - menu_link_content
+    - node
+    - paragraphs
+    - path
+    - shortcut
+    - system
+    - toolbar
+    - views_ui
 id: webmaster
 label: Webmaster
 weight: -7

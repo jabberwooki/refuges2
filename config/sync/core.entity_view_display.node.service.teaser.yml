@@ -21,6 +21,8 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        classes:
+          layout_class: {  }
         wrappers:
           left: div
           right: div
@@ -28,8 +30,6 @@ third_party_settings:
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
     regions:
       left:
         - field_icone
@@ -42,22 +42,22 @@ mode: teaser
 content:
   field_displayed_text:
     type: string
-    weight: 1
-    region: right
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: right
   field_icone:
     type: icon_select_formatter_default
-    weight: 0
-    region: left
     label: hidden
     settings:
       apply_dimensions: '1'
       width: '47'
       height: '47'
     third_party_settings: {  }
+    weight: 0
+    region: left
 hidden:
   addtoany: true
   field_frontpage_promoted: true

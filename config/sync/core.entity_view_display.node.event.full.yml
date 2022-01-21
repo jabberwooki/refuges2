@@ -25,15 +25,15 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
+        label: ''
     regions:
       ds_content:
         - group_content
@@ -58,43 +58,41 @@ third_party_settings:
         - field_event_dates
         - field_location
         - field_content
+      label: Contenu
       parent_name: ''
+      region: ds_content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: 'content_page col-md-offset-2 col-md-8'
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: Contenu
-      region: ds_content
 id: node.event.full
 targetEntityType: node
 bundle: event
 mode: full
 content:
   addtoany:
-    weight: 2
-    region: ds_content
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: ds_content
   field_content:
-    weight: 6
+    type: entity_reference_revisions_entity_view
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    weight: 6
     region: ds_content
   field_event_dates:
     type: daterange_custom
-    weight: 4
-    region: ds_content
     label: hidden
     settings:
       timezone_override: ''
@@ -103,23 +101,25 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
+    weight: 4
+    region: ds_content
   field_location:
     type: string
-    weight: 5
-    region: ds_content
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 5
+    region: ds_content
   field_media_image:
     type: entity_reference_entity_view
-    weight: 1
-    region: ds_content
     label: hidden
     settings:
       view_mode: agenda_full
       link: false
     third_party_settings: {  }
+    weight: 1
+    region: ds_content
 hidden:
   field_pub_dates: true
   field_summary: true

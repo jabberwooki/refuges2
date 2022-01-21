@@ -4,6 +4,7 @@ status: false
 dependencies: {  }
 id: fours
 label: 'Refuge du Fond des Fours'
+weight: 0
 folder: ../config/sites/fours
 module: {  }
 theme: {  }
@@ -15,4 +16,3 @@ graylist:
   - 'block.block.socialmedialinks*'
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

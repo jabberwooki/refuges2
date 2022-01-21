@@ -15,39 +15,39 @@ third_party_settings:
       children:
         - field_image_media
         - field_texte
+      label: div
       parent_name: ''
+      region: content
       weight: 20
       format_type: html_element
       format_settings:
-        id: ''
         classes: col-md-6
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: div
-      region: content
 id: paragraph.image_sur_texte_1_2.default
 targetEntityType: paragraph
 bundle: image_sur_texte_1_2
 mode: default
 content:
   field_image_media:
-    weight: 0
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 0
     region: content
   field_texte:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
 hidden: {  }

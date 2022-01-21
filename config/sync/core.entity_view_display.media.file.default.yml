@@ -19,30 +19,30 @@ bundle: file
 mode: default
 content:
   field_description:
-    weight: 3
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
   field_flipthrough_url:
-    weight: 2
+    type: link
     label: above
     settings:
       trim_length: 80
-      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
   field_media_file:
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
     weight: 1
     region: content
 hidden:

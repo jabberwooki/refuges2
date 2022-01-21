@@ -15,24 +15,24 @@ bundle: bloc_partenaires
 mode: default
 content:
   field_partner_logo:
-    weight: 0
+    type: image_link
     label: hidden
     settings:
-      image_style: partners
       image_link: link
+      image_style: partners
+      link_title_display: false
       link_title_tag: ''
       link_title_position: ''
+      link_rel: '0'
+      link_target: '0'
       svg_render_as_image: true
       svg_attributes:
         width: null
         height: null
-      link_title_display: false
-      link_rel: '0'
-      link_target: '0'
     third_party_settings:
       ds:
         ds_limit: ''
-    type: image_link
+    weight: 0
     region: content
 hidden:
   langcode: true

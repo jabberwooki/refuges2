@@ -1,7 +1,7 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://www.arpont2.localhost/themes/custom/refuges/favicon.ico'
+  url: 'http://pnv-refuge-arpont.brgm-rec.fr/themes/custom/refuges/favicon.ico'
   use_default: 1
 schemas:
   bootstrap: 8000
@@ -12,7 +12,7 @@ features:
   favicon: 1
   node_user_picture: 1
 logo:
-  path: 'public://pn_logo.jpg'
+  path: 'public://LogoRefuge_14.png'
   url: ''
   use_default: 0
 region_wells:
@@ -32,4 +32,5 @@ region_wells:
   footer: ''
 table_responsive: '-1'
 table: ''
+cdn_provider_import_data: ''
 langcode: fr

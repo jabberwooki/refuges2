@@ -15,73 +15,73 @@ third_party_settings:
       children:
         - group_left
         - group_right
+      label: row
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: row
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: row
-      region: content
     group_left:
       children:
         - field_texte
+      label: left
       parent_name: group_row
+      region: content
       weight: 20
       format_type: html_element
       format_settings:
-        id: ''
         classes: col-md-8
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: left
-      region: content
     group_right:
       children:
         - field_image_media
+      label: right
       parent_name: group_row
+      region: content
       weight: 21
       format_type: html_element
       format_settings:
-        id: ''
         classes: col-md-4
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: right
-      region: content
 id: paragraph.texte_2_3_image_1_3.default
 targetEntityType: paragraph
 bundle: texte_2_3_image_1_3
 mode: default
 content:
   field_image_media:
-    weight: 22
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 22
     region: content
   field_texte:
-    weight: 21
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 21
     region: content
 hidden: {  }

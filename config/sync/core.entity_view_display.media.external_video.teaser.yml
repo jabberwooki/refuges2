@@ -17,14 +17,14 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        classes:
+          layout_class: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
     regions:
       ds_content:
         - field_media_video_embed_field
@@ -36,26 +36,26 @@ mode: teaser
 content:
   field_media_video_embed_field:
     type: video_embed_field_colorbox
-    weight: 0
-    region: ds_content
     label: hidden
     settings:
-      image_style: ''
-      link_image_to: ''
       autoplay: true
       responsive: true
       width: 854
       height: 480
+      image_style: ''
+      link_image_to: ''
       modal_max_width: 1200
     third_party_settings: {  }
+    weight: 0
+    region: ds_content
   name:
     type: string
-    weight: 1
-    region: ds_content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: ds_content
 hidden:
   addtoany: true
   created: true
