@@ -1,4 +1,4 @@
-uuid: 3d438d82-e1f4-4d4b-842a-d56b921477e5
+uuid: 3f82cf08-b77e-4fdd-83f1-ec36a896757a
 langcode: fr
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     module:
       - devel
 _core:
-  default_config_hash: mYceWZ4FHflXMWwxiO7ePCeXvKMl9F-ARIQ9p4IpvWE
+  default_config_hash: 3V-l1uuTcyirYOGLPZV5HWaDfr02uEbWZJIwc8Byz-c
 id: devel
-label: Développement
+label: Development
 description: 'Links related to Devel module.'
 locked: true
