@@ -17,21 +17,6 @@
         {
             "type": "package",
             "package": {
-                "name": "harvesthq/chosen",
-                "version": "1.8.2",
-                "type": "drupal-library",
-                "dist": {
-                "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip",
-                "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "^1.2.0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "jackmoore/colorbox",
                 "version": "1.6.4",
                 "type": "drupal-library",
@@ -49,6 +34,7 @@
         "drupal/admin_toolbar": "^3",
         "drupal/block_content_permissions": "^1.6",
         "drupal/bootstrap": "^3",
+        "drupal/chosen": "^3.0",
         "drupal/colorbox": "^1.4",
         "drupal/config_ignore": "^2.1",
         "drupal/config_split": "^1.3",
@@ -84,8 +70,8 @@
         "drupal/views_bootstrap": "^3.1",
         "drupal/views_parity_row": "^1.8",
         "drush/drush": "^10",
-        "harvesthq/chosen": "^1.8",
         "jackmoore/colorbox": "^1.6",
+        "mnsami/composer-custom-directory-installer": "^2.0",
         "symfony/yaml": "^4",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -107,7 +93,8 @@
             "cweagans/composer-patches": true,
             "drupal/console-extend-plugin": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true
+            "drupal/core-project-message": true,
+            "mnsami/composer-custom-directory-installer": true
         }
     },
     "autoload": {
@@ -133,7 +120,10 @@
     "extra": {
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "harvesthq/chosen"
+            ],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
