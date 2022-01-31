@@ -1,3 +1,10 @@
+Refuges PNV 1.5.1
+-----------------
+  * Réinstallation composer du module colorbox, mais sans activation drupal, pour éviter une erreur de déploiement en recette ou prod (module manquant ou invalide, marqué comme installed dans core.extension).
+  * Mise à jour de sécurité du module admin_toolbar : 3.0.3 -> 3.1.0
+  * Désactivation et desinstallation composer du module colorbox : Il n'est plus suppporté et non disponible au téléchargement.
+  * Merge tag 'v1.5' into develop
+
 Refuges PNV 1.5
 ---------------
   * Ajout du droit de gérer la traduction de ses contenus au rôle rédacteur.
