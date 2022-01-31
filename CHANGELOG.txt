@@ -1,3 +1,40 @@
+Refuges PNV 1.5
+---------------
+  * Ajout du droit de gérer la traduction de ses contenus au rôle rédacteur.
+  * Désactivation temporaire de devel_kint_extras.
+  * Modif du fichier refuges_utils.module pour le rendre D9 compatible.
+  * Réinstallation de devel et de chosen et sa librairie.
+  * Réactivation du module devel + installation du module devel_kint_extras.
+  * Mise à niveau vers Drupal 9.3.3
+  * Merge tag 'v1.4.3' into develop
+  * Merge branch 'release/v1.4.3'
+  * Mise à jour du changelog.
+  * Formulaire de contact : ajout du champ Votre téléphone.
+  * Merge tag 'v1.4.2' into develop
+  * Merge branch 'release/v1.4.2'
+  * Mise à jour du changelog.
+  * Modification css du node event : ajout d'une margin bottom au champ Lieu.
+  * Merge tag 'event_full_content-field-wrong-display-format' into develop
+  * Merge branch 'hotfix/event_full_content-field-wrong-display-format'
+  * Modif affichage full mode des événements : le format d'affichage du champ content était mal paramétré. Format choisi : entité rendue.
+  * Merge tag 'v1.4.1' into develop
+  * Merge branch 'release/v1.4.1'
+  * Mise à jour de CHANGELOG.txt
+  * Modif du Config Split staging: retrait du module config_ignore du split complet.
+  * Export de la configuration après mise à jour noyau et modules non supportés.
+  * Mise à jour des 4 modules non supportés : Admin Toolbar, Devel, Field Group et Structure Sync.
+  * Mise à jour de sécurité du noyau Drupal : 8.9.8 => 8.9.11
+  * New drsqld PHP script (databases dump) added. Script drard modified with '--no-tablespaces' added to dump command.
+  * Merge tag 'v1.4' into develop
+  * Merge branch 'release/v1.4'
+  * Mise à jour du fichier changelog.
+  * Suppression du fichier config/envs/staging/shield.settings.yml devenu inutile.
+  * Modif du Config Split staging : retrait du module Shield du split complet.
+  * Activation de Google Analytics pour essayer de supprimer les pb d'import en recette.
+  * Export de la config après passage du noyau à la version 8.9.8.
+  * Mise à jour de sécurité du noyau drupal : passage de la version 8.7.13 à la version 8.9.8 (tuto https://ramsalt.com/news/tips-tricks-when-upgrading-latest-drupal-8-going-drupal-9).
+  * Merge tag 'v1.3.3' into develop
+
 Refuge PNV 1.4.3
 ----------------
   * Formulaire de contact : ajout du champ Votre téléphone.
