@@ -20,77 +20,77 @@ third_party_settings:
         - addtoany
         - name
         - field_description
+      label: left
       parent_name: group_wrapper
+      region: content
       weight: 1
       format_type: html_element
       format_settings:
         label: left
+        classes: 'text col-md-6'
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'text col-md-6'
-      label: left
-      region: content
     group_right:
       children:
         - field_media_file
+      label: right
       parent_name: group_wrapper
+      region: content
       weight: 4
       format_type: html_element
       format_settings:
         label: right
+        classes: 'download col-md-3'
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'download col-md-3'
-      label: right
-      region: content
     group_wrapper:
       children:
         - group_left
         - group_middle
         - group_right
+      label: wrapper
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
         label: wrapper
+        classes: wrapper
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: wrapper
-      label: wrapper
-      region: content
     group_middle:
       children:
         - field_flipthrough_url
+      label: middle
       parent_name: group_wrapper
+      region: content
       weight: 2
       format_type: html_element
       format_settings:
         label: middle
+        classes: 'read col-md-3'
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'read col-md-3'
-      label: middle
-      region: content
 _core:
   default_config_hash: 9s0lWIanCnW5Xrrkmedxohs9F0yk4LO8ZcmVQ9xyuu4
 id: media.file.teaser
@@ -99,46 +99,46 @@ bundle: file
 mode: teaser
 content:
   addtoany:
-    weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_description:
     type: text_summary_or_trimmed
-    weight: 3
-    region: content
     label: hidden
     settings:
       trim_length: 200
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_flipthrough_url:
-    weight: 4
+    type: link
     label: hidden
     settings:
       trim_length: 80
-      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings: {  }
-    type: link
+    weight: 4
     region: content
   field_media_file:
+    type: file_default
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
     weight: 5
     region: content
   name:
     type: string
-    weight: 2
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   created: true
   langcode: true

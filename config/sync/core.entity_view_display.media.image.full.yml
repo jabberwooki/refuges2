@@ -22,25 +22,25 @@ mode: full
 content:
   field_caption:
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_copyright:
     type: text_default
-    weight: 1
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_media_image:
+    type: image
     label: visually_hidden
     settings:
-      image_style: ''
       image_link: file
+      image_style: ''
     third_party_settings: {  }
-    type: image
     weight: 0
     region: content
 hidden:

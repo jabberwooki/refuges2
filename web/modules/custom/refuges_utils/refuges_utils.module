@@ -17,7 +17,8 @@ function refuges_utils_form_media_image_edit_form_alter(&$form, \Drupal\Core\For
   // il ne faut afficher que les crop types correspondant au type de node.
   if (substr($_SERVER['REQUEST_URI'],1,14) == 'entity_browser') {
     $nid = explode('/',$_SERVER['HTTP_REFERER'])[4];
-    $node = node_load($nid);
+    //$node = node_load($nid);
+    $node = \Drupal::service('entity_type.manager')->getStorage('node')->load($nid);
     $node_type = $node->getType();
 
     // tableau de correspondance node type / crop type

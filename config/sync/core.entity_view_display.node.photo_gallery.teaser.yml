@@ -19,14 +19,14 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        classes:
+          layout_class: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
     regions:
       ds_content:
         - group_link
@@ -47,60 +47,60 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
+          link: false
           wrapper: h2
           class: ''
-          link: false
   field_group:
     group_link:
       children:
         - group_overlay
         - field_photos
         - group_details
+      label: Lien
       parent_name: ''
+      region: ds_content
       weight: 0
       format_type: link
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         target: entity
         custom_uri: ''
         target_attribute: default
-      label: Lien
-      region: ds_content
     group_details:
       children:
         - node_title
+      label: Details
       parent_name: group_link
+      region: ds_content
       weight: 22
       format_type: html_element
       format_settings:
-        id: ''
         classes: 'content-details fadeIn-bottom'
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: Details
-      region: ds_content
     group_overlay:
       children:
         - node_post_date
+      label: Overlay
       parent_name: group_link
+      region: ds_content
       weight: 20
       format_type: html_element
       format_settings:
-        id: ''
         classes: content-overlay
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: Overlay
-      region: ds_content
 id: node.photo_gallery.teaser
 targetEntityType: node
 bundle: photo_gallery
@@ -108,8 +108,6 @@ mode: teaser
 content:
   field_photos:
     type: entity_reference_entity_view
-    weight: 21
-    region: ds_content
     label: hidden
     settings:
       view_mode: photo_teaser
@@ -117,6 +115,8 @@ content:
     third_party_settings:
       ds:
         ds_limit: '1'
+    weight: 21
+    region: ds_content
 hidden:
   addtoany: true
   body: true

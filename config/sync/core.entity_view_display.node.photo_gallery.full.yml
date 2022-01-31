@@ -18,21 +18,21 @@ third_party_settings:
       children:
         - field_photos
         - body
+      label: wrapper
       parent_name: ''
+      region: ds_content
       weight: 0
       format_type: html_element
       format_settings:
         label: wrapper
+        classes: 'col-md-8 col-md-offset-2'
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'col-md-8 col-md-offset-2'
-      label: wrapper
-      region: ds_content
   ds:
     layout:
       id: ds_1col
@@ -40,14 +40,14 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        classes:
+          layout_class: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
     regions:
       ds_content:
         - group_wrapper
@@ -59,15 +59,14 @@ bundle: photo_gallery
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: ds_content
   field_photos:
     type: entity_reference_entity_view
-    weight: 2
     label: hidden
     settings:
       view_mode: photo_gallery
@@ -75,6 +74,7 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
+    weight: 2
     region: ds_content
 hidden:
   addtoany: true

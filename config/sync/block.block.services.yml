@@ -17,14 +17,14 @@ plugin: 'system_menu_block:services'
 settings:
   id: 'system_menu_block:services'
   label: Services
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: "/services-gardiennage\r\n/services-hors-gardiennage"
     negate: false
     context_mapping: {  }
+    pages: "/services-gardiennage\r\n/services-hors-gardiennage"

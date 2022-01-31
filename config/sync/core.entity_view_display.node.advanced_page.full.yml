@@ -21,14 +21,14 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        classes:
+          layout_class: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
     regions:
       ds_content:
         - group_contenu
@@ -37,33 +37,33 @@ third_party_settings:
     group_contenu:
       children:
         - field_content
+      label: Contenu
       parent_name: ''
+      region: ds_content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: 'content_page col-md-offset-2 col-md-8'
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: Contenu
-      region: ds_content
 id: node.advanced_page.full
 targetEntityType: node
 bundle: advanced_page
 mode: full
 content:
   field_content:
-    weight: 4
+    type: entity_reference_revisions_entity_view
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    weight: 4
     region: ds_content
 hidden:
   addtoany: true

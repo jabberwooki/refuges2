@@ -1,6 +1,6 @@
 name: Les autres refuges
+type: module
 description: Bloc de liens vers les autres refuges.
+core_version_requirement: ^8 || ^9
 package: Refuges
 
-type: module
-core: 8.x

@@ -4,6 +4,7 @@ status: false
 dependencies: {  }
 id: palet
 label: 'Refuge du Col du Palet'
+weight: 0
 folder: ../config/sites/palet
 module: {  }
 theme: {  }
@@ -15,4 +16,3 @@ graylist:
   - 'block.block.socialmedialinks*'
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

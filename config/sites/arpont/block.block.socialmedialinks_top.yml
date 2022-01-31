@@ -15,15 +15,15 @@ plugin: social_media_links_block
 settings:
   id: social_media_links_block
   label: Suivez-nous
-  provider: social_media_links
   label_display: '0'
+  provider: social_media_links
   platforms:
     facebook:
       value: refugedelarpont/
       description: ''
       weight: '-30'
     twitter:
-      value: arpont
+      value: ''
       description: ''
       weight: '-29'
     youtube:
@@ -102,7 +102,7 @@ settings:
     orientation: h
     show_name: 0
   link_attributes:
-    target: '<none>'
+    target: _blank
     rel: '<none>'
   iconset:
     style: 'fontawesome:2x'

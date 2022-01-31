@@ -13,74 +13,74 @@ third_party_settings:
     group_left:
       children:
         - field_raw_text
+      label: left
       parent_name: group_row
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: col-md-6
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: left
-      region: content
     group_right:
       children:
         - field_image_media
+      label: right
       parent_name: group_row
+      region: content
       weight: 1
       format_type: html_element
       format_settings:
-        id: ''
         classes: col-md-6
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: right
-      region: content
     group_row:
       children:
         - group_left
         - group_right
+      label: row
       parent_name: ''
+      region: content
       weight: 20
       format_type: html_element
       format_settings:
-        id: ''
         classes: row
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: row
-      region: content
 id: paragraph.texte_1_image_1.default
 targetEntityType: paragraph
 bundle: texte_1_image_1
 mode: default
 content:
   field_image_media:
-    weight: 21
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 21
     region: content
   field_raw_text:
-    weight: 1
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 1
     region: content
 hidden: {  }

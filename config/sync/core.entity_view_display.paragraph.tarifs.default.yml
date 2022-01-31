@@ -15,82 +15,82 @@ third_party_settings:
     group_tab_1:
       children:
         - field_texte
+      label: Printemps
       parent_name: group_tab_2
+      region: content
       weight: 20
       format_type: tab
       format_settings:
         label: Printemps
+        classes: ''
+        id: ''
         formatter: open
         description: ''
-        id: ''
-        classes: ''
-      label: Printemps
-      region: content
     group_tab_2:
       children:
         - group_tab_1
         - group_ete
         - group_hors_gardiennage
+      label: Onglets
       parent_name: ''
+      region: content
       weight: 20
       format_type: tabs
       format_settings:
         label: Onglets
-        direction: vertical
-        id: ''
         classes: ''
-      label: Onglets
-      region: content
+        id: ''
+        direction: vertical
     group_ete:
       children:
         - field_text
+      label: été
       parent_name: group_tab_2
+      region: content
       weight: 21
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         formatter: closed
         description: ''
-      label: été
-      region: content
     group_hors_gardiennage:
       children:
         - field_texte_tab3
+      label: 'Hors gardiennage'
       parent_name: group_tab_2
+      region: content
       weight: 22
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         formatter: closed
         description: ''
-      label: 'Hors gardiennage'
-      region: content
 id: paragraph.tarifs.default
 targetEntityType: paragraph
 bundle: tarifs
 mode: default
 content:
   field_text:
-    weight: 22
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 22
     region: content
   field_texte:
-    weight: 21
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 21
     region: content
   field_texte_tab3:
-    weight: 23
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 23
     region: content
 hidden: {  }

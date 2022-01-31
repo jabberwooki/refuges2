@@ -1,7 +1,33 @@
 uuid: 600e390e-0edc-4e22-949f-740c786426f0
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - media.type.external_video
+    - media.type.file
+    - media.type.image
+    - node.type.advanced_page
+    - node.type.event
+    - node.type.news
+    - node.type.page
+    - node.type.photo_gallery
+    - node.type.section_header_image
+    - node.type.service
+    - node.type.slide
+  module:
+    - block_content
+    - block_content_permissions
+    - content_translation
+    - contextual
+    - entity_browser
+    - file
+    - honeypot
+    - media
+    - menu_admin_per_menu
+    - menu_link_content
+    - node
+    - paragraphs
+    - system
 id: redacteur
 label: Rédacteur
 weight: -8
@@ -38,6 +64,7 @@ permissions:
   - 'edit own slide content'
   - 'translate advanced_page node'
   - 'translate block_content'
+  - 'translate editable entities'
   - 'translate event node'
   - 'translate menu_link_content'
   - 'translate news node'
