@@ -1,3 +1,7 @@
+Refuges PNV 1.5.2
+-----------------
+  * Mise en place du widget Réservation pour Turia.
+
 Refuges PNV 1.5.1
 -----------------
   * Réinstallation composer du module colorbox, mais sans activation drupal, pour éviter une erreur de déploiement en recette ou prod (module manquant ou invalide, marqué comme installed dans core.extension).

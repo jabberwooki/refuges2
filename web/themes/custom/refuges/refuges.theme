@@ -154,7 +154,9 @@ function refuges_preprocess_region(&$variables) {
       $reservation_data = [
         // Destination PNV
         'valette' => ['code' => 'OPRF-93064', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
-        'turia' => NULL,
+        // Mise à jour du 15/02/22
+        //'turia' => NULL,
+        'turia' => ['code' => 'OPRF-93145', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
         'martin' => ['code' => 'OPRF-93146', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
         'fours' => ['code' => 'OPRF-93147', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
         'palet' => ['code' => 'OPRF-93148', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
