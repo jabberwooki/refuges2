@@ -25,7 +25,7 @@ include('web/sites/sites.php');
 
 // For each unique site name, launches cache clearing, db backup and files backups.
 $CacheCommandPattern = "drush --uri=:key cr";
-$DbCommandPattern = "drush sql:dump --uri=:key --gzip --no-tablespaces --result-file=:filename";
+$DbCommandPattern = "drush sql:dump --uri=:key --gzip --extra-dump=--no-tablespaces --result-file=:filename";
 $FilesCommandPattern = "tar czf :filename web/sites/:site/files/*";
 $done = [];
 
