@@ -51,8 +51,6 @@ settings:
           items:
             - Source
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: "p.intro|Intro\r\np.color|Texte de couleur\r\nh3.titre|Titre 3\r\nh4.titre|Titre 4\r\nh4.titredebloc|Titre de bloc\r\nh5.titre|Titre 5\r\nh6.titre|Titre 6"
 image_upload:
