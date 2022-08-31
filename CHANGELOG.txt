@@ -1,3 +1,7 @@
+Refuges PNV 1.5.3, 2022-08-31
+-----------------------------
+  * Mise à jour de sécurité du noyau : 9.3.3 -> 9.4.5
+
 Refuges PNV 1.5.2
 -----------------
   * Mise en place du widget Réservation pour Turia.
