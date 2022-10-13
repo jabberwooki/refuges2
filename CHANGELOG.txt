@@ -1,3 +1,7 @@
+Refuges PNV 1.5.4, 2022-10-13
+-----------------------------
+  * Installation et paramétrage des modules captcha et image_captcha.
+
 Refuges PNV 1.5.3, 2022-08-31
 -----------------------------
   * Mise à jour de sécurité du noyau : 9.3.3 -> 9.4.5
