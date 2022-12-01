@@ -1,3 +1,9 @@
+Refuges PNV 1.5.5, 2022-12-01
+-----------------------------
+  * Mise à jour de modules contrib plus supportés -  Admin Toolbar : 3.1.0 => 3.3.0 - Honeypot : 2.0.2 => 2.1.2
+  * Mise à jour de sécurité du noyau Drupal : 9.4.5 -> 9.4.8
+  * Merge tag 'v1.5.4' into develop
+
 Refuges PNV 1.5.4, 2022-10-13
 -----------------------------
   * Installation et paramétrage des modules captcha et image_captcha.
