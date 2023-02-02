@@ -45,17 +45,17 @@
             </div>
 
             <div class="col-xs-3 col-sm-2 col-md-1">
-              {% if resa_data['code'] %}
+              {% if resa_data['code'] or resa_data['codeXsalto'] %}
                 <button type="button" class="btn-resa hidden-xs hidden-sm">{{ resa_button_label }}</button>
                 <button type="button" class="btn-resa visible-xs visible-sm"><span class="fa fa-calendar-check-o"></span></button>
               {% endif %}
             </div>
-            
+
             <div class="col-md-2 hidden-xs hidden-sm">
                 <a style="float:right" href="http://www.vanoise-parcnational.fr" title="Parc national de la Vanoise" target="_blank"><img src="/themes/custom/refuges/images/pnv_logo.png" alt="logo du parc national de la vanoise" class="img-responsive"></a>
             </div>
         </div>
-      
+
         <div class="row widget-resa-1">
             {% if resa_data['code'] %}
               <div class="col-md-6 col-md-offset-3 col">
@@ -77,6 +77,27 @@
                 </script>
                 <div id="widget-produit-{{ resa_data['code'] }}"></div>
                 {# Fin du code widget AllianceReseaux #}
+              </div>
+            {% elseif resa_data['codeXsalto'] %}
+                <div id="booking"></div>
+                <script src="https://refugit.refuges-vanoise.com/js/widget.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                  const urlQueryString = window.location.search;
+                  const urlParams = new URLSearchParams(urlQueryString);
+                  var BK_opts={
+                    target:'booking',
+                    apporigin:'VANOISE',
+                    mode:'FORM',
+                    id: urlParams.get('id'),
+                    structure: "{{ resa_data['codeXsalto'] }}",
+                    action:'',
+                    lang:'FR',
+                    css:'https://refugit.refuges-vanoise.com/css/widget-resa/parcvanoise/widget-resa.css',
+                  };
+                  BK_widget.init(BK_opts);
+
+                  jQuery(document.head).prepend('<meta http-equiv="refresh"content="3600">');
+                </script>
               </div>
             {% endif %}
         </div>
