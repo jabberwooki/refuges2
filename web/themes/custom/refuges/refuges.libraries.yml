@@ -133,6 +133,14 @@ reservation:
   dependencies:
     - core/jquery
 
+reservation_xsalto:
+  js:
+    '//refugit.refuges-vanoise.com/js/widget.js': {type: external}
+    js/reservation_xsalto.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+
 news:
   js:
     js/news.js: {}

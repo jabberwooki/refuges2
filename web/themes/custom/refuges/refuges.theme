@@ -167,7 +167,7 @@ function refuges_preprocess_region(&$variables) {
         // Refuges rapatriés de Maurienne vers PNV - 03 juillet 2019 - voir email Chloé du même jour
         //'arpont' => ['code' => 'OPRF-92950', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
         // Intégration Xsalto à la place de Alliance Réseaux - 01/02/2023 - Voir email Chloé du 31/01/23 : "TR: Arpont : Intégration du widget RefugIT"
-        'arpont' => ['codeXsalto' => 'xxxld3htkpn'],
+        'arpont' => ['structure' => 'xxxld3htkpn'],
         'femma' => ['code' => 'OPRF-92951', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
         'leisse' => ['code' => 'OPRF-92948', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
         'lac' => ['code' => 'OPRF-92949', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
@@ -191,7 +191,6 @@ function refuges_preprocess_region(&$variables) {
         'fr' => 'Réservation',
         'en' => 'Booking',
       ];
-
       $resa_button_languages = [
         'fr' => 'fr',
         'en' => 'uk'
@@ -200,6 +199,13 @@ function refuges_preprocess_region(&$variables) {
       $lang_id = \Drupal::languageManager()->getCurrentLanguage()->getId();
       $variables['resa_button_label'] = $resa_button_labels[$lang_id];
       $variables['resa_button_language'] = $resa_button_languages[$lang_id];
+
+      $xsalto_languages = [
+        'fr' => 'FR',
+        'en' => 'EN'
+      ];
+      $variables['#attached']['drupalSettings']['xsalto_data'] = $variables['resa_data'];
+      $variables['#attached']['drupalSettings']['xsalto_data']['lang'] = $xsalto_languages[$lang_id];
 
       break;
   }
