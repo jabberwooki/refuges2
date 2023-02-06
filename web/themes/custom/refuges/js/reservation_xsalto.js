@@ -13,7 +13,7 @@
           structure: settings.xsalto_data.structure,
           action: '',
           lang: settings.xsalto_data.structure,
-          css: 'https://refugit.refuges-vanoise.com/css/widget-resa/vanoise/widget-resa.css',
+          css: 'https://refugit.vanoise.com/css/widget-resa/vanoise/widget-resa.css',
         };
 
         BK_widget.init(BK_opts);
