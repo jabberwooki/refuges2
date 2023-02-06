@@ -7,7 +7,7 @@
         const urlParams = new URLSearchParams(urlQueryString);
         var BK_opts = {
           target: 'booking',
-          apporigin: 'VANOISE',
+          apporigin: 'VANOISE-PNV',
           mode: 'FORM',
           id: urlParams.get('id'),
           structure: settings.xsalto_data.structure,
