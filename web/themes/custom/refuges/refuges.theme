@@ -177,7 +177,9 @@ function refuges_preprocess_region(&$variables) {
         // 'orgere' => ['code' => 'OPRF-92947', 'idPanier' => 's5Czs7M', 'idIntegration' => '301'],
         // Mise à jour du 06/06/20
         // Rapatriement Orgère de Maurienne vers PNV - voir mail Chloé du meme jour "Tunnel de résa".
-        'orgere' => ['code' => 'OPRF-92947', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
+        //'orgere' => ['code' => 'OPRF-92947', 'idPanier' => 'AGwCAAA', 'idIntegration' => '1110'],
+        // Intégration Xsalto à la place de Alliance Réseaux - 01/02/2023 - Voir email Chloé du 10/02/23 : "Widget de réservation Xsalto"
+        'orgere' => ['structure' => '5a1nrby5i831'],
 
         // Refuges sans destination
         // 'prariond' => NULL,
