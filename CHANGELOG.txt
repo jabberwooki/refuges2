@@ -1,3 +1,15 @@
+Refuges PNV 1.6, 2023-02-10
+---------------------------
+  * Intégration Xsalto : Correction du code de langue Xsalto : EN remplacé par GB.
+  * Modif du widget xsalto : valeur de apporigin changée de VANOISE à VANOISE-PNV.
+  * Création du sous-domaine refugit.vanoise.com chez NETIM et remplacement de refugeit.refuges-vanoise.com par refugit.vanoise.com dans le code xsalto pour écarter tout problème de type cross-origin.
+  * Suppression de la hauteur fixée à 1800px du div #booking.
+  * Intégration du widget Xsalto : Modification de la hauteur du <div id=booking> de 1600 à 1800px.
+  * Intégration du widget Xsalto : Adaptation du code fourni par Xsalto au mécanisme Drupal avec creation librairie reservation_xsalto dans le fichier .libraries.yml, creation script reservation_xsalto.js...
+  * Intégration du widget Xsalto : génération conditionnelle du widget Alliance Réseaux ou de Xsalto. Seul Arpont possède un identifiant Xsalto pour le moment.
+  * Merge tag 'v1.5.5' into develop
+
+
 Refuges PNV 1.5.5, 2022-12-01
 -----------------------------
   * Mise à jour de modules contrib plus supportés -  Admin Toolbar : 3.1.0 => 3.3.0 - Honeypot : 2.0.2 => 2.1.2
