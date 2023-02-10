@@ -45,17 +45,17 @@
             </div>
 
             <div class="col-xs-3 col-sm-2 col-md-1">
-              {% if resa_data['code'] %}
+{#              {% if resa_data['code'] or resa_data['codeXsalto'] %}#}
                 <button type="button" class="btn-resa hidden-xs hidden-sm">{{ resa_button_label }}</button>
                 <button type="button" class="btn-resa visible-xs visible-sm"><span class="fa fa-calendar-check-o"></span></button>
-              {% endif %}
+{#              {% endif %}#}
             </div>
-            
+
             <div class="col-md-2 hidden-xs hidden-sm">
                 <a style="float:right" href="http://www.vanoise-parcnational.fr" title="Parc national de la Vanoise" target="_blank"><img src="/themes/custom/refuges/images/pnv_logo.png" alt="logo du parc national de la vanoise" class="img-responsive"></a>
             </div>
         </div>
-      
+
         <div class="row widget-resa-1">
             {% if resa_data['code'] %}
               <div class="col-md-6 col-md-offset-3 col">
@@ -78,6 +78,11 @@
                 <div id="widget-produit-{{ resa_data['code'] }}"></div>
                 {# Fin du code widget AllianceReseaux #}
               </div>
+              {% else %}
+                {{ attach_library('refuges/reservation_xsalto') }}
+                <div class="col-md-8 col-md-offset-2 col">
+                  <div id="booking"></div>
+                </div>
             {% endif %}
         </div>
   </div>
