@@ -202,7 +202,8 @@ function refuges_preprocess_region(&$variables) {
 
       $xsalto_languages = [
         'fr' => 'FR',
-        'en' => 'EN'
+        'en' => 'GB',
+        'it' => 'IT',
       ];
       $variables['#attached']['drupalSettings']['xsalto_data'] = $variables['resa_data'];
       $variables['#attached']['drupalSettings']['xsalto_data']['lang'] = $xsalto_languages[$lang_id];
