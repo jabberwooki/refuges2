@@ -1,3 +1,7 @@
+Refuges PNV 1.6.1, 2023-02-10
+-----------------------------
+  * Intégration Xsalto : ajout du refuge de l'Orgère.
+
 Refuges PNV 1.6, 2023-02-10
 ---------------------------
   * Intégration Xsalto : Correction du code de langue Xsalto : EN remplacé par GB.
