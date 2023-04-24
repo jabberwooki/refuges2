@@ -1,3 +1,8 @@
+Refuges PNV 1.6.2, 2023-04-24
+-----------------------------
+  * Mise à jour de sécurité 2023/1 : mise jour du noyau 9.4.8 -> 9.5.8 et du module contrib entity_browser 2.6 -> 2.9
+  * Ajout du paramétrage du bloc sélecteur de langue au config_ignore.
+
 Refuges PNV 1.6.1, 2023-02-10
 -----------------------------
   * Intégration Xsalto : ajout du refuge de l'Orgère.
