@@ -1,3 +1,10 @@
+Refuges PNV 1.6.3, 2023-08-28
+-----------------------------
+  * Correction problèmes Drush : réinstall et activation du module hook_post_action. On verra plus pour son retrait.
+  * Correction problèmes Composer : Cette fois-ci, c'est bien google_analytics 4.0.2 qui est installé et non 3.0
+  * Pb d'upgrade du module google_analytics. Fichier composer.lock modifié.
+  * Mise à jour de sécurité 2023 - 2/3. Noyau 9.5.8 -> 9.5.10. Modules contrib : addtoany 8.x-1.16 -> 8.x-1.21, admin_toolbar 3.3.0 -> 3.4.1, google_analytics 8.x-3.1 -> 4.0.2. Thème contrib : bootstrap 8.x-3.23 -> 8.x-3.29
+
 Refuges PNV 1.6.2, 2023-04-24
 -----------------------------
   * Mise à jour de sécurité 2023/1 : mise jour du noyau 9.4.8 -> 9.5.8 et du module contrib entity_browser 2.6 -> 2.9
