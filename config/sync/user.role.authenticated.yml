@@ -24,7 +24,6 @@ dependencies:
     - media
     - node
     - paragraphs
-    - quickedit
     - search
     - shortcut
     - system
@@ -40,7 +39,6 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access content overview'
-  - 'access in-place editing'
   - 'access media overview'
   - 'access shortcuts'
   - 'access site-wide contact form'

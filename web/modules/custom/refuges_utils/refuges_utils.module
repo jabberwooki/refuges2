@@ -9,7 +9,7 @@
 use Drupal\editor\Entity\Editor;
 
 function refuges_utils_ckeditor_css_alter(array &$css, Editor $editor) {
-  $css[] = 'themes/custom/refuges/css/' . str_replace('sites/', '', \Drupal::service('site.path')) . '.css';
+  $css[] = 'themes/custom/refuges/css/' . str_replace('sites/', '', \Drupal::getContainer()->getParameter('site.path')) . '.css';
 }
 
 function refuges_utils_form_media_image_edit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {

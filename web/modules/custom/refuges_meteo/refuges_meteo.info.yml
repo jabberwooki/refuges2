@@ -1,6 +1,0 @@
-name: Meteo Refuges
-type: module
-description: Bloc meteo pour les sites des refuges. Utilise la librairie simpleweather.js.
-core_version_requirement: ^8 || ^9
-package: Refuges
-
