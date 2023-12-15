@@ -1,3 +1,10 @@
+Refuges PNV 1.6.4, 2023-12-15
+-----------------------------
+  * Retrait des applications de patches pour field_image_link et fixed_path_alias, on reste pour l'instant en D9.5.11
+  * Suppression de drupal/core-dev, drupal/core-project-message, palantirnet/drupal-rector.
+  * Désactivation de upgrade_status
+  * Mise à jour/à niveau de tous les modules contrib/custom pour la compatibilité Drupal 10.
+
 Refuges PNV 1.6.3, 2023-08-28
 -----------------------------
   * Correction problèmes Drush : réinstall et activation du module hook_post_action. On verra plus pour son retrait.
