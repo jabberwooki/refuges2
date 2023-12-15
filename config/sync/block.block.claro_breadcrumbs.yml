@@ -1,22 +1,22 @@
-uuid: f3bdb625-a168-4af0-84c5-00ef8a5bde81
-langcode: fr
+uuid: 9f0ad962-2ad9-442e-8396-3e6a98419097
+langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - seven
+    - claro
 _core:
-  default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
-id: seven_breadcrumbs
-theme: seven
+  default_config_hash: NjcxOBrPOiK5-38t56DwFBDVY4yer7YSlbRWXFuHe7A
+id: claro_breadcrumbs
+theme: claro
 region: breadcrumb
 weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: 'Fils d''Ariane'
+  label: Breadcrumbs
   label_display: '0'
   provider: system
 visibility: {  }

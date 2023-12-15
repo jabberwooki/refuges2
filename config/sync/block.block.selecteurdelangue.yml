@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - language
-    - user
   theme:
     - refuges
 id: selecteurdelangue
@@ -18,11 +17,4 @@ settings:
   label: 'Sélecteur de langue'
   label_display: '0'
   provider: language
-visibility:
-  user_role:
-    id: user_role
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
-    roles:
-      authenticated: authenticated
+visibility: {  }

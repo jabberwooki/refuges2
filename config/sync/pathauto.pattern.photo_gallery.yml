@@ -11,7 +11,7 @@ type: 'canonical_entities:node'
 pattern: 'galeries-photo/[node:title]'
 selection_criteria:
   77405ab1-9645-41ab-aef8-ec0f5770e4e0:
-    id: node_type
+    id: 'entity_bundle:node'
     negate: false
     uuid: 77405ab1-9645-41ab-aef8-ec0f5770e4e0
     context_mapping:

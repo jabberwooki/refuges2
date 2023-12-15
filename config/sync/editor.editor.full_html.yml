@@ -1,58 +1,64 @@
-uuid: 6fb3481a-a318-4f0b-aa0e-bf7381f016e3
+uuid: 42392639-805d-40aa-ba72-e1a2afe490a4
 langcode: fr
 status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
-    - ckeditor
-_core:
-  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
+    - ckeditor5
 format: full_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: 'Supprimer les styles'
-          items:
-            - RemoveFormat
-        -
-          name: 'Style de texte'
-          items:
-            - Styles
-        -
-          name: Formatting
-          items:
-            - Blockquote
-            - Bold
-            - Italic
-            - Strike
-            - Superscript
-            - Subscript
-            - '-'
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Tableau
-          items:
-            - Table
-        -
-          name: Tools
-          items:
-            - Source
+    items:
+      - removeFormat
+      - '|'
+      - style
+      - '|'
+      - blockQuote
+      - bold
+      - italic
+      - strikethrough
+      - superscript
+      - subscript
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - insertTable
+      - '|'
+      - sourceEditing
   plugins:
-    stylescombo:
-      styles: "p.intro|Intro\r\np.color|Texte de couleur\r\nh3.titre|Titre 3\r\nh4.titre|Titre 4\r\nh4.titredebloc|Titre de bloc\r\nh5.titre|Titre 5\r\nh6.titre|Titre 6"
+    ckeditor5_style:
+      styles:
+        -
+          label: Intro
+          element: '<p class="intro">'
+        -
+          label: 'Texte de couleur'
+          element: '<p class="color">'
+        -
+          label: 'Titre 3'
+          element: '<h3 class="titre">'
+        -
+          label: 'Titre 4'
+          element: '<h4 class="titre">'
+        -
+          label: 'Titre de bloc'
+          element: '<h4 class="titredebloc">'
+        -
+          label: 'Titre 5'
+          element: '<h5 class="titre">'
+        -
+          label: 'Titre 6'
+          element: '<h6 class="titre">'
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
 image_upload:
   status: true
   scheme: public

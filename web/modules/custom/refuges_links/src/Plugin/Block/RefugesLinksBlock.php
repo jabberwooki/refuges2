@@ -60,8 +60,7 @@ class RefugesLinksBlock extends BlockBase {
     $sub_domain = $domain_parts[0];
     $domain = $domain_parts[1];
     $domain_tld = $domain_parts[2];
-    $current_site = str_replace('sites/', '', \Drupal::service('site.path'));
-
+    $current_site = str_replace('sites/', '', \Drupal::getContainer()->getParameter('site.path'));
     unset($sites[$current_site]);
 
     $items = array();
