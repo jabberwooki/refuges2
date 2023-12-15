@@ -69,7 +69,7 @@
         "drupal/video_embed_field": "^2.0",
         "drupal/views_bootstrap": "^3.1",
         "drupal/views_parity_row": "^1.8",
-        "drush/drush": "^10.6",
+        "drush/drush": "*",
         "jackmoore/colorbox": "^1.6",
         "mnsami/composer-custom-directory-installer": "^2.0",
         "symfony/yaml": "^4",
@@ -147,13 +147,6 @@
             }
         },
         "enable-patching": true,
-        "patches": {
-            "drupal/field_image_link": {
-                "Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-10-10/field_image_link-D10-3297200-3.patch"
-            },
-            "drupal/fixed_path_alias": {
-                "Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-08-09/fixed_path_alias-d10_compatibility-3287602-5.patch"
-            }
-        }
+        "patches": {}
     }
 }
