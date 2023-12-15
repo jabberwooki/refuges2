@@ -41,7 +41,6 @@
         "drupal/console": "^1.0.2",
         "drupal/contact_block": "^1.4",
         "drupal/core-composer-scaffold": "^9",
-        "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/ctools": "^3.0",
         "drupal/devel": "^5.0",
@@ -67,21 +66,16 @@
         "drupal/social_media_links": "^2.6",
         "drupal/structure_sync": "^2.0",
         "drupal/twig_tweak": "^3.2",
-        "drupal/upgrade_status": "^4.0",
         "drupal/video_embed_field": "^2.0",
         "drupal/views_bootstrap": "^3.1",
         "drupal/views_parity_row": "^1.8",
-        "drush/drush": "^10",
+        "drush/drush": "^10.6",
         "jackmoore/colorbox": "^1.6",
         "mnsami/composer-custom-directory-installer": "^2.0",
         "symfony/yaml": "^4",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
-    },
-    "require-dev": {
-        "drupal/core-dev": "^9",
-        "palantirnet/drupal-rector": "^0.12.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -95,7 +89,6 @@
             "cweagans/composer-patches": true,
             "drupal/console-extend-plugin": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true,
             "mnsami/composer-custom-directory-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
