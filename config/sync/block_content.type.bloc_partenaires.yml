@@ -5,4 +5,4 @@ dependencies: {  }
 id: bloc_partenaires
 label: 'Bloc Partenaires'
 revision: 0
-description: 'Permet d''afficher les logos des organismes partenaires.'
+description: "Permet d'afficher les logos des organismes partenaires."

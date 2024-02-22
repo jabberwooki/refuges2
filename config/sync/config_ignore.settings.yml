@@ -1,17 +1,18 @@
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 langcode: fr
+mode: simple
 ignored_config_entities:
-  - system.site
-  - structure_sync.data
-  - refuges.settings
+  - block.block.selecteurdelangue
   - 'block.block.socialmedialinks*'
   - contact.form.feedback
-  - 'views.view.news:display.list.display_options.menu'
-  - 'views.view.events:display.list.display_options.menu'
-  - 'views.view.services:display.list.display_options.menu'
-  - 'views.view.services:display.keeping_page.display_options.menu'
-  - 'views.view.services:display.out_keeping_page.display_options.menu'
-  - google_analytics.settings
   - 'core.entity_form_display.user.user.default:content.google_analytics'
-  - block.block.selecteurdelangue
+  - google_analytics.settings
+  - refuges.settings
+  - structure_sync.data
+  - system.site
+  - 'views.view.events:display.list.display_options.menu'
+  - 'views.view.news:display.list.display_options.menu'
+  - 'views.view.services:display.keeping_page.display_options.menu'
+  - 'views.view.services:display.list.display_options.menu'
+  - 'views.view.services:display.out_keeping_page.display_options.menu'

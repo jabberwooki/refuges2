@@ -66,7 +66,7 @@ menus:
     options: null
 blocks:
   -
-    info: 'Bloc d''intro de la page Services'
+    info: "Bloc d'intro de la page Services"
     langcode: fr
     uuid: 6d6f6b90-7ad4-4506-91dd-efb85fe52a20
     bundle: intro_block

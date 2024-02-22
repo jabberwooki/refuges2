@@ -11,7 +11,7 @@ id: node.service.field_frontpage_promoted
 field_name: field_frontpage_promoted
 entity_type: node
 bundle: service
-label: 'Affichage en page d''accueil'
+label: "Affichage en page d'accueil"
 description: ''
 required: true
 translatable: false

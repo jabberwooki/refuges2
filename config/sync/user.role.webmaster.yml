@@ -41,12 +41,15 @@ label: Webmaster
 weight: -7
 is_admin: null
 permissions:
+  - 'access block library'
   - 'access contextual links'
   - 'access files overview'
   - 'access media_browser entity browser pages'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access toolbar'
+  - 'administer block content'
+  - 'administer block types'
   - 'administer blocks'
   - 'administer contact forms'
   - 'administer footer menu items'
@@ -71,6 +74,7 @@ permissions:
   - 'delete any service content'
   - 'delete any slide content'
   - 'delete content translations'
+  - 'delete own files'
   - 'edit any advanced_page content'
   - 'edit any event content'
   - 'edit any external_video media'

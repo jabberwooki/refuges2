@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Evénement
 type: event
-description: 'Les événements apparaîtront dans l''agenda du site.'
+description: "Les événements apparaîtront dans l'agenda du site."
 help: ''
 new_revision: false
 preview_mode: 1

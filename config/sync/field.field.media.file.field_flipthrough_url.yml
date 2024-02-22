@@ -12,7 +12,7 @@ field_name: field_flipthrough_url
 entity_type: media
 bundle: file
 label: Feuilleter
-description: 'Saisir l''url de feuilletage du document (url calameo, issuu, etc...).'
+description: "Saisir l'url de feuilletage du document (url calameo, issuu, etc...)."
 required: false
 translatable: false
 default_value:

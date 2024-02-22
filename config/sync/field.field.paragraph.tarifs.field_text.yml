@@ -11,7 +11,7 @@ id: paragraph.tarifs.field_text
 field_name: field_text
 entity_type: paragraph
 bundle: tarifs
-label: 'Saison d''été'
+label: "Saison d'été"
 description: ''
 required: false
 translatable: true

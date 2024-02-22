@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Diapositive
 type: slide
-description: 'Les diapositives sont affichées dans le grand diaporama de la page d''accueil.'
+description: "Les diapositives sont affichées dans le grand diaporama de la page d'accueil."
 help: ''
 new_revision: false
 preview_mode: 1

@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: menu-hamburger
 label: 'Menu Hamburger'
-description: 'Liens d''accès aux sections du site'
+description: "Liens d'accès aux sections du site"
 locked: false

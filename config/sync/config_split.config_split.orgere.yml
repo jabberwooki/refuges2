@@ -3,7 +3,7 @@ langcode: fr
 status: false
 dependencies: {  }
 id: orgere
-label: 'Refuge-porte de l''Orgère'
+label: "Refuge-porte de l'Orgère"
 weight: 0
 folder: ../config/sites/orgere
 module: {  }

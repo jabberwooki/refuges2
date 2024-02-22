@@ -3,7 +3,7 @@ langcode: fr
 status: false
 dependencies: {  }
 id: arpont
-label: 'Refuge de l''Arpont'
+label: "Refuge de l'Arpont"
 weight: 0
 folder: ../config/sites/arpont
 module: {  }
