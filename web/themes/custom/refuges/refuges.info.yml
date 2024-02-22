@@ -30,5 +30,5 @@ libraries-extend:
   bootstrap/framework:
     - refuges/framework
 
-ckeditor_stylesheets:
+ckeditor5-stylesheets:
   - css/style.css

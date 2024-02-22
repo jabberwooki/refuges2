@@ -41,7 +41,6 @@ module:
   field_ui: 0
   file: 0
   filter: 0
-  fixed_path_alias: 0
   google_analytics: 0
   help: 0
   history: 0
@@ -64,6 +63,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  phpass: 0
   refuges_links: 0
   refuges_utils: 0
   responsive_image: 0

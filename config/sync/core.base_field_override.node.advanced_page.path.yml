@@ -10,7 +10,7 @@ id: node.advanced_page.path
 field_name: path
 entity_type: node
 bundle: advanced_page
-label: 'Alias d''URL'
+label: "Alias d'URL"
 description: ''
 required: false
 translatable: true

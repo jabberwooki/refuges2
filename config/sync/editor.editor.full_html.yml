@@ -13,6 +13,7 @@ settings:
     items:
       - removeFormat
       - '|'
+      - heading
       - style
       - '|'
       - blockQuote
@@ -31,6 +32,20 @@ settings:
       - '|'
       - sourceEditing
   plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
     ckeditor5_style:
       styles:
         -
@@ -54,11 +69,6 @@ settings:
         -
           label: 'Titre 6'
           element: '<h6 class="titre">'
-    ckeditor5_sourceEditing:
-      allowed_tags: {  }
-    ckeditor5_list:
-      reversed: true
-      startIndex: true
 image_upload:
   status: true
   scheme: public

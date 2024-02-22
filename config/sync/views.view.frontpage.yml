@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: ezK5Dw8P_4bqJdDQIiecSAJak9p1Wf1yDwHzTutGFuQ
 id: frontpage
-label: 'Page d''accueil'
+label: "Page d'accueil"
 module: node
-description: 'Tout le contenu promu en page d''accueil.'
+description: "Tout le contenu promu en page d'accueil."
 tag: default
 base_table: node_field_data
 base_field: nid

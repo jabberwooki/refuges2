@@ -10,7 +10,7 @@ id: taxonomy_term.icons.path
 field_name: path
 entity_type: taxonomy_term
 bundle: icons
-label: 'Alias d''URL'
+label: "Alias d'URL"
 description: ''
 required: false
 translatable: false

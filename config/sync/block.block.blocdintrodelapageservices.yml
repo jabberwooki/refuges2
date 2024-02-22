@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:6d6f6b90-7ad4-4506-91dd-efb85fe52a20'
 settings:
   id: 'block_content:6d6f6b90-7ad4-4506-91dd-efb85fe52a20'
-  label: 'Bloc d''intro de la page Services'
+  label: "Bloc d'intro de la page Services"
   label_display: '0'
   provider: block_content
   status: true

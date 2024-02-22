@@ -44,6 +44,7 @@ permissions:
   - 'delete own event content'
   - 'delete own external_video media'
   - 'delete own file media'
+  - 'delete own files'
   - 'delete own image media'
   - 'delete own news content'
   - 'delete own page content'

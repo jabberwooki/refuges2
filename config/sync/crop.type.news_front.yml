@@ -2,7 +2,7 @@ uuid: 345caaab-0bf1-48eb-84eb-36b49fa6b1e4
 langcode: fr
 status: true
 dependencies: {  }
-label: 'Actus page d''accueil'
+label: "Actus page d'accueil"
 id: news_front
 description: ''
 aspect_ratio: '26:19'

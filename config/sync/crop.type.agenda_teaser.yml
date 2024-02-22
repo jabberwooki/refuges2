@@ -2,7 +2,7 @@ uuid: c90aee2f-6bd8-4583-b0be-58e59f8c37c1
 langcode: fr
 status: true
 dependencies: {  }
-label: 'Agenda page d''accueil et rubrique'
+label: "Agenda page d'accueil et rubrique"
 id: agenda_teaser
 description: ''
 aspect_ratio: '3:4'

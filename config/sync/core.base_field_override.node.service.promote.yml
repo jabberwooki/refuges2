@@ -8,7 +8,7 @@ id: node.service.promote
 field_name: promote
 entity_type: node
 bundle: service
-label: 'Promu en page d''accueil'
+label: "Promu en page d'accueil"
 description: ''
 required: false
 translatable: false

@@ -5,4 +5,4 @@ dependencies: {  }
 id: intro_block
 label: 'Bloc intro'
 revision: 0
-description: 'Bloc d''introduction d''une rubrique'
+description: "Bloc d'introduction d'une rubrique"

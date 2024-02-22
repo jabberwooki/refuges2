@@ -19,8 +19,10 @@ dependencies:
   module:
     - comment
     - contact
+    - file
     - filter
     - google_analytics
+    - help
     - media
     - node
     - paragraphs
@@ -39,6 +41,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access content overview'
+  - 'access help pages'
   - 'access media overview'
   - 'access shortcuts'
   - 'access site-wide contact form'
@@ -56,6 +59,7 @@ permissions:
   - 'create section_header_image content'
   - 'create service content'
   - 'create slide content'
+  - 'delete own files'
   - 'opt-in or out of google analytics tracking'
   - 'post comments'
   - 'search content'
