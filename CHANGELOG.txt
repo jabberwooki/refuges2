@@ -1,3 +1,7 @@
+Refuges PNV 2.0, 2024-02-22
+---------------------------
+  * Mise à niveau de Drupal 9.5.11 à 10.2.3
+
 Refuges PNV 1.6.4, 2023-12-15
 -----------------------------
   * Retrait des applications de patches pour field_image_link et fixed_path_alias, on reste pour l'instant en D9.5.11
@@ -42,7 +46,6 @@ Refuges PNV 1.5.5, 2022-12-01
 Refuges PNV 1.5.4, 2022-10-13
 -----------------------------
   * Installation et paramétrage des modules captcha et image_captcha.
-
 Refuges PNV 1.5.3, 2022-08-31
 -----------------------------
   * Mise à jour de sécurité du noyau : 9.3.3 -> 9.4.5
