@@ -1,3 +1,7 @@
+Refuges PNV 2.0.1, 2024-02-29
+-----------------------------
+  * Mise en place d'une feuille de style pour CKEditor côté admin.
+
 Refuges PNV 2.0, 2024-02-22
 ---------------------------
   * Mise à niveau de Drupal 9.5.11 à 10.2.3
