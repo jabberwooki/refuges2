@@ -1,0 +1,159 @@
+p.intro {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+h3.titre {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h4.titre {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h5.titre {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h6.titre {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+body.arpont p.intro,
+body.arpont p.color,
+body.arpont h3.titre,
+body.arpont h4.titre,
+body.arpont h5.titre,
+body.arpont h6.titre {
+  color: #127271;
+}
+
+body.bois p.intro,
+body.bois p.color,
+body.bois h3.titre,
+body.bois h4.titre,
+body.bois h5.titre,
+body.bois h6.titre {
+  color: #001489;
+}
+
+body.femma p.intro,
+body.femma p.color,
+body.femma h3.titre,
+body.femma h4.titre,
+body.femma h5.titre,
+body.femma h6.titre {
+  color: #001489;
+}
+
+body.fours p.intro,
+body.fours p.color,
+body.fours h3.titre,
+body.fours h4.titre,
+body.fours h5.titre,
+body.fours h6.titre {
+  color: #cc0066;
+}
+
+body.lac p.intro,
+body.lac p.color,
+body.lac h3.titre,
+body.lac h4.titre,
+body.lac h5.titre,
+body.lac h6.titre {
+  color: #001489;
+}
+
+body.leisse p.intro,
+body.leisse p.color,
+body.leisse h3.titre,
+body.leisse h4.titre,
+body.leisse h5.titre,
+body.leisse h6.titre {
+  color: #669900;
+}
+
+body.martin p.intro,
+body.martin p.color,
+body.martin h3.titre,
+body.martin h4.titre,
+body.martin h5.titre,
+body.martin h6.titre {
+  color: #3366cc;
+}
+
+body.orgere p.intro,
+body.orgere p.color,
+body.orgere h3.titre,
+body.orgere h4.titre,
+body.orgere h5.titre,
+body.orgere h6.titre {
+  color: #ff6600;
+}
+
+body.palet p.intro,
+body.palet p.color,
+body.palet h3.titre,
+body.palet h4.titre,
+body.palet h5.titre,
+body.palet h6.titre {
+  color: #04a8e0;
+}
+
+body.plaisance p.intro,
+body.plaisance p.color,
+body.plaisance h3.titre,
+body.plaisance h4.titre,
+body.plaisance h5.titre,
+body.plaisance h6.titre {
+  color: #127271;
+}
+
+body.prariond p.intro,
+body.prariond p.color,
+body.prariond h3.titre,
+body.prariond h4.titre,
+body.prariond h5.titre,
+body.prariond h6.titre {
+  color: #3333cc;
+}
+
+body.rosuel p.intro,
+body.rosuel p.color,
+body.rosuel h3.titre,
+body.rosuel h4.titre,
+body.rosuel h5.titre,
+body.rosuel h6.titre {
+  color: #76c420;
+}
+
+body.turia p.intro,
+body.turia p.color,
+body.turia h3.titre,
+body.turia h4.titre,
+body.turia h5.titre,
+body.turia h6.titre {
+  color: #001489;
+}
+
+body.valette p.intro,
+body.valette p.color,
+body.valette h3.titre,
+body.valette h4.titre,
+body.valette h5.titre,
+body.valette h6.titre {
+  color: #993300;
+}
+
+body.vallonbrun p.intro,
+body.vallonbrun p.color,
+body.vallonbrun h3.titre,
+body.vallonbrun h4.titre,
+body.vallonbrun h5.titre,
+body.vallonbrun h6.titre {
+  color: #127271;
+}

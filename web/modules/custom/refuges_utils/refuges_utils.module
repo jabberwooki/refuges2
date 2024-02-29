@@ -35,3 +35,12 @@ function refuges_utils_form_media_image_edit_form_alter(&$form, \Drupal\Core\For
     $form['field_media_image']['widget'][0]['#crop_list'] = $node_types_crop_types[$node_type];
   }
 }
+
+function refuges_utils_preprocess_html(&$variables) {
+  // ajout à la balise <body> d'un nom de classe 
+  // correspondant au nom du dossier de sous-site dans /web/sites/.
+  $host = \Drupal::request()->getHost();
+  include(DRUPAL_ROOT . '/sites/sites.php');
+  $subsite_name = $sites[$host];
+  $variables['attributes']['class'][] = $subsite_name;
+}
