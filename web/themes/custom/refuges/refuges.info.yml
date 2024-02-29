@@ -31,4 +31,4 @@ libraries-extend:
     - refuges/framework
 
 ckeditor5-stylesheets:
-  - css/style.css
+  - css/ckeditor5.css
