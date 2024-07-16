@@ -98,6 +98,7 @@ content:
       timezone_override: ''
       date_format: 'd/m/Y (H:i)'
       separator: '>'
+      from_to: both
     third_party_settings:
       ds:
         ds_limit: ''

@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Bandeau rubrique'
 type: section_header_image
 description: "Image placée en haut de page d'une rubrique"
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: contact_details
 label: 'Bloc Coordonnées'
-revision: 0
+revision: false
 description: 'Coordonnées du refuge (tél, adresse postale, adresse mail).'

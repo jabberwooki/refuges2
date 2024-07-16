@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Galerie photo'
 type: photo_gallery
 description: 'Une galerie permet de regrouper des photos par thème. Les galeries sont visibles dans la rubrique Media > Photos.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

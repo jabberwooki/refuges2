@@ -11,7 +11,7 @@ third_party_settings:
 name: Diapositive
 type: slide
 description: "Les diapositives sont affichées dans le grand diaporama de la page d'accueil."
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

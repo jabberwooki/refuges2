@@ -11,7 +11,7 @@ third_party_settings:
 name: Evénement
 type: event
 description: "Les événements apparaîtront dans l'agenda du site."
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false
