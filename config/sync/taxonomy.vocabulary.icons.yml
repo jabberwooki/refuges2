@@ -6,5 +6,6 @@ _core:
   default_config_hash: py1K5_xKzfVTT314A9SdRm7-4AKavjghxgBfY8BeAxo
 name: Icônes
 vid: icons
-description: ''
+description: null
 weight: 0
+new_revision: false

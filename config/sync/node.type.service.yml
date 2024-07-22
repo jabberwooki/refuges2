@@ -11,7 +11,7 @@ third_party_settings:
 name: Service
 type: service
 description: 'Service fourni par le refuge, en période de gardiennage ou bien hors gardiennage.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

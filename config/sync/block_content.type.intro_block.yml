@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: intro_block
 label: 'Bloc intro'
-revision: 0
+revision: false
 description: "Bloc d'introduction d'une rubrique"
