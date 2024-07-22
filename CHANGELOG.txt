@@ -1,3 +1,8 @@
+Refuges PNV 2.1, 2024-07-22
+---------------------------
+  * Mise à jour de sécurité 2024 - 2/3
+  * Modif de configuration : Création de comptes utilisateur seulement par les administrateurs.
+
 Refuges PNV 2.0.1, 2024-02-29
 -----------------------------
   * Mise en place d'une feuille de style pour CKEditor côté admin.
