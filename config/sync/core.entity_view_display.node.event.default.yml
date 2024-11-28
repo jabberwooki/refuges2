@@ -126,8 +126,8 @@ content:
     settings:
       timezone_override: ''
       date_format: 'd F Y'
-      separator: '>'
       from_to: both
+      separator: '>'
     third_party_settings:
       ds:
         ds_limit: ''
