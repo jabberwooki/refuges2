@@ -199,6 +199,14 @@
 }
 
 //ACTUALITES VIEWS
+#views-bootstrap-news-frontpage-block {
+  & > div.row {
+    & > div.col {
+      overflow: hidden
+    }
+  }
+}
+
 .node--type-news{
     .text-teaser{
         background:#F2F2F2;
