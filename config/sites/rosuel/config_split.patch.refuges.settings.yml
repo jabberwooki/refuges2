@@ -1,0 +1,49 @@
+adding:
+  favicon:
+    url: /themes/custom/refuges/favicon.ico
+    use_default: 1
+  features:
+    comment_user_picture: 1
+    comment_user_verification: 1
+    favicon: 1
+    node_user_picture: 1
+  logo:
+    path: 'public://logo 2-2.png'
+    use_default: 0
+  region_wells:
+    navigation: ''
+    navigation_collapsible: ''
+    header: ''
+    highlighted: ''
+    help: ''
+    content: ''
+    sidebar_first: ''
+    sidebar_second: ''
+    footer: ''
+    top: ''
+    hamburger: ''
+    post_content_1: ''
+    post_content_2: ''
+    pre_footer: ''
+  table_responsive: '-1'
+  table: ''
+  cdn_provider_import_data: ''
+  cdn_theme: bootstrap
+  cdn_cache_ttl_versions: '604800'
+  cdn_cache_ttl_themes: '604800'
+  cdn_cache_ttl_assets: '0'
+  cdn_cache_ttl_library: '0'
+  apply: Appliquer
+  reset_http_request_cache: ''
+removing:
+  favicon:
+    url: 'http://www.bois2.localhost/themes/contrib/bootstrap/favicon.ico'
+    use_default: true
+  features:
+    comment_user_picture: true
+    comment_user_verification: true
+    favicon: true
+    node_user_picture: true
+  logo:
+    path: ''
+    use_default: true

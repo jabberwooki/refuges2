@@ -1,0 +1,26 @@
+adding:
+  settings:
+    platforms:
+      facebook:
+        value: refugedelaleissevanoise
+      twitter:
+        value: ''
+      youtube:
+        value: ''
+      instagram:
+        value: refugedelaleisse
+    link_attributes:
+      target: _blank
+removing:
+  settings:
+    platforms:
+      facebook:
+        value: parcnationaldelavanoise/
+      twitter:
+        value: pnvanoise
+      youtube:
+        value: user/ParcNationalVanoise
+      instagram:
+        value: ''
+    link_attributes:
+      target: '<none>'

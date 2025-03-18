@@ -1,0 +1,26 @@
+adding:
+  settings:
+    platforms:
+      facebook:
+        value: refuge.orgere
+      twitter:
+        value: ''
+      youtube:
+        value: ''
+      email:
+        value: refuge.orgere@vanoise-parcnational.fr
+    link_attributes:
+      target: _blank
+removing:
+  settings:
+    platforms:
+      facebook:
+        value: parcnationaldelavanoise/
+      twitter:
+        value: pnvanoise
+      youtube:
+        value: user/ParcNationalVanoise
+      email:
+        value: ''
+    link_attributes:
+      target: '<none>'

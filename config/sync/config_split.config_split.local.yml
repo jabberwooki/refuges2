@@ -6,14 +6,15 @@ id: local
 label: Local
 description: ''
 weight: 0
+stackable: false
+no_patching: false
+storage: folder
 folder: ../config/envs/local
 module:
   update: 0
   chosen: 0
   devel: 0
 theme: {  }
-blacklist: {  }
-graylist:
+complete_list: {  }
+partial_list:
   - system.performance
-graylist_dependents: true
-graylist_skip_equal: true

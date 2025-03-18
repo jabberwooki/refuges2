@@ -1,0 +1,26 @@
+adding:
+  settings:
+    platforms:
+      facebook:
+        value: 'Refuge du Fond des Fours'
+      twitter:
+        value: ''
+      youtube:
+        value: ''
+      instagram:
+        value: refugedufonddesfours/
+    link_attributes:
+      target: _blank
+removing:
+  settings:
+    platforms:
+      facebook:
+        value: parcnationaldelavanoise/
+      twitter:
+        value: pnvanoise
+      youtube:
+        value: user/ParcNationalVanoise
+      instagram:
+        value: ''
+    link_attributes:
+      target: '<none>'

@@ -1,0 +1,63 @@
+adding:
+  langcode: fr
+  blocks:
+    config_split_sequence_j1gpk0vd3opn5m2t:
+      fields:
+        field_email:
+          value: refuge.plandulac@vanoise-parcnational.fr
+        field_phone:
+          value: '+33 4 79 20 50 85'
+        field_postal_address:
+          value: "Termignon\r\n73500 Val-Cenis"
+  menus:
+    config_split_sequence_h4l8njdid8pq6iu5:
+      enabled: true
+      expanded: true
+      weight: 12
+    config_split_sequence_60tajp5vf9r0c1f:
+      enabled: true
+      expanded: false
+      weight: 13
+    config_split_sequence_dglk38c2hsn5kahq:
+      enabled: true
+      expanded: false
+      weight: 0
+    config_split_sequence_b0rsf2jqmk1m8npd:
+      enabled: true
+      expanded: false
+      weight: 1
+    config_split_sequence_8dbksfq0b490td2h:
+      enabled: true
+      expanded: false
+      weight: 2
+removing:
+  menus:
+    config_split_sequence_h4l8njdid8pq6iu5:
+      enabled: '1'
+      expanded: '1'
+      weight: '12'
+    config_split_sequence_60tajp5vf9r0c1f:
+      enabled: '1'
+      expanded: '0'
+      weight: '13'
+    config_split_sequence_dglk38c2hsn5kahq:
+      enabled: '1'
+      expanded: '0'
+      weight: '0'
+    config_split_sequence_b0rsf2jqmk1m8npd:
+      enabled: '1'
+      expanded: '0'
+      weight: '1'
+    config_split_sequence_8dbksfq0b490td2h:
+      enabled: '1'
+      expanded: '0'
+      weight: '2'
+  blocks:
+    config_split_sequence_j1gpk0vd3opn5m2t:
+      fields:
+        field_email:
+          value: refuge.xxx@vanoise-parcnational.fr
+        field_phone:
+          value: '+33 6 xx xx xx'
+        field_postal_address:
+          value: "Rue ...\r\nComplément d'adresse\r\n73xxx Ville"

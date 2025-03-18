@@ -1,0 +1,22 @@
+adding:
+  settings:
+    platforms:
+      facebook:
+        value: Refuge-de-la-Femma-206931316725226/
+      twitter:
+        value: ''
+      youtube:
+        value: ''
+    link_attributes:
+      target: _blank
+removing:
+  settings:
+    platforms:
+      facebook:
+        value: parcnationaldelavanoise/
+      twitter:
+        value: pnvanoise
+      youtube:
+        value: user/ParcNationalVanoise
+    link_attributes:
+      target: '<none>'

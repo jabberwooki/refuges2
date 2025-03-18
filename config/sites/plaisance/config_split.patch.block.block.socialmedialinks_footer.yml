@@ -1,0 +1,44 @@
+adding:
+  settings:
+    platforms:
+      facebook:
+        value: refugedeplaisance/
+      twitter:
+        value: ''
+      youtube:
+        value: ''
+      instagram:
+        value: refugedeplaisance/
+      xing:
+        value: ''
+        description: ''
+        weight: '-10'
+      gitlab:
+        value: ''
+        description: ''
+        weight: '-9'
+      whatsapp:
+        value: ''
+        description: ''
+        weight: '-8'
+      website:
+        value: ''
+        description: ''
+        weight: '-7'
+    appearance:
+      suggestion: ''
+    link_attributes:
+      target: _blank
+removing:
+  settings:
+    platforms:
+      facebook:
+        value: parcnationaldelavanoise/
+      twitter:
+        value: pnvanoise
+      youtube:
+        value: user/ParcNationalVanoise
+      instagram:
+        value: ''
+    link_attributes:
+      target: '<none>'

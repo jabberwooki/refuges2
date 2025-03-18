@@ -1,0 +1,48 @@
+adding:
+  settings:
+    platforms:
+      facebook:
+        value: RefugeDePrariond/
+      twitter:
+        value: ''
+      youtube:
+        value: ''
+      email:
+        value: le.refuge.de.prariond@gmail.com
+      instagram:
+        value: 'refugedeprariond/?hl=fr'
+      xing:
+        value: ''
+        description: ''
+        weight: '-10'
+      gitlab:
+        value: ''
+        description: ''
+        weight: '-9'
+      whatsapp:
+        value: '06 08 83 75 30'
+        description: ''
+        weight: '-8'
+      website:
+        value: ''
+        description: ''
+        weight: '-7'
+    appearance:
+      suggestion: ''
+    link_attributes:
+      target: _blank
+removing:
+  settings:
+    platforms:
+      facebook:
+        value: parcnationaldelavanoise/
+      twitter:
+        value: pnvanoise
+      youtube:
+        value: user/ParcNationalVanoise
+      email:
+        value: ''
+      instagram:
+        value: ''
+    link_attributes:
+      target: '<none>'

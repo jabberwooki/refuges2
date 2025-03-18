@@ -5,14 +5,15 @@ dependencies: {  }
 id: fours
 label: 'Refuge du Fond des Fours'
 weight: 0
+stackable: false
+no_patching: false
+storage: folder
 folder: ../config/sites/fours
 module: {  }
 theme: {  }
-blacklist: {  }
-graylist:
+complete_list: {  }
+partial_list:
   - refuges.settings
   - structure_sync.data
   - system.site
   - 'block.block.socialmedialinks*'
-graylist_dependents: true
-graylist_skip_equal: true

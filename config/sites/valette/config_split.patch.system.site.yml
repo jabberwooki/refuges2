@@ -1,0 +1,7 @@
+adding:
+  name: 'Refuge de la Valette'
+  mail: refuge.valette@vanoise-parcnational.fr
+  mail_notification: null
+removing:
+  name: 'Refuge (nom)'
+  mail: christophe.espiau@gmail.com

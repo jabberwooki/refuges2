@@ -1,0 +1,7 @@
+adding:
+  name: 'Refuge de la Martin'
+  mail: refuge.lamartin@vanoise-parcnational.fr
+  mail_notification: null
+removing:
+  name: 'Refuge (nom)'
+  mail: christophe.espiau@gmail.com

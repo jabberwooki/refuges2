@@ -1,0 +1,7 @@
+adding:
+  name: 'Refuge de la Femma'
+  mail: refuge.femma@vanoise-parcnational.fr
+  mail_notification: null
+removing:
+  name: 'Refuge (nom)'
+  mail: christophe.espiau@gmail.com

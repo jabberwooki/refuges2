@@ -3,7 +3,6 @@ _core:
 module:
   addtoany: 0
   admin_toolbar: 0
-  admin_toolbar_links_access_filter: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
   automated_cron: 0
@@ -17,7 +16,6 @@ module:
   ckeditor5: 0
   comment: 0
   config: 0
-  config_filter: 0
   config_ignore: 0
   config_split: 0
   config_translation: 0
@@ -78,7 +76,6 @@ module:
   text: 0
   token: 0
   toolbar: 0
-  tour: 0
   twig_tweak: 0
   user: 0
   video_embed_field: 0
