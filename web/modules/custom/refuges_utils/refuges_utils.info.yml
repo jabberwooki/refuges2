@@ -1,5 +1,5 @@
 name: Utilitaires Refuges
 type: module
 description: Utilitaires pour les sites des refuges.
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^10 || ^11
 package: Refuges

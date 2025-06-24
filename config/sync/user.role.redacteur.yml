@@ -3,6 +3,10 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - block_content.type.bloc_partenaires
+    - block_content.type.contact_details
+    - block_content.type.intro_block
+    - entity_browser.browser.media_browser
     - media.type.external_video
     - media.type.file
     - media.type.image
@@ -16,7 +20,6 @@ dependencies:
     - node.type.slide
   module:
     - block_content
-    - block_content_permissions
     - content_translation
     - contextual
     - entity_browser
@@ -52,6 +55,9 @@ permissions:
   - 'delete own section_header_image content'
   - 'delete own service content'
   - 'delete own slide content'
+  - 'edit any bloc_partenaires block content'
+  - 'edit any contact_details block content'
+  - 'edit any intro_block block content'
   - 'edit own advanced_page content'
   - 'edit own event content'
   - 'edit own external_video media'
@@ -74,7 +80,4 @@ permissions:
   - 'translate section_header_image node'
   - 'translate service node'
   - 'translate slide node'
-  - 'update any bloc_partenaires block content'
-  - 'update any contact_details block content'
-  - 'update any intro_block block content'
   - 'view the administration theme'

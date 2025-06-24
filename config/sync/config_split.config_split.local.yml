@@ -11,9 +11,8 @@ no_patching: false
 storage: folder
 folder: ../config/envs/local
 module:
-  update: 0
-  chosen: 0
   devel: 0
+  update: 0
 theme: {  }
 complete_list: {  }
 partial_list:

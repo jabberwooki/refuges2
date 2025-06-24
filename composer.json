@@ -68,9 +68,10 @@
         "drupal/video_embed_field": "^3.0@beta",
         "drupal/views_bootstrap": "^3.1",
         "drupal/views_parity_row": "^1.8",
-        "drush/drush": "^12.5",
+        "drush/drush": "^13",
         "jackmoore/colorbox": "^1.6",
-        "jigarius/drall": "^3.1",
+        "jigarius/drall": "^4.0",
+        "mglaman/composer-drupal-lenient": "^1.0",
         "mnsami/composer-custom-directory-installer": "^2.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -86,11 +87,15 @@
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/console-extend-plugin": true,
             "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "mglaman/composer-drupal-lenient": true,
             "mnsami/composer-custom-directory-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "drupal/core-project-message": true
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true,
+            "tbachert/spi": true
         }
     },
     "autoload": {
@@ -151,6 +156,9 @@
             "drupal/views_parity_row": {
                 "3384799: Call to undefined method preRenderByRelationship": "https://www.drupal.org/files/issues/2023-10-10/3384799-8.undefined-relationship-fix.patch"
             }
+        },
+        "drupal-lenient": {
+            "allowed-list": ["drupal/field_image_link"]
         }
     }
 }
