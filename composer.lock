@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9932e982229e748712f3eef512c67e84",
+    "content-hash": "456bbe5ea9708c5a35b37cd71f1b885c",
     "packages": [
         {
             "name": "amphp/amp",
@@ -2100,55 +2100,6 @@
             }
         },
         {
-            "name": "drupal/block_content_permissions",
-            "version": "1.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/block_content_permissions.git",
-                "reference": "8.x-1.11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_content_permissions-8.x-1.11.zip",
-                "reference": "8.x-1.11",
-                "shasum": "1ecb7330f69be30b6cf05f8682d1957c1aaf605e"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10"
-            },
-            "suggest": {
-                "drupal/block_region_permissions": "Block Region Permissions adds permissions for administering 'blocks' based on each theme's regions."
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.11",
-                    "datestamp": "1674237116",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Joshua Roberson",
-                    "homepage": "https://www.drupal.org/u/joshuaroberson",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Block Content Permissions adds permissions for administering 'block content types' and 'block content'.",
-            "homepage": "https://www.drupal.org/project/block_content_permissions",
-            "support": {
-                "source": "https://git.drupalcode.org/project/block_content_permissions",
-                "issues": "https://www.drupal.org/project/issues/block_content_permissions"
-            }
-        },
-        {
             "name": "drupal/bootstrap",
             "version": "3.35.0",
             "source": {
@@ -2296,149 +2247,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/captcha",
                 "issues": "https://www.drupal.org/project/issues/captcha"
-            }
-        },
-        {
-            "name": "drupal/chosen",
-            "version": "5.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/chosen.git",
-                "reference": "5.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/chosen-5.0.2.zip",
-                "reference": "5.0.2",
-                "shasum": "bda191e28f3461bfa36f63d12b6d14c346104840"
-            },
-            "require": {
-                "drupal/chosen_lib": "*",
-                "drupal/core": "^10.2 || ^11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "5.0.2",
-                    "datestamp": "1746293867",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "aidanlis",
-                    "homepage": "https://www.drupal.org/user/502018"
-                },
-                {
-                    "name": "Cyclodex",
-                    "homepage": "https://www.drupal.org/user/1305230"
-                },
-                {
-                    "name": "dave reid",
-                    "homepage": "https://www.drupal.org/user/53892"
-                },
-                {
-                    "name": "hydra",
-                    "homepage": "https://www.drupal.org/user/647364"
-                },
-                {
-                    "name": "kalman.hosszu",
-                    "homepage": "https://www.drupal.org/user/267481"
-                },
-                {
-                    "name": "nagy.balint",
-                    "homepage": "https://www.drupal.org/user/1763952"
-                },
-                {
-                    "name": "pol",
-                    "homepage": "https://www.drupal.org/user/47194"
-                },
-                {
-                    "name": "shadcn",
-                    "homepage": "https://www.drupal.org/user/571032"
-                },
-                {
-                    "name": "supercabbageuk",
-                    "homepage": "https://www.drupal.org/user/235438"
-                }
-            ],
-            "description": "Makes select elements more user-friendly using <a href=\"https://github.com/noli42/chosen\">Chosen</a>.",
-            "homepage": "https://www.drupal.org/project/chosen",
-            "support": {
-                "source": "https://git.drupalcode.org/project/chosen"
-            }
-        },
-        {
-            "name": "drupal/chosen_lib",
-            "version": "5.0.2",
-            "require": {
-                "drupal/chosen": "^5",
-                "drupal/core": "^10.2 || ^11"
-            },
-            "type": "metapackage",
-            "extra": {
-                "drupal": {
-                    "version": "5.0.2",
-                    "datestamp": "1746293867",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "aidanlis",
-                    "homepage": "https://www.drupal.org/user/502018"
-                },
-                {
-                    "name": "Cyclodex",
-                    "homepage": "https://www.drupal.org/user/1305230"
-                },
-                {
-                    "name": "dave reid",
-                    "homepage": "https://www.drupal.org/user/53892"
-                },
-                {
-                    "name": "hydra",
-                    "homepage": "https://www.drupal.org/user/647364"
-                },
-                {
-                    "name": "kalman.hosszu",
-                    "homepage": "https://www.drupal.org/user/267481"
-                },
-                {
-                    "name": "nagy.balint",
-                    "homepage": "https://www.drupal.org/user/1763952"
-                },
-                {
-                    "name": "pol",
-                    "homepage": "https://www.drupal.org/user/47194"
-                },
-                {
-                    "name": "shadcn",
-                    "homepage": "https://www.drupal.org/user/571032"
-                },
-                {
-                    "name": "supercabbageuk",
-                    "homepage": "https://www.drupal.org/user/235438"
-                }
-            ],
-            "description": "Add <a href=\"https://github.com/noli42/chosen\">chosen</a> library definition.",
-            "homepage": "https://www.drupal.org/project/chosen",
-            "support": {
-                "source": "https://git.drupalcode.org/project/chosen"
             }
         },
         {
