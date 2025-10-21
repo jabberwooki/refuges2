@@ -29,12 +29,14 @@ adding:
   table: ''
   cdn_provider_import_data: ''
   cdn_theme: bootstrap
-  cdn_cache_ttl_versions: '604800'
-  cdn_cache_ttl_themes: '604800'
-  cdn_cache_ttl_assets: '0'
-  cdn_cache_ttl_library: '0'
+  cdn_cache_ttl_versions: 0
+  cdn_cache_ttl_themes: 0
+  cdn_cache_ttl_assets: 0
+  cdn_cache_ttl_library: 0
   apply: Appliquer
   reset_http_request_cache: ''
+  cdn_provider: ''
+  reset: 'Reset Brisé Cache'
 removing:
   favicon:
     url: 'http://www.bois2.localhost/themes/contrib/bootstrap/favicon.ico'

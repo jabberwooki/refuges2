@@ -152,9 +152,6 @@
             "drupal/views_parity_row": {
                 "3384799: Call to undefined method preRenderByRelationship": "https://www.drupal.org/files/issues/2023-10-10/3384799-8.undefined-relationship-fix.patch"
             },
-            "drupal/bootstrap": {
-                "3528426: Undefined constant PREPROCESS_INVOKES": "https://git.drupalcode.org/project/bootstrap/-/merge_requests/59.diff?diff_id=1520159"
-            },
             "drupal/field_image_link": {
                 "3430510: Drupal 11 compatibility fixes":
                 "https://www.drupal.org/files/issues/2024-03-17/field_image_link.8.x-1.x-dev.rector.patch"
