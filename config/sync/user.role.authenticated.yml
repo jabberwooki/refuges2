@@ -28,6 +28,7 @@ dependencies:
     - paragraphs
     - search
     - shortcut
+    - sitewide_alert
     - system
     - toolbar
 _core:
@@ -69,4 +70,5 @@ permissions:
   - 'use text format full_html'
   - 'view media'
   - 'view own unpublished content'
+  - 'view published sitewide alert entities'
   - 'view unpublished paragraphs'

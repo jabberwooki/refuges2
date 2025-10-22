@@ -59,6 +59,7 @@
         "drupal/responsive_table_filter": "^2.0",
         "drupal/responsive_tables_filter": "^2.0",
         "drupal/shield": "^1.2",
+        "drupal/sitewide_alert": "^3.0",
         "drupal/social_media_links": "^2.6",
         "drupal/structure_sync": "^2.0",
         "drupal/twig_tweak": "^3.2",
