@@ -17,7 +17,6 @@ dependencies:
     - node.type.service
     - node.type.slide
   module:
-    - comment
     - contact
     - file
     - filter
@@ -39,7 +38,6 @@ weight: -9
 is_admin: false
 permissions:
   - 'access administration pages'
-  - 'access comments'
   - 'access content'
   - 'access content overview'
   - 'access help pages'
@@ -62,9 +60,7 @@ permissions:
   - 'create slide content'
   - 'delete own files'
   - 'opt-in or out of google analytics tracking'
-  - 'post comments'
   - 'search content'
-  - 'skip comment approval'
   - 'use advanced search'
   - 'use text format basic_html'
   - 'use text format full_html'
