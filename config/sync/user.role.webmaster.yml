@@ -36,6 +36,7 @@ dependencies:
     - paragraphs
     - path
     - shortcut
+    - sitewide_alert
     - system
     - toolbar
     - views_ui
@@ -51,6 +52,7 @@ permissions:
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access toolbar'
+  - 'add sitewide alert entities'
   - 'administer block content'
   - 'administer block types'
   - 'administer blocks'
@@ -59,12 +61,14 @@ permissions:
   - 'administer menu-hamburger menu items'
   - 'administer services menu items'
   - 'administer shortcuts'
+  - 'administer sitewide alert entities'
   - 'administer themes'
   - 'administer users'
   - 'administer views'
   - 'bypass honeypot protection'
   - 'create content translations'
   - 'create url aliases'
+  - 'delete all sitewide alert revisions'
   - 'delete any advanced_page content'
   - 'delete any event content'
   - 'delete any external_video media'
@@ -78,6 +82,7 @@ permissions:
   - 'delete any slide content'
   - 'delete content translations'
   - 'delete own files'
+  - 'delete sitewide alert entities'
   - 'edit any advanced_page content'
   - 'edit any bloc_partenaires block content'
   - 'edit any contact_details block content'
@@ -92,6 +97,8 @@ permissions:
   - 'edit any section_header_image content'
   - 'edit any service content'
   - 'edit any slide content'
+  - 'edit sitewide alert entities'
+  - 'revert all sitewide alert revisions'
   - 'translate advanced_page node'
   - 'translate any entity'
   - 'translate block_content'
@@ -106,4 +113,6 @@ permissions:
   - 'translate service node'
   - 'translate slide node'
   - 'update content translations'
+  - 'view all sitewide alert revisions'
   - 'view the administration theme'
+  - 'view unpublished sitewide alert entities'
