@@ -20,6 +20,7 @@ dependencies:
     - node.type.slide
   module:
     - block_content
+    - captcha
     - content_translation
     - contextual
     - entity_browser
@@ -39,10 +40,13 @@ permissions:
   - 'access contextual links'
   - 'access files overview'
   - 'access media_browser entity browser pages'
+  - 'administer CAPTCHA settings'
   - 'administer footer menu items'
   - 'administer menu-hamburger menu items'
   - 'administer services menu items'
   - 'bypass honeypot protection'
+  - 'create content translations'
+  - 'delete content translations'
   - 'delete own advanced_page content'
   - 'delete own event content'
   - 'delete own external_video media'
@@ -57,6 +61,9 @@ permissions:
   - 'delete own slide content'
   - 'edit any bloc_partenaires block content'
   - 'edit any contact_details block content'
+  - 'edit any external_video media'
+  - 'edit any file media'
+  - 'edit any image media'
   - 'edit any intro_block block content'
   - 'edit own advanced_page content'
   - 'edit own event content'
@@ -69,6 +76,7 @@ permissions:
   - 'edit own section_header_image content'
   - 'edit own service content'
   - 'edit own slide content'
+  - 'skip CAPTCHA'
   - 'translate advanced_page node'
   - 'translate block_content'
   - 'translate editable entities'
@@ -80,4 +88,5 @@ permissions:
   - 'translate section_header_image node'
   - 'translate service node'
   - 'translate slide node'
+  - 'update content translations'
   - 'view the administration theme'
