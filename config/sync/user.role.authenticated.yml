@@ -22,6 +22,7 @@ dependencies:
     - filter
     - google_analytics
     - help
+    - matomo
     - media
     - node
     - paragraphs
@@ -60,6 +61,7 @@ permissions:
   - 'create slide content'
   - 'delete own files'
   - 'opt-in or out of google analytics tracking'
+  - 'opt-in or out of matomo tracking'
   - 'search content'
   - 'use advanced search'
   - 'use text format basic_html'

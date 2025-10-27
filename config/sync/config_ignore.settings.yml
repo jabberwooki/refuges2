@@ -7,6 +7,7 @@ ignored_config_entities:
   - contact.form.feedback
   - 'core.entity_form_display.user.user.default:content.google_analytics'
   - google_analytics.settings
+  - matomo.settings
   - refuges.settings
   - structure_sync.data
   - system.site
