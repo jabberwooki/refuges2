@@ -9,7 +9,7 @@ _core:
 id: who_s_online
 label: 'Bloc "Qui est connecté"'
 module: user
-description: "Affiche les noms des utilisateurs les plus actifs récemment, et le nombre total d'utilisateurs actifs."
+description: "Affiche les noms des utilisateurs les plus actifs récemment et le nombre total d'utilisateurs actifs."
 tag: default
 base_table: users_field_data
 base_field: uid
