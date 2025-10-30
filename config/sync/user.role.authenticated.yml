@@ -63,7 +63,6 @@ permissions:
   - 'opt-in or out of google analytics tracking'
   - 'opt-in or out of matomo tracking'
   - 'search content'
-  - 'use advanced search'
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'view media'

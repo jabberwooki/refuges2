@@ -140,6 +140,7 @@ permissions:
   - 'translate slide node'
   - 'update content translations'
   - 'view all sitewide alert revisions'
+  - 'view own unpublished media'
   - 'view the administration theme'
   - 'view unpublished sitewide alert entities'
   - 'view user email addresses'
