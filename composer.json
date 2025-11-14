@@ -94,6 +94,9 @@
             "php-http/discovery": true,
             "phpstan/extension-installer": true,
             "tbachert/spi": true
+        },
+        "audit": {
+            "ignore": ["PKSA-4g5g-4rkv-myqs"]
         }
     },
     "autoload": {
