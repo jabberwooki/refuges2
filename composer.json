@@ -44,7 +44,7 @@
         "drupal/devel_kint_extras": "^1.0",
         "drupal/ds": "^3.1",
         "drupal/entity_browser": "~2.0",
-        "drupal/field_group": "^3.0",
+        "drupal/field_group": "^4.0",
         "drupal/field_group_link": "^3",
         "drupal/field_image_link": "1.x-dev",
         "drupal/google_analytics": "^4.0",
@@ -91,6 +91,7 @@
             "mnsami/composer-custom-directory-installer": true,
             "php-http/discovery": true,
             "phpstan/extension-installer": true,
+            "symfony/runtime": true,
             "tbachert/spi": true
         },
         "audit": {
@@ -154,6 +155,9 @@
         "patches": {
             "drupal/views_parity_row": {
                 "3384799: Call to undefined method preRenderByRelationship": "https://www.drupal.org/files/issues/2023-10-10/3384799-8.undefined-relationship-fix.patch"
+            },
+            "drupal/field_image_link": {
+                "#3610655: Drupal 11.4 broke compatibility in ImageFormatter": "patches/field_image_link/5.diff"
             }
         }
     }

@@ -68,6 +68,8 @@ module:
   responsive_table_filter: 0
   responsive_tables_filter: 0
   search: 0
+  search_help: 0
+  search_node: 0
   shortcut: 0
   sitewide_alert: 0
   social_media_links: 0
