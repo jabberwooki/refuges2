@@ -76,7 +76,7 @@ body {
       padding-top: 0;
     }
   }
-  .language-switcher-language-url ul {
+  ul.language-switcher-language-url {
     margin-right: 2rem;
     padding-top: 10px;
     li {
@@ -96,7 +96,7 @@ body {
 .highlighted{
   margin-bottom: 80px;
   min-height: 100px;
-   .search-block-form{
+   .block-search-form-block {
     position: absolute;
     padding: 50px;
     width: 100%;
