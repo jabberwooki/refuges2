@@ -35,6 +35,7 @@ a:hover {
 html {
   position: relative;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -109,11 +110,11 @@ body {
 .top #block-socialmedialinks-top li {
   padding-top: 0;
 }
-.top .language-switcher-language-url ul {
+.top ul.language-switcher-language-url {
   margin-right: 2rem;
   padding-top: 10px;
 }
-.top .language-switcher-language-url ul li {
+.top ul.language-switcher-language-url li {
   display: inline;
   padding-right: 10px;
   list-style: none;
@@ -144,7 +145,7 @@ body {
   margin-bottom: 80px;
   min-height: 100px;
 }
-.highlighted .search-block-form {
+.highlighted .block-search-form-block {
   position: absolute;
   padding: 50px;
   width: 100%;
@@ -153,18 +154,18 @@ body {
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
 }
-.highlighted .search-block-form .wrapper {
+.highlighted .block-search-form-block .wrapper {
   width: 45%;
   margin: 0 auto;
 }
-.highlighted .search-block-form .form-type-search {
+.highlighted .block-search-form-block .form-type-search {
   width: 80%;
   float: left;
 }
-.highlighted .search-block-form #searchformclose {
+.highlighted .block-search-form-block #searchformclose {
   float: right;
 }
-.highlighted .search-block-form #searchformclose .glyphicon-remove {
+.highlighted .block-search-form-block #searchformclose .glyphicon-remove {
   color: #ff6600;
   font-size: 20px;
 }

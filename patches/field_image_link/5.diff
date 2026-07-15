@@ -1,0 +1,47 @@
+diff --git a/src/Plugin/Field/FieldFormatter/ImageLinkFormatter.php b/src/Plugin/Field/FieldFormatter/ImageLinkFormatter.php
+index 5e392e47260b8039441e1f0d91e9b5d1f6236f38..7fb8553f738ecc2eb477878cc301c5031a75dce6 100644
+--- a/src/Plugin/Field/FieldFormatter/ImageLinkFormatter.php
++++ b/src/Plugin/Field/FieldFormatter/ImageLinkFormatter.php
+@@ -2,19 +2,20 @@
+ 
+ namespace Drupal\field_image_link\Plugin\Field\FieldFormatter;
+ 
++use Drupal\Core\Cache\Cache;
+ use Drupal\Core\Entity\EntityStorageInterface;
+-use Drupal\Core\Field\FieldItemListInterface;
+ use Drupal\Core\Field\FieldDefinitionInterface;
++use Drupal\Core\Field\FieldItemListInterface;
+ use Drupal\Core\File\FileUrlGeneratorInterface;
++use Drupal\Core\Form\FormStateInterface;
+ use Drupal\Core\Logger\LoggerChannelFactoryInterface;
+ use Drupal\Core\Render\Markup;
+ use Drupal\Core\Session\AccountInterface;
+ use Drupal\Core\Url;
+ use Drupal\file\Entity\File;
++use Drupal\image\ImageDerivativeUtilities;
+ use Drupal\image\Plugin\Field\FieldFormatter\ImageFormatter;
+ use Symfony\Component\DependencyInjection\ContainerInterface;
+-use Drupal\Core\Form\FormStateInterface;
+-use Drupal\Core\Cache\Cache;
+ 
+ /**
+  * Plugin implementation of the 'image_link' formatter.
+@@ -33,8 +34,8 @@ class ImageLinkFormatter extends ImageFormatter {
+    */
+   private $logger;
+ 
+-  public function __construct($plugin_id, $plugin_definition, FieldDefinitionInterface $field_definition, array $settings, $label, $view_mode, array $third_party_settings, AccountInterface $current_user, EntityStorageInterface $image_style_storage, FileUrlGeneratorInterface $file_url_generator, LoggerChannelFactoryInterface $logger) {
+-    parent::__construct($plugin_id, $plugin_definition, $field_definition, $settings, $label, $view_mode, $third_party_settings, $current_user, $image_style_storage, $file_url_generator);
++  public function __construct($plugin_id, $plugin_definition, FieldDefinitionInterface $field_definition, array $settings, $label, $view_mode, array $third_party_settings, AccountInterface $current_user, EntityStorageInterface $image_style_storage, FileUrlGeneratorInterface $file_url_generator, ImageDerivativeUtilities $image_derivative_utilities, LoggerChannelFactoryInterface $logger) {
++    parent::__construct($plugin_id, $plugin_definition, $field_definition, $settings, $label, $view_mode, $third_party_settings, $current_user, $image_style_storage, $file_url_generator, $image_derivative_utilities);
+     $this->logger = $logger;
+   }
+ 
+@@ -53,6 +54,7 @@ class ImageLinkFormatter extends ImageFormatter {
+         $container->get('current_user'),
+         $container->get('entity_type.manager')->getStorage('image_style'),
+         $container->get('file_url_generator'),
++        $container->get(ImageDerivativeUtilities::class),
+         $container->get('logger.factory')
+     );
+   }

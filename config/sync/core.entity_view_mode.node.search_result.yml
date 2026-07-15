@@ -1,11 +1,11 @@
-uuid: 320b9f12-664e-4af2-b05d-67d4cc7e5a1e
+uuid: 90b831b9-aec6-40e1-a4be-4b1654734d47
 langcode: fr
 status: false
 dependencies:
   module:
     - node
 _core:
-  default_config_hash: 6GCOQ-jP2RbdbHA5YWQ6bT8CfGbqrBYKOSC_XY4E3ZM
+  default_config_hash: d8wBEm7XvJ6H3S0IneDD9PfTBklPIH7GMpxElVemPf8
 id: node.search_result
 label: 'Résultat de recherche mettant en évidence la saisie'
 description: ''
